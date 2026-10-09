@@ -3,3 +3,7 @@ __pycache__/
 samples/generation/wav/
 samples/**/*.wav
 samples/*.zip
+samples/generation/replacements/
+samples/generation/replacement-active.json
+samples/generation/*.log
+samples/quality-audit/

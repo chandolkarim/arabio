@@ -16,7 +16,7 @@ const data = JSON.parse(fs.readFileSync('web/data/sentences.json', 'utf8'));
 context.example = data.sentences[5];
 for (const variant of ['fusha', 'egypt', 'jordan']) {
   vm.runInContext(`speak(example, '${variant}', 'B')`, context);
-  assert.equal(played.at(-1), `audio/${context.example[variant].audio.B}`);
+  assert.equal(played.at(-1), `audio/${context.example[variant].audio.B}?v=${context.example[variant].audioRevision.B}`);
 }
 assert.equal(new Set(played).size, 3, 'variants must use distinct files');
 context.missing = { fusha: { A: 'نص', audio: {} } };

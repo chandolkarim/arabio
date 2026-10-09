@@ -6,6 +6,7 @@ web/audio/ 폴더에 음성 파일이 있으면 자동으로 연결한다.
     python3 build_data.py
 """
 import csv
+import hashlib
 import json
 from dialect_notes import split_notes
 from pathlib import Path
@@ -58,6 +59,10 @@ def main():
                     if (name := next((f"{r['id']}_{key}_{side}.{ext}" for ext in ("m4a", "mp3", "wav")
                                       if f"{r['id']}_{key}_{side}.{ext}" in audio_files), None))
                 },
+            }
+            item[key]['audioRevision'] = {
+                side: hashlib.sha256((AUDIO / name).read_bytes()).hexdigest()[:12]
+                for side, name in item[key]['audio'].items()
             }
         sentences.append(item)
 

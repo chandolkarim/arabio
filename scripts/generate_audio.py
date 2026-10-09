@@ -5,6 +5,7 @@ from decimal import Decimal
 import hashlib
 import fcntl
 import json
+import re
 from pathlib import Path
 import threading
 import time
@@ -98,8 +99,19 @@ def valid_wav(path):
 
 def jobs():
     data = json.loads((ROOT / 'web/data/sentences.json').read_text())
-    return [(f'{s["id"]}_{v}_{side}', v, s[v][side])
-            for s in data['sentences'] for v in VOICES for side in 'AB']
+    path = ROOT / 'pronunciation_overrides.json'
+    overrides = json.loads(path.read_text()) if path.exists() else {}
+    result = []
+    for s in data['sentences']:
+        for v in VOICES:
+            for side in 'AB':
+                name = f'{s["id"]}_{v}_{side}'
+                text = overrides.get(name, s[v][side])
+                strip = lambda value: re.sub('[\u064b-\u065f\u0670\u0640]', '', value)
+                if strip(text) != strip(s[v][side]):
+                    raise RuntimeError(name + ': pronunciation override changes source words')
+                result.append((name, v, text))
+    return result
 
 
 def generate(key, job):

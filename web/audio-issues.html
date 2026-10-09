@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>아라비오 · 음성 확인 후보</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="arabio.css">
+<style>
+body{display:block;max-width:760px;margin:auto;padding:24px 20px 60px}header{display:flex;justify-content:space-between;gap:20px;align-items:center}h1{font-size:23px}a{color:var(--henna)}p{line-height:1.7}select{font:inherit;padding:12px;border:1px solid #cfbda8;background:transparent;color:inherit;margin:8px 8px 16px 0}article{border-top:1px solid #cfbda8;padding:22px 0}h2{font-size:17px;margin:0 0 12px}.ar{font-size:29px;line-height:1.8;overflow-wrap:anywhere}audio{display:block;width:100%;margin:14px 0}.muted{color:var(--muted);font-size:13px}summary{cursor:pointer}details .ar{font-size:23px}label{display:inline-block}
+</style>
+</head>
+<body>
+<header><h1 id="heading">음성 확인 후보</h1><a href="admin.html">전체 대화</a></header>
+<p id="intro">자동 검사에서 원문과 차이가 잡힌 파일이에요. 음성 인식도 방언을 잘못 알아들을 수 있어요. <strong>오류가 확정된 목록은 아니에요.</strong></p>
+<p id="status" class="muted">불러오는 중…</p>
+<label>목소리 <select id="voice"><option value="all">모두</option><option value="fusha">푸스하 · 아이만</option><option value="egypt">이집트 · 아슈라프</option><option value="jordan">요르단 · 야잔</option></select></label>
+<label>확인 유형 <select id="kind"><option value="priority">내용 비교 후보</option><option value="acoustic">길이·볼륨 후보 포함</option></select></label>
+<main id="list"></main>
+<script>
+(async()=>{
+const status=document.getElementById('status'),list=document.getElementById('list');
+if(!['localhost','127.0.0.1','[::1]'].includes(location.hostname)){status.textContent='이 화면은 localhost에서만 열 수 있어요.';return;}
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const names={fusha:'푸스하 · 아이만',egypt:'이집트 · 아슈라프',jordan:'요르단 · 야잔'};
+try{
+ const response=await fetch('data/audio-audit.json',{cache:'no-cache'});if(!response.ok)throw Error();const data=await response.json();
+ if(data.replacedCount){document.getElementById('heading').textContent='다시 녹음한 음성';document.getElementById('intro').textContent=`내용 확인 후보 ${data.replacedCount}개를 기존 목소리로 다시 생성했어요. 아래에서 교체된 음성을 들어볼 수 있어요.`;}
+ function render(){
+  list.querySelectorAll('audio').forEach(a=>a.pause());
+  const voice=document.getElementById('voice').value,kind=document.getElementById('kind').value;
+  const rows=data.candidates.filter(r=>(voice==='all'||r.variant===voice)&&(kind==='acoustic'||r.contentCandidate));
+  status.textContent=`전체 ${data.checked}개 검사${data.replacedCount?` · ${data.replacedCount}개 재생성 완료`:''} · 현재 ${rows.length}개 표시`;
+  list.innerHTML=rows.map(r=>`<article><h2>${r.day}일차 · ${names[r.variant]} · #${r.name.split('_')[0]} ${r.side}</h2><p class="muted">${r.replaced?`새로 녹음한 음성 · 재생 음량 조정 완료${r.replacementReviewNeeded?' · 자동 인식 판정 불확실':''}`:esc(r.reason)}</p><p class="ar" dir="rtl" lang="ar">${esc(r.text)}</p><audio controls preload="none" aria-label="${r.day}일차 ${names[r.variant]} ${r.side}" src="audio/${encodeURIComponent(r.name)}.m4a?v=${r.sha256.slice(0,12)}"></audio><details><summary>${r.replaced?'교체 전 검사 결과':'자동 인식 결과 비교'}</summary><p class="muted">${r.replaced?'아래 내용은 교체 전 파일의 검사 결과예요. 위 플레이어는 새 음성을 재생해요.':'받아쓰기 오류일 수도 있어요. 원문과 음성을 직접 비교해주세요.'}</p><p class="ar" dir="rtl" lang="ar">${esc(r.transcript)}</p>${r.alternateTranscript?`<p class="muted">다른 모델의 인식 결과</p><p class="ar" dir="rtl" lang="ar">${esc(r.alternateTranscript)}</p>`:''}</details><p><a href="admin.html?day=${r.day}">해당 일차 전체 대화</a></p></article>`).join('')||'<p>이 조건에 해당하는 후보가 없어요.</p>';
+  list.querySelectorAll('audio').forEach(a=>a.addEventListener('play',()=>list.querySelectorAll('audio').forEach(b=>{if(b!==a)b.pause();})));
+ }
+ document.getElementById('voice').addEventListener('change',render);document.getElementById('kind').addEventListener('change',render);render();
+}catch{status.textContent='검사 결과를 불러오지 못했어요.';}
+})();
+</script>
+</body>
+</html>

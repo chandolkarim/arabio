@@ -288,7 +288,8 @@ function speak(s, variant, side, button = null) {
   if (file) {
     const notice = document.getElementById("service-status");
     if (notice?.dataset?.kind === "audio") notice.hidden = true;
-    const audio = new Audio(`audio/${file}`);
+    const revision = s[variant].audioRevision?.[side];
+    const audio = new Audio(`audio/${file}${revision ? `?v=${encodeURIComponent(revision)}` : ""}`);
     currentAudio = audio;
     currentAudioFile = file;
     audio.playbackRate = state.audioRate || 1;

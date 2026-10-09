@@ -1,6 +1,6 @@
 {
   "fingerprint": "5a9fd1aeec6243bafe9aff4e70a3093942a97c3dba9fc05f0044a0bb7ed2aaaa",
-  "idempotency_key": "dd046925-b344-4503-a009-b7c9b428ae3f",
+  "idempotency_key": "91f1938c-795c-4624-bf25-dc2f5b299528",
   "payload": {
     "model": "arabic-tts-1",
     "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
@@ -10,14 +10,14 @@
     "enhance_pronunciation": false
   },
   "submitted": true,
-  "operation_id": "b9a422c2-0500-4e1b-8368-8b92dadb2a4b",
+  "operation_id": "d29cf7c4-0c1c-4dc9-99f3-a04b10d5a8ef",
   "operation": {
-    "id": "b9a422c2-0500-4e1b-8368-8b92dadb2a4b",
+    "id": "d29cf7c4-0c1c-4dc9-99f3-a04b10d5a8ef",
     "state": "terminal",
     "outcome": "completed",
     "charged_micros": 700,
-    "completion_bytes": 99840
+    "completion_bytes": 61440
   },
   "complete": true,
-  "seconds": 2.08
+  "seconds": 1.28
 }

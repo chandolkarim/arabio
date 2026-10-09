@@ -1,6 +1,7 @@
 """Verify every app audio mapping against its source and completed operation."""
 import hashlib
 import json
+import re
 from pathlib import Path
 import wave
 
@@ -32,7 +33,8 @@ def audit():
                     continue
                 payload = state['payload']
                 assert payload['voice'] == voice, name + ': voice mismatch'
-                assert payload['input'] == sentence[variant][side], name + ': text mismatch'
+                strip = lambda value: re.sub('[\u064b-\u065f\u0670\u0640]', '', value)
+                assert strip(payload['input']) == strip(sentence[variant][side]), name + ': text mismatch'
                 assert hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest() == state['fingerprint']
                 assert state['operation']['outcome'] == 'completed', name
                 raw = ROOT / 'samples/generation/wav' / (name + '.wav')
