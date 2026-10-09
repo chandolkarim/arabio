@@ -1,0 +1,23 @@
+{
+  "fingerprint": "fa2220b9e72c3da2450e9f474c2d1d348438e83e298419992e2f529e62dc00fa",
+  "idempotency_key": "30e99deb-f5b9-4b09-961a-f503880316d3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لما كنت صغير شو كان حلمك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a24c0227-4ec4-4efd-8ccf-aa24b0cc6eea",
+  "operation": {
+    "id": "a24c0227-4ec4-4efd-8ccf-aa24b0cc6eea",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6ec45b0ec1a672ac1c734d6ae3ae0126206a8da10327d1367ca9afd8bef73b18",
+  "idempotency_key": "465352bb-579c-438d-96b1-76c47cc482d4",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ممكن أقيسه؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "bb148120-812e-4a7e-883c-13089e3eccb6",
+  "operation": {
+    "id": "bb148120-812e-4a7e-883c-13089e3eccb6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 550,
+    "completion_bytes": 53760
+  },
+  "complete": true,
+  "seconds": 1.12
+}

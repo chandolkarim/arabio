@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c3cecf3f687874e14a11b9b622572891c29828af8e280265765805ed1a6409c3",
+  "idempotency_key": "1b981bcf-202d-45b2-ad80-a4f1434468b2",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "شغّل العداد من فضلك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d7dae228-6905-49b5-bf4b-309a7f1b21c5",
+  "operation": {
+    "id": "d7dae228-6905-49b5-bf4b-309a7f1b21c5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

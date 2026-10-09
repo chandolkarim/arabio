@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6b29dc6f5e04308b7030ac8300e5c3de55afad47c3e990c17462d7643a694d49",
+  "idempotency_key": "3d3cf961-bb7a-401e-83a9-da97808c8d93",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لو كنت رئيس البلد دي، إيه أول حاجة عايز تغيرها؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "56c8bec8-2ff9-434d-97bd-fc74dce2750f",
+  "operation": {
+    "id": "56c8bec8-2ff9-434d-97bd-fc74dce2750f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

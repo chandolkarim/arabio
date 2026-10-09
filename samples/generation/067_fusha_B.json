@@ -1,0 +1,23 @@
+{
+  "fingerprint": "54f6420fa88f8f5003f4c16a2e58bd05ccc8065c8571f7f1b31fb8c4799bacaf",
+  "idempotency_key": "8688c8ff-f887-423a-aef2-31ea226c9f0d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا، ليس حارًا أبدًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "68131eb6-79c6-4a67-8ee3-94e0846eba2c",
+  "operation": {
+    "id": "68131eb6-79c6-4a67-8ee3-94e0846eba2c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5aa995f9a74e4e6646666ff9c2b59c85b7cd7cfbf3fddaa525dd2bbcbebbb2fa",
+  "idempotency_key": "1d2095b5-aeee-46af-8a87-53841e86eece",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لو اتولدت تاني، تحب تعيش في أنهي بلد؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8e787764-2ea1-409d-bba4-d748cc9c015e",
+  "operation": {
+    "id": "8e787764-2ea1-409d-bba4-d748cc9c015e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 207360
+  },
+  "complete": true,
+  "seconds": 4.32
+}

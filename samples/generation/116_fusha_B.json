@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c85169ece197036699049ff4fcfec5e35df7d785781b9e3d2c28e1bf1ff9f833",
+  "idempotency_key": "074ab1da-2e5b-4323-b5f4-792ad3195e86",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "انزل بعد خمس محطات.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e3c0bdb9-77ca-4f98-aec5-ba4eee23b979",
+  "operation": {
+    "id": "e3c0bdb9-77ca-4f98-aec5-ba4eee23b979",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

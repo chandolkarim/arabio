@@ -1,0 +1,23 @@
+{
+  "fingerprint": "fc01b5b57fce8c1ba8710290f7d68bf4b9b5105b3cb0c02e8f4c4513b7efc78c",
+  "idempotency_key": "fe4672f3-dc2d-4c6a-bf6c-a7f7d5bbc617",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "رح أروح رحلة عالصحرا مع صحابي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "06783cd3-b40e-4d0b-b29f-ed2be024b821",
+  "operation": {
+    "id": "06783cd3-b40e-4d0b-b29f-ed2be024b821",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

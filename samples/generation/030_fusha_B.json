@@ -1,0 +1,23 @@
+{
+  "fingerprint": "81857ba6a78cebef573b03a86af8d0f03b1b77681cc16908079e26c8416fd4b2",
+  "idempotency_key": "47318948-1923-48f5-9fb2-d39f2ca40ba2",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "سأبقى فصلًا دراسيًا واحدًا ثم أعود إلى كوريا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "955f4838-4bee-4451-85ff-b0496a8ab206",
+  "operation": {
+    "id": "955f4838-4bee-4451-85ff-b0496a8ab206",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

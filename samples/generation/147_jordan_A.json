@@ -1,0 +1,23 @@
+{
+  "fingerprint": "249446671c24cddecf66f5254814c519ce87dcb3a55f469dd9797b3b7e02b320",
+  "idempotency_key": "dd4457e0-73e5-4733-983f-45f6441182ce",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "إنت حكيت \"بنشوف بعض بكرا إن شاء الله\"، يعني رح تيجي عن جد؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "18b4d049-1722-4110-8f0a-a88aeecf3f81",
+  "operation": {
+    "id": "18b4d049-1722-4110-8f0a-a88aeecf3f81",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2900,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

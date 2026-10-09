@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d949d625b724cbfff6d574700e1e81859cd9f47d475f1978c3dcf3caf9d8a2dd",
+  "idempotency_key": "4f4f9f46-fbe9-4ec4-a4c9-1441b89c8442",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لا، دي أول مرة، فما كنتش عارف أعمل إيه.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b7b1cf6c-034b-4fb5-b536-5b42aa8830c9",
+  "operation": {
+    "id": "b7b1cf6c-034b-4fb5-b536-5b42aa8830c9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

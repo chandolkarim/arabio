@@ -1,0 +1,23 @@
+{
+  "fingerprint": "23daba63351f2f7fdad660b8197407f419332827191f8684c8e1ffdabeb34d92",
+  "idempotency_key": "2d4dde1c-60c7-4b46-a15e-640d2e290f20",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "حدث لي شيء غريب جدًا في السوق أمس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6314a6de-96e8-4782-92eb-3ca18042ca3c",
+  "operation": {
+    "id": "6314a6de-96e8-4782-92eb-3ca18042ca3c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

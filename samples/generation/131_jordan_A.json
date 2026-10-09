@@ -1,0 +1,23 @@
+{
+  "fingerprint": "18b2e806fedaca385134ab51356eabbe113ab008a08dac7adf4e5447fa9d8459",
+  "idempotency_key": "0ec3d0ca-1b87-4936-865a-1f65005b5ff6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "طيب شو رأيك نلتقي السبت الساعة سبعة المسا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6454be66-27e7-4cbf-8d37-a8cce6d07361",
+  "operation": {
+    "id": "6454be66-27e7-4cbf-8d37-a8cce6d07361",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

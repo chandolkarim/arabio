@@ -1,0 +1,23 @@
+{
+  "fingerprint": "11f13eeafff1d55a9f68f11af55a957458c55dfd85b182899c035083f0941292",
+  "idempotency_key": "2238dd73-dc41-48b3-a24e-599dc6c35d3f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لا، بس اشتقت لكوريا كتير.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d327d2f2-28e1-4957-a0bb-1abe879f3a4b",
+  "operation": {
+    "id": "d327d2f2-28e1-4957-a0bb-1abe879f3a4b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

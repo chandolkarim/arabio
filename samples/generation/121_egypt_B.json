@@ -1,0 +1,23 @@
+{
+  "fingerprint": "940c97c92d13bb2c6f5268544d1a513c121de192ad85d3e146c18c383c19aed2",
+  "idempotency_key": "6632fa21-2b46-4e6e-a1f5-3af532b02e0a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "في الوقت ده المترو أسرع من التاكسي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c9408dea-8e24-457c-910f-73376f8795e0",
+  "operation": {
+    "id": "c9408dea-8e24-457c-910f-73376f8795e0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

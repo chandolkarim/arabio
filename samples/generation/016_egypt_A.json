@@ -1,0 +1,23 @@
+{
+  "fingerprint": "35ed973b340de92bf08a7121ef07c9b30617a7baca8d47859b31576cee14cf56",
+  "idempotency_key": "c356615c-9429-4a7f-8ab9-0722acf25016",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أنا لازم أمشي دلوقتي. انبسطت أوي النهارده.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "dd12c7df-e0f4-4955-9248-8959821d98c0",
+  "operation": {
+    "id": "dd12c7df-e0f4-4955-9248-8959821d98c0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

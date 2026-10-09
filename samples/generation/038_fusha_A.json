@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2f7012d1f5c442c34eebd03299057ac1cd116ef1a37558811d83baacf8917e9f",
+  "idempotency_key": "ebc2dd60-29eb-4494-9e93-56e0e89a8244",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل هناك كثير من الكوريين الذين يتعلمون العربية؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "72744d07-1edf-4623-b1aa-9f83819b56d6",
+  "operation": {
+    "id": "72744d07-1edf-4623-b1aa-9f83819b56d6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

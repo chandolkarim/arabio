@@ -1,0 +1,23 @@
+{
+  "fingerprint": "72446156d2bea624da15bb00b9207364faab69101df1579c4117cb43bc42783e",
+  "idempotency_key": "69a44ec7-fec0-4273-ab05-1d119b41ae80",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "كان معي حرارة فضليت بالتخت طول اليوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f06274b2-e709-4d3e-aad9-8bba86cad318",
+  "operation": {
+    "id": "f06274b2-e709-4d3e-aad9-8bba86cad318",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

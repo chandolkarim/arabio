@@ -1,0 +1,23 @@
+{
+  "fingerprint": "22bcb3a870881429f6efc7ae0d97dcf70f219ae67ed927ad40321e0646462997",
+  "idempotency_key": "ae3aa824-8040-4234-968e-5bd6f1434d9c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شو بدك تشتغل بعد التخرج؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "de8299ac-4d2f-4e55-b8e7-1b906b49d50f",
+  "operation": {
+    "id": "de8299ac-4d2f-4e55-b8e7-1b906b49d50f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

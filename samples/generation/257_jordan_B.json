@@ -1,0 +1,23 @@
+{
+  "fingerprint": "99b24843e6ccf39bae0dd27a98e2797b481a5e0e3aa00cb38b515123a4f04af5",
+  "idempotency_key": "d7802415-bf52-479f-9ddf-7f96c449ed54",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ممكن تكون المشكلة بالفلتر، رح أجي بكرا أشوفه.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f628d1e9-532c-4cd0-ad53-abb239e9aa46",
+  "operation": {
+    "id": "f628d1e9-532c-4cd0-ad53-abb239e9aa46",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

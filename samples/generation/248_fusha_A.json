@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f8cf9dce2a1f607232f7e5a2db67d08b73554e8d19504cc0104167e25c42d98e",
+  "idempotency_key": "d28dd0b8-0951-44ee-b9bd-aa5072d71a44",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كلما سمعت هذه الأغنية تذكرت أول ما جئت إلى هنا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "56ad3977-79e6-4927-9135-9ae161b231e8",
+  "operation": {
+    "id": "56ad3977-79e6-4927-9135-9ae161b231e8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

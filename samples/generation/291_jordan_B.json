@@ -1,0 +1,23 @@
+{
+  "fingerprint": "352e6bd5e06da7390e4b591f03cf4bb645fde58ae019e5db21496d8f91e610b5",
+  "idempotency_key": "f2799267-c506-4efc-9594-eeba35b01112",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "صح، بالبلدين احترام الكبار إشي كتير مهم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "726b0fa8-614b-44c0-814a-b0315c181ae2",
+  "operation": {
+    "id": "726b0fa8-614b-44c0-814a-b0315c181ae2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

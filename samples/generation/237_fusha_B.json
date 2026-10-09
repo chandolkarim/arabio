@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e5539f538c7c4ddfe1ed9813f80f2621def233b7d302d9b4dedaee1ecc495ef2",
+  "idempotency_key": "6260a411-80fb-4081-af60-f17f63f99b0b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لو كنت مكانك لتكلمت معه بصراحة أولًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "abe2bead-42cd-449d-a9e8-a327373560b8",
+  "operation": {
+    "id": "abe2bead-42cd-449d-a9e8-a327373560b8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

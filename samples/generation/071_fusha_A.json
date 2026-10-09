@@ -1,0 +1,23 @@
+{
+  "fingerprint": "35b810f9ec7f902832463e17e12b5b3294456642e4c2af2ea20cb5d75c16f436",
+  "idempotency_key": "42eeace2-5641-4179-a1a6-90071c0f9642",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أريد واحدًا من هذا واثنين من ذاك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "00c7b65b-f6fc-4a31-a52b-53e54ba221fa",
+  "operation": {
+    "id": "00c7b65b-f6fc-4a31-a52b-53e54ba221fa",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

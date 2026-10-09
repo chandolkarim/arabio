@@ -1,0 +1,23 @@
+{
+  "fingerprint": "fb21528067780d87eb4bc94240453cc5535c6194ad8dbb2646a7d7a26a5094c6",
+  "idempotency_key": "1b1adc4e-f2bf-4971-a4c6-c35caa343b9b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أنا شايف إنك مش هتعرف الناس بتضحك على إيه غير لما تعرف لغتهم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "72e91fab-54dc-4f98-b24b-e238f40d08ac",
+  "operation": {
+    "id": "72e91fab-54dc-4f98-b24b-e238f40d08ac",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3050,
+    "completion_bytes": 268800
+  },
+  "complete": true,
+  "seconds": 5.6
+}

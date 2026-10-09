@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1ca3653537bdd0182905a515ef1adad39bee50397984c6f1e7fc093cf1b43cda",
+  "idempotency_key": "6c67fed1-c321-4c0d-9f79-853a3a956847",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "صباح النور. نعم، نمتُ جيدًا والحمد لله.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7e70388f-59e4-42ab-9908-2913dd847e71",
+  "operation": {
+    "id": "7e70388f-59e4-42ab-9908-2913dd847e71",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "fb52c6181eeabc52a03629e43014aa04f49ae94b3bc8c9adb73c47cad579a42c",
+  "idempotency_key": "bfaf4a95-5793-4f44-a752-eac7efeb357f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "التأمين بيغطي هنا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7f9fc887-30ac-4c16-b121-8bc866eb8f38",
+  "operation": {
+    "id": "7f9fc887-30ac-4c16-b121-8bc866eb8f38",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

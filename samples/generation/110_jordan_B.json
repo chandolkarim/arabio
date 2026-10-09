@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a170a0c8112e1c5661c5b75f31b9090b3f7321b2d5d6ecc5c1a92e9b170ad8c9",
+  "idempotency_key": "f8141932-10a2-4a65-8f06-980224f62113",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "عالعداد بتطلع حوالي خمسين.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "719d36e9-300c-4ec9-823f-058540c2287a",
+  "operation": {
+    "id": "719d36e9-300c-4ec9-823f-058540c2287a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8e5449f3f101e6dba5680f94f1f1901bc64881da1215983e51195661fb70568e",
+  "idempotency_key": "ccde696e-f5d8-4d7b-9a78-063fc5beee93",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل يمكنك أن تعطيني كوب ماء من فضلك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "dbee137c-bc07-4600-97f7-37bd409d27e3",
+  "operation": {
+    "id": "dbee137c-bc07-4600-97f7-37bd409d27e3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

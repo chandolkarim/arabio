@@ -1,0 +1,23 @@
+{
+  "fingerprint": "788512eba6a4fed814c3e7615528e246efcfdf54e77556c7727137d097f10f7c",
+  "idempotency_key": "8c006368-945b-4025-992d-f10140978f5d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "الجو حار جدًا، أليس كذلك؟ هل تأقلمت؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8b9f34a1-d161-45b6-a0bf-afa5a77df6cf",
+  "operation": {
+    "id": "8b9f34a1-d161-45b6-a0bf-afa5a77df6cf",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

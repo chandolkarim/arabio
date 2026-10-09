@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f1a49b160cb5cab4c0148bee1307ab8cb60c831cca4e80bcac37b066f53e577f",
+  "idempotency_key": "9a53bd2d-f0b3-4682-84bc-6d6156c7bcb8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "اتصل بي عندما تصل إلى البيت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "41326b78-8b23-430a-8376-cb0fedb6b6e0",
+  "operation": {
+    "id": "41326b78-8b23-430a-8376-cb0fedb6b6e0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

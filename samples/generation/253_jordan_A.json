@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ade94cd7a6f4aca4b416c3599704411ee29b4ab1aafc211ea60aad1ea10f68f2",
+  "idempotency_key": "d6f63632-2a63-41cf-b76c-e127f7198bbd",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "اتصلت فيك لأني شفت الإعلان، الغرفة لسا موجودة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "cd81fde6-46fe-4428-a47e-70766f4093c9",
+  "operation": {
+    "id": "cd81fde6-46fe-4428-a47e-70766f4093c9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

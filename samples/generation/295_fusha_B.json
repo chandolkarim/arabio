@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f30b71b080cc8e4ffbb882236b99e6306ae03d47587a99b25ef16f85c6b34b66",
+  "idempotency_key": "b013eb18-5c3b-4baa-ad86-848bfcfdc2c6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ما هو؟ أشعر بالتوتر عندما تقول ذلك فجأة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0118c162-efeb-41e9-914e-8521fff4b4fb",
+  "operation": {
+    "id": "0118c162-efeb-41e9-914e-8521fff4b4fb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

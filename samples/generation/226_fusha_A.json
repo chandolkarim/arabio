@@ -1,0 +1,23 @@
+{
+  "fingerprint": "593a08d645a885f8383d3b44e24580d94643ff06739c377cdd0b72925b915ec5",
+  "idempotency_key": "e711984e-84a9-480f-b7d4-56e1eaa9c1f5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لم أنم أبدًا طوال الليلة الماضية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6267eec5-7218-48b8-9166-6b7ea277ca6a",
+  "operation": {
+    "id": "6267eec5-7218-48b8-9166-6b7ea277ca6a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

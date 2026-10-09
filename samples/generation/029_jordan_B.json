@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6aef371ec760ed16264c889802d3849d5b9b72ced0572dbeae59ea48aa171657",
+  "idempotency_key": "890d9066-ca6f-484a-a1a1-bce74a40eab3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "يا دوب صارلي شهر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d145aa8f-3a3e-41c8-8218-cc32991b93d2",
+  "operation": {
+    "id": "d145aa8f-3a3e-41c8-8218-cc32991b93d2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5e9f285a4da70a050a89f6a5642157006c4c938d14ef56d4d9e5ef0d604e9a4a",
+  "idempotency_key": "9db8b137-2bbe-47a5-9c86-e02d6e8cead5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "يعني لازم آخذ شمسية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "14748beb-089d-42cf-bcaa-87a675f58ebb",
+  "operation": {
+    "id": "14748beb-089d-42cf-bcaa-87a675f58ebb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

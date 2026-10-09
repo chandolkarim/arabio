@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d22835f6d66792614e12e6b71b7398837782cd1e7b65419c7ab45f6c44c20bf7",
+  "idempotency_key": "c9ee6551-48ae-4413-9cfe-f6b1b9186406",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "القوانين اتغيرت، ودلوقتي لازم تكون موجودة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e94902a2-2fb7-4fb2-aa14-060d026d6ea7",
+  "operation": {
+    "id": "e94902a2-2fb7-4fb2-aa14-060d026d6ea7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

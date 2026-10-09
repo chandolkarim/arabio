@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b3f91b4069752885583f7daf9a170157f7600ae07aef7075a566819cda904968",
+  "idempotency_key": "37a6e59f-8d64-4344-ace4-7f50fd26df44",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "إنت هنا. المكان اللي رايحه في الشارع اللي بعده على طول.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "02988095-8975-45d4-bf5b-dcab5e481c8e",
+  "operation": {
+    "id": "02988095-8975-45d4-bf5b-dcab5e481c8e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2750,
+    "completion_bytes": 207360
+  },
+  "complete": true,
+  "seconds": 4.32
+}

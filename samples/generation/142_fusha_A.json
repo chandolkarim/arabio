@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a763d0dbf11fc72c24a3278029ef7dcb028685a4a2f02dbacdbe51b40a33388e",
+  "idempotency_key": "6ac0a761-97a5-4666-818c-1d283cb3bc1f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "آسف، هل يمكن أن نؤجل موعد الغد إلى الأسبوع القادم؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "dccccbc7-9df1-4975-93d1-a56f900046df",
+  "operation": {
+    "id": "dccccbc7-9df1-4975-93d1-a56f900046df",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2500,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

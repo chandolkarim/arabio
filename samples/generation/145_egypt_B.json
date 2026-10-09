@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7b885e0f23b815c4df97e860bb8e4f287546cac57c27bb3eb428de260ba67faf",
+  "idempotency_key": "c3f41d12-579d-45cd-ad99-64cae8e60308",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "دي تالت مرة تقول الكلام ده.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6b04849b-7b88-43a0-b816-3113d789cf3a",
+  "operation": {
+    "id": "6b04849b-7b88-43a0-b816-3113d789cf3a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

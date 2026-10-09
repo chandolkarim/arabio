@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b338f835687e81c639b8e2437ffbc11d78634b7dc43615e51a7137caee80598c",
+  "idempotency_key": "af02e1ff-5eb8-4f30-bc9a-c8f770e50dbf",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ماشي، ما رح أحكي لحدا أبدًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fae1240d-1b86-4076-b2c1-ffc74874bd8c",
+  "operation": {
+    "id": "fae1240d-1b86-4076-b2c1-ffc74874bd8c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

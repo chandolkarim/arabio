@@ -1,0 +1,23 @@
+{
+  "fingerprint": "69a0f40ba2e0994623d89b3201d58b94866789830da07782ff38b883646e7ac1",
+  "idempotency_key": "2cb02b4d-51f5-4e43-b261-0dc2be3940aa",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "هالدوا بوخذه قديش مرة باليوم؟ قبل الأكل ولا بعده؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8f027476-8e6b-40bf-92fa-df3a1d62aac3",
+  "operation": {
+    "id": "8f027476-8e6b-40bf-92fa-df3a1d62aac3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2450,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

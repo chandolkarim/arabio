@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1cd9c6e7355974b05eec1f7e44c9efd8c1d62bc7402b413cadc14d6864e554e1",
+  "idempotency_key": "697b1e06-4e74-4546-b6e6-5baac13fd36e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "عندي امتحان بكرة، فشكلي هسهر طول الليل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "43ed118a-1ff3-4841-9d90-4b068b84e8d9",
+  "operation": {
+    "id": "43ed118a-1ff3-4841-9d90-4b068b84e8d9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

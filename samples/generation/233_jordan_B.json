@@ -1,0 +1,23 @@
+{
+  "fingerprint": "06b4d238fc0da03e6090fc40bb4a57dd924635ec8439bb3b1c29d1f028560cd1",
+  "idempotency_key": "02122b15-14ff-44ed-918a-5febe36c341d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "الوحدة أصعب حتى من الشوب.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8562f7e0-e42c-49ba-ac51-be1d2df365f8",
+  "operation": {
+    "id": "8562f7e0-e42c-49ba-ac51-be1d2df365f8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

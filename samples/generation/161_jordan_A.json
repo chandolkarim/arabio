@@ -1,0 +1,23 @@
+{
+  "fingerprint": "93c486fe4951f42964c531f4fb54589228941dd8426d3f28e935748b37f926a1",
+  "idempotency_key": "e8cd46d7-29ab-48cd-8633-5bd54aa14f99",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شو أكتر مكان بستاهل الزيارة هون؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "536c39f3-0d0e-491f-a557-980295383fb1",
+  "operation": {
+    "id": "536c39f3-0d0e-491f-a557-980295383fb1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

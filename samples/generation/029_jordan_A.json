@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e2a2f6fc0c62e39e76e6eb83416603e70ed7640f376eff3ac0236a588c423fb2",
+  "idempotency_key": "fc17c294-b908-490a-a57b-a8e537589c26",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "صارلك قديش هون؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "74c4dbac-c915-4799-b464-ed13da5013ae",
+  "operation": {
+    "id": "74c4dbac-c915-4799-b464-ed13da5013ae",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 750,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "bc5a978ad8927bc1d02845eefe874e5a1e88fdfe83b2421d5f331c4bd799457f",
+  "idempotency_key": "aea02a07-8724-425f-a0b3-1197c6458056",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "عن جد؟ صارلك قديش ما شفته؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2c5a95af-b51a-4ec3-a050-5db2d432be53",
+  "operation": {
+    "id": "2c5a95af-b51a-4ec3-a050-5db2d432be53",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

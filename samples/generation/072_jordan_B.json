@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9f2386fd8435fe3633f86dda9c9b91c62dd05bf5fcd50b12817fa1a919f3605d",
+  "idempotency_key": "2e6bc920-1597-4e62-b77b-4a36c434f352",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، السفري بياخد حوالي عشر دقايق.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e6df410b-fe02-4458-b819-4cb1e4be1c50",
+  "operation": {
+    "id": "e6df410b-fe02-4458-b819-4cb1e4be1c50",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

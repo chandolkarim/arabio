@@ -1,0 +1,23 @@
+{
+  "fingerprint": "87d42e02ee5aa87b6715eeeaf82cb2ae5f24c9c17a366ddfbdc71eb2a173e4aa",
+  "idempotency_key": "e2ea67e7-173f-458e-b6ed-f7f52b755987",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "هلّأ صعب شوي، بس بعد نص ساعة بقدر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3010838e-04d9-45fa-a7aa-0f330d2c2ea7",
+  "operation": {
+    "id": "3010838e-04d9-45fa-a7aa-0f330d2c2ea7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

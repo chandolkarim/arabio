@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6f22f9d9cf385658b7cca592c66f8c6ad1f6486a6ca895d5e219ec8d4ccc8da8",
+  "idempotency_key": "494a0f87-d184-4454-857a-23d395a5e0b4",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، صرت أحسن بكتير من لما صار عندي صحاب.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "60627626-b1a7-44b4-8248-ca580a2bd37e",
+  "operation": {
+    "id": "60627626-b1a7-44b4-8248-ca580a2bd37e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

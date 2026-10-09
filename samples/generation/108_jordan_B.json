@@ -1,0 +1,23 @@
+{
+  "fingerprint": "96bec7c24b29fbb58f49c85e31962739cab09a494980bdbdd4c475356aeb3a6c",
+  "idempotency_key": "72a4a603-b12c-49d6-8d6f-17acd05f1235",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "في وحدة جنب البنك، بس غالبًا مسكرة هلّأ.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "eceb8da1-8877-41bd-bb6b-0bc52fd48e9d",
+  "operation": {
+    "id": "eceb8da1-8877-41bd-bb6b-0bc52fd48e9d",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

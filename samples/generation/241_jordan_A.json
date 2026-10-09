@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4037c59b9b583b395a7a8bb4aa09aaece87f95681751e044cfa01382adc3df1e",
+  "idempotency_key": "2979bca8-f658-46db-bef9-1ea7f6d22249",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "زعلت لما سمعت هالحكي؟ أنا آسف.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2ff98233-5b16-4e12-949d-ea5c5fc4b518",
+  "operation": {
+    "id": "2ff98233-5b16-4e12-949d-ea5c5fc4b518",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

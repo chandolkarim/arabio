@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1ca4057f256b8d1d09c3fe2f16dd7ddd5fa8c50c3baf95d40bf6432c2789efa7",
+  "idempotency_key": "a4872582-73a7-4365-ae7c-9d4e6697cef7",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "الليلة التي غنينا فيها جميعًا ونحن ننظر إلى النجوم في الصحراء.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "bbcd0a2d-eda7-4e23-9be3-72a889a12a05",
+  "operation": {
+    "id": "bbcd0a2d-eda7-4e23-9be3-72a889a12a05",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3100,
+    "completion_bytes": 222720
+  },
+  "complete": true,
+  "seconds": 4.64
+}

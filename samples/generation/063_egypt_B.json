@@ -1,0 +1,23 @@
+{
+  "fingerprint": "24aba41719de8aa68e511622d29d3886fbce12f3e97df362f4810cb72612bb05",
+  "idempotency_key": "94e01e53-10e1-407d-b21c-051ac1774a77",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لا، تسلم. كفاية إنك سألت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8ef09b52-bd12-4dc1-9fd0-2834da1a27fd",
+  "operation": {
+    "id": "8ef09b52-bd12-4dc1-9fd0-2834da1a27fd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

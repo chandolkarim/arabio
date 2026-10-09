@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9e9a374f033459b2e79715e741dc028a6e705eb73fd13e050229bdbe5734c672",
+  "idempotency_key": "2c188f50-c145-4a07-b7c5-55cc37c01c3b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أرى أن تعلم اللهجة قبل الفصحى هو الصحيح.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ea7a94e8-5052-4932-b9a0-86c355321f01",
+  "operation": {
+    "id": "ea7a94e8-5052-4932-b9a0-86c355321f01",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

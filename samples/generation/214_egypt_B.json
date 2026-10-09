@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1fbae2e3abe979703de6b47e0b4ab3b96a77dc66d029968b125811d704d76521",
+  "idempotency_key": "ef807036-6935-44f0-b237-bcc17fba52cb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "في الأول كان نفسي أبقى لاعب كورة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "63e33474-e911-4fb1-8a63-ca6c6bb70179",
+  "operation": {
+    "id": "63e33474-e911-4fb1-8a63-ca6c6bb70179",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

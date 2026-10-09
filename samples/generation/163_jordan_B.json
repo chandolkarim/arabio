@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0208014fb8ff34b0e16e284dc46593bbf5bc55db16e62d0962b548109e1a2739",
+  "idempotency_key": "6ca7a2d2-b9bb-43aa-b15d-b683cbfee830",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لأنها كلمة عامية، فعادةً ما بتلاقيها بالقاموس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "943ea222-ef29-4e07-9bd4-e701a7a01be7",
+  "operation": {
+    "id": "943ea222-ef29-4e07-9bd4-e701a7a01be7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ed2e942f3e300fcd23da2e61b4a4f34193a2e21ab92f28959be81852c6a75573",
+  "idempotency_key": "470f119a-05c2-41a7-a549-c8bd32864bf2",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "شكلك تعبان، إنت كويس؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3ee195d8-2ef7-4491-9fc3-c2501f4bbfd9",
+  "operation": {
+    "id": "3ee195d8-2ef7-4491-9fc3-c2501f4bbfd9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "de1fc2a9521c00b22ea3369072c8d6050d70fec50c8b36e64d7e8f05bf37fac1",
+  "idempotency_key": "a9fae16a-2397-4b0b-ac7a-1b75c80c9628",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شوفير التكسي حكى إنه ما بعرف الطريق، فأنا اللي دليته بالآخر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f15c0712-f350-4fa7-9299-9dd7c5b11026",
+  "operation": {
+    "id": "f15c0712-f350-4fa7-9299-9dd7c5b11026",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3000,
+    "completion_bytes": 245760
+  },
+  "complete": true,
+  "seconds": 5.12
+}

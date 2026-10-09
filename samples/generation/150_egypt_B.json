@@ -1,0 +1,23 @@
+{
+  "fingerprint": "105785b3656e7e2f3f4c15fe16c393296bf39d521c7080985af45014811139fd",
+  "idempotency_key": "fb095bd1-1b4a-4b19-a956-fe25cc2211fb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ولا حاجة، كنت بكلم نفسي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "10bb08ff-8edb-4420-9425-ae1dae67b206",
+  "operation": {
+    "id": "10bb08ff-8edb-4420-9425-ae1dae67b206",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

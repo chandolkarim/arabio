@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3589be8cdb5a3bacfd2ba5381bd6360fad930c352c6969b4e514b5a13aaaa108",
+  "idempotency_key": "6db803aa-dca3-49ea-a0d2-539f3506a099",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "معلش، النهارده مش هينفع، بس بكرة مفيش مشكلة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "716995b8-8764-4b18-8d1e-7ad6c97862a5",
+  "operation": {
+    "id": "716995b8-8764-4b18-8d1e-7ad6c97862a5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

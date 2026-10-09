@@ -1,0 +1,23 @@
+{
+  "fingerprint": "eade4bf6eb0c01e23f3a43ed696ed0963c8bd3b621f46191390fb75ced565b2c",
+  "idempotency_key": "67843bf1-4975-478d-b016-06f969172844",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ماشي، أنا كمان عندي واجب.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0eed432d-a75b-403f-b973-fd616494e589",
+  "operation": {
+    "id": "0eed432d-a75b-403f-b973-fd616494e589",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "13eae380eb46c3a63d890de5be6d7da475c8b22e0fc71ae4c4d1a984be327698",
+  "idempotency_key": "48cdf58e-1ead-422a-8e5d-a7413f38dc01",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "في حيّنا تفتح بعد غروب الشمس وتبقى مفتوحة حتى الفجر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3a797557-7bdc-4f69-8b4e-ecd19e6dc692",
+  "operation": {
+    "id": "3a797557-7bdc-4f69-8b4e-ecd19e6dc692",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2600,
+    "completion_bytes": 222720
+  },
+  "complete": true,
+  "seconds": 4.64
+}

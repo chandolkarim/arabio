@@ -1,0 +1,23 @@
+{
+  "fingerprint": "00d5b13ef93e2c8f59e338abc009de7e8917ec488ede1e218d837f1f79e76f96",
+  "idempotency_key": "4e576a1c-e844-426c-997e-8646b8333016",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا تنسَ، أنا متشوق جدًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "4f92e287-04d3-4d50-8a45-40de07be0269",
+  "operation": {
+    "id": "4f92e287-04d3-4d50-8a45-40de07be0269",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

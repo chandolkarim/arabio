@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4c10b9696ccdd3e7a411bd4832165bf3ee4ab0edefaab3c86c60b7fb404902f0",
+  "idempotency_key": "37731fcf-ebb5-466d-8df5-d526d013f881",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "بالتأكيد، أشعر أنني أصبحت أفهم الكلام بشكل أفضل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7739bcb7-6f42-4b8d-b610-3f2a24974ad0",
+  "operation": {
+    "id": "7739bcb7-6f42-4b8d-b610-3f2a24974ad0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2400,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

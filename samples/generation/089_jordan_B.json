@@ -1,0 +1,23 @@
+{
+  "fingerprint": "858d14249095c09023edaba00470cbd9fc1e32f0555765023d95aa12d6786439",
+  "idempotency_key": "4c6e478b-d59c-44ea-ba30-ae94420fbd05",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "التنتين بأربعمية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5f6a7ad4-4d38-4f1b-8f3f-e5a55b260e29",
+  "operation": {
+    "id": "5f6a7ad4-4d38-4f1b-8f3f-e5a55b260e29",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

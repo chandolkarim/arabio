@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b3b3b2b72ac7caa76214844d911fc0f132d99075c07458e77987e9f20c4a07f6",
+  "idempotency_key": "06bbd1ce-a189-4dd2-a484-3e2d435c5895",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "طبعًا، هجيبلك مية ساقعة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2ad3965e-31c5-4e18-b0b3-a96ed427888e",
+  "operation": {
+    "id": "2ad3965e-31c5-4e18-b0b3-a96ed427888e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

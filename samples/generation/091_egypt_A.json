@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ab99165f05ec4ef9e51f2925e2fe0a1213326ca31c411fd0898b6d6267c17be5",
+  "idempotency_key": "40d82106-65a5-45da-8b74-aeefd83b6219",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "في منه ألوان تانية؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d0d6c7f2-bb97-4d30-b330-9229973f3658",
+  "operation": {
+    "id": "d0d6c7f2-bb97-4d30-b330-9229973f3658",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

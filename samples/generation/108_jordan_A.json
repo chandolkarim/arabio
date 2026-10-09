@@ -1,0 +1,23 @@
+{
+  "fingerprint": "45c15e128c470e30efe813c475a152e3dffc19b766ce42057fca57f72d777e55",
+  "idempotency_key": "701b8817-70a0-4e5b-af0e-8c2e9bb6639d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "في صرافة قريبة من هون؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "15ff29bf-8aeb-4c62-9478-f399f940f2a0",
+  "operation": {
+    "id": "15ff29bf-8aeb-4c62-9478-f399f940f2a0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

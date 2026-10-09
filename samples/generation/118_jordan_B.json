@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b3c7b5bd3c349c6018a2b079a4c091c2f334d2bb12bdd2a1f35b914af40e9185",
+  "idempotency_key": "ef1a6d38-5770-4ff1-8904-62b251f44236",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "وين رايح؟ فرجيني الخريطة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b32fe46e-ff15-4617-a9ca-40d004f1ee6b",
+  "operation": {
+    "id": "b32fe46e-ff15-4617-a9ca-40d004f1ee6b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

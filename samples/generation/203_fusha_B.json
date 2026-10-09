@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ba1282ac6463705879d5b3b2b3fcd4bd4fb928c36a84991cc93eebef92e137aa",
+  "idempotency_key": "e61ea53b-81a6-49f0-b0d5-40c6c7293080",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "إذا سارت الأمور جيدًا فسينتهي قبل المساء.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "66b078f3-6326-455c-a7a6-2d668d622dc1",
+  "operation": {
+    "id": "66b078f3-6326-455c-a7a6-2d668d622dc1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

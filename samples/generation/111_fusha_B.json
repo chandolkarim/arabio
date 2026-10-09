@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5cd32b349d0fd57bbd69f295c7c9bb680059f7c131e68e0b609ff388719a3e6d",
+  "idempotency_key": "004f6f20-506b-4e6a-a9f4-228a2355f3dc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "العداد معطل، سأوصلك بأربعين فقط.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "14b3471b-3d18-4082-83af-92892cff23ac",
+  "operation": {
+    "id": "14b3471b-3d18-4082-83af-92892cff23ac",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

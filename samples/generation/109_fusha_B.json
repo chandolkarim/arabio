@@ -1,0 +1,23 @@
+{
+  "fingerprint": "fe1e502ee3bc400a36408ba8f6d526c8465ff4406536e4da152a2fafa1e0f22b",
+  "idempotency_key": "1b1805a4-5cf5-409c-a8d9-8ff5c2c49e78",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "نعم، أعرفه. لكن الزحام شديد هناك الآن.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d3b71432-aa18-4ff5-81b6-e7a7fddbe088",
+  "operation": {
+    "id": "d3b71432-aa18-4ff5-81b6-e7a7fddbe088",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

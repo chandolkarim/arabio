@@ -1,0 +1,23 @@
+{
+  "fingerprint": "aad9023416df38d8b5764f155abe4f9f797ba9a3e35073ba1e37d68ed6c9d140",
+  "idempotency_key": "fa9e528a-e2fe-450b-a49d-db888953dded",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ساعدوني! صديقي سقط فجأة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7d4b67db-3a94-4a30-b89a-edb4ca069e38",
+  "operation": {
+    "id": "7d4b67db-3a94-4a30-b89a-edb4ca069e38",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

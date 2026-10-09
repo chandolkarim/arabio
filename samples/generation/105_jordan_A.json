@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9229e759cef8a926e6bfcb98aab79d789b9fa676f3ba195998380036844f37f0",
+  "idempotency_key": "938a8529-71ed-4b04-bbc6-f7da70848577",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "يعني ما في ترجيع مصاري، بس تبديل؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e9be187f-1916-4fb8-afaf-c9c07629aa26",
+  "operation": {
+    "id": "e9be187f-1916-4fb8-afaf-c9c07629aa26",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

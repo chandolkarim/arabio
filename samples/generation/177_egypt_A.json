@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1966ac76d8289dd1b59592a169c14e6cf33423ada8b4f8ca2826acf2f0a5fc69",
+  "idempotency_key": "cf29f498-d1ff-493d-9b8f-05c574a87d4d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "المكان ده فاضي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "658f485b-85d9-4af6-b96a-043fb6d9a9a4",
+  "operation": {
+    "id": "658f485b-85d9-4af6-b96a-043fb6d9a9a4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 750,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "81cc723b024f1ca59cf9eb3cf7521e86953a292bd248c317dfba5637e82d888f",
+  "idempotency_key": "3e2d4b1c-3bd8-4b59-a373-c3ffebb68ab1",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "عادةً ست شهور، بس للطلاب بزبط تلات شهور.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7f1bdf8e-94d7-456d-8e83-734a1ffd3b4f",
+  "operation": {
+    "id": "7f1bdf8e-94d7-456d-8e83-734a1ffd3b4f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

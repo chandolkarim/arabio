@@ -1,0 +1,23 @@
+{
+  "fingerprint": "18383875360b6e8313d62ea03a773bc29979bf87aa5a12ac9d55551ddc98f766",
+  "idempotency_key": "64d573e9-5f7a-47e6-8032-db418b4cd3b8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "وأنا كمان. توصل بالسلامة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "605d4aa2-4f7d-4b90-b4d7-0359443077ba",
+  "operation": {
+    "id": "605d4aa2-4f7d-4b90-b4d7-0359443077ba",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

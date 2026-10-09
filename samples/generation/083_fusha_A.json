@@ -1,0 +1,23 @@
+{
+  "fingerprint": "87389031764f1bdc684449aa20c94c501d4d4d7377c0c7337200816119da4fb6",
+  "idempotency_key": "0179fbca-a92a-4e76-bde9-047cd15c25ed",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كم يدفع الناس عادةً كبقشيش؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "47210a29-6c7b-4a66-92ab-01a364b6a1c7",
+  "operation": {
+    "id": "47210a29-6c7b-4a66-92ab-01a364b6a1c7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

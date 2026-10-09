@@ -1,0 +1,23 @@
+{
+  "fingerprint": "10f49130b4df24ba39baf1fba83151f077d87af9cdbb066e6d7d6343d4752102",
+  "idempotency_key": "72989d47-0498-4ed3-b051-548981546bfd",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "على قد ما كنت مستني كتير، على قد ما الصدمة كبيرة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0e484c12-50b0-4284-81fd-f01c046dcba4",
+  "operation": {
+    "id": "0e484c12-50b0-4284-81fd-f01c046dcba4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2450,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

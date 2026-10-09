@@ -1,0 +1,23 @@
+{
+  "fingerprint": "646afe92d07273974a28db728c64ea81b6f5d8e0ff5e1418c1684f41ed19d39e",
+  "idempotency_key": "f4adbf11-6814-48d2-9a93-ba94d8b64bfa",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كانت الكتابة من اليمين إلى اليسار أكثر ما أربكني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ac86ffaa-58a6-4530-a227-3c9c6d94174b",
+  "operation": {
+    "id": "ac86ffaa-58a6-4530-a227-3c9c6d94174b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2450,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

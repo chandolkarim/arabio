@@ -1,0 +1,23 @@
+{
+  "fingerprint": "551461e8b742475cf181dd4d4af3e710baa837e981682bf30a7ca58476bd8dd8",
+  "idempotency_key": "b0671676-4b8c-4cd7-b2fa-264e1c1b6521",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "في شمال وسط البلد، وبالتاكسي عشرين دقيقة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "dcac5eba-2b88-4f77-8e47-5133f06815b3",
+  "operation": {
+    "id": "dcac5eba-2b88-4f77-8e47-5133f06815b3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

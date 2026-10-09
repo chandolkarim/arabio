@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5a9fd1aeec6243bafe9aff4e70a3093942a97c3dba9fc05f0044a0bb7ed2aaaa",
+  "idempotency_key": "dd046925-b344-4503-a009-b7c9b428ae3f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بشو بتفكر هيك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b9a422c2-0500-4e1b-8368-8b92dadb2a4b",
+  "operation": {
+    "id": "b9a422c2-0500-4e1b-8368-8b92dadb2a4b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 700,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

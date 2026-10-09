@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0ea138fad8e3eb57648f09b6ed1642207ccaf98808dbee68089d95e218ac9c5b",
+  "idempotency_key": "f21f9484-85e6-45fd-bae2-869789ba399c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "بالفصحى نقولها هكذا، لكن في الواقع يقولونها هكذا أكثر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "44533944-1c4b-4e1f-a018-e79471cc0069",
+  "operation": {
+    "id": "44533944-1c4b-4e1f-a018-e79471cc0069",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2700,
+    "completion_bytes": 245760
+  },
+  "complete": true,
+  "seconds": 5.12
+}

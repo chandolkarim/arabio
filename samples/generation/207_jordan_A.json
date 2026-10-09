@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ef222b5d5c6f0fb8c8119926112b5bd3a5c1566764c8b60db9a70f5e662dc976",
+  "idempotency_key": "4e299470-ddf5-41e9-b85d-b0386e2b93ee",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أنا جاي هلّأ، استناني شوي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ece81f8b-6009-4371-95e9-d38f38e73ba8",
+  "operation": {
+    "id": "ece81f8b-6009-4371-95e9-d38f38e73ba8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

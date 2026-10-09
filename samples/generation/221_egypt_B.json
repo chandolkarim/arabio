@@ -1,0 +1,23 @@
+{
+  "fingerprint": "67110d110f373cf774bf53627f88bcbf71dfb2d8d44f0fec6e7a82ab1e9f8fc3",
+  "idempotency_key": "e3a98ca9-5dbc-406e-8c44-903f6ca16f67",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "في الأول ما صدقتش، بس بعدين فرحت أوي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2d199a66-8e68-4b6f-9983-74a1430072a1",
+  "operation": {
+    "id": "2d199a66-8e68-4b6f-9983-74a1430072a1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

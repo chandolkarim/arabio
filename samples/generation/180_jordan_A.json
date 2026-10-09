@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3d47a82c91ad39363918a7661f760a659eeb6e437777288149b4ae18c5ba3910",
+  "idempotency_key": "04682036-cf90-45a6-accb-40c2c4e96ad8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شفت هالفيلم؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0e3c0db8-a178-4598-bd33-8a6791f6bfda",
+  "operation": {
+    "id": "0e3c0db8-a178-4598-bd33-8a6791f6bfda",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 600,
+    "completion_bytes": 53760
+  },
+  "complete": true,
+  "seconds": 1.12
+}

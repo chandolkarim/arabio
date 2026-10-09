@@ -1,0 +1,23 @@
+{
+  "fingerprint": "977477a5fe8317d8ba87868be1b103755d5e45c2410e3395984ce6198a6a9adf",
+  "idempotency_key": "4eb530f2-2d00-482d-a093-b79a447b49b3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "هروح المكتبة بكرة بعد المحاضرة، تيجي معايا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2e30c301-606a-4715-80cb-5d9d53aa09b6",
+  "operation": {
+    "id": "2e30c301-606a-4715-80cb-5d9d53aa09b6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2150,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "889a673936478a339ac456f6b34398c46b754bf5b0b660c8c30b5f7733d2a660",
+  "idempotency_key": "78a1b62b-7250-4142-b58d-34b6c631f0dc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ممكن تيجي معايا لحد هناك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7ea91a1e-2dab-4da6-88c6-cb93046cb074",
+  "operation": {
+    "id": "7ea91a1e-2dab-4da6-88c6-cb93046cb074",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

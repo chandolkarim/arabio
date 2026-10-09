@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6d94e0165609a3e5cc57ab6fcefe0f9be8d04f725dcea02e2b7faa4564c0d434",
+  "idempotency_key": "d5b14459-a985-49c0-b72e-f2f5d2e07988",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ما أسرع طريقة للوصول إلى المطار؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "12dbc230-6284-4c47-b898-2e886e0b9cb1",
+  "operation": {
+    "id": "12dbc230-6284-4c47-b898-2e886e0b9cb1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

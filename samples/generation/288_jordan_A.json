@@ -1,0 +1,23 @@
+{
+  "fingerprint": "18673683b0b05974309c74590314494ffda8592b27d357c4be7e64e74e003f2a",
+  "idempotency_key": "edd7babc-46f4-478e-88fe-316309cada86",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "خايف إنه العادات تروح لما تفوت ثقافات من برا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0dfbdf6d-0189-496c-9fee-13aa9a653d6b",
+  "operation": {
+    "id": "0dfbdf6d-0189-496c-9fee-13aa9a653d6b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

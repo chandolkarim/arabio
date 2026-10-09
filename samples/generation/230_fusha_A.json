@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1bd35e0d05f7a6f27066977f9e226c62ff5204ee0862e053a4b8c019ca4e4541",
+  "idempotency_key": "8e8dd147-4773-4db1-bbf2-dfc485b687bf",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لم أتخيل أبدًا أنه سيغضب بهذا الشكل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5442d4a2-5fb5-41c8-b327-44aea9c992c5",
+  "operation": {
+    "id": "5442d4a2-5fb5-41c8-b327-44aea9c992c5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

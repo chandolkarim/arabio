@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8f3a60f5a11efcd5b3d73c15f55382a6ad2ec4a9c2b5d79e843b29d9630cf994",
+  "idempotency_key": "f167453e-91e3-4072-8d76-6e96776d5ac1",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "هاي كتير غالية. نزّل شوي بالسعر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "154fe85f-c013-44f1-abde-e4b44b7ca614",
+  "operation": {
+    "id": "154fe85f-c013-44f1-abde-e4b44b7ca614",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e94b1a730b6fd20811d0e229f1a0547e8cebb33872b2f3c9504867c7b17f0dd8",
+  "idempotency_key": "86f65bbf-6a00-4ca2-b31c-1cd4ba173aeb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لا، بمزح. مش صحيح.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e0505b40-6159-4523-866d-f31144e47211",
+  "operation": {
+    "id": "e0505b40-6159-4523-866d-f31144e47211",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

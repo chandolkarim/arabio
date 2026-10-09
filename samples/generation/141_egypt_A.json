@@ -1,0 +1,23 @@
+{
+  "fingerprint": "11c5668dec38573889414a7ace4b269c763d62b5730a3dc6a31c078e6f749e75",
+  "idempotency_key": "ed63ab6a-07c5-4d6d-8aca-eeef9109de40",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أنا مشغول أوي اليومين دول ومعنديش وقت أرتاح خالص.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c1fb0fb2-a274-4427-948f-184d3c5ecef7",
+  "operation": {
+    "id": "c1fb0fb2-a274-4427-948f-184d3c5ecef7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2450,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

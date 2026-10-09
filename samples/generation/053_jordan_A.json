@@ -1,0 +1,23 @@
+{
+  "fingerprint": "372bb31b84268551313bda3a03e69d73f65a8ac7407f32e8ca4013f0acb92caa",
+  "idempotency_key": "a416b6e4-74f4-4860-ac9e-6fa4de706484",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ممكن أفتح الشباك؟ الدنيا شوب شوي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "74dffd1b-94e9-4093-9c2c-f86ca37da6a0",
+  "operation": {
+    "id": "74dffd1b-94e9-4093-9c2c-f86ca37da6a0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

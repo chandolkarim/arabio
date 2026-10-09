@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2298aafe513da8b60c117da55c3b09567e8c9b0ce97bcfd8be562f93e33f8859",
+  "idempotency_key": "40b594e1-cad1-4252-85b2-ce6f9b667374",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، عنا بس تبديل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "4db23814-72f7-4080-800a-54e86571e3f8",
+  "operation": {
+    "id": "4db23814-72f7-4080-800a-54e86571e3f8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

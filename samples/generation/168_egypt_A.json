@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ec559449df0043a88b46f5a990b28053457fdd2b1dd1a1a5f6b50e627efc1f23",
+  "idempotency_key": "5b5e596a-9ccc-4f90-adc2-655ce2e4a812",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "وفي الآخر قررت تعمل إيه؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a3c3ffe1-2bc4-4db5-8923-587a03bea075",
+  "operation": {
+    "id": "a3c3ffe1-2bc4-4db5-8923-587a03bea075",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

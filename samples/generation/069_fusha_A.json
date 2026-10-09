@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2652853699c6d2d79c1df32b83c09fa8255e32921cd94bd0cba5e0fe12f74876",
+  "idempotency_key": "587009c0-1690-4bb3-a929-ad5c6ffeb92e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل لديكم أطباق بدون لحم؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a00c4af4-2882-4ac9-b93e-d0998edc9cab",
+  "operation": {
+    "id": "a00c4af4-2882-4ac9-b93e-d0998edc9cab",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

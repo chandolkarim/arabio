@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6d02d57451ea923a9705dae4e4b1f5a08f837bfcaeed3105d84e6a720cffb779",
+  "idempotency_key": "4aea888f-2a3e-4360-ad67-0ec01fdef02d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شو ناوي تعمل بعد التخرج؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "671c35f8-b90d-4e94-a833-fda1dab8ca2e",
+  "operation": {
+    "id": "671c35f8-b90d-4e94-a833-fda1dab8ca2e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

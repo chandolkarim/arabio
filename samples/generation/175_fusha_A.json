@@ -1,0 +1,23 @@
+{
+  "fingerprint": "eb969b5fce42dca5c7798c5e2e36ea9ae99524c09c1c31413548d21a9461660e",
+  "idempotency_key": "73f18849-1479-4cd9-8fab-04bd90be928a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل يمكنني التصوير هنا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e29526cb-be6a-4c55-bcdd-e14cf2dbeacb",
+  "operation": {
+    "id": "e29526cb-be6a-4c55-bcdd-e14cf2dbeacb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

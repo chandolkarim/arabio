@@ -1,0 +1,23 @@
+{
+  "fingerprint": "42123d669ecafed488c5c5b06f818f16d768608fe388926b5c6bc83ea08014d1",
+  "idempotency_key": "57874fb0-9c32-42b1-87c9-b144e279038a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "هههه، أحيانًا \"إن شاء الله\" معناها \"يمكن\".",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "82b3c4d3-3558-47b4-b694-f09185adc3d4",
+  "operation": {
+    "id": "82b3c4d3-3558-47b4-b694-f09185adc3d4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

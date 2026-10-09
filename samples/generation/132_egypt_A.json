@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6b8940b34754511a887f7eaddec32a2f485299e52c5e22f7a6a2e945568214fc",
+  "idempotency_key": "8e38e689-7666-452d-998e-d990da49709f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "قررت هنتقابل فين؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2532cc61-a09b-4c08-a72f-4be3c5fa9cf5",
+  "operation": {
+    "id": "2532cc61-a09b-4c08-a72f-4be3c5fa9cf5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

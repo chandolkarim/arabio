@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7f2d92bd4b3e3d3dfc27e66f6660d3029a404a1197d5c9c1db9b20fe5c1d9d14",
+  "idempotency_key": "d4cc7770-916a-400f-b267-9705f4950973",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ماشي، ارتاح منيح وبنشوفك بكرا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9094ac8d-2fef-43a9-a846-aaf844d52e1c",
+  "operation": {
+    "id": "9094ac8d-2fef-43a9-a846-aaf844d52e1c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

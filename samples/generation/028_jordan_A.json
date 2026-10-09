@@ -1,0 +1,23 @@
+{
+  "fingerprint": "aecbba9691b68ce2a3a52b20f9eaa7e5f3f46c567be4ca671c8050206dbda3f7",
+  "idempotency_key": "76991289-4c31-409d-98b8-53084081017c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "عربيك كتير منيح! وين تعلمته؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c279b4c4-a7f3-40d9-9080-202914cfa07f",
+  "operation": {
+    "id": "c279b4c4-a7f3-40d9-9080-202914cfa07f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

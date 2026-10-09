@@ -1,0 +1,23 @@
+{
+  "fingerprint": "95c9b2ea97de28daa8633b8f84e2b42fc3dc44491337563c7391689f40addbf8",
+  "idempotency_key": "26b32c35-cb45-4aef-8232-b5a4208b4b49",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ماشي، المرة الجاية العزومة عليا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1bd2c8af-838e-4838-a8f5-2ea8c1a9f0de",
+  "operation": {
+    "id": "1bd2c8af-838e-4838-a8f5-2ea8c1a9f0de",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

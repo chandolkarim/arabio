@@ -1,0 +1,23 @@
+{
+  "fingerprint": "59a2121a1624892844005c99eb00600a07ddb8af71f6c49fb4878c3254daa7a2",
+  "idempotency_key": "4454303d-0465-4abf-b6d6-ff3da6cb1eac",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "من سيول، عاصمة كوريا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e84e331c-2b08-46e4-8ab4-d430ee5b790e",
+  "operation": {
+    "id": "e84e331c-2b08-46e4-8ab4-d430ee5b790e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

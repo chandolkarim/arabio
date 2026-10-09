@@ -1,0 +1,23 @@
+{
+  "fingerprint": "07ab03b0643c0534e9e9b25b05fcc161d3e7366224543ddf2370a6c9ff9d91c3",
+  "idempotency_key": "693ceb8a-13d4-451b-bd2b-08c6ee76a299",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل يغطي التأمين العلاج هنا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "91a5a3bf-8b67-449b-a0fb-c4387b155141",
+  "operation": {
+    "id": "91a5a3bf-8b67-449b-a0fb-c4387b155141",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

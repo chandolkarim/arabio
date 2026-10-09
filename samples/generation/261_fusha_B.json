@@ -1,0 +1,23 @@
+{
+  "fingerprint": "952c0a7c067efebe7656d1cb5f03efdf91dfbf0a5affc690c6882e7cf5a39223",
+  "idempotency_key": "27c6e6d7-0a5a-4d16-866e-a8d0229de278",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "سأتحدث معهم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5dc82ef7-bae7-4b78-948d-2ff4fb71f302",
+  "operation": {
+    "id": "5dc82ef7-bae7-4b78-948d-2ff4fb71f302",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 600,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

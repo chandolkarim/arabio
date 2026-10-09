@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ba0dc2cfc2c35674419d5ed9a2cf1a1a4be922e12e978fc4c5699150eb0ba10d",
+  "idempotency_key": "4e5e18d2-7b61-4fdb-b693-83c5bc9239ca",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "الفصل الماضي كل المحاضرات تقريبًا كانت بالفصحى بس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "10e204de-d893-4713-959b-3b9d83487700",
+  "operation": {
+    "id": "10e204de-d893-4713-959b-3b9d83487700",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2500,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

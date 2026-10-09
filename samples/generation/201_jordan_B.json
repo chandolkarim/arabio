@@ -1,0 +1,23 @@
+{
+  "fingerprint": "48c7be0b6d78b90f9198bbd1a6ba137e82c4147cd9c863d450fd33f2afa465ed",
+  "idempotency_key": "b4bf43b4-af36-47ce-b066-99e44ccee713",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "يمكن رح أكون بشتغل بدبي أو عمّان.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c0e312d1-cfde-462a-beb7-2329266e7baf",
+  "operation": {
+    "id": "c0e312d1-cfde-462a-beb7-2329266e7baf",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

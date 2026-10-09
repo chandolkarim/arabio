@@ -1,0 +1,23 @@
+{
+  "fingerprint": "aa1413511d44e0df7466112a304835e2720e9c5a67340d14f411d9c206540ca5",
+  "idempotency_key": "80a7cc4d-c1f2-4e9d-a3ab-fa893cb0c1ed",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "صح، حتى الخبز بالفرن اللي جنبنا صار سعره الضعف بسنة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2f65ab4c-bef1-40ea-8162-07b561220ad1",
+  "operation": {
+    "id": "2f65ab4c-bef1-40ea-8162-07b561220ad1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2600,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

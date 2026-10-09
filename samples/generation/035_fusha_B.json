@@ -1,0 +1,23 @@
+{
+  "fingerprint": "dfdbb570e262eaab9f603e1b634acfcacb67d95f7d0716ab53dff24e4de0ec30",
+  "idempotency_key": "5434fdb2-fd63-4125-8fcc-1be0460da0c6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أستمع كثيرًا إلى الأغاني العربية هذه الأيام.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a0e92be0-5016-4c57-b5ca-ddd0855ef849",
+  "operation": {
+    "id": "a0e92be0-5016-4c57-b5ca-ddd0855ef849",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f440ddfa1f4e1a0d83c7561d1cbfe233030b8c597f720d016e4d3afca1549a05",
+  "idempotency_key": "f3aa566b-6ec7-4e29-b39e-50cca97b43ce",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "آسف، لا أستطيع البيع بهذا السعر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "25e96805-ee1e-48d0-a80e-6fe0696b08af",
+  "operation": {
+    "id": "25e96805-ee1e-48d0-a80e-6fe0696b08af",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

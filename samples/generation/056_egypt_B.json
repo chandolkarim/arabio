@@ -1,0 +1,23 @@
+{
+  "fingerprint": "70cdb1cb1e0f4bf042f77b588455db63f121753d59d3454755d914372163c7d5",
+  "idempotency_key": "1a3f70cc-9ad9-4289-a78b-f492c85d38a9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ماشي، أنا كمان كان نفسي أروح.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "08863e8e-164f-420c-80cf-7a2e18f11bcf",
+  "operation": {
+    "id": "08863e8e-164f-420c-80cf-7a2e18f11bcf",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1450,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9cce25aae82462941ad77d0b73fcf9f7ede08324bfebd22bb221c30b86e83169",
+  "idempotency_key": "94cc5ce0-0294-4b8d-9c75-923877a0c743",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أين تظن أنك ستكون بعد خمس سنوات وماذا ستفعل؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2a1934e0-9ded-41d1-b527-536c01c0ffb7",
+  "operation": {
+    "id": "2a1934e0-9ded-41d1-b527-536c01c0ffb7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "eb15e662effc8ca6e1378734a07a8d71374b76fa5ee92564e737dda52216119c",
+  "idempotency_key": "61930af2-46dc-4456-a75d-79583a910e4f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "تحسنت عربيتك كثيرًا مقارنة بأول ما جئت، أليس كذلك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f1de9dd1-6646-4163-83ae-26b5cba59884",
+  "operation": {
+    "id": "f1de9dd1-6646-4163-83ae-26b5cba59884",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2500,
+    "completion_bytes": 215040
+  },
+  "complete": true,
+  "seconds": 4.48
+}

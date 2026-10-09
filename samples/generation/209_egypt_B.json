@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1cc29a4980e9cbcfac14025487ff03f464de9f4b5a2be6cf357bcca91fa8e1f4",
+  "idempotency_key": "538a2675-b6fa-4cad-8e75-fcfc15ebcb8b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لو وصلت لكده تبقى بقيت ابن بلد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "231b6c80-4bb0-4185-bc5e-2e70749ce548",
+  "operation": {
+    "id": "231b6c80-4bb0-4185-bc5e-2e70749ce548",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

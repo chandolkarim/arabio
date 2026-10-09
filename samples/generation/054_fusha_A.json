@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8073fe89c6ddc15ee624a5c31dade69566eca2bc65b697ef496a8b3e85e6004d",
+  "idempotency_key": "f5015378-bd10-4d82-a136-a4fd6210e9ee",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل يمكنني الجلوس هنا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "79679f59-5617-470f-8482-9bf570c22169",
+  "operation": {
+    "id": "79679f59-5617-470f-8482-9bf570c22169",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

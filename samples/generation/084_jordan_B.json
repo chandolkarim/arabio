@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3f9f3df78ec6ff1a149de3f1f70868b9eb9777d23112eaa1f378b4b57e577ae7",
+  "idempotency_key": "23b2b596-2338-4ea7-bc98-499ee255b3f4",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أهلين، بتشرفونا مرة تانية!",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "651a7bd8-43e4-40a5-a037-349dac45c5f6",
+  "operation": {
+    "id": "651a7bd8-43e4-40a5-a037-349dac45c5f6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

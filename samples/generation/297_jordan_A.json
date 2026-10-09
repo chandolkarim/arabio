@@ -1,0 +1,23 @@
+{
+  "fingerprint": "654632ffa255acb412979052a379670b46b9be21b23cfd0a90a9bb67cc990af7",
+  "idempotency_key": "f984ab1e-6590-41e4-b112-3f31cd8b263f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بفضل الناس اللي تعرفت عليهم هون، هالبلد صار بلدي التاني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fdb78bd1-9879-453f-86ae-a853e774b07f",
+  "operation": {
+    "id": "fdb78bd1-9879-453f-86ae-a853e774b07f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2800,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

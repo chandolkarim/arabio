@@ -1,0 +1,52 @@
+{
+  "name": "053_egypt_B",
+  "day": 18,
+  "text": "آه، افتحه عادي.",
+  "variant": "egypt",
+  "side": "B",
+  "duration": 2.56,
+  "speech_span": 2.16,
+  "voiced": 1.7,
+  "chars": 11,
+  "dbfs": -19.3,
+  "peak": 0.9378,
+  "ratio": 0.19636363636363638,
+  "leading": 0.1,
+  "trailing": 0.3,
+  "clip": 0.0,
+  "length_factor": 2.1,
+  "volume_delta": 1.5,
+  "flags": [
+    "long_speech"
+  ],
+  "sha256": "60dde394215b779ff615885fef477dc292c834e2f0d840c1223c141608cb6926",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "transcript": "افتحوا عادي",
+  "match": 0.762,
+  "recognized_length_factor": 0.91,
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 1.32,
+      "text": " افتحوا عادي",
+      "tokens": [
+        50365,
+        1975,
+        5172,
+        2655,
+        5016,
+        14407,
+        6225,
+        995,
+        16254,
+        50431
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.28027014298872516,
+      "compression_ratio": 0.65625,
+      "no_speech_prob": 1.4497648914701955e-10
+    }
+  ]
+}

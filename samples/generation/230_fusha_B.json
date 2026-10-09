@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d2f792566ca29814ec22d7ea99333a6569b2e6c9944aa9522aef0951e081d117",
+  "idempotency_key": "2c74dbaa-66b5-48f1-bd0a-b07893f6b84d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "وأنا أيضًا أراه هكذا لأول مرة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8f3f65f9-6429-4ec1-b8d6-63aeb570fecd",
+  "operation": {
+    "id": "8f3f65f9-6429-4ec1-b8d6-63aeb570fecd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

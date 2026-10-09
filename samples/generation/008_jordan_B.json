@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c63a799862cf13eb9c4f01d55b2926d0a55b4c7b48c653d99b5ba1be2016e6e4",
+  "idempotency_key": "3ab9684b-0ab6-46c7-acd3-4e76071f5826",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لسّا، كل إشي جديد وغريب.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "23d1b1f1-e342-4439-9d35-9f8fb7cca4b9",
+  "operation": {
+    "id": "23d1b1f1-e342-4439-9d35-9f8fb7cca4b9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

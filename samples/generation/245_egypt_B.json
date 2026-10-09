@@ -1,0 +1,23 @@
+{
+  "fingerprint": "618eec6c95fd348aedc9ccd1ee24be1699ebf982c97d60313871897d976bceab",
+  "idempotency_key": "a8df2f1f-e72d-494c-8ea3-b5095b1db0da",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "صح، من ساعة ما جيت هنا وأنا حاسس بده أكتر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a00df624-5b42-4501-bf2b-e10971f714b9",
+  "operation": {
+    "id": "a00df624-5b42-4501-bf2b-e10971f714b9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "78666b0e3ef34da6d7871c6957a71a1dc92dbc15469cf91d40dc209574befe28",
+  "idempotency_key": "9eb2f8e7-6aea-44cb-aae8-b018a6bdeac2",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بس برضو لازم ترتاح بالويكند.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9300272e-9d09-48be-98e5-df02b37262b8",
+  "operation": {
+    "id": "9300272e-9d09-48be-98e5-df02b37262b8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

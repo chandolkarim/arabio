@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0c2d8ec1c555b3edbaaa1e25cf7d226e25f00954504fc29fca58c3227556e86c",
+  "idempotency_key": "5bc70eb0-d533-489d-8ce8-5813b3361485",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "متى تنتهي المحاضرة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e1e2347f-8ec8-4f3b-b971-58d695656982",
+  "operation": {
+    "id": "e1e2347f-8ec8-4f3b-b971-58d695656982",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

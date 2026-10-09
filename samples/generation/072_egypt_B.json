@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f2cfd6a67e4e6c0752b82a0281d02731d8a39c1ff4177c0c3289f2c0729ec134",
+  "idempotency_key": "5b657169-28e7-4bb4-a0f8-8e769e8b7883",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أيوه، التيك أواي بياخد حوالي عشر دقايق.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e51732c4-730f-477a-a21c-93f40f56c564",
+  "operation": {
+    "id": "e51732c4-730f-477a-a21c-93f40f56c564",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

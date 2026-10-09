@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2c605d6d6ed4a3868920430e057013b972421511e348b4fca0ee6523798f77ac",
+  "idempotency_key": "29167ec8-4964-4db0-81dd-c1528bf730cf",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "سامحني، بزبط نأجل موعد بكرا للجمعة الجاي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "89ec49a8-94ac-43a3-8d64-eccd2befb01e",
+  "operation": {
+    "id": "89ec49a8-94ac-43a3-8d64-eccd2befb01e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

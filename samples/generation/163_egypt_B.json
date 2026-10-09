@@ -1,0 +1,23 @@
+{
+  "fingerprint": "36890b2cb1e7e878b41eb3a097d2614ed70bcfd0f340ae8a2f7cbc57db3fee07",
+  "idempotency_key": "2bf28b7c-ddf5-43f7-abdb-7d23f05cb665",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "عشان دي كلمة عامية، فمش هتلاقيها في القاموس غالبًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1367c5c2-f16a-4af2-bf50-7615419d581a",
+  "operation": {
+    "id": "1367c5c2-f16a-4af2-bf50-7615419d581a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2550,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

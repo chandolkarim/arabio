@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6419420d379358ad97575339d09071d5c2daa82bf0e96298cb4dcba40ed3cb97",
+  "idempotency_key": "2e52cab2-6c12-4819-acf6-93fa5eac7118",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أي ساعة رح تطلع بكرا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "4b05c247-0ff4-4b08-8f0c-8772d5156123",
+  "operation": {
+    "id": "4b05c247-0ff4-4b08-8f0c-8772d5156123",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

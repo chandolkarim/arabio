@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4a1997b82ec8d03005175d73c00f01b5a2c4093236b0a50dcc5d4297b99f9d0c",
+  "idempotency_key": "36a96594-bd08-4ca8-8b52-9d3fd849ec3b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "قد تكون مشكلة في الفلتر، سآتي غدًا لأراه.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6c7628e0-1a00-4109-bef7-c08ae5b44ae9",
+  "operation": {
+    "id": "6c7628e0-1a00-4109-bef7-c08ae5b44ae9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

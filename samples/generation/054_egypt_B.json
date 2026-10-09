@@ -1,0 +1,23 @@
+{
+  "fingerprint": "864e9c3a0972da0fecc82de6dabf5be9f2fdf47d26705d2f46f704792fe15a33",
+  "idempotency_key": "1c58c8e4-1c4c-4d19-b4cd-b7416d52e682",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "آه، فاضي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2217634b-a9e1-458d-9d3a-9a721f86fbd5",
+  "operation": {
+    "id": "2217634b-a9e1-458d-9d3a-9a721f86fbd5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 450,
+    "completion_bytes": 46080
+  },
+  "complete": true,
+  "seconds": 0.96
+}

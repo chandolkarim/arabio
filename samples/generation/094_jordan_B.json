@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e1b1b093945b80f932f07447bc954bb48aafab0f611d3ffb04c573b9c07f7426",
+  "idempotency_key": "51083e20-664d-4b0e-8508-f3ec6ea92443",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "الكيلو بخمسطعش.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "87f6d7c6-2812-4b7b-b635-b0af7a9e5b0c",
+  "operation": {
+    "id": "87f6d7c6-2812-4b7b-b635-b0af7a9e5b0c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 750,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1a3f5d23c4f90aea6a559a4a4f265f971f560c8096520900ffaeb9e2f2843041",
+  "idempotency_key": "de2a51a7-f24e-4cfa-b0d2-390091be5596",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "إذا طالب رح أنزّلك شوي كمان.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d4d26c50-f31f-4453-9123-c0d4169c4866",
+  "operation": {
+    "id": "d4d26c50-f31f-4453-9123-c0d4169c4866",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

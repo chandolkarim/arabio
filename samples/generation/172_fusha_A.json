@@ -1,0 +1,23 @@
+{
+  "fingerprint": "55314add52c79d2a29f298f992e18917a2e10f7e3578fa48201924e7d354ba00",
+  "idempotency_key": "63af1962-1e8c-48ff-a523-d809f354d026",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل تحب هذا الطعام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "28fec82c-16ca-4ef1-acc1-a557621da308",
+  "operation": {
+    "id": "28fec82c-16ca-4ef1-acc1-a557621da308",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

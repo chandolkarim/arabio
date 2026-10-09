@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c2b0b2c55ac71c177447a5ec2bd17c2d1814467860b06fbaf3dc95fbd21f021c",
+  "idempotency_key": "e1f2e795-aec1-4a16-9ab5-fc28e8f28543",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أوعك تنسى، أنا كتير متشوق.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fabdb01e-6a2d-4a09-8fa9-0406e3d00cf3",
+  "operation": {
+    "id": "fabdb01e-6a2d-4a09-8fa9-0406e3d00cf3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

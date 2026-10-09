@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5ef227750e62c5712a7867be8823d9e8b25198303f3e2cf52cdbd3dbd58b1162",
+  "idempotency_key": "a293c3de-a344-43d2-88d3-eac561569145",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "إذن يجب أن آخذ مظلة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "41f44647-dd6f-42dc-8401-a073f9d871cc",
+  "operation": {
+    "id": "41f44647-dd6f-42dc-8401-a073f9d871cc",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

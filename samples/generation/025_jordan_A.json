@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7f398116f45e8a102f7908a5da06ff34ff3db28487fcd75e1fbf28d5b8e44c84",
+  "idempotency_key": "495002d5-6cfa-4bc4-ba25-43cc6e949473",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شو بتدرس بالجامعة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b5c8ebff-34dc-4254-8f04-1d6405d82c03",
+  "operation": {
+    "id": "b5c8ebff-34dc-4254-8f04-1d6405d82c03",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

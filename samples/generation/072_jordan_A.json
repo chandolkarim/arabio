@@ -1,0 +1,23 @@
+{
+  "fingerprint": "17b42aebac9fbfb91bc62b10aa4f87049c4836591b081f658b86668fa47466d3",
+  "idempotency_key": "6645b730-5049-4660-919e-e67f82beb7e6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ممكن سفري؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "034d9ac2-985d-4f86-80b9-4c4190dd19bf",
+  "operation": {
+    "id": "034d9ac2-985d-4f86-80b9-4c4190dd19bf",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 500,
+    "completion_bytes": 53760
+  },
+  "complete": true,
+  "seconds": 1.12
+}

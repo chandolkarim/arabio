@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a391ec88a8f7f9e8f14752a66d61585eb148f338b1cb881e3258d8f0134a45df",
+  "idempotency_key": "0ddf2bdd-739e-46e5-bad6-7dad37a01f51",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "في البداية كان صعبًا، لكن الآن أصبح أفضل قليلًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d5116a57-576d-4929-b51f-bd7f04139e17",
+  "operation": {
+    "id": "d5116a57-576d-4929-b51f-bd7f04139e17",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2400,
+    "completion_bytes": 222720
+  },
+  "complete": true,
+  "seconds": 4.64
+}

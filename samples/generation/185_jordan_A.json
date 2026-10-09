@@ -1,0 +1,23 @@
+{
+  "fingerprint": "011dc6c7b9283fc8e6c4997cbec021f69818ae74f6e2971c257825bccd35e638",
+  "idempotency_key": "e3bfbf8a-d691-4104-8d02-0ca6f498940f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "سامحني، ما بقدر أبيع بهالسعر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "450cb17e-9001-4a1a-b6ee-86000d878201",
+  "operation": {
+    "id": "450cb17e-9001-4a1a-b6ee-86000d878201",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1450,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

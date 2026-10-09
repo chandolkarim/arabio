@@ -1,0 +1,23 @@
+{
+  "fingerprint": "cb5e1663c464af51770bd7ac33e67e8baa010c79229e0ad44ddcb0750b836470",
+  "idempotency_key": "8773ee73-f539-4efc-ac39-3bd4b7987d3b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لازم أروح هلّأ. انبسطت كتير اليوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "29a7305e-6d81-4942-a8e4-f554c8c21192",
+  "operation": {
+    "id": "29a7305e-6d81-4942-a8e4-f554c8c21192",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

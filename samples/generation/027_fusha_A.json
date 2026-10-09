@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6f6a985e0124b4f29b30ed374629ca48a456f4d40bf6111471f95d26ddbe11c4",
+  "idempotency_key": "6438b62e-9592-4e3b-bc7c-0b0285215b3b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لماذا اخترتَ أن تتعلم العربية بالذات؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "11e22e7b-7acf-4a18-8f87-4bef1a75c011",
+  "operation": {
+    "id": "11e22e7b-7acf-4a18-8f87-4bef1a75c011",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0587b240809b5fd43c62712bc7fab434cb73ab3391c516f66ea9bcb8474b4d8d",
+  "idempotency_key": "5aa98494-ff1f-493e-b095-df716946f069",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "تعال نسمعها مع بعض ونشرحها سطر سطر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f65b9e93-9271-4fa1-9dee-4578f4235af7",
+  "operation": {
+    "id": "f65b9e93-9271-4fa1-9dee-4578f4235af7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

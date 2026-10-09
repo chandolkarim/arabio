@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9300b4035d9beb0efe6dc184ddf9b87541daa54f26305e2be6e7b98e63ca1217",
+  "idempotency_key": "11301a18-db5f-49ae-9357-53e7f16179c8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بنقوله بين الصحاب القريبين لما نتفاجئ.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "11ea5d7a-6bbb-40eb-a4fd-5512484baa01",
+  "operation": {
+    "id": "11ea5d7a-6bbb-40eb-a4fd-5512484baa01",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

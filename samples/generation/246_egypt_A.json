@@ -1,0 +1,23 @@
+{
+  "fingerprint": "235b47da3d04ffe0d444c64d91d0f31a6c6c2cdf2880be343a718349eb32bb60",
+  "idempotency_key": "59b8d3d2-b6c6-4c6d-900f-290412a4d56e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "إنت شايف إن العيلة أهم من الفلوس؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e983e5e9-5865-405b-9059-8521cecf054c",
+  "operation": {
+    "id": "e983e5e9-5865-405b-9059-8521cecf054c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 215040
+  },
+  "complete": true,
+  "seconds": 4.48
+}

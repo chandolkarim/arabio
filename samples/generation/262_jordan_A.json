@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b15bd5613ab31a3111f5a87a73879e8c6e105039e8836ec517dc66eb7f9bc63c",
+  "idempotency_key": "e34fcb59-8a27-4630-b253-6727562d411c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "معي حرارة من مبارح وجسمي كله بوجعني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "eabfaaee-e4ef-43e5-9682-d22a2b909125",
+  "operation": {
+    "id": "eabfaaee-e4ef-43e5-9682-d22a2b909125",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

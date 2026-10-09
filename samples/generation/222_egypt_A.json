@@ -1,0 +1,23 @@
+{
+  "fingerprint": "192ecc80bac60ecab80c66e9d7d363bc6c4da2ea9d522fea790b41562072da35",
+  "idempotency_key": "b97570fe-aa87-45e2-95f8-81e1ef5e0ae0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "حصلك حاجة زي كده قبل كده؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "06fd2eab-d456-4ced-845e-1a49c9060ea1",
+  "operation": {
+    "id": "06fd2eab-d456-4ced-845e-1a49c9060ea1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

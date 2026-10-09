@@ -1,0 +1,23 @@
+{
+  "fingerprint": "37dddd3b32137af2c3d679ad8fa46e61bdc24290cf9eb77ed50647a2dd3b41c0",
+  "idempotency_key": "8dfc80d3-3f1c-4505-9b8e-52ad5a449ca6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، هاتها. طلعت أتقل مما توقعت!",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "17487123-87b0-4f4e-ad2a-a380ed587688",
+  "operation": {
+    "id": "17487123-87b0-4f4e-ad2a-a380ed587688",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

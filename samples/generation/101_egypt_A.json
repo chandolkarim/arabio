@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b6aa750f3bfd04dd5864e9f174da567c5346228ec3e21a193151e85e63cab1e3",
+  "idempotency_key": "a5854149-cf8a-43e2-9114-4c0a7264eefc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "هفكر شوية وأرجعلك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c4f2652a-c61c-4d89-96c3-91d3aa102f8b",
+  "operation": {
+    "id": "c4f2652a-c61c-4d89-96c3-91d3aa102f8b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

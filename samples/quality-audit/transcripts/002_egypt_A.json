@@ -1,0 +1,70 @@
+{
+  "name": "002_egypt_A",
+  "day": 1,
+  "text": "صباح الخير. نمت كويس؟",
+  "variant": "egypt",
+  "side": "A",
+  "duration": 4.0,
+  "speech_span": 3.5,
+  "voiced": 2.38,
+  "chars": 16,
+  "dbfs": -21.5,
+  "peak": 0.9036,
+  "ratio": 0.21875,
+  "leading": 0.12,
+  "trailing": 0.38,
+  "clip": 0.0,
+  "length_factor": 2.34,
+  "volume_delta": -0.7,
+  "flags": [
+    "long_speech"
+  ],
+  "sha256": "90eec44c5ed2e153e164dd053de47a394cc799ae397158194f9eae76972e8a31",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "transcript": "صباح الخير نمت كويس",
+  "match": 1.0,
+  "recognized_length_factor": 1.0,
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.0,
+      "text": " صباح الخير",
+      "tokens": [
+        50365,
+        20328,
+        3555,
+        39319,
+        33962,
+        13546,
+        50465
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.45247897505760193,
+      "compression_ratio": 0.7954545454545454,
+      "no_speech_prob": 9.288696894982351e-11
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 2.0,
+      "end": 4.0,
+      "text": " نمت كويس",
+      "tokens": [
+        50465,
+        8717,
+        2304,
+        2655,
+        9122,
+        45865,
+        3794,
+        50565
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.45247897505760193,
+      "compression_ratio": 0.7954545454545454,
+      "no_speech_prob": 9.288696894982351e-11
+    }
+  ]
+}

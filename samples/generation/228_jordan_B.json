@@ -1,0 +1,23 @@
+{
+  "fingerprint": "bf4d3fbc5fbbad77b337d68cb41189e63b7b89a28354a94aa2971bb8f7564082",
+  "idempotency_key": "efb9533e-23fc-4282-9acf-a9d27b5925b8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "عشان هيك حاسس إنه اللهجة غريبة عليك أكتر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fddb986a-ad40-4432-8754-d0631324d539",
+  "operation": {
+    "id": "fddb986a-ad40-4432-8754-d0631324d539",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

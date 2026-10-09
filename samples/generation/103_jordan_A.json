@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c0a13987853a21bce3056d7143ffd2bf70c03b110428db34b604a9e140fe631f",
+  "idempotency_key": "a6fa0ee0-cc43-45e9-b87f-c7ea9febc582",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "اشتريته مبارح بس القياس مش مزبوط. بقدر أبدله؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "aa824e7c-9956-482e-9e21-a494fd2d1ad7",
+  "operation": {
+    "id": "aa824e7c-9956-482e-9e21-a494fd2d1ad7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "eed9f8cae512fb5791a47f76c98cf825487edd71ebf6b9052dee91827c759c16",
+  "idempotency_key": "b4269e6d-6f41-461d-95ab-45069c9878bc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل تخشى أن تختفي التقاليد عندما تدخل ثقافات أجنبية؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9b45df8a-1e78-4069-8268-589f5b62f7cc",
+  "operation": {
+    "id": "9b45df8a-1e78-4069-8268-589f5b62f7cc",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2550,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

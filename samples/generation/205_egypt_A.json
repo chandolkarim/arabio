@@ -1,0 +1,23 @@
+{
+  "fingerprint": "dccea694dca38447b281eee346ebe110f7216a981210d0a4d7f16f39af517365",
+  "idempotency_key": "796abb01-af1d-471a-8913-478b1d483e04",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "النهارده بالليل مش هعمل أي حاجة، هرتاح في البيت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fd5be038-124b-4c34-80f0-6b29ec94fa8e",
+  "operation": {
+    "id": "fd5be038-124b-4c34-80f0-6b29ec94fa8e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2400,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

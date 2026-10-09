@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a095f7713238bb0540dc1ce6973c71e2f6f67b17639cae76d5be1bad78cf787f",
+  "idempotency_key": "ff7a91d6-b385-4c87-914c-33a72f8bb2b6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "وأنا كمان كنت رح أعيط بهالمشهد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d972a1a6-f4d5-4407-9fc7-e94b1bac3116",
+  "operation": {
+    "id": "d972a1a6-f4d5-4407-9fc7-e94b1bac3116",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

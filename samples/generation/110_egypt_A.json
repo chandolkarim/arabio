@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b7978b4c58987438439c3af41d75e2baed6002b388323ba9ae900d2b3e7b54a4",
+  "idempotency_key": "e15de54d-071a-4216-af51-4c9441c8a9e7",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لحد هناك هتيجي بكام تقريبًا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e47062f1-1d0c-4345-ae65-7798281ca645",
+  "operation": {
+    "id": "e47062f1-1d0c-4345-ae65-7798281ca645",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

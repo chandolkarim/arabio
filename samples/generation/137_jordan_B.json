@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9b085d3f83d8de783413f0a326cc2f1b0ce4853c2cd128f6a00dc8c9e8d1e143",
+  "idempotency_key": "289dc97d-f2b8-4174-b86c-302061be2cd1",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بمنطقتنا أغلبها بتفتح بعد الظهر لما تخلص الصلاة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b4e15a14-3dfd-40af-ab78-69c08e58d4ce",
+  "operation": {
+    "id": "b4e15a14-3dfd-40af-ab78-69c08e58d4ce",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2400,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

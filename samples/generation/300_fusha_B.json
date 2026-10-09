@@ -1,0 +1,23 @@
+{
+  "fingerprint": "13d82d8047acb8d609c11854813654c272d11b1c880331dba3d5c8bf9675595f",
+  "idempotency_key": "9a91e2e9-6fb4-4fb2-8fc6-cf0e19ef063d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "حسنًا، تدرب كثيرًا حتى ذلك الوقت!",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e8d28e6d-739f-4309-85d2-041f0a511034",
+  "operation": {
+    "id": "e8d28e6d-739f-4309-85d2-041f0a511034",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a34b87d943ce7d268b83c948928dd82d79c89e943e479b7d4636f414b1931339",
+  "idempotency_key": "67c04a1e-39d2-4f6b-ad4f-d352e8514e63",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ولا إشي، كنت أحكي مع حالي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "de51175c-cb26-462d-8e95-c1cbbad6c85c",
+  "operation": {
+    "id": "de51175c-cb26-462d-8e95-c1cbbad6c85c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5d41d79b71b2c5aa6ce4a12a9aba779d7d1deb4dfccd758fed324cb43a3b47a3",
+  "idempotency_key": "556ca16e-f53e-420b-9f78-173a60778de6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ما بزبط أوقف هون، رح أوقف كمان شوي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a9b97667-fa66-40b8-a363-d89f7474e8d2",
+  "operation": {
+    "id": "a9b97667-fa66-40b8-a363-d89f7474e8d2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

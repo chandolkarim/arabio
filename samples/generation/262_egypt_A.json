@@ -1,0 +1,23 @@
+{
+  "fingerprint": "55c700a521b2af495c0f48d800a4c983b546a0ba2408e8e7aa24439935b43cfa",
+  "idempotency_key": "e6e3c3bd-293d-45b6-b37c-0628043569c4",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "عندي سخونية من امبارح وجسمي كله بيوجعني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "95825e9c-68bf-443a-927f-806cba4544f5",
+  "operation": {
+    "id": "95825e9c-68bf-443a-927f-806cba4544f5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

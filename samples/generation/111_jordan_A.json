@@ -1,0 +1,23 @@
+{
+  "fingerprint": "22fe95a344025bc63e79176ac6b28ba4bd56b7fc575880610f408f73925c2893",
+  "idempotency_key": "f68cb973-2e33-4c77-9fcd-f8c6468386b0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شغل العداد لو سمحت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f365de19-920e-4913-b894-e8c36ab4ae0d",
+  "operation": {
+    "id": "f365de19-920e-4913-b894-e8c36ab4ae0d",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

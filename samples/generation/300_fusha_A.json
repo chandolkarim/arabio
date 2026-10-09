@@ -1,0 +1,23 @@
+{
+  "fingerprint": "06df5ed36591bfa0afa681057c7f019ccb99f7a18b13395f6d42e5e43e4de7f9",
+  "idempotency_key": "2511dfd1-0619-4ea0-ac32-babe7c387aae",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "في المرة القادمة التي نلتقي فيها لنتحدث باللهجة فقط.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "064c2bcf-134d-4466-b881-83879b1caa89",
+  "operation": {
+    "id": "064c2bcf-134d-4466-b881-83879b1caa89",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2600,
+    "completion_bytes": 207360
+  },
+  "complete": true,
+  "seconds": 4.32
+}

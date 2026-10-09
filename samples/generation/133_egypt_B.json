@@ -1,0 +1,23 @@
+{
+  "fingerprint": "990c406e7ed60d69e63d79a30c78817cec850419de5a4d0b91b8414d4bea8c23",
+  "idempotency_key": "161f16bb-196c-4637-b089-9e3735c4fc0d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ولا يهمك، تعالى براحتك. أنا هدخل الأول.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "99ed4b03-b7f0-4bd4-8d94-a8f0b7686ebc",
+  "operation": {
+    "id": "99ed4b03-b7f0-4bd4-8d94-a8f0b7686ebc",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

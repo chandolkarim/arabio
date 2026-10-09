@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8bc8942b1fa158901599f249d3757e2463310bd8b9228f25b54f12b2bd89e125",
+  "idempotency_key": "29f3b992-0f96-4dd9-a708-d131ad6e270f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "الشغلة الثابتة والأسعار اللي عم تغلى كل يوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "653a6cdd-0a7e-4fbb-9119-09271ec32bec",
+  "operation": {
+    "id": "653a6cdd-0a7e-4fbb-9119-09271ec32bec",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 268800
+  },
+  "complete": true,
+  "seconds": 5.6
+}

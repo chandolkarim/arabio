@@ -1,0 +1,70 @@
+{
+  "name": "007_egypt_A",
+  "day": 3,
+  "text": "اتشرفنا. سمعت عنك كتير.",
+  "variant": "egypt",
+  "side": "A",
+  "duration": 4.32,
+  "speech_span": 3.88,
+  "voiced": 2.4,
+  "chars": 18,
+  "dbfs": -27.2,
+  "peak": 0.5484,
+  "ratio": 0.21555555555555556,
+  "leading": 0.08,
+  "trailing": 0.36,
+  "clip": 0.0,
+  "length_factor": 2.31,
+  "volume_delta": -6.4,
+  "flags": [
+    "long_speech"
+  ],
+  "sha256": "1749b8e3c0d2bb0cd67eb3585fce112ef9ca8b8b614e495b68230af65dc0d335",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "transcript": "شرفنا سمعت عنك كثير",
+  "match": 0.882,
+  "recognized_length_factor": 0.89,
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 0.56,
+      "text": " شرفنا",
+      "tokens": [
+        50365,
+        13412,
+        28480,
+        8315,
+        50393
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2587929666042328,
+      "compression_ratio": 0.7608695652173914,
+      "no_speech_prob": 3.3499947260651197e-10
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.56,
+      "end": 2.96,
+      "text": " سمعت عنك كثير",
+      "tokens": [
+        50393,
+        8608,
+        2304,
+        34268,
+        18871,
+        4117,
+        9122,
+        12984,
+        13546,
+        50513
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2587929666042328,
+      "compression_ratio": 0.7608695652173914,
+      "no_speech_prob": 3.3499947260651197e-10
+    }
+  ]
+}

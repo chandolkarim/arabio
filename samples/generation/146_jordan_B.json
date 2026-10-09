@@ -1,0 +1,23 @@
+{
+  "fingerprint": "45bbd29e3ad6efec71e916458cc15e86310ad0b974b2d192404b63de75157dd2",
+  "idempotency_key": "e7059562-14d7-4be4-898d-833d75d505b9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "صح، صحابي بحكوا إنه التأخير نص ساعة مش تأخير أصلًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "dd9bf52b-e3d5-4457-91d6-65575300ae72",
+  "operation": {
+    "id": "dd9bf52b-e3d5-4457-91d6-65575300ae72",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2550,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

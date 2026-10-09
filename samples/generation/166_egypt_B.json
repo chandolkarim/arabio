@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1a5834caa8374177c2bb21ed06fe3f8761679b3d206b6c7248467abf4d128e0d",
+  "idempotency_key": "fd61e35e-2caa-4acb-9cb2-8c80c27d905d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "افتكرت ماما اللي في كوريا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f284b7dd-7bbc-4b43-96d2-656abec57c7e",
+  "operation": {
+    "id": "f284b7dd-7bbc-4b43-96d2-656abec57c7e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

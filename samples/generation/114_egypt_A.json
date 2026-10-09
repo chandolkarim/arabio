@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ba8384eb51ee1da756c28ad016f45959bb55f3bb70c2f76a79186c6e489dca22",
+  "idempotency_key": "5a6dc132-ebaa-47c9-a71a-d6bf76ffe09a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ممكن تسوق بالراحة شوية؟ أنا دايخ.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2c10ce81-fef4-4d3d-8556-08935aaca5dd",
+  "operation": {
+    "id": "2c10ce81-fef4-4d3d-8556-08935aaca5dd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

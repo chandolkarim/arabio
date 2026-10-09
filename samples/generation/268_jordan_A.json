@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5ddd7638078565935b612c085a1ade0c04876e5bd10bbbc00803ec3669125928",
+  "idempotency_key": "b982dee0-e62f-4a34-9bb7-d991bbd98c90",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لحتى أجدد الفيزا شو الأوراق اللي بدي ياها؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "bbb042ad-0e95-46d6-bd98-421c108e1fa3",
+  "operation": {
+    "id": "bbb042ad-0e95-46d6-bd98-421c108e1fa3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

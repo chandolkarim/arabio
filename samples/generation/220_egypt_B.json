@@ -1,0 +1,23 @@
+{
+  "fingerprint": "533b473cbca2112432b5e641fa6be65e08c5205719e89915b5877cd6f2d4b8cf",
+  "idempotency_key": "6dc54a46-1bed-4a85-b2f8-ed3129027cfb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "كنت في الجيش في كوريا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "af14da23-0d34-44ff-aeda-8535646243ef",
+  "operation": {
+    "id": "af14da23-0d34-44ff-aeda-8535646243ef",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

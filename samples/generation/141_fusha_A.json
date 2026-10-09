@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1fab9df38b333c2bb06d3beab89bad6664938a9e06305ff64b2006ac16af1aa7",
+  "idempotency_key": "207f29ed-cba4-49cb-9651-fc5490f2508b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أنا مشغول جدًا هذه الأيام وليس لدي وقت للراحة أبدًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8f4e8484-4772-4af3-9541-ad4a925a8e95",
+  "operation": {
+    "id": "8f4e8484-4772-4af3-9541-ad4a925a8e95",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2600,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

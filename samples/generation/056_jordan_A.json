@@ -1,0 +1,23 @@
+{
+  "fingerprint": "61002a2a9732aa9a69cf71a4ad9836473c589e94e26620186c60e6130ea4ae70",
+  "idempotency_key": "0c30f47a-8c20-40c6-8698-ca184cdc70dc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بدك نروح عالبلد هالويكند؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "14d5ee0b-286d-4630-abd5-5b9253bb32d1",
+  "operation": {
+    "id": "14d5ee0b-286d-4630-abd5-5b9253bb32d1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

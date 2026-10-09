@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ad0466280667cdbe18c46f4cc2ef1bb2f7aaa0f09556861556d30c144d0654b2",
+  "idempotency_key": "df09013b-ea17-40f9-b29d-ef508ea919ee",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "متشكر أوي على العزومة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f36babba-10a2-42d3-b9f0-07f72d1dccb2",
+  "operation": {
+    "id": "f36babba-10a2-42d3-b9f0-07f72d1dccb2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

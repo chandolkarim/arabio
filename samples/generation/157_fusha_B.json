@@ -1,0 +1,23 @@
+{
+  "fingerprint": "595982abac4f7c9e863443cd12d7edae834468a624734d70af6953eb4d0327ff",
+  "idempotency_key": "f1e473a2-ec58-4834-8c94-90b3e3a77c66",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "إنه رئيس قسمنا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "358d4b54-5f90-48f7-a111-d34ba3058426",
+  "operation": {
+    "id": "358d4b54-5f90-48f7-a111-d34ba3058426",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 750,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

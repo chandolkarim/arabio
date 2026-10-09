@@ -1,0 +1,23 @@
+{
+  "fingerprint": "de29e2a4972bbc69cd140ac3bfbcdc6d76a26832ef93479f32d76fdc14158cad",
+  "idempotency_key": "272cd27f-3bc0-4408-ad37-f55fd116b27f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "عرفت الخبر ده إزاي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "41bf61e2-9355-4da9-b73d-6fe1fa863781",
+  "operation": {
+    "id": "41bf61e2-9355-4da9-b73d-6fe1fa863781",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

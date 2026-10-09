@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d28e7468ce97988fd468c852a7d0da4ce25bfd55b220cfe2a784253fbadd8553",
+  "idempotency_key": "858f5aaa-cfe7-45cb-9454-8d69c1925230",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ممكن كاسة مي لو سمحت؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f041cac8-6a85-4932-a394-cbdfe6ab64df",
+  "operation": {
+    "id": "f041cac8-6a85-4932-a394-cbdfe6ab64df",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

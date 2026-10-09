@@ -1,0 +1,23 @@
+{
+  "fingerprint": "606086239921e844a4782ba249184c56b194b5ab4bdc41d9903e5fffc5bdf998",
+  "idempotency_key": "df0bf143-6aff-4fb9-a034-0f087ece8434",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أنا مسافر بكرة مدينة تانية، الموقف فين؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0b606095-57b8-42af-81b2-f779ba5a53b1",
+  "operation": {
+    "id": "0b606095-57b8-42af-81b2-f779ba5a53b1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

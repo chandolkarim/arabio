@@ -1,0 +1,23 @@
+{
+  "fingerprint": "92a0f0c3085ae42ddc775a531b124ed1fa111c4c108918b17177ea19619a75c5",
+  "idempotency_key": "e3148701-afe2-44b3-8263-9b07b7be4980",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أريد أن أصبح مترجمًا فوريًا أو دبلوماسيًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "dee48af7-433a-4e97-9318-b905d0a7ee28",
+  "operation": {
+    "id": "dee48af7-433a-4e97-9318-b905d0a7ee28",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

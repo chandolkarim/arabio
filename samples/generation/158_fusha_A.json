@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6d7354138fc230cd08c8823914650eabdb452977d40e1b04061e7187eb34f8ec",
+  "idempotency_key": "7b1d293d-8ce9-48a4-9a37-f92ef27dfcd0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لمن هذا الكتاب؟ تركه أحدهم هنا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "aa5c93b2-3f49-4a0d-b033-825056475232",
+  "operation": {
+    "id": "aa5c93b2-3f49-4a0d-b033-825056475232",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

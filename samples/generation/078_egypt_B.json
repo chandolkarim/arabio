@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6abae6193f0b2abff4828f85bdf2313a7b57e02cea4ad29460d36970dd39b234",
+  "idempotency_key": "090367bc-1509-473e-b8b8-f8bbd77f56bf",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "طبعًا، هجيبلك حالًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "cfd52b14-9039-406a-a6b3-bb62e42944e3",
+  "operation": {
+    "id": "cfd52b14-9039-406a-a6b3-bb62e42944e3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

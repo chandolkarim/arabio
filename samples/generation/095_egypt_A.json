@@ -1,0 +1,23 @@
+{
+  "fingerprint": "22cbe2c49725db1db726cd72d677dd4cebefded5accc63d5232d97953cb22e2a",
+  "idempotency_key": "54f0da2c-ccb2-4324-b905-413425ee925d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ده جه النهارده؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "908bc533-6d56-46c1-9588-c73750f3d19e",
+  "operation": {
+    "id": "908bc533-6d56-46c1-9588-c73750f3d19e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 750,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

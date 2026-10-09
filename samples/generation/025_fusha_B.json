@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7b578112018d44a5cc75d392d9dd2d0ede77515dabdb45d4257c8ad928097c1f",
+  "idempotency_key": "5b932330-d620-4b30-87c2-14830d6fa5e7",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "تخصصي اللغة العربية، وتخصصي الفرعي الاقتصاد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "60a0117e-eb14-4960-ba1d-ab4a79aa72d0",
+  "operation": {
+    "id": "60a0117e-eb14-4960-ba1d-ab4a79aa72d0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

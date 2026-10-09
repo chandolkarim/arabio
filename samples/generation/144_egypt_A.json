@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1143b956b182cf07c67471520581d3ac302a7dff9fbdb9f059c19d2d107683d3",
+  "idempotency_key": "9f3ee694-2d20-4158-ba83-df43453b4cbd",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لازم أقرر وأقولك لحد الساعة كام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "61227c93-e500-49f9-9a08-16c5e5793ec9",
+  "operation": {
+    "id": "61227c93-e500-49f9-9a08-16c5e5793ec9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

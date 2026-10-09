@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4b6a0035e8f1e342199f6bfd9298cc56afa4a5c76af051add5f9ad8a594198ad",
+  "idempotency_key": "1ee41564-cf8d-4ace-a609-5c40b3fd0c73",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كان يجب ألا أقول ذلك الكلام حينها.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0e7f1dfa-d665-4612-957c-6a4102f9466f",
+  "operation": {
+    "id": "0e7f1dfa-d665-4612-957c-6a4102f9466f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "37845a0ecfb9ec5f2bac1e41f9f717bd6f65cb717b12a458e39fa7947076a67b",
+  "idempotency_key": "5a16d20c-4ce8-4bd3-9bcd-d2a6bce73627",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "في محل تاني قالولي بميتين.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "19a1d393-1f03-49a9-a513-52fa295eb825",
+  "operation": {
+    "id": "19a1d393-1f03-49a9-a513-52fa295eb825",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

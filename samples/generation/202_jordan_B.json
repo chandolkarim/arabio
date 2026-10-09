@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8a67ee5b36eb1b1c5b781da01aa1f23a84b9ad20d7889ad10a865f144cfb8069",
+  "idempotency_key": "1ff5d1c4-6031-4f09-8e32-1d2e70f8ed10",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أكيد، حتى دورت على مكان ننام فيه.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5ca34b2e-98bf-4c9c-9421-3a87afa3267f",
+  "operation": {
+    "id": "5ca34b2e-98bf-4c9c-9421-3a87afa3267f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

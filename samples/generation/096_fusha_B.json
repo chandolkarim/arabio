@@ -1,0 +1,23 @@
+{
+  "fingerprint": "244fe0309f63e9adced1e90417380695de1a96796d4b0d848d73226f6f4f1953",
+  "idempotency_key": "597c2988-cd8c-4103-89e7-e0b5b858ee97",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "بالطبع، سأضعه لك في كيس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9754c9a5-8286-4db0-ada4-d3aa87be4911",
+  "operation": {
+    "id": "9754c9a5-8286-4db0-ada4-d3aa87be4911",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

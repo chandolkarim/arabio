@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7c60bba6c5beb94694b55259bd646dfba8a4bf8aa6ac5e9bff7d6f95a551ee8e",
+  "idempotency_key": "69f9075a-de1f-4895-99e9-177aa62a19a6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "صار إشي؟ إذا ما في مشكلة احكيلي شو السبب.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3274eb37-36cb-4091-bfa8-104e91509654",
+  "operation": {
+    "id": "3274eb37-36cb-4091-bfa8-104e91509654",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

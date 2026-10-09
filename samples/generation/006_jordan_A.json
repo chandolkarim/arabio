@@ -1,0 +1,23 @@
+{
+  "fingerprint": "eec30e1365bc021444b858d64c0671add322292c52079b6a5c6e652b0a832103",
+  "idempotency_key": "d8f701bf-de84-4257-90b6-48a08787749c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "كيف الجامعة معك هالأيام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6f30affc-7884-49ca-88c7-e8f26b16e534",
+  "operation": {
+    "id": "6f30affc-7884-49ca-88c7-e8f26b16e534",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

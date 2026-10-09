@@ -1,0 +1,23 @@
+{
+  "fingerprint": "320e8f21eba98886b01e6edc61aab315d3cee4c7befc68bedf9a301600e4d503",
+  "idempotency_key": "5121bf5e-587b-4f16-8490-3d5ee7967726",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ممكن أستلف القلم بتاعك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f7920a6d-8a15-4f14-9db9-9ce4b49e3a3f",
+  "operation": {
+    "id": "f7920a6d-8a15-4f14-9db9-9ce4b49e3a3f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1150,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ba2742981645e43d77c32555664a4bf0de815356b66c77afeca0b726c715fefb",
+  "idempotency_key": "f1cf4890-9235-4dd5-9ff5-0d35ccdccf3f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "يبدو أن الناس هنا لا يلتزمون بالمواعيد كثيرًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b9fdba78-1e7f-49ce-8509-1958e6f476e4",
+  "operation": {
+    "id": "b9fdba78-1e7f-49ce-8509-1958e6f476e4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

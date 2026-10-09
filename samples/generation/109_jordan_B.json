@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3c3ca28eef581a578aa41c9d54cada7b6c87efdae8286ebe731e3af5f2644ea1",
+  "idempotency_key": "620770f0-f9d7-4fdc-9790-3acefc898403",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، بعرفه. بس هديك المنطقة كتير أزمة هلّأ.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a3377f01-54c6-440b-9075-1086f1c011c9",
+  "operation": {
+    "id": "a3377f01-54c6-440b-9075-1086f1c011c9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

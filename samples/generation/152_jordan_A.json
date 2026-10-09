@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b264817034406773ba59eb626abf71742252d06bab8f840fd2e0a2c75f28e24e",
+  "idempotency_key": "e446fc8e-ddf5-4de5-8a1a-c48655846042",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ليش بتتعلم اللهجة بهالجدية؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7436754e-5dd8-4e09-8311-b1959fd73555",
+  "operation": {
+    "id": "7436754e-5dd8-4e09-8311-b1959fd73555",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

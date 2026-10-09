@@ -1,0 +1,23 @@
+{
+  "fingerprint": "cd7d0f4f1d00314e511a15ba05fcc3b742be08faf27c0a88e1e540567cfc71e0",
+  "idempotency_key": "320e8cf4-d36c-4916-ba8e-59dd00111e2d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "القصة كانت جيدة، لكن النهاية كانت مخيبة قليلًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3e313bcd-5b3f-41ed-817e-1804a1658482",
+  "operation": {
+    "id": "3e313bcd-5b3f-41ed-817e-1804a1658482",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a1f053e52d2a27cf024c3efed52fd105c360a3dad2fab579e55cf412185115ef",
+  "idempotency_key": "fc34270f-8427-4ed3-b78c-b8de76d49c31",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "إذا اتصلت برقم الطوارئ تبع السفارة رح يحكولك شو تعمل فورًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d364ebf5-4d7d-47d8-9dfd-cfdc7f3340d1",
+  "operation": {
+    "id": "d364ebf5-4d7d-47d8-9dfd-cfdc7f3340d1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2950,
+    "completion_bytes": 322560
+  },
+  "complete": true,
+  "seconds": 6.72
+}

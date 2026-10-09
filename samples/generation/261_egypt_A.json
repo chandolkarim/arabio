@@ -1,0 +1,23 @@
+{
+  "fingerprint": "314c084cc0c03d416851b13558aa3b5d8f4448315ba7e272181b834c2a1f45a2",
+  "idempotency_key": "6f09bcb0-e54e-44e8-afda-f2903124fe07",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "اللي فوق دوشة أوي كل ليلة، مش عارف أنام.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a99c06da-446a-4976-9d11-4121b6d73ea6",
+  "operation": {
+    "id": "a99c06da-446a-4976-9d11-4121b6d73ea6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

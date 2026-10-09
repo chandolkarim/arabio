@@ -1,0 +1,23 @@
+{
+  "fingerprint": "87f9e554a67adf3123503b86d370b0c6a86512ed403040ca625242106b86127a",
+  "idempotency_key": "7a4c7169-ed9f-4f64-a290-f9b63424e30a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شكله الولاد هالأيام قاعدين عالموبايل طول اليوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "756b644d-d5f8-44fb-9426-9ee6a1e14eff",
+  "operation": {
+    "id": "756b644d-d5f8-44fb-9426-9ee6a1e14eff",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

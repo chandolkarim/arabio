@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6367ea418b96c3a9c463985f007914a338feeb403711d3842d4dd4b17e1cc389",
+  "idempotency_key": "d8f43bea-5721-4a64-9709-e575b6550e74",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "الأكل برد شوية، ممكن تسخنه؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "eb2b6e87-c624-44c5-99ad-3bf53e600bdf",
+  "operation": {
+    "id": "eb2b6e87-c624-44c5-99ad-3bf53e600bdf",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

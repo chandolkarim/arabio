@@ -1,0 +1,23 @@
+{
+  "fingerprint": "35c4eb6a5e98ce447e0c1a7a6f3e89be2c89c3585db7f324dae6931b392f501c",
+  "idempotency_key": "3cff859e-c487-4fbc-8eb8-7dd65878d4ab",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بالأصل كان بدي أصير لاعب فوتبول.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2209cdc1-922e-41b4-93f3-bc82cd1f3739",
+  "operation": {
+    "id": "2209cdc1-922e-41b4-93f3-bc82cd1f3739",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

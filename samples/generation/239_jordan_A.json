@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6afb2e64dcec8b716ec8204b582d26516bdc9acd656c75e51c31e9369da5a3fa",
+  "idempotency_key": "68beb76b-4e03-436d-b13e-555fda433382",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "حكيك فيه إشي صح، بس لازم نشوف الجهة التانية كمان.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0641a383-d320-4384-bdbe-31d8a5873e06",
+  "operation": {
+    "id": "0641a383-d320-4384-bdbe-31d8a5873e06",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2450,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

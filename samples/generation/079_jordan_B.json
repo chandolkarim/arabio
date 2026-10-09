@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ca1a3d209092421360b1709015ac55b10ac7cab69c6e71be61f24b99cf15cd00",
+  "idempotency_key": "1f032764-462e-440a-aae6-08cbe56db7ee",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ماشي، ثواني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d5ad630e-35d0-40ca-9fe2-3aeb47fc4ab1",
+  "operation": {
+    "id": "d5ad630e-35d0-40ca-9fe2-3aeb47fc4ab1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 600,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

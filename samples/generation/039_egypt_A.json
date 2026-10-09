@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4fa944e4c07a16a8ce2bafdab18aad92a96aeb4c77045d11fc39446b8d0ce536",
+  "idempotency_key": "ea615207-b144-428d-8a4a-6aa2569cacb6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "تعرف حاجة عن كوريا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c7c6a5d3-c6e6-407b-9451-d4cc672ad4c9",
+  "operation": {
+    "id": "c7c6a5d3-c6e6-407b-9451-d4cc672ad4c9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

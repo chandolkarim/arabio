@@ -1,0 +1,23 @@
+{
+  "fingerprint": "db34927fc299329a49620fd6d329b80ec6cdb69281668d3763c5e6be2ce24d1f",
+  "idempotency_key": "0ae6a08d-a125-4337-939d-f8ceb12649ee",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لهذا يعمل كثيرون ممن أعرفهم في وظيفتين.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "423b2134-ea90-4545-bac0-76c3c0fa0309",
+  "operation": {
+    "id": "423b2134-ea90-4545-bac0-76c3c0fa0309",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

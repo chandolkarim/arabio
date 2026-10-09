@@ -1,0 +1,23 @@
+{
+  "fingerprint": "de95d95f6e59de38a7f595d8fff91395c012cfb0827bf70a3a4d6916878e9149",
+  "idempotency_key": "247f66a7-e34b-43f3-99b6-3d02a8728c13",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "جرب أن تطفئ الراوتر وتشغله مرة أخرى، وإذا لم ينجح فاتصل بي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6460ff42-6c73-44f2-ae97-98b8c27aeedd",
+  "operation": {
+    "id": "6460ff42-6c73-44f2-ae97-98b8c27aeedd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2950,
+    "completion_bytes": 261120
+  },
+  "complete": true,
+  "seconds": 5.44
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5e3cf349e47b17d30e6d32c19a17ae3874d68fd278b189d1d8c3686cce83b6e9",
+  "idempotency_key": "c9a9e0de-f170-4d9f-aebb-304ec959b941",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "شكرًا على الدعوة، لكن لا أظن أنني أستطيع الحضور هذه المرة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a5039f50-d21c-4aed-9f48-5eb12cfd2cb6",
+  "operation": {
+    "id": "a5039f50-d21c-4aed-9f48-5eb12cfd2cb6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2900,
+    "completion_bytes": 222720
+  },
+  "complete": true,
+  "seconds": 4.64
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3ff84cd02a63e8c7dd76f940c6d0c72eaac501295f16e8e14d44910f4a618907",
+  "idempotency_key": "cb701754-b8b3-4e15-aa7e-c6f2e4b6cdbb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "إيمتى فاضي هالجمعة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "51e88061-5db4-4214-92f1-885a1e1e48ab",
+  "operation": {
+    "id": "51e88061-5db4-4214-92f1-885a1e1e48ab",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

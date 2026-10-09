@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b6d80f6a05f4312c072bd4aef29cee3fc25dbbac1d826e938d38308fd358ebec",
+  "idempotency_key": "26afd80f-b5ac-45b7-9490-aedfc8abadbf",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لا، سمعت اسمه بس عمري ما قابلته.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "638509b0-0c76-43cc-b5a2-8677a3fbf172",
+  "operation": {
+    "id": "638509b0-0c76-43cc-b5a2-8677a3fbf172",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

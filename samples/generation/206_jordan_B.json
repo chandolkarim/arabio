@@ -1,0 +1,23 @@
+{
+  "fingerprint": "54e745caa02a84ff9eaa6dffe0ce5e6db660141d787a6cb2ff1eb2514804e7a6",
+  "idempotency_key": "9e3b2f33-1889-4291-b015-6e9494fd4810",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لا تشرب قهوة كتير.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "140cf2e2-13ad-43cd-9df0-cb7c45c485ae",
+  "operation": {
+    "id": "140cf2e2-13ad-43cd-9df0-cb7c45c485ae",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

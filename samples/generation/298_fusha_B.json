@@ -1,0 +1,23 @@
+{
+  "fingerprint": "95d5c452513867d252ed0375d5b9c01601ff499e6d320433a36f638d411f4971",
+  "idempotency_key": "6c59f6ce-1894-4765-a9ba-ffa704135b5e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "اتفقنا! وحينها سأحاول أن أتكلم بالكورية أيضًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c61d1cd8-ac86-44a7-b13c-d3d3393ef0e0",
+  "operation": {
+    "id": "c61d1cd8-ac86-44a7-b13c-d3d3393ef0e0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

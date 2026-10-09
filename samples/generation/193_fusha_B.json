@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8792ef0f90937f1342dc7c9923975471104d0aeefd9308a1c54cc11f8caa1d84",
+  "idempotency_key": "66ab4778-fcd3-4bb6-999d-30db7924788b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "حسنًا، سأكون في انتظارك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e645bb94-36c3-4a91-a4ee-53f1436c55af",
+  "operation": {
+    "id": "e645bb94-36c3-4a91-a4ee-53f1436c55af",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

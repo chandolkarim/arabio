@@ -1,0 +1,23 @@
+{
+  "fingerprint": "eb70ba669eb2fcb70f0af940c7aa84d482bd8aff86107bc066eb0ee07a495763",
+  "idempotency_key": "10f3fb4a-7c4d-4344-b507-eab3c325c27e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "جئتُ لأدرس اللغة العربية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ab42239f-d468-4489-ae74-fe03652154b9",
+  "operation": {
+    "id": "ab42239f-d468-4489-ae74-fe03652154b9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

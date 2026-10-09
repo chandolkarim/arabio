@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f8b0c23839192553f5b9993b96a1f3d155d54988d7d82f6030fa851802bd36c2",
+  "idempotency_key": "5249e83f-c698-47b5-947a-1f0aaa53a7ce",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "اهدا. رح أتصل بالإسعاف هلّأ.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "13ebd356-fa84-4ed3-9da4-89fe0e8c6af5",
+  "operation": {
+    "id": "13ebd356-fa84-4ed3-9da4-89fe0e8c6af5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

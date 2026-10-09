@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b3a405152cea6e5ad431ebb8d9eaa7a11d72c432df783acef627fa05d26c6c5b",
+  "idempotency_key": "0308c63c-7d94-4440-8d52-0ed1d806663c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "إنت هون. المكان اللي رايحله بالشارع اللي بعده.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "507ee970-1e91-4bfd-991b-f26dc97daee1",
+  "operation": {
+    "id": "507ee970-1e91-4bfd-991b-f26dc97daee1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

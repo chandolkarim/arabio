@@ -1,0 +1,23 @@
+{
+  "fingerprint": "150e99f4beda7c35b9d9d83bc2b705171c8942c72a09e4f9e72728346a5f7fd8",
+  "idempotency_key": "c29211ce-d373-41ed-b811-69a663da4f82",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل تريد أن نذهب معًا لنتجول في وسط المدينة في عطلة نهاية هذا الأسبوع؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "41bc990b-29bc-4768-9b66-9e3b6a4b1074",
+  "operation": {
+    "id": "41bc990b-29bc-4768-9b66-9e3b6a4b1074",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3450,
+    "completion_bytes": 261120
+  },
+  "complete": true,
+  "seconds": 5.44
+}

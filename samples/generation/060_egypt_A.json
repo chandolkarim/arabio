@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5136b0bd22076863f80e8b3279d6e035c84ed14e9070b3f361dc8067b7407f58",
+  "idempotency_key": "803b7ff4-ec38-4272-8410-9ed5ba65fc6f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ممكن أدخل الحمام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a0c69475-afa2-40cd-af92-82cd1cd02abd",
+  "operation": {
+    "id": "a0c69475-afa2-40cd-af92-82cd1cd02abd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

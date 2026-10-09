@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d2278fe92cf6c11a4acdcf042b0f4daf13bafbbde36eb7d5d685520d1ee6260b",
+  "idempotency_key": "f35d690e-5d4c-4a95-9be1-09a228539b29",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أنا ضد هيك. لازم يكون عندك أساس عشان تتحسن باللهجة بسرعة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e77b17dd-5481-43c5-8b8a-c07530033ff4",
+  "operation": {
+    "id": "e77b17dd-5481-43c5-8b8a-c07530033ff4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2850,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

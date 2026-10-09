@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8946123aecdf41e135d5f9725b0536c3f817b2b89da466c20f9d8e6200d01a46",
+  "idempotency_key": "8c1426ba-5292-47f8-8d89-71581e212684",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آسف، في أزمة، شكلي رح أتأخر حوالي عشرين دقيقة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "4ad1b08a-b20d-4f13-b299-2d25326ceb3b",
+  "operation": {
+    "id": "4ad1b08a-b20d-4f13-b299-2d25326ceb3b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

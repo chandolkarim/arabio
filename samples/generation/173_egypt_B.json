@@ -1,0 +1,23 @@
+{
+  "fingerprint": "86c4625d82718a4285bebe3fd739b9fc4d9d8e89ddcc9ab223d739b719786e5a",
+  "idempotency_key": "bc7001b7-8c46-4c58-a1c2-7e0e1de74cf1",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لا، بهزر. مش حقيقي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0b40edf4-7e0e-4114-a418-6ca7a3d38aeb",
+  "operation": {
+    "id": "0b40edf4-7e0e-4114-a418-6ca7a3d38aeb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

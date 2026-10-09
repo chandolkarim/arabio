@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a21b4ee4f31cf62e9cae37eea3ca8df89e3e345e9e02306cb4282bf5398d66ca",
+  "idempotency_key": "bcceb53d-1a73-4a03-8295-e106e38f8800",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "تذكرت إمي اللي بكوريا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f7741cc2-5f13-48a8-91dc-ae7b92e1637a",
+  "operation": {
+    "id": "f7741cc2-5f13-48a8-91dc-ae7b92e1637a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

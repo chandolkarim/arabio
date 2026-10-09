@@ -1,0 +1,23 @@
+{
+  "fingerprint": "41d0d1d972d9f9ec8d63e43fa9e927fa572867ef3d057178a3723cadacd92f57",
+  "idempotency_key": "cfa6d03a-0a21-4d6c-bdfd-6145ac1512e7",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل يمكنك أن تقود ببطء قليلًا؟ أشعر بدوار.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ab4890b8-706c-46d4-b063-662cef8885c8",
+  "operation": {
+    "id": "ab4890b8-706c-46d4-b063-662cef8885c8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

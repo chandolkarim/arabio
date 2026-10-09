@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8514614363bd56296528ead6d1415a1da75f7ed1599638b9d9bbf60497bd92a8",
+  "idempotency_key": "b7a49931-0e88-4a3e-b941-6b3bf0c3adb5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لأني مهتم كتير بثقافة الشرق الأوسط.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "868ce302-ab0b-45c2-a579-c8748a3f8055",
+  "operation": {
+    "id": "868ce302-ab0b-45c2-a579-c8748a3f8055",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

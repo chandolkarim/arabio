@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c36a428a440d853be1bf0418d6316d429cf09c22a2f0a39d6a5260bbed07c7c5",
+  "idempotency_key": "cc5935dd-2475-4785-a936-9acbeb7d99d4",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أنا أصلًا رايح الناحية دي، تعالى ورايا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a3e82789-d02c-4994-ab88-994ddcab6759",
+  "operation": {
+    "id": "a3e82789-d02c-4994-ab88-994ddcab6759",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "bc7e935581d392db97cdf64cc5417b374052c36a7abcf5ad0bf92bad74a9ff9f",
+  "idempotency_key": "76c32bbc-f3d0-4b04-8bf9-af1ca2c98b3b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "إذن لا بأس، سأشتري من مكان آخر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6abfeb5c-1521-4e08-9db9-6fb7d71b8608",
+  "operation": {
+    "id": "6abfeb5c-1521-4e08-9db9-6fb7d71b8608",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

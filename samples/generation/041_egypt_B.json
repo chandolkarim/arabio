@@ -1,0 +1,23 @@
+{
+  "fingerprint": "65f1cccba6ea930516be67fc7577113f314c3b26513e37ed184fd4e26f3cc985",
+  "idempotency_key": "8ab5c34a-c8b0-4fbc-9665-609d97e872a9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "آه، هبعتلك الأكاونت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "464c6cc0-bc1c-4440-9644-c914b2b95dcb",
+  "operation": {
+    "id": "464c6cc0-bc1c-4440-9644-c914b2b95dcb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

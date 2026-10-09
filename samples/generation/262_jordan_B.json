@@ -1,0 +1,23 @@
+{
+  "fingerprint": "96a8ee210a403df4fe4e23608615ba260e690ee38ff13288543c3cdf8e91567f",
+  "idempotency_key": "918d7851-9d36-4d02-9e10-a61c6637d8ed",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "زورك بوجعك كمان؟ وفي سعلة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ab10dc87-96cb-4415-9076-8581c01e4641",
+  "operation": {
+    "id": "ab10dc87-96cb-4415-9076-8581c01e4641",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

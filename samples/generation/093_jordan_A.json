@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3388269789d1cc222cc07f7b9a909299f6556c64544fef85c091f579ffcd941c",
+  "idempotency_key": "5ec230f1-b38c-47ae-a7f9-4bbb0b844a2d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بقدر أقيسه؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c56752cb-723a-40b8-ae67-b9945a1c6a22",
+  "operation": {
+    "id": "c56752cb-723a-40b8-ae67-b9945a1c6a22",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 550,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

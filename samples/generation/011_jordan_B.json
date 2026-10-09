@@ -1,0 +1,23 @@
+{
+  "fingerprint": "001d042a0c8bfeedddb03a5ee6ada8f097c8e0020269ab0cf3fc8e07709f7aa3",
+  "idempotency_key": "a85282db-9ed5-407e-8753-06c81297a0ef",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، رحت عالبحر مع صحابي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5d3cae0d-7769-455f-8e40-22dee8149cd7",
+  "operation": {
+    "id": "5d3cae0d-7769-455f-8e40-22dee8149cd7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "21cd45f2ee1bd95b765747e60f234b0e427a0fd6b3fc528598231b9cf4cf3ecc",
+  "idempotency_key": "23c4c0fc-75f8-4db2-8a7b-bed55e922f53",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لا، أنا كمان لسه واصل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "34bfe10d-eb29-4565-8ad4-de0f8cebcffd",
+  "operation": {
+    "id": "34bfe10d-eb29-4565-8ad4-de0f8cebcffd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

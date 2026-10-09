@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d896e9f80a557eb97c65d2cb4b8a72bfc7b5359e00fe5698c79e51d42ea32f80",
+  "idempotency_key": "1a4ecc91-b75c-429e-8fb1-af699161b9b0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "الوظيفة المستقرة والأسعار التي ترتفع باستمرار.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a31056f0-ddf3-4f6b-a57e-5f476be64b2c",
+  "operation": {
+    "id": "a31056f0-ddf3-4f6b-a57e-5f476be64b2c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

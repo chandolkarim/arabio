@@ -1,0 +1,23 @@
+{
+  "fingerprint": "971de67915a3985736a02fc6382e31b085922d2ade49031340765ac1e8e6c641",
+  "idempotency_key": "d2492534-17ac-4bff-a2d9-0dc15032a87b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "خسارة. المرة الجاية لازم تيجي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7ecdd6b9-d363-4260-88b4-3c7b297c7653",
+  "operation": {
+    "id": "7ecdd6b9-d363-4260-88b4-3c7b297c7653",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8294dd26b4f2521465603ef4b4c3ce745e35f9c7550a4a3d7759151cf6c66413",
+  "idempotency_key": "8a4cae2f-06c1-493f-8bc0-ad5affab44c5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أنا مسافر بكرا على مدينة تانية، وين المجمع؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8c7db9cb-1836-4525-8091-e72c3a782ae7",
+  "operation": {
+    "id": "8c7db9cb-1836-4525-8091-e72c3a782ae7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2150,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

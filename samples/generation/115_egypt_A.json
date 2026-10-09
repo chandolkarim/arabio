@@ -1,0 +1,23 @@
+{
+  "fingerprint": "24b866e80af554a011db8790f757386dab574404940afb70bdcecb837d0aee3f",
+  "idempotency_key": "61e0eeeb-3b77-4482-a66a-e20907613c46",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "الأتوبيس ده بيعدي قدام الجامعة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e821393a-90db-44f8-8894-4a69747f7627",
+  "operation": {
+    "id": "e821393a-90db-44f8-8894-4a69747f7627",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

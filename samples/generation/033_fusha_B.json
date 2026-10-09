@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f7d74729da274460c4fadf242a0633134fe6a79494cec1baaeb0a34bc4115000",
+  "idempotency_key": "413bd9fb-2149-450a-b982-2da230459566",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أسكن مع صديقي بالقرب من الجامعة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9bf871bf-facd-451e-8b51-2024a3b65405",
+  "operation": {
+    "id": "9bf871bf-facd-451e-8b51-2024a3b65405",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

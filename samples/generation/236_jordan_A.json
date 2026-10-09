@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e17680de61c06e6a1ff1ff557f088486d5d756d983476edd0f5538bcc847ca96",
+  "idempotency_key": "ff373f7c-bcd4-4245-9fcf-527e8b902658",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "كيف شايفه كشخص؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ab435c13-c797-4310-b225-f36f4c91e82a",
+  "operation": {
+    "id": "ab435c13-c797-4310-b225-f36f4c91e82a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 750,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

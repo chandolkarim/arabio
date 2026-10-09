@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e2b857d2501cb1d774bf37b4b4f5fbea13e0c3d5063623d736d6bed4591cf8cc",
+  "idempotency_key": "ecb76575-71a0-480c-a3ce-2a13d21fbe3d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شكلك زعلان شوي هالأيام، صار إشي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "615282dc-cbc5-4692-9d36-e507b61c8854",
+  "operation": {
+    "id": "615282dc-cbc5-4692-9d36-e507b61c8854",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

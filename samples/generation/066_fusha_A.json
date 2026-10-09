@@ -1,0 +1,23 @@
+{
+  "fingerprint": "24b90eeafae205636124e6e7d20d6184287c712ec978d735f2c778184ebfe553",
+  "idempotency_key": "4050e1ec-29e0-44e1-aa5c-dfd95ed859a7",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ما أكثر طبق يطلبه الناس هنا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1d6fd9bd-8aa7-46d5-9aa7-e50ad3acd3be",
+  "operation": {
+    "id": "1d6fd9bd-8aa7-46d5-9aa7-e50ad3acd3be",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

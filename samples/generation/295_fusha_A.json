@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c14c3cbadffb1e3dbcf8cffaf74b274cf4ebd9a15ad4c594116fb1e349fd8450",
+  "idempotency_key": "74f75c55-4a7e-41b7-91d5-a5db035459e3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كان هناك شيء أردت أن أقوله قبل أن أغادر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6941e8f2-4293-4cc7-8f34-e13c40387844",
+  "operation": {
+    "id": "6941e8f2-4293-4cc7-8f34-e13c40387844",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "34d26672ad4b56b8023c3c3e63fe9b853e43d24a2121c8bd40ddad2bab700acd",
+  "idempotency_key": "478a0222-13bc-47eb-8fa9-7dfea8c63604",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "عيد مبارك! العيد عامل معاك إيه؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b3c984e5-9c6e-4c6d-9c11-7745561f75aa",
+  "operation": {
+    "id": "b3c984e5-9c6e-4c6d-9c11-7745561f75aa",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

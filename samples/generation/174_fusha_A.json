@@ -1,0 +1,23 @@
+{
+  "fingerprint": "068d51871ed607ca9cef2592b309ed913ab2e8f041702c5299465110dd8172b3",
+  "idempotency_key": "5241bc5c-ceae-4af6-8d4c-5d15b6c0d206",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ألست جائعًا؟ لم تأكل شيئًا منذ الصباح.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "772b8cbc-832c-472c-8a22-a93e02e1e8a6",
+  "operation": {
+    "id": "772b8cbc-832c-472c-8a22-a93e02e1e8a6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

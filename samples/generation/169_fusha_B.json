@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1a5b4a07c576d85a729a69dd2b4d4794e140b85f308a7dc92e62c847c20bd7a1",
+  "idempotency_key": "4f7826bc-2a44-47b3-b9e2-251ba2615bd4",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا، سمعت باسمه لكنني لم ألتقِ به شخصيًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1e803c50-b9f3-4561-99de-e3e56ef1775b",
+  "operation": {
+    "id": "1e803c50-b9f3-4561-99de-e3e56ef1775b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "fa937bfa9cca18ae25e74248944142ae47bc8dc8fa17305e8e969e368cc40282",
+  "idempotency_key": "de886724-c758-46d3-ac19-1ebde365f05a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "حسنًا، سأعطيك إياها بمئتين وخمسين خصيصًا لك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "27fcbe03-7ef8-4098-b71f-ad81ba684ba8",
+  "operation": {
+    "id": "27fcbe03-7ef8-4098-b71f-ad81ba684ba8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

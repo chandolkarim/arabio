@@ -1,0 +1,23 @@
+{
+  "fingerprint": "82526d07646abadbd00d506bca2175aad45c10bb1e5c39092525a44aae3501c4",
+  "idempotency_key": "613f0de6-548f-4377-a7bc-a31ae8a7c746",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "كيلو الطماطم بكام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fa754716-d184-4731-8c55-68e6e50a279a",
+  "operation": {
+    "id": "fa754716-d184-4731-8c55-68e6e50a279a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 560640
+  },
+  "complete": true,
+  "seconds": 11.68
+}

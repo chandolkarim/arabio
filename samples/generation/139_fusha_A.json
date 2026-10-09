@@ -1,0 +1,23 @@
+{
+  "fingerprint": "372d2b25554ae890065a2324524f8bbb1a5ff23f6b065b6fd9741e9550fd7dfe",
+  "idempotency_key": "c99c41b2-bab6-456a-9b2f-5263614d3515",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "عادةً أستيقظ في السادسة صباحًا وأبدأ بالرياضة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "482f8189-a299-4f4f-9c9b-d7f0b0d283f2",
+  "operation": {
+    "id": "482f8189-a299-4f4f-9c9b-d7f0b0d283f2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 207360
+  },
+  "complete": true,
+  "seconds": 4.32
+}

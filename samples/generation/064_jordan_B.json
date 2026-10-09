@@ -1,0 +1,23 @@
+{
+  "fingerprint": "76278f3cf93b9b65a82d68a0277fbe830aa193fa542917856d87f890748ec973",
+  "idempotency_key": "9713ac84-5bdc-4e90-9e2b-8735ae04be66",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، تفضلوا، رح أقعدكم جنب الشباك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "500f515d-6029-4886-b49e-f1362ddf0029",
+  "operation": {
+    "id": "500f515d-6029-4886-b49e-f1362ddf0029",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9e853ec1615cfa9cbabe2ffae877ee5a1072d955199ed7c35c29fd5499ee0606",
+  "idempotency_key": "ed28749a-1a54-492b-9145-9df9131c6b78",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شكلك تعبان، إنت منيح؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a32117ea-9111-44e2-9299-5dc56063676e",
+  "operation": {
+    "id": "a32117ea-9111-44e2-9299-5dc56063676e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

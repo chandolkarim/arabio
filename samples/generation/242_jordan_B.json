@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c64d80354348bb7f9fb62938fcb8f9d12b8495b630ed580057c67b97550351df",
+  "idempotency_key": "fc2cef51-f45f-4d4f-b219-f78eb1c6a575",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "عادي إذا غلطت. الكل بعرف إنك عم تجتهد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a7307e75-4ba1-4e50-96d7-0560aeac0a3f",
+  "operation": {
+    "id": "a7307e75-4ba1-4e50-96d7-0560aeac0a3f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

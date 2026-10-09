@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4d8316cf0d77d092048a4c5befc3be17ffb96a83acfd2ba8e0a66cfe5eed4b6a",
+  "idempotency_key": "b5e7b9ff-6546-4e7f-a4d6-bcf1a4453a31",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أول ما إجيت ما كنت أفهم ولا كلمة، وهلّأ بفهم حتى النكت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "288948b6-c170-4512-9bde-acb8f9c452a5",
+  "operation": {
+    "id": "288948b6-c170-4512-9bde-acb8f9c452a5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2750,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f11ad8854daf7d209338aa1a924c4a5929ac91a683cbacf2be50f952c16918e2",
+  "idempotency_key": "08394feb-68e6-4dc6-97a1-7820194aad48",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هذا أمر طبيعي بين الأصدقاء.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "43849013-1aba-404f-bb29-82a1ec8e24c5",
+  "operation": {
+    "id": "43849013-1aba-404f-bb29-82a1ec8e24c5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

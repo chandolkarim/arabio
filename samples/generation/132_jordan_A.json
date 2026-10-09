@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b5f1414b92ba809300dd4ced37f0556e47bbfb4590ae02a2f3c841ef20921cda",
+  "idempotency_key": "541bedad-60df-413a-99b0-79c4f6bad773",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "قررت وين بدنا نلتقي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "82a20224-e4e3-4bf9-86e8-ddf8b0de90d5",
+  "operation": {
+    "id": "82a20224-e4e3-4bf9-86e8-ddf8b0de90d5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

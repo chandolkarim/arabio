@@ -1,0 +1,23 @@
+{
+  "fingerprint": "351dcb24119591d0aebb81766e9532e3d7d7b22ca8b84353fbe40a5f4426760d",
+  "idempotency_key": "3c76ee86-9677-4b9b-9c0b-6303d80f230f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "تذكرتين ذهابًا وإيابًا من فضلك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "db454e31-8c26-4a3c-ac86-4eab4a461f17",
+  "operation": {
+    "id": "db454e31-8c26-4a3c-ac86-4eab4a461f17",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

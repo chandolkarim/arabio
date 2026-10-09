@@ -1,0 +1,23 @@
+{
+  "fingerprint": "bf9f879ce0cd00719c8555a1f12198378585ba23c5da3ef725a61b144c2b6cba",
+  "idempotency_key": "a2410649-faa0-4fe9-b0e0-7e225003f7e9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "فكرة جيدة. ستتحسن بسرعة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "18bc4076-2e97-4d90-8b3c-66f8b00cd1e0",
+  "operation": {
+    "id": "18bc4076-2e97-4d90-8b3c-66f8b00cd1e0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6cb64fefce59eccd742cb25e9c3c62f22744a710e5f19f21fcf8ee75b98e3ef0",
+  "idempotency_key": "1794e9c4-8bcb-4d23-868a-b1d274e5e9f6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كم مرة في اليوم آخذ هذا الدواء؟ قبل الأكل أم بعده؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d6d22deb-7b8d-4db8-bcc7-0265487e0131",
+  "operation": {
+    "id": "d6d22deb-7b8d-4db8-bcc7-0265487e0131",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2500,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

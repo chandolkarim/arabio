@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2e0175a0dffea48db0bc6ff06d43aba4632b45e64d7462a24a3645d6324a685e",
+  "idempotency_key": "8d2e7681-f516-414e-9e78-dc61f24b5b8e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "عشان كده حاسس إن العامية غريبة عليك أكتر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7ea76329-15d4-4e23-8f0e-b89d109091f9",
+  "operation": {
+    "id": "7ea76329-15d4-4e23-8f0e-b89d109091f9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

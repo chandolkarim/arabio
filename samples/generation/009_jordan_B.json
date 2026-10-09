@@ -1,0 +1,23 @@
+{
+  "fingerprint": "62b6deb12ca095950c8e091c5d050027de37e93b1437db1563f509fe9d8461a9",
+  "idempotency_key": "cf530d4a-1ec0-48a0-bf5d-0b4e46390126",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بالأول كان صعب، بس هلّأ أحسن شوي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "aee46517-ad67-4277-9f18-d8c4a3a53220",
+  "operation": {
+    "id": "aee46517-ad67-4277-9f18-d8c4a3a53220",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

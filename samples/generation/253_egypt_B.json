@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6ffe0bed8057d85b9fcd4a09ba7978d2b2a19fbeb975691172c88870bb9bf0b6",
+  "idempotency_key": "94838ba4-8aa4-4ffa-bd28-2168ef71fa9c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أيوه، فاضل أوضة واحدة. تقدر تيجي تشوفها إمتى؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "05f59c79-4a38-4b13-b030-6f6477d1d50f",
+  "operation": {
+    "id": "05f59c79-4a38-4b13-b030-6f6477d1d50f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

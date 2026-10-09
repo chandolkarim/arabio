@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8ed61c616255ee470c23c42de91a4ae0f1b3495af69d337e4fdb4786615a49ab",
+  "idempotency_key": "f6f3e3e6-f2c8-404b-84e6-06076a10353f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "سبت موبايلي في البيت ورحت المتحف.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "54f2eb76-c64f-40b2-9d55-21eb0f6cb1fa",
+  "operation": {
+    "id": "54f2eb76-c64f-40b2-9d55-21eb0f6cb1fa",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

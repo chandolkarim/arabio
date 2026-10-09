@@ -1,0 +1,23 @@
+{
+  "fingerprint": "90e193c6a9a629dadf9ba948084801a3ec96efe5cc3b6e6982693f40ffe8644e",
+  "idempotency_key": "0f96f69e-73e4-4c77-bfd5-fe66923cf828",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "النهارده كام في الشهر؟ هو الواجب آخر ميعاد له إمتى؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d54aaec1-67a7-4786-ad95-a8c6250f51c0",
+  "operation": {
+    "id": "d54aaec1-67a7-4786-ad95-a8c6250f51c0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2550,
+    "completion_bytes": 215040
+  },
+  "complete": true,
+  "seconds": 4.48
+}

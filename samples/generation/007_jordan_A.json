@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6edd0c7779b1d5ce149ec5267434c5825126f7258075d1b4e2b0cefe39fc6235",
+  "idempotency_key": "439ec00b-2033-40cd-ba0b-cb50593b03a6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "تشرفنا. سمعت عنك كتير.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "43e22e3e-2a3d-4c3a-900e-82169cae5cd8",
+  "operation": {
+    "id": "43e22e3e-2a3d-4c3a-900e-82169cae5cd8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

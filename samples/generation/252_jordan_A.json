@@ -1,0 +1,23 @@
+{
+  "fingerprint": "61696cf85688b5461aa14debeea959cba2b1c659edd1120f394f0b56f146fc6a",
+  "idempotency_key": "4696b910-beed-42c1-aacc-58f914ccf876",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "برأيك هالتجربة شو رح تعنيلك بحياتك بعدين؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b153a8a1-bb2f-415f-80a4-e030f8761ad7",
+  "operation": {
+    "id": "b153a8a1-bb2f-415f-80a4-e030f8761ad7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

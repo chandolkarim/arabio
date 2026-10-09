@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2b72a02a7834b7f275c4c66c918ac02e99119fb4dfea1ef1f96b638e19b0bc07",
+  "idempotency_key": "260a8ad2-edbd-45db-a4f4-16a3c545caa9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "شكل العيال اليومين دول قاعدين على الموبايل طول اليوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "02290030-cd6c-4cc4-a08e-c3e2187d8657",
+  "operation": {
+    "id": "02290030-cd6c-4cc4-a08e-c3e2187d8657",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2650,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

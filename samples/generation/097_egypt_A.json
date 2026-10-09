@@ -1,0 +1,23 @@
+{
+  "fingerprint": "70ed2e04403e50ce36027d640b9dcd66d2c9ae25869554873fc3fbc49518e130",
+  "idempotency_key": "c62a69df-ce70-4281-b556-af6cd7f8b70b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "كله على بعضه كام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b0adfad9-df98-4717-b614-7c8cacae633a",
+  "operation": {
+    "id": "b0adfad9-df98-4717-b614-7c8cacae633a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

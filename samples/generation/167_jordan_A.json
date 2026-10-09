@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d40cac2af66d559542fa4305d4754cc6205f4775ae0e5572f050fa3dce55f79a",
+  "idempotency_key": "eb4f084c-14de-4212-972e-a050a33e7220",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شو أكتر إشي شاغل بالك هالأيام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2edf4411-f320-4013-b1dc-c383c1ca46ed",
+  "operation": {
+    "id": "2edf4411-f320-4013-b1dc-c383c1ca46ed",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

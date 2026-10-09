@@ -1,0 +1,23 @@
+{
+  "fingerprint": "10a3b49bf18ea54db997a304b0ad0b4b801351ea124f1e769b8e63b519eb6372",
+  "idempotency_key": "8045ff8e-8d75-4908-ba81-5163b20d9150",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "شكلي ضيعت موبايلي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "cd1a9493-bd56-4617-91e3-2e84cdd7c5db",
+  "operation": {
+    "id": "cd1a9493-bd56-4617-91e3-2e84cdd7c5db",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

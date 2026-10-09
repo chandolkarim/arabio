@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2b4310474d38b91cff114cc1b1e32311b2fe2f26031f4e21d380401382222555",
+  "idempotency_key": "8abd8b1f-ed02-4dac-81dc-4c8702d00315",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لسه ما جربتش كل حاجة، بس لحد دلوقتي الطعمية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "cca386d1-46c3-497b-a8d0-8e528d336f83",
+  "operation": {
+    "id": "cca386d1-46c3-497b-a8d0-8e528d336f83",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "fd1bf3e433095a750b5451155e11790bfe77a56e181db03216c94444658f54d3",
+  "idempotency_key": "c837face-1a45-41b1-ab3b-0063932484a2",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "وأنا جاي من شوية قابلت صاحب قديم صدفة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e3fbaf2c-2bf3-477f-8197-03500e91db35",
+  "operation": {
+    "id": "e3fbaf2c-2bf3-477f-8197-03500e91db35",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 215040
+  },
+  "complete": true,
+  "seconds": 4.48
+}

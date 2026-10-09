@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f8ca13a4f469d7eedd0aef33cbaaf88962a14f40b6cfc7c522ceca9e87c3a1b5",
+  "idempotency_key": "31766eb0-d9af-4df5-a072-aa4c9aebf66c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بفكر إني رح أتذكرها إنها الوقت اللي تغيرت فيه نظرتي للدنيا كليًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c17af4a0-8aa7-4d53-ac10-01d799802857",
+  "operation": {
+    "id": "c17af4a0-8aa7-4d53-ac10-01d799802857",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3250,
+    "completion_bytes": 261120
+  },
+  "complete": true,
+  "seconds": 5.44
+}

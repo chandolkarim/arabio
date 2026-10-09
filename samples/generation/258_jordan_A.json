@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4b62737e8f19927dc3893d91ad5f8afdb0fcf465c5005c1f47c190b46269d187",
+  "idempotency_key": "3d095bbb-adf7-4266-bb33-1d734f1b7ddb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "الكهربا بتقطع كل شوي، هاد طبيعي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "36d4bda4-e5b1-4884-82cc-193665780afb",
+  "operation": {
+    "id": "36d4bda4-e5b1-4884-82cc-193665780afb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

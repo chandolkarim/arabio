@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d75b75163492c6beb342318a82a423d4e5124d025e8434b0c3aca7582740e897",
+  "idempotency_key": "859d214e-e6a8-4005-a889-59efb18b6c8a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ليس بعد، كل شيء ما زال جديدًا وغريبًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "33765390-ea9b-4b5c-b57d-450ab3f9e574",
+  "operation": {
+    "id": "33765390-ea9b-4b5c-b57d-450ab3f9e574",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

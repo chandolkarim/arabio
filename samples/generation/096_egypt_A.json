@@ -1,0 +1,23 @@
+{
+  "fingerprint": "07d7bf54dd41c638df52e14b8c59570c40d17f049919b6fb2ee785116774c020",
+  "idempotency_key": "66a3a041-575a-413b-a5ce-9c945d4fb16f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ممكن نص كيلو بس؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d2b19c2b-1f7c-4e75-924e-03bd34773109",
+  "operation": {
+    "id": "d2b19c2b-1f7c-4e75-924e-03bd34773109",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 800,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

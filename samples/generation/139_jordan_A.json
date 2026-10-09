@@ -1,0 +1,23 @@
+{
+  "fingerprint": "56298da79b3cc909be58628c13b7597d55c5081cf82bafc1a4c167bb5066a924",
+  "idempotency_key": "23ce1aa1-ac0c-4550-b1be-65b40ca49be8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أنا عادةً بصحى الساعة ستة الصبح وببلّش بالرياضة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6150f230-0f0d-4c45-b80a-d32acf546b26",
+  "operation": {
+    "id": "6150f230-0f0d-4c45-b80a-d32acf546b26",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2400,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

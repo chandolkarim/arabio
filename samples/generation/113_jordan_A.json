@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c141c797cb5c32c4289691ad078f53ac8ab73cf69f39ba79e5a7ec966cff53c3",
+  "idempotency_key": "4dfc397a-cf88-405f-9578-9a1b5504dacd",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "نزلني قدام هالبناية الزرقا لو سمحت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fb22318c-2795-4c86-b4e2-ac9c75faf2a8",
+  "operation": {
+    "id": "fb22318c-2795-4c86-b4e2-ac9c75faf2a8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

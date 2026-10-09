@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1124bf011be8fb8a7d45e968d9d2358b1bb1fd615caaedaa14ddce76f7e306cc",
+  "idempotency_key": "27837809-465d-4a69-a7f9-c2e9c44cae07",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لو انولدت من جديد، بأي بلد بدك تعيش؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5e412556-f0f7-4af7-90c3-8cdf823c7dde",
+  "operation": {
+    "id": "5e412556-f0f7-4af7-90c3-8cdf823c7dde",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

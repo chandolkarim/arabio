@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4f027ecf07909e0b675491722c40637caf4be1dcc897e4ba3b1148cf2bd70c25",
+  "idempotency_key": "319dbbef-91bb-4894-8dd6-0f91445032b4",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لسه ماليش نفس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "521d1658-e710-4c47-a9a4-79ffd1f29aa5",
+  "operation": {
+    "id": "521d1658-e710-4c47-a9a4-79ffd1f29aa5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 700,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

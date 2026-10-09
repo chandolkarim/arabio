@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a0e2e05dc0266357ea313f8ec04bdabe3bf49db9072628a7d5e02fd10ad9d574",
+  "idempotency_key": "45dd38ee-6105-4b37-9979-fef5897eae32",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "قال سائق التاكسي إنه لا يعرف الطريق، فدللته عليه أنا في النهاية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f4bec96c-6c50-4c54-b1b7-218a3dafd0fd",
+  "operation": {
+    "id": "f4bec96c-6c50-4c54-b1b7-218a3dafd0fd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3200,
+    "completion_bytes": 245760
+  },
+  "complete": true,
+  "seconds": 5.12
+}

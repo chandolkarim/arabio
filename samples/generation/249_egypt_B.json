@@ -1,0 +1,23 @@
+{
+  "fingerprint": "25d2b159aa288d753c432291f123d94af302581aa371ab07fddfaedeff27edf4",
+  "idempotency_key": "d30725ab-fe7b-4ed8-a975-8bc56381bc72",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لما تتعب كلمني في أي وقت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8adbe99d-4e50-4a32-a120-208b3190be9f",
+  "operation": {
+    "id": "8adbe99d-4e50-4a32-a120-208b3190be9f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "097066c36a3cd096e07987721c4cafa209a2197398eb39296fe90528c1e5ff97",
+  "idempotency_key": "5e2add7b-536b-4268-931f-e22ae6fc3994",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أنا طالب، مفيش خصم؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9fc6f1d7-70d5-488c-8503-919c4cbd5f1b",
+  "operation": {
+    "id": "9fc6f1d7-70d5-488c-8503-919c4cbd5f1b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

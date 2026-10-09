@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7b46c5b1a0d5f592c86acf37f554439f364dd66eaf20df11fb46b96f94bbc047",
+  "idempotency_key": "4b7b4b30-f34e-4ab4-849d-110b6a298448",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "حسنًا، لكن هذا السعر لليوم فقط.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6c612ace-b250-4589-a311-c1f21a7b04c2",
+  "operation": {
+    "id": "6c612ace-b250-4589-a311-c1f21a7b04c2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

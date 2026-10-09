@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4e5eda1105769260c42c7d59a0968692feb6f6e3a3edaf2eb7afa55bd22d5e91",
+  "idempotency_key": "7f7d5303-de2d-45b2-a5b8-b576cc75ba78",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ماشي، هستناك عند المدخل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ca2c414f-fc22-488f-a810-9f7eca2564a1",
+  "operation": {
+    "id": "ca2c414f-fc22-488f-a810-9f7eca2564a1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

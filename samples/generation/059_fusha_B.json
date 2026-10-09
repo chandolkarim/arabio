@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d8c7f72e73614a9f315736ea040160caf7155d032e7368d2a612c52147174bef",
+  "idempotency_key": "c0862a2b-1c39-4a78-a3f8-af2b4d9be1c7",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "طبعًا، اشبكه في المقبس هناك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6b93c025-dbe5-4c53-94d1-f4268696ad71",
+  "operation": {
+    "id": "6b93c025-dbe5-4c53-94d1-f4268696ad71",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1bc3a852c0fc03a63ccbb0827e9969bfcb6ff07f5c099618af470ab545e04c88",
+  "idempotency_key": "96427c9a-a26c-4204-aeef-ab4c67a7b618",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "نهاية ذلك الفيلم حزينة جدًا لدرجة أنني ما زلت أفكر فيها.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a73a51cd-c89a-431e-b2b0-9720023b25f2",
+  "operation": {
+    "id": "a73a51cd-c89a-431e-b2b0-9720023b25f2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2800,
+    "completion_bytes": 238080
+  },
+  "complete": true,
+  "seconds": 4.96
+}

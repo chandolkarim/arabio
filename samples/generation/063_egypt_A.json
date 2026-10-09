@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b4131ae4833865326330330bf6aadb0e9b69dbc2209ee5a3a45692db99b867ca",
+  "idempotency_key": "fd19584d-5d39-49eb-986a-057c6fc892e0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "محتاج مساعدة في حاجة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9a516424-65da-42dd-be8e-9939a686e70f",
+  "operation": {
+    "id": "9a516424-65da-42dd-be8e-9939a686e70f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

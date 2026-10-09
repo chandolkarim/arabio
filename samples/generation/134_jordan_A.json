@@ -1,0 +1,23 @@
+{
+  "fingerprint": "98dac31376e1c6a1321e05f1fcdfd0390323ac34ca437e8d25e2582fbab7825f",
+  "idempotency_key": "02e7db67-7006-42f1-a48d-253dec2ecbeb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "إنت وصلت؟ أنا لسا ما طلعت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b24e23dd-a3d5-4ad1-8911-61b5b33dc0df",
+  "operation": {
+    "id": "b24e23dd-a3d5-4ad1-8911-61b5b33dc0df",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

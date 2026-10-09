@@ -1,0 +1,23 @@
+{
+  "fingerprint": "49e09bd62ca65027f6f80c7b99c9ccc76ee02c73e669898e031a891afe5aeee0",
+  "idempotency_key": "67037ca7-d1bb-4cd5-94a7-fac75c94a09f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "في الأصل كنت أريد أن أصبح لاعب كرة قدم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "41f07855-f2e6-4fc8-ae03-c2ca8a01c6fb",
+  "operation": {
+    "id": "41f07855-f2e6-4fc8-ae03-c2ca8a01c6fb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

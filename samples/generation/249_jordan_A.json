@@ -1,0 +1,23 @@
+{
+  "fingerprint": "553213e5504d05e81467512db5d1f08497b8c533614dd29348f7d7877ebbaaec",
+  "idempotency_key": "565b5a30-d8e6-40ac-9521-7637b1dace05",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لما حكيت هيك ريحتني كتير.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5b1d0f23-8b2b-4115-a914-bf5e48231f52",
+  "operation": {
+    "id": "5b1d0f23-8b2b-4115-a914-bf5e48231f52",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8f52f0afcdb9df36ce6a3864dd98ee53b3a08db18f62ad4d3f4a30b3ae009705",
+  "idempotency_key": "1133d165-fc82-40ac-b8b0-a00f7075400d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "رمضان كريم! الصيام مش صعب عليك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "92c85554-396d-4d8e-b884-115a6c466e37",
+  "operation": {
+    "id": "92c85554-396d-4d8e-b884-115a6c466e37",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

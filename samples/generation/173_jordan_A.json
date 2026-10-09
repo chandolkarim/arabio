@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8824f202475e8d0bafe8a8f324b9db25ce426de8a9df73f278f426328fe20183",
+  "idempotency_key": "1aff1264-bd3e-4029-ba4b-8d0cbcf88f4d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "عن جد؟ مش مصدق.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "47ef47fc-e770-4069-8bf8-f6f06af30c0c",
+  "operation": {
+    "id": "47ef47fc-e770-4069-8bf8-f6f06af30c0c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 750,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

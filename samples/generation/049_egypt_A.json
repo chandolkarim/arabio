@@ -1,0 +1,23 @@
+{
+  "fingerprint": "66e99378eedc10d2e0ead0e01beb54ffbfdfbca9078649232276aeffd0a21871",
+  "idempotency_key": "61766f4e-3e6f-492d-a9d9-aba2f0f7e920",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ممكن تتكلم بالراحة شوية؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "43ae1ea7-1c76-4a2d-8975-429e247426dc",
+  "operation": {
+    "id": "43ae1ea7-1c76-4a2d-8975-429e247426dc",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

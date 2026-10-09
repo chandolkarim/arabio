@@ -1,0 +1,23 @@
+{
+  "fingerprint": "78a6579b8ecb59601a62bd60950bca656b105e59d1656d8196aa59753f12b259",
+  "idempotency_key": "726c5704-9e7e-4f4d-a87c-d1ec11434265",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أنا ما بقدر آكل حار، هاد حار؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7d4a7b52-3a84-445b-aeb1-9b4a9fa6cac3",
+  "operation": {
+    "id": "7d4a7b52-3a84-445b-aeb1-9b4a9fa6cac3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1450,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

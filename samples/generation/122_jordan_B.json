@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7daa5f25c8e9c0945c531a555e42a480c30fc3cef64c7ba30c5184d32abaf0f1",
+  "idempotency_key": "279cbf19-a454-4424-992f-2cf10df0f82a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أوبر أريح، لأنه بتعرف السعر من قبل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fa5ade3f-61c8-43e2-826c-04080baa4cd4",
+  "operation": {
+    "id": "fa5ade3f-61c8-43e2-826c-04080baa4cd4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

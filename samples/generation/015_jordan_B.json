@@ -1,0 +1,23 @@
+{
+  "fingerprint": "19f09c42dd361da06be0ac2889864c14a9722b70c15c87fd2c5549dde46ba872",
+  "idempotency_key": "87e5b8ae-08f0-4f0c-bbdd-625184136f22",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ولا يهمك. احكيلي بأي وقت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "79b4f663-e388-4a44-bda6-228973c993b1",
+  "operation": {
+    "id": "79b4f663-e388-4a44-bda6-228973c993b1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

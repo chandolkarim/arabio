@@ -1,0 +1,23 @@
+{
+  "fingerprint": "78795348bb650c34ab9fc1a27bd87dec08a880362deea375476a09c45c829e74",
+  "idempotency_key": "7ccd4e2e-7eec-430c-ba62-1f008de890bd",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، بآخر الممر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5d2cd31f-5506-44d3-9108-3915ad3efd64",
+  "operation": {
+    "id": "5d2cd31f-5506-44d3-9108-3915ad3efd64",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 750,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

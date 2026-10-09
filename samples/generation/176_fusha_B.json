@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f94ee41337de281ef6c202280c411c712d827064945980a10f75ccd0600cdaa6",
+  "idempotency_key": "91275622-0a59-458e-8de1-9d198682a20c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا يمكنك الدخول الآن لأنه وقت الصلاة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e1eaf01e-ae82-4e76-9045-d76775fccd15",
+  "operation": {
+    "id": "e1eaf01e-ae82-4e76-9045-d76775fccd15",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

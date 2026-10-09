@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a7763c4b558ef26c2f3de26705569087a8f89f689958208e3164b07b07006245",
+  "idempotency_key": "6a03b7d2-01e9-4433-a2a2-8b7769d4b05a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "فرجيني ياه. رح أبدلك ياه بواحد جديد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f848f18a-0364-42e5-a82e-d98077fb068a",
+  "operation": {
+    "id": "f848f18a-0364-42e5-a82e-d98077fb068a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

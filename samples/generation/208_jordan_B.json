@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e07fc891398c0b4bdcac1676105e8fa9e6407719c1ba855851265c5a34ad3552",
+  "idempotency_key": "509bda7a-725d-48f8-a5c1-80b72e056973",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ليش؟ كان في مشكلة بالأكل؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "adeacf52-966a-4b26-a74b-7978cef2e9b4",
+  "operation": {
+    "id": "adeacf52-966a-4b26-a74b-7978cef2e9b4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

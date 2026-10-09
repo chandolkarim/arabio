@@ -1,0 +1,23 @@
+{
+  "fingerprint": "51198ed6a212f782328c628fc6ffce936bfdb90bb5bb5b334d8f5c2611bf0e84",
+  "idempotency_key": "bb2ed0f3-e62a-4fdc-a73e-18cb3ecfe06f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ممكن كوباية مية لو سمحت؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "47372c56-76c3-4ad2-b2fb-8301179adb39",
+  "operation": {
+    "id": "47372c56-76c3-4ad2-b2fb-8301179adb39",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f99d39b4fbce7b0ee19fb0c2b208f207ef8e9605d623c94bc9ebcd8562251af4",
+  "idempotency_key": "c9343f12-f9f0-4f6c-a559-554566aa500a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "آه، معلش. هسوق بالراحة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "dc159075-e820-4f3d-ba72-0a1f47b5d9d2",
+  "operation": {
+    "id": "dc159075-e820-4f3d-ba72-0a1f47b5d9d2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1150,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

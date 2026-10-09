@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b780dd13ed08f88d9568e50a16d356453cf74f0809d5f53e2d272fcf0e868bf4",
+  "idempotency_key": "ac945820-7f26-47ff-a594-d8959a5178b4",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بحضر فوتبول أو بقرا بالكافيه.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "260000f1-726e-40f8-ab48-a94efdc4c4dc",
+  "operation": {
+    "id": "260000f1-726e-40f8-ab48-a94efdc4c4dc",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1450,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

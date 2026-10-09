@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0fa30be7121312c05ac7f9d4bd9e914bb597bc15dd409179f8e5c2d924ad750c",
+  "idempotency_key": "b2fde6a2-fa5a-42f8-83ad-b9ef5a786227",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أنا ضد كده. لازم يبقى عندك أساس عشان العامية تمشي بسرعة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "11c89374-0ffb-4797-813f-b62650a3c2ce",
+  "operation": {
+    "id": "11c89374-0ffb-4797-813f-b62650a3c2ce",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2800,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

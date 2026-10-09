@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b803d5a79121604c24320c65ab64b252a59da2d387fcbd43de8f044bf9b1b141",
+  "idempotency_key": "619c977d-48f3-4a5f-9ecd-dc3f84f50bb2",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "تعالَ على مهلك، لا داعي للعجلة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "06ad39e4-f7f9-44b2-9189-dde7aebb997b",
+  "operation": {
+    "id": "06ad39e4-f7f9-44b2-9189-dde7aebb997b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

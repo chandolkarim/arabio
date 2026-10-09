@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8ba90f4a8ed579f8f443fad26a78deeefe07247dee35bf9fe5a73c3b722c4a29",
+  "idempotency_key": "a74804f2-430e-4444-a59d-5fa2a909a824",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "نعم، بقيت غرفة واحدة. متى يمكنك أن تأتي لرؤيتها؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "65f9cf56-6719-40e0-8dad-a993be14d84f",
+  "operation": {
+    "id": "65f9cf56-6719-40e0-8dad-a993be14d84f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2400,
+    "completion_bytes": 207360
+  },
+  "complete": true,
+  "seconds": 4.32
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f00d2a92af1f447af366986f29693f6526f6c393f8eb03550a07841c018b79f3",
+  "idempotency_key": "d7e76455-f5f5-442c-a766-8ceb746f2b79",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بحكوا إنه إكرام الضيف كتير مهم بالثقافة هون.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "053c3a45-2dce-4803-ab30-f2fe73b931d7",
+  "operation": {
+    "id": "053c3a45-2dce-4803-ab30-f2fe73b931d7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

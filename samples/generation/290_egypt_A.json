@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d6de7e31071b6ea9755394b9d259b3e908e142c369bfc316ca471053dc39fdb1",
+  "idempotency_key": "6f282f68-0ff5-43e8-a8f1-7bc0f6de0e5d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "شكل ثقافة العيلة مختلفة أوي بين كوريا وهنا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c9bd5b8d-a522-4fb7-b57d-e7eefc9d6a34",
+  "operation": {
+    "id": "c9bd5b8d-a522-4fb7-b57d-e7eefc9d6a34",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2150,
+    "completion_bytes": 222720
+  },
+  "complete": true,
+  "seconds": 4.64
+}

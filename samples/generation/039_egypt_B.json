@@ -1,0 +1,23 @@
+{
+  "fingerprint": "391c04560d74f06611d4aa8845f136e507ecab65399abe5b1a3e8e3e4ec05d4f",
+  "idempotency_key": "b4b5a224-a238-4339-864b-f86451964c48",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بحب المسلسلات والأغاني الكوري أوي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f9724e7b-bc96-416d-9c6a-cb29f1c939ce",
+  "operation": {
+    "id": "f9724e7b-bc96-416d-9c6a-cb29f1c939ce",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

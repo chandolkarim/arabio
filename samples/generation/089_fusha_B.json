@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a7b8e9e596e5cb7c85fd53df79a38ce06716b82ba5a247b9630b31ff736a42be",
+  "idempotency_key": "d7e877d3-1add-48e3-a254-b1a42ecd842e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "إذا اشتريت اثنتين فبأربعمئة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3e503a50-0ff9-4b64-87aa-939a478792b4",
+  "operation": {
+    "id": "3e503a50-0ff9-4b64-87aa-939a478792b4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

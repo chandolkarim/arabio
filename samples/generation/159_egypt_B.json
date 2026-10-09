@@ -1,0 +1,23 @@
+{
+  "fingerprint": "00d694577d3f707fab37c34ff5bf70ed1c4b1897d9b315d591b122a0a2300bd5",
+  "idempotency_key": "471f221a-a36c-4813-960d-92dfaf7bcc75",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "مقدرش أقول اسمه، بس هو حد ثقة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ebb94c5a-f951-4e6f-a09c-bed69809025f",
+  "operation": {
+    "id": "ebb94c5a-f951-4e6f-a09c-bed69809025f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

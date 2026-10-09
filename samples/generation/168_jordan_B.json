@@ -1,0 +1,23 @@
+{
+  "fingerprint": "41045c3eeb032aff44fd26ddd514f89a85dfb9de498d48510005e66eff4c3de8",
+  "idempotency_key": "cbc0710a-655d-4ff4-b42b-d035f2568e8f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "قررت أضل هون لآخر هالفصل عالأقل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2c31308c-cad2-47d1-9fe3-add0c3d2f044",
+  "operation": {
+    "id": "2c31308c-cad2-47d1-9fe3-add0c3d2f044",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

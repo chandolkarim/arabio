@@ -1,0 +1,23 @@
+{
+  "fingerprint": "59fbd4a8351d0a005f6f391f78f1eba1ce3e2103bfa5c79c8587cb4cdeafee69",
+  "idempotency_key": "8b0c25ca-2fbd-4892-85ce-c88ebfd2118e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل انزعجت عندما سمعت ذلك الكلام؟ أنا آسف.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "374cac31-3800-4288-b57b-d9673ea80f98",
+  "operation": {
+    "id": "374cac31-3800-4288-b57b-d9673ea80f98",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

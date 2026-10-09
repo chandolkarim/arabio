@@ -1,0 +1,23 @@
+{
+  "fingerprint": "298a17803ff2bd256d3ec1556702e30908ea3695c4e150a4f3348a98e6e1073d",
+  "idempotency_key": "1c3947e5-990e-43d9-b512-f11846d45994",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "الإنترنت ينقطع ويعود طوال اليوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d4ab85bb-b5d2-4975-874d-c04a10b5b3e7",
+  "operation": {
+    "id": "d4ab85bb-b5d2-4975-874d-c04a10b5b3e7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

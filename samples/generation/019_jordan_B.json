@@ -1,0 +1,23 @@
+{
+  "fingerprint": "bb7ca6310784198e21e64a29ce8a2ae93d96c0f976d3d3c51ddaf66e76050f9d",
+  "idempotency_key": "31d5f19b-f736-4a34-8b96-294e403b29b9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أول كم يوم بس اللي صعبين، وبعدين بتتعوّد بسرعة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "948b374a-c3c1-4d21-8081-d7fefb529c49",
+  "operation": {
+    "id": "948b374a-c3c1-4d21-8081-d7fefb529c49",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

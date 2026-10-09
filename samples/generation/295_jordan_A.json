@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9ec6bcbcbdf635836c5b9b5fafbb58780b23d842925006f6a5e11591e1000dce",
+  "idempotency_key": "92d7642c-4fa3-4a12-8c0b-65d80c1eb604",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "كان في إشي بدي أحكيه قبل ما أروح.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ab675176-594b-4ee7-b549-ba57f4fdbf70",
+  "operation": {
+    "id": "ab675176-594b-4ee7-b549-ba57f4fdbf70",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

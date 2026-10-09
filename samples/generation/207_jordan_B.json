@@ -1,0 +1,23 @@
+{
+  "fingerprint": "621bc8a96985654a8b1fb5ba0f3cf836ebaa16b4736a0fabe908c1474e4c68ff",
+  "idempotency_key": "040033ab-c62e-41b6-aa4a-cb25e71adc6b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "تعال على مهلك، مش مستعجلين.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "990e7828-d735-40ca-9de7-76889f5f66d2",
+  "operation": {
+    "id": "990e7828-d735-40ca-9de7-76889f5f66d2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f4173502fb0ffae9dc156d6969e044d9113db57d27d8e5351ec2145336ca2ba7",
+  "idempotency_key": "8350448d-c41b-404b-b5e1-27aba69a32a0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "وأنا كمان هفتكركم كل يوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "afc516f3-5469-4502-b962-f2e4a6e84fa9",
+  "operation": {
+    "id": "afc516f3-5469-4502-b962-f2e4a6e84fa9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

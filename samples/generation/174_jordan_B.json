@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3b7f6de048f6c2d5440a4b9a9549b8ef0c702a8bc49c2fc2dbc1e66f62169c87",
+  "idempotency_key": "735a46df-1b8d-4570-b16a-780b4171fb48",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لسا ما إلي نفس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "488aaede-9ad6-4e9c-aa75-856117b3f979",
+  "operation": {
+    "id": "488aaede-9ad6-4e9c-aa75-856117b3f979",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 750,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "972e567fb4b59c9543fa752fe47b08de7d2e00675bf874247b321eaf61a3b2d8",
+  "idempotency_key": "6cce11cf-d62b-4ed1-ada2-bc7819141391",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ما كانش لازم أقول الكلام ده ساعتها.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "340925f4-bb51-47c5-9341-616b9b87479a",
+  "operation": {
+    "id": "340925f4-bb51-47c5-9341-616b9b87479a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

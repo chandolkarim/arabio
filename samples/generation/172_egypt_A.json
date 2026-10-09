@@ -1,0 +1,23 @@
+{
+  "fingerprint": "bd821fa2885395fdf5ce65da7884c9c1381d2923c000b9443fdab66fe22b01f3",
+  "idempotency_key": "240ddf5a-cbbf-4c98-b0f6-5233bea79bfe",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بتحب الأكل ده؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ed487f0c-dfe1-4f43-bd59-2322e4605a9f",
+  "operation": {
+    "id": "ed487f0c-dfe1-4f43-bd59-2322e4605a9f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 700,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

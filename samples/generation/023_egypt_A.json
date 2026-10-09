@@ -1,0 +1,23 @@
+{
+  "fingerprint": "250162a63ecd70ffcde9b1ef53153fac1658b3ebc30b9e9fd5e3e6324d2ec15a",
+  "idempotency_key": "88d98b27-b4d4-4dbe-a818-70f60d9538a6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "إنت منين؟ إنت صيني؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "651c2a31-5edc-4f0b-8ca1-bb1e690b72b5",
+  "operation": {
+    "id": "651c2a31-5edc-4f0b-8ca1-bb1e690b72b5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

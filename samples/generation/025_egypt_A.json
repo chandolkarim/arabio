@@ -1,0 +1,23 @@
+{
+  "fingerprint": "29456724ba95bfe9f26195c2e2cd650202931bbdbfc601ec57097370ed44bff8",
+  "idempotency_key": "561fe39d-8563-41aa-8096-fc0537a75ed0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بتدرس إيه في الجامعة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "849580aa-c74d-4343-8256-b57aee71f296",
+  "operation": {
+    "id": "849580aa-c74d-4343-8256-b57aee71f296",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6ff76cc76414bc7f2d90fe3b161f47a84ad54e3b1cd7215bc29202ead5bc4628",
+  "idempotency_key": "e2e44adc-9e52-47dd-86fb-7e68c3871614",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "تغيرت القوانين، والآن هي مطلوبة بالتأكيد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "cda61e3a-c81e-49ca-bfa5-5e1fd8d1ba65",
+  "operation": {
+    "id": "cda61e3a-c81e-49ca-bfa5-5e1fd8d1ba65",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

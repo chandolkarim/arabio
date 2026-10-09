@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1adccfb170b439da897d3030f2e628a85ee8233f065f548609a987314ad5fe9b",
+  "idempotency_key": "6924abfa-9163-4b5d-b675-211d9ecb84f4",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "بما أن توقعاتك كانت كبيرة، فلا بد أن خيبة أملك كبيرة أيضًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e6f6ae55-3eb6-4e0b-b662-5f36628caaeb",
+  "operation": {
+    "id": "e6f6ae55-3eb6-4e0b-b662-5f36628caaeb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2950,
+    "completion_bytes": 261120
+  },
+  "complete": true,
+  "seconds": 5.44
+}

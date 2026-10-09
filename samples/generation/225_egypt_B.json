@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5c25acff5f720b7650e7ba862e76524c63e7e9b23e65038175513e13dce2df89",
+  "idempotency_key": "5545e021-4c13-4319-9933-09197fa039d6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أيوه، كان حلو أوي زي ما قلت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e6d27a0c-e6db-488e-a920-2d4845cd4907",
+  "operation": {
+    "id": "e6d27a0c-e6db-488e-a920-2d4845cd4907",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

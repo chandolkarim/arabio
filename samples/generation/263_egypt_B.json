@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a2b55b3e1f1c4795019a7a2fe2ba238ad6177d77b8f51c352a9258868e437ffa",
+  "idempotency_key": "cd9d1ab5-9a2f-4cc6-af0d-67966a11ffcb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "فاكر كلت إيه امبارح؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "64533851-bd7b-4d31-b7c7-0304099b0319",
+  "operation": {
+    "id": "64533851-bd7b-4d31-b7c7-0304099b0319",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

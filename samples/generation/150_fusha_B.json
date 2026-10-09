@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2a5f31a938e00796f71238fd7a178b432703ebd64358ac91c5a3baea8e352b43",
+  "idempotency_key": "a1062c55-b312-4dc3-b0d7-8770d2f4e830",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا شيء، كنت أتكلم مع نفسي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "4e46c9aa-dfcb-4a9f-937d-af72f76dc498",
+  "operation": {
+    "id": "4e46c9aa-dfcb-4a9f-937d-af72f76dc498",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

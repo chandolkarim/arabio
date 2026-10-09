@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ea16f5e9f988cb170e095abdee50d40f85cf4530f1b2178399d3d3e7e62b283b",
+  "idempotency_key": "24e793bf-8593-4bc1-a587-299fc6814e99",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هذا أمر يصعب تخيله حتى الآن، على الأقل بين من أعرفهم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9f3077ca-764e-410c-b39d-f05a68f4a275",
+  "operation": {
+    "id": "9f3077ca-764e-410c-b39d-f05a68f4a275",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2650,
+    "completion_bytes": 238080
+  },
+  "complete": true,
+  "seconds": 4.96
+}

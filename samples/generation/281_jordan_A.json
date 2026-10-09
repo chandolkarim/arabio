@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b50d69948c114eddcf57b27fd3139d4b312f9eba9c52c0aa1a82a735991c7484",
+  "idempotency_key": "fd6eb036-6deb-4efe-b434-1230367d244c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "الرواتب متل ما هي، بس كل إشي صار غالي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "344588b6-1f00-4047-a727-e12791718d3f",
+  "operation": {
+    "id": "344588b6-1f00-4047-a727-e12791718d3f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

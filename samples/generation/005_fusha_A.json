@@ -1,0 +1,23 @@
+{
+  "fingerprint": "53d2e6269e2a96e6833d0b0704cd90deb23842ffd15a6cb99a200c2d831ae10b",
+  "idempotency_key": "7caf3b6b-a34a-4a20-b96f-c6f0c275728f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "تبدو متعبًا، هل أنت بخير؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c229292a-cda9-4fde-a7bb-3874a7e67da6",
+  "operation": {
+    "id": "c229292a-cda9-4fde-a7bb-3874a7e67da6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

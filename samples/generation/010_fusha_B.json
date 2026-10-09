@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f0bc516d52187c1af9f261b9e02a17c761003f10c3fa3c4e7f59bc15ddaeabad",
+  "idempotency_key": "53e20e24-980c-4aaa-ae79-66c029e3f5fc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "نعم، ظهرت نتيجة الامتحان وكانت جيدة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d294b195-92d2-45d8-b6a4-28f050da83a7",
+  "operation": {
+    "id": "d294b195-92d2-45d8-b6a4-28f050da83a7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

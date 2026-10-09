@@ -1,0 +1,23 @@
+{
+  "fingerprint": "826cbc6925482e0911397e36f18776e83a06add8bcb87d53e5fa7440c932d423",
+  "idempotency_key": "60bf4323-ca9b-4b4e-ad43-ac5f9ef616cf",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بحكوا إنه قصص العيلة والأدب اللي فيها بتناسب الثقافة هون.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9b5cae51-a2e1-43ae-8627-24249405170c",
+  "operation": {
+    "id": "9b5cae51-a2e1-43ae-8627-24249405170c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2850,
+    "completion_bytes": 245760
+  },
+  "complete": true,
+  "seconds": 5.12
+}

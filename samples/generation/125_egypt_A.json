@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7e2021f501acac8f7609fcefca982204d1af45881dbb043a6ae1bc91002706ed",
+  "idempotency_key": "44b92193-dea7-407f-89e8-d200a2c847f9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "الأتوبيسات اللي رايحة هناك الساعة كام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1729dba8-4d3c-47a0-a399-2fe7fe41c76e",
+  "operation": {
+    "id": "1729dba8-4d3c-47a0-a399-2fe7fe41c76e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

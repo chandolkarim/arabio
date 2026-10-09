@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a8860363fd3bf18435c403bf4796e589017becfc51dbb32a3e249770b449e151",
+  "idempotency_key": "cc13e236-d669-46ee-9afd-0bdb614d9e09",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "رح أروح عالمكتبة بكرا بعد المحاضرة، بتيجي معي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "66342536-f5a8-4471-9eb8-15b759f0a663",
+  "operation": {
+    "id": "66342536-f5a8-4471-9eb8-15b759f0a663",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

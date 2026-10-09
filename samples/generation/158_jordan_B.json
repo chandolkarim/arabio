@@ -1,0 +1,23 @@
+{
+  "fingerprint": "af448158a82cb290e4a070adfef17ddb04725e43c15f7510ae247470a0ed5090",
+  "idempotency_key": "64996c2a-bd20-427b-bb5f-76396bbbbadd",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "يمكن للطالب اللي كان قاعد هون قبل شوي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "923b2fd7-04bf-4efb-8de9-5d916b2ac628",
+  "operation": {
+    "id": "923b2fd7-04bf-4efb-8de9-5d916b2ac628",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

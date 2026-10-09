@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1a9720d06e446623b55838d88413e3446fc0a9d3fbde82033f2cd898f5f82505",
+  "idempotency_key": "52e104bc-3b0e-454d-a383-db91d366c759",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "اسمي مينسو. ممكن تناديني مين بس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "18afa78f-02e6-4e08-9733-39cd85010a89",
+  "operation": {
+    "id": "18afa78f-02e6-4e08-9733-39cd85010a89",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

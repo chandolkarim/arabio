@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c9ed4d8e783e7544360d3c40e12680dc8e52f1f15ae82af7e262c7d7ba270cc7",
+  "idempotency_key": "ac502930-2bf0-4763-ace4-63f94e809afa",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لأنني أريد أن أتحدث حقًا مع الناس هنا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d7ff15f5-0177-49bf-8553-6ac676a1aeb9",
+  "operation": {
+    "id": "d7ff15f5-0177-49bf-8553-6ac676a1aeb9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

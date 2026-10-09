@@ -1,0 +1,23 @@
+{
+  "fingerprint": "167255f82bdbf95e2e9f1677f76708807ecbe37ea396e037daaf473f1ce580ce",
+  "idempotency_key": "c1d748a8-46b8-47a0-8b46-3f821db9685c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "هديك أرخص، بس هاي أحسن بكتير بالجودة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "20720b0d-f687-48fd-9f67-dba4edb147aa",
+  "operation": {
+    "id": "20720b0d-f687-48fd-9f67-dba4edb147aa",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

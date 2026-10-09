@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b14a3550bc77b4c0d5d323702c20e35ff7590b7083e01d5577d616e1b629ada6",
+  "idempotency_key": "d6bb27db-ab5f-447d-91d3-6d92e804efba",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أين أنا الآن على الخريطة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "55a906db-4cd0-47e1-a061-712cfea732f7",
+  "operation": {
+    "id": "55a906db-4cd0-47e1-a061-712cfea732f7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

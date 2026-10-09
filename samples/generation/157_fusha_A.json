@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a1ba13743befbd8bd13a794e3184ee94fc5ff227a0af24640011264eb3c5616b",
+  "idempotency_key": "3d7feb04-5986-42cb-8601-98c4f545c462",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "من ذلك الشخص الواقف هناك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8a14ac9e-978a-4558-bc2d-6b24b840f934",
+  "operation": {
+    "id": "8a14ac9e-978a-4558-bc2d-6b24b840f934",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

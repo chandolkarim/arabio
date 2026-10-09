@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e5530b8c09d320f10d906d58938211b691095955ce51b1d33a0332cdca445985",
+  "idempotency_key": "0024613c-49a2-4d32-beda-bde4c0ff2066",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "إذا استمر الأمر هكذا فسيفوتني القطار.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1d8fc040-1364-49ba-b1c9-4cafdd6a90ed",
+  "operation": {
+    "id": "1d8fc040-1364-49ba-b1c9-4cafdd6a90ed",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

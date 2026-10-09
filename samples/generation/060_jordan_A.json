@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a03c6f3f9b2a298064e294a41aaafdaebfe18082d11c46523ac1690a396b521d",
+  "idempotency_key": "fa6765cb-94c1-4cc4-8b92-2a638f6d4b2f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ممكن أفوت عالحمام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f780e42a-7579-4578-b8b7-17abb16ae4b6",
+  "operation": {
+    "id": "f780e42a-7579-4578-b8b7-17abb16ae4b6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

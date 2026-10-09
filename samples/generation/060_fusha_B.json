@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c7245b9c88f86e0295830caab7408aaf12fa638c136d631c70eb0c7428264115",
+  "idempotency_key": "e734e61d-10f1-408e-9d10-064e80b37865",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "نعم، إنه في نهاية الممر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "672c8e1a-5dfe-4346-afcd-5fe99d141fae",
+  "operation": {
+    "id": "672c8e1a-5dfe-4346-afcd-5fe99d141fae",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

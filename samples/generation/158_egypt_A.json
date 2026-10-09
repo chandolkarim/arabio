@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5ab77ecf985ea70fc76250caa07a6b6e750e587be9c64e4dbb54e2c9d1be9258",
+  "idempotency_key": "8b6ce8e6-3365-456d-bf1d-1edb0f3f8ede",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "الكتاب ده بتاع مين؟ حد سابه هنا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a3a83261-63e2-4222-9759-56d50c6a927c",
+  "operation": {
+    "id": "a3a83261-63e2-4222-9759-56d50c6a927c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

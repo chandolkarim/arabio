@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5c4fa0f5a84ed59be30207b61ebf3fcd81a39826fb30815d85dc89cbc9181baa",
+  "idempotency_key": "1c0beae9-0075-4d99-a832-b54091fd6da6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ما المعنى الذي تظن أن هذه التجربة ستحمله في حياتك لاحقًا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a8a53042-bef0-49eb-b43c-c671056b6571",
+  "operation": {
+    "id": "a8a53042-bef0-49eb-b43c-c671056b6571",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2850,
+    "completion_bytes": 222720
+  },
+  "complete": true,
+  "seconds": 4.64
+}

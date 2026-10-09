@@ -1,0 +1,23 @@
+{
+  "fingerprint": "490176e07fb038ff7b9e5e85df2a360ceb68b459e8fb0b1604314b4be7940b55",
+  "idempotency_key": "5538babc-e957-4ccd-9fb2-9ac9999225d2",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لا، رح أضل هون وأسافر على مدن تانية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9f4ca48a-1ee0-428a-80a0-174df877f80f",
+  "operation": {
+    "id": "9f4ca48a-1ee0-428a-80a0-174df877f80f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

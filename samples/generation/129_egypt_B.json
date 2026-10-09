@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ec4be712a865b8199276529eab04f845c82a0224f2a560a76cd792037160e7e6",
+  "idempotency_key": "3dde5c33-e760-45d3-b7f0-4c6fa681f77b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "دلوقتي صعب شوية، بس بعد نص ساعة أقدر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0b484883-c64f-4511-9496-6434045f43da",
+  "operation": {
+    "id": "0b484883-c64f-4511-9496-6434045f43da",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

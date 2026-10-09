@@ -1,0 +1,23 @@
+{
+  "fingerprint": "86f10dfdc27a89f69e8a2fb70ea336ec4275eea9d3da0a30ba6ac30db90194b5",
+  "idempotency_key": "f583e865-015b-4d06-bc02-26ad454391f0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "منيح إنك حكيتلي. رح أكتبلك دوا تاني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "271db32d-4e9d-4862-8400-be6cd868e1a9",
+  "operation": {
+    "id": "271db32d-4e9d-4862-8400-be6cd868e1a9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

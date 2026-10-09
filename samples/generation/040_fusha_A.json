@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3ef4e8560582f0ecdad12b395e6b00ea6d3c142feb40be3fe3589465b1374440",
+  "idempotency_key": "8e79f0a4-ebf0-4901-9bd9-f874fb1c09fe",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل نتبادل أرقام الهواتف؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "748fe4c9-0adc-4e6b-a876-1cc243e0fb76",
+  "operation": {
+    "id": "748fe4c9-0adc-4e6b-a876-1cc243e0fb76",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

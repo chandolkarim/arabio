@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ac2e809a53a76b38b351683c090e0e03f7126e06a35b9a4fbf92e9bf363284fb",
+  "idempotency_key": "d29a9319-0996-4908-8b61-2cc0c0eb9aed",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "بدا باردًا في البداية، لكن تبين أنه طيب القلب جدًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "14d9deb1-7721-4913-a4fb-ec703aaa65cb",
+  "operation": {
+    "id": "14d9deb1-7721-4913-a4fb-ec703aaa65cb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2550,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

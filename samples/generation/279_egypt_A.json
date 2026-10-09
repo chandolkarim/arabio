@@ -1,0 +1,23 @@
+{
+  "fingerprint": "12f8c2513e027dc3d7149d61bdc0a3363ad43b82181f314afb938724033ab6b1",
+  "idempotency_key": "4731f343-3517-4e41-b20e-ba9a88ce872e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "سمعت إن البطالة عند الشباب في كوريا مشكلة كبيرة برضه.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5a336575-8376-40f9-92f7-e6b1779c8690",
+  "operation": {
+    "id": "5a336575-8376-40f9-92f7-e6b1779c8690",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2650,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

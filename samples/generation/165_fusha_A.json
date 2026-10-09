@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f54ef538ef72c178a0eced6b24ae84712744c24cffac350166c4648a84bdf0a8",
+  "idempotency_key": "a013fbb9-6dcc-4a4d-ae18-39894e666413",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ما الفرق بين هاتين الكلمتين؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8e2b5602-763c-40cf-a545-74d25af6e9a9",
+  "operation": {
+    "id": "8e2b5602-763c-40cf-a545-74d25af6e9a9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

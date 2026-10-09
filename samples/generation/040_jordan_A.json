@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9ab4bfac9ec52cffebc508b5b1a1314e3f344b7be0986d589ede44f2bc48bc4d",
+  "idempotency_key": "83298181-c37e-4e6a-a5fe-890d6f083859",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بنوخذ أرقام بعض؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "50c3bd6a-8210-41f9-b3d9-b9d34484f868",
+  "operation": {
+    "id": "50c3bd6a-8210-41f9-b3d9-b9d34484f868",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 800,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

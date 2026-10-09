@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c2e73cea507b51569f361b3962aa331a6ab3829e24f354b6a55cfb714e9e031b",
+  "idempotency_key": "20de0306-5f0e-4618-896f-b19130a46eaf",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أطلب أوبر أحسن ولا أوقف تاكسي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "4ef9f1cc-f3dc-421b-b5cc-c557f08edfa9",
+  "operation": {
+    "id": "4ef9f1cc-f3dc-421b-b5cc-c557f08edfa9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

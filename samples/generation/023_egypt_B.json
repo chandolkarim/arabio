@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5841cf6c1e4a9f597f50673f36be9da23470835aa44fb4d00dc2b9e655f52ab9",
+  "idempotency_key": "ffcc0aaa-7baf-486e-bea6-1637276823f5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لا، أنا من كوريا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "4ff15082-ab00-4fef-baef-22ec2c608b1b",
+  "operation": {
+    "id": "4ff15082-ab00-4fef-baef-22ec2c608b1b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

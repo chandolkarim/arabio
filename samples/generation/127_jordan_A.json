@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2b4fe872a252ca634e9374a42f2ef206b977dd8d43683e525ff4e10e36fec211",
+  "idempotency_key": "ee62514e-9089-4a8d-8ebf-08f66addf972",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "قديش الساعة هلّأ؟ موبايلي طفى.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3a5adc78-4f26-4c13-9b9a-803a30baf583",
+  "operation": {
+    "id": "3a5adc78-4f26-4c13-9b9a-803a30baf583",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ff9b1a7e70dc6722b8d27744bae99ba2c4446266ef3eff374570840eb4e58ed1",
+  "idempotency_key": "0621b4ad-712b-4459-8089-b9b353988225",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لا، لازم تركب سبعة من الناحية التانية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c5a2146a-3a44-455a-b208-d314b1a1f9d6",
+  "operation": {
+    "id": "c5a2146a-3a44-455a-b208-d314b1a1f9d6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6fda0d626a726c2c941317a002569b58ee5961c4b8edf12e88eede8aac3c1b37",
+  "idempotency_key": "b50963c4-f36b-41e2-b629-b424290f4720",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بتعمل إيه اليومين دول؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "12eb96c9-01bc-48ce-9c7a-bfc43d578e67",
+  "operation": {
+    "id": "12eb96c9-01bc-48ce-9c7a-bfc43d578e67",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

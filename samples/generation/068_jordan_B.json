@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4dfc0306dddd2b5b9310abd4c1625415db6cbe102f5d5111c25cc08b247bfee1",
+  "idempotency_key": "0e9a830c-2a78-40bc-8e4f-d38a3fab5a53",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "فيه لحمة ورز ومكسرات.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a5a0413b-3071-400d-85bc-6ba7fa2d09fe",
+  "operation": {
+    "id": "a5a0413b-3071-400d-85bc-6ba7fa2d09fe",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "51bc90709a56d88e2bdb22a9016b22acca94fe53fb1dc5daa5ea9a04a896f6d7",
+  "idempotency_key": "73b2a5cd-ca09-4942-974a-ce6ab973bf1f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "آه، نتيجة الامتحان طلعت كويسة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c6f1cdf8-869b-46ec-8ea4-b4b3eb749a1e",
+  "operation": {
+    "id": "c6f1cdf8-869b-46ec-8ea4-b4b3eb749a1e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6b543f961da109f13cbf91c340cd80f98274001aa25b77d99c657189917a72b5",
+  "idempotency_key": "6a7922f4-b468-44bc-8f29-075358587616",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "بدونك ستكون جلساتنا فارغة جدًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "426718c2-c4f9-461b-8417-9c6afdea5b0b",
+  "operation": {
+    "id": "426718c2-c4f9-461b-8417-9c6afdea5b0b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

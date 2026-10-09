@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3ce9ed22bf8ab21836d08787a8a4f5c50bfcdb24d2be057c238cfa16a21f3d00",
+  "idempotency_key": "53b3c5a5-3b06-4bd7-85cc-cf7aaaa3b065",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "يوجد واحد بجانب البنك، لكنه مغلق الآن على الأرجح.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8dca24ab-1f77-4b79-90ec-d00e58ed370e",
+  "operation": {
+    "id": "8dca24ab-1f77-4b79-90ec-d00e58ed370e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2450,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

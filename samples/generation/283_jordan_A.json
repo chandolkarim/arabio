@@ -1,0 +1,23 @@
+{
+  "fingerprint": "86248b2f4e0e022ccc0091b11dcf6f1026a06c971b6e8baad2fe8b79acb4fcc7",
+  "idempotency_key": "01713db2-f8ca-4de4-949f-0f594190c532",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بتفكر إنه السوشيال ميديا بتقرب الناس من بعض؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0f502646-c8e2-4b96-bb7a-98788aa93aa7",
+  "operation": {
+    "id": "0f502646-c8e2-4b96-bb7a-98788aa93aa7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0e32a7f87ed7ff4748fd3589a5cd19a768b9a0bdd22a12471f84f87608f4a5aa",
+  "idempotency_key": "30221220-25cb-4777-9566-3fa234858700",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا يمكن التوقف هنا، سأتوقف بعد قليل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "bfb34776-6b13-4df4-8ded-1cd365350e90",
+  "operation": {
+    "id": "bfb34776-6b13-4df4-8ded-1cd365350e90",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

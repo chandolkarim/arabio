@@ -1,0 +1,23 @@
+{
+  "fingerprint": "fc640cc409b8b5454a6f382363184fe5d49e4121352659d1bc06ef40395b463a",
+  "idempotency_key": "49156e56-5d44-4547-9ff2-7dbf0e54aedf",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ماشي، احفظ رقمي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c7c3fd37-ec2f-4710-9a44-6edb69e908ed",
+  "operation": {
+    "id": "c7c3fd37-ec2f-4710-9a44-6edb69e908ed",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 800,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

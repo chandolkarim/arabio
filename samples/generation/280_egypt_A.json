@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a501d75c4e247325a4b09806be5970e7fb829fc2730559a8964946eb078b5d2c",
+  "idempotency_key": "92c8f076-e3f9-4df9-8a86-7447b516700e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "الأسعار غليت أوي اليومين دول، والعيشة بقت صعبة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "828c2a46-936c-4650-ab00-49ba870f60cd",
+  "operation": {
+    "id": "828c2a46-936c-4650-ab00-49ba870f60cd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

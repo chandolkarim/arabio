@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e1ddc068be3b3c0b709b1fbadb8a7b4f226ef5deadeb4ac8cedae8ba6520027e",
+  "idempotency_key": "2651de9c-0cd7-4130-9f3f-4a7d21294e1c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "برأيك شو لازم أعمل؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "bdf8480d-8cda-40c1-813e-4d94f8e0a8ed",
+  "operation": {
+    "id": "bdf8480d-8cda-40c1-813e-4d94f8e0a8ed",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

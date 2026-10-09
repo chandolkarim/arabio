@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c28ceb1f4b7e06f7650dd1113e64c34d3c3243b4981e6c2aea540a5f29733158",
+  "idempotency_key": "f169c558-bf89-4109-abaa-e80a9e0bec13",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آسف، التصوير ممنوع جوا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "92f5faa2-44a8-4f4d-82d1-51ee5f3e5082",
+  "operation": {
+    "id": "92f5faa2-44a8-4f4d-82d1-51ee5f3e5082",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1150,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

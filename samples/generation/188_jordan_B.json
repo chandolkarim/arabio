@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ac9103f3001947cbf67f4b0df75e7203d49098e2cc229fbe0e665e9e711429eb",
+  "idempotency_key": "8448799a-4aea-4fba-befa-ee57e6408d69",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بعرف، ما حدا بلومك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3efc915d-1a86-4ecd-9632-1804b8bc85ff",
+  "operation": {
+    "id": "3efc915d-1a86-4ecd-9632-1804b8bc85ff",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

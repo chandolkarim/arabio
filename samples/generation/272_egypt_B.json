@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3c35df5780f378a50717eac41059f203dca8629b8c87e088fc6ec7e79ca1fefc",
+  "idempotency_key": "edef83f0-da7a-4204-85e2-5203cfcf4559",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لازم تروح أقرب قسم وتعمل محضر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7512131f-3745-4fff-aad2-139a4ab09e74",
+  "operation": {
+    "id": "7512131f-3745-4fff-aad2-139a4ab09e74",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

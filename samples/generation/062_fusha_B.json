@@ -1,0 +1,23 @@
+{
+  "fingerprint": "80c1425bf297be568918f89164e9149ef25fd5435be10caf8ef8702cd46e9ef2",
+  "idempotency_key": "4c05d925-5dc1-4b63-8286-d2d9d347b629",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "حسنًا، سأخبره غدًا بعد المحاضرة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8cba907f-1dd6-4efe-999e-3ea86340ddb2",
+  "operation": {
+    "id": "8cba907f-1dd6-4efe-999e-3ea86340ddb2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

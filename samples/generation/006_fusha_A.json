@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b9873c20c76360f705101b7677977d74cef240a32063fb339b4fa4b6454a4aa9",
+  "idempotency_key": "6fcf1097-fda2-4ba2-87f0-c491e5ced3a2",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كيف الحياة الجامعية هذه الأيام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "10d38223-6672-494b-9e26-ce79b0bb40e6",
+  "operation": {
+    "id": "10d38223-6672-494b-9e26-ce79b0bb40e6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

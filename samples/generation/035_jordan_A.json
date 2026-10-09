@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e867ad7c84938dc5fe8aa0a58f26cdf28a2cfbca8ca1b0ece95885c2f9b5f93d",
+  "idempotency_key": "a4659542-7cce-4f2c-b334-97b3a347ed22",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شو نوع الموسيقى اللي بتحبها؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9bd7e791-cc9d-4cec-bcc1-e213991d48e0",
+  "operation": {
+    "id": "9bd7e791-cc9d-4cec-bcc1-e213991d48e0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

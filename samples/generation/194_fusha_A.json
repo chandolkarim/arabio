@@ -1,0 +1,23 @@
+{
+  "fingerprint": "adba135ee98b3312fc910935503dd0f1c1999fc33827c7e0d87016c2e1d49fec",
+  "idempotency_key": "7b46ea0c-bcb4-4447-9276-38c548e86cae",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "سأذهب إلى المكتبة بعد المحاضرة غدًا، هل تأتي معي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7019b1cf-b38b-4801-b7a7-b097bdcd81cc",
+  "operation": {
+    "id": "7019b1cf-b38b-4801-b7a7-b097bdcd81cc",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2450,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

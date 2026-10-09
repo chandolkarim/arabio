@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9b94f132368d9d581b0b9105f0462754160c32e84b2ea334838ba58e16240084",
+  "idempotency_key": "45c578f8-cf2d-424b-b8ff-0a3852e5b10b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "عجقة وأزمة، بس أنا بفكر إنه هاد اللي مخليها حلوة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "278bb728-6e0b-40c8-96f4-c77af4bed7ce",
+  "operation": {
+    "id": "278bb728-6e0b-40c8-96f4-c77af4bed7ce",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2450,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

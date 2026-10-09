@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b3f4c1e31ee33280acd7c5abc4c0d7f6aa83742335eb5e95bcf7278458587d25",
+  "idempotency_key": "006c594a-5ac1-4c24-9bb7-0de8592ad091",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "مينفعش تدخل دلوقتي عشان وقت الصلاة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fa26e0ea-9708-4a36-b1d8-a43dcd3044d7",
+  "operation": {
+    "id": "fa26e0ea-9708-4a36-b1d8-a43dcd3044d7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

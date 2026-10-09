@@ -1,0 +1,23 @@
+{
+  "fingerprint": "963a502d7b939552eebffcd8419c8b7fb17675288371bdf5a380387099e3f0dc",
+  "idempotency_key": "3fdedcea-28f4-4da4-9870-d09548057a34",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "تذكرت أمي التي في كوريا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "af9c6649-0561-424a-ac0c-445f19e6373e",
+  "operation": {
+    "id": "af9c6649-0561-424a-ac0c-445f19e6373e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

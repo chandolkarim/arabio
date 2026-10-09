@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e4e473fce2a1bfc74a0862d3539f0d6ac2536c1da95e9c04bf61b4905e7e3b7e",
+  "idempotency_key": "dea76bc9-5db4-4943-a8dd-e1d9d8ca5c94",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لو معاك تأمين الطلبة الأجانب بيغطي جزء.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d37d2034-a6b7-445a-8f5b-fedb33ae748f",
+  "operation": {
+    "id": "d37d2034-a6b7-445a-8f5b-fedb33ae748f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

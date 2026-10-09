@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c0f9db21d3c42e2aca29822bc15ef4ba9a6853a2081644029ab08af659adb411",
+  "idempotency_key": "2555a1ab-1ed7-451c-be56-ff3369dd8770",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "حاضر، اسمع كويس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "36aee43a-1932-4992-8415-2263326bdd1e",
+  "operation": {
+    "id": "36aee43a-1932-4992-8415-2263326bdd1e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 800,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

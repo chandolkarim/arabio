@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2f04d158e3abfa514614bd3a3f2e52568a652d1dbba9a6393690e564da2b7fe3",
+  "idempotency_key": "e4aa68fb-876c-4416-9cf6-ed810214fa52",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "عندما بدأت تتعلم العربية، ما أصعب شيء واجهته؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1b24279a-042d-47ff-8bf9-862bb76e2188",
+  "operation": {
+    "id": "1b24279a-042d-47ff-8bf9-862bb76e2188",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

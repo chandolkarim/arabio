@@ -1,0 +1,23 @@
+{
+  "fingerprint": "085505be6b4f4ded2cf9d1fed9ad207e42db08504353009f8e425612ea6f2e38",
+  "idempotency_key": "be7104b7-d885-4e98-8259-5bd1973c0aec",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "فرصة سعيدة جدًا. نتكلم تاني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b2684b19-3486-4344-b6cb-f0c9e4c54671",
+  "operation": {
+    "id": "b2684b19-3486-4344-b6cb-f0c9e4c54671",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

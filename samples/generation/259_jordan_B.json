@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ece553a2871181406a203b500ab3892ceb94f9683791462a92d6ea27ef9485ff",
+  "idempotency_key": "1f787f99-0e75-409b-87a9-6c9e6ec19bb3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "جرب تطفي الراوتر وتشغله مرة تانية، وإذا ما زبط احكيلي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "424ecbc7-1063-4d72-9165-58ab014a3fdb",
+  "operation": {
+    "id": "424ecbc7-1063-4d72-9165-58ab014a3fdb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2700,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

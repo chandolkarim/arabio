@@ -1,0 +1,23 @@
+{
+  "fingerprint": "850156c539496a00e3f8e0efe73faa7f6a459cdc50bfa73f0b605e4cfad591e0",
+  "idempotency_key": "ce6facc6-a1f2-47fe-9798-c91759340973",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "معلش، ممكن نأجل ميعاد بكرة للأسبوع الجاي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e6f0f2dd-bc98-4d05-96d9-ddaaa28bea37",
+  "operation": {
+    "id": "e6f0f2dd-bc98-4d05-96d9-ddaaa28bea37",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

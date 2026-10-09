@@ -1,0 +1,23 @@
+{
+  "fingerprint": "99ef5a2aba64933422d4c8f7747af6e5662d4820c30f5155766fb04891624355",
+  "idempotency_key": "80ccbe83-042c-476d-8713-aa806b6e2f18",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "آسف إني اتأخرت. استنيت كتير؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e3f09fd9-5f04-43e5-8b61-14370dba2bc0",
+  "operation": {
+    "id": "e3f09fd9-5f04-43e5-8b61-14370dba2bc0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

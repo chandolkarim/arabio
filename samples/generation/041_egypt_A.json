@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2b7e2d7c80825306f7efaa5636be8ebdc64aa89489e2bf2f4b94574abc2dfa2e",
+  "idempotency_key": "1864a11d-cf5f-4169-a386-6ff90c12f516",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "عندك إنستجرام؟ هعملك فولو.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f1916a81-993b-40c3-8f52-9f418483e142",
+  "operation": {
+    "id": "f1916a81-993b-40c3-8f52-9f418483e142",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

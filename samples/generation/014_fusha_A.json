@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4f342c49fb88da78f7b00d1a67fdedecef284e955675488574b373d51bc9baf9",
+  "idempotency_key": "a3756257-d83d-48e1-98ab-9008558610a4",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "آسف على التأخير. هل انتظرتَ طويلًا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f9cf49e1-8517-47aa-b4f8-34ad24df7f6c",
+  "operation": {
+    "id": "f9cf49e1-8517-47aa-b4f8-34ad24df7f6c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

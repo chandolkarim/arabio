@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8d47d50e54a82ab73a5df1da95aa2b40a1bfd3eb853e84f2116f5d470ac699ca",
+  "idempotency_key": "a2c479bf-c455-402c-80dd-a730aa3f9be0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ها ها، أحيانًا \"إن شاء الله\" تعني \"ربما\".",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "13792f43-cdb6-4170-bc79-ca2698e035a1",
+  "operation": {
+    "id": "13792f43-cdb6-4170-bc79-ca2698e035a1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

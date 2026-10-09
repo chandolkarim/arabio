@@ -1,0 +1,23 @@
+{
+  "fingerprint": "dd7b667161895b1a8396b905724090e144fabb10d817f9c7db78d169f1443d88",
+  "idempotency_key": "88dbcd10-2cf9-497b-8be3-00be116bb537",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "سأرسل فني الصيانة بعد ظهر اليوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d933b822-1641-420c-b72d-a33ee04720ca",
+  "operation": {
+    "id": "d933b822-1641-420c-b72d-a33ee04720ca",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

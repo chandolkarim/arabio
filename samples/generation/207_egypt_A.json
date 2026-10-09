@@ -1,0 +1,23 @@
+{
+  "fingerprint": "20bf9911217dc50db2443a2769041e95d3ed503ee576848e759e4c4245ee87d4",
+  "idempotency_key": "357a99f8-e0f3-477e-a82e-4217144c532c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أنا جاي على طول، استناني شوية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b6271223-00f2-4b3b-8cdd-f01db9e1dc8b",
+  "operation": {
+    "id": "b6271223-00f2-4b3b-8cdd-f01db9e1dc8b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

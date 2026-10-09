@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>디자인 시안 v3 · 페이퍼 & 헤나</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #e9e3d8; color: #201a16; font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+  .page { max-width: 1640px; margin: 0 auto; padding: 40px 24px 80px; }
+  .intro { display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; margin-bottom: 34px; }
+  .intro h1 { font-family: "Noto Serif KR"; font-size: 26px; font-weight: 700; letter-spacing: -0.02em; }
+  .intro p { color: #7d756c; font-size: 14px; margin-top: 6px; }
+  .replay { background: #201a16; color: #f2ece2; border: 0; border-radius: 999px; padding: 11px 18px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+  .phones { display: flex; gap: 34px; flex-wrap: wrap; justify-content: center; }
+  .cap { text-align: center; font-size: 13px; color: #7d756c; margin-top: 14px; font-weight: 600; letter-spacing: .02em; }
+
+  .phone {
+    --paper: #f3ede3; --paper2: #ebe3d6; --card: #fbf8f2; --ink: #201a16; --ink2: #4a423b; --muted: #8f867b;
+    --hair: #ddd3c4; --henna: #9c3a24; --henna2: #b5502f; --gold: #b28c55; --ok: #2d6a5c; --ok-soft: #e3ece6; --bad: #b23a2a;
+    --ease: cubic-bezier(.22,.9,.24,1); --spring: cubic-bezier(.34,1.5,.64,1);
+    width: 372px; height: 790px; border-radius: 52px; overflow: hidden; position: relative;
+    background: var(--paper); color: var(--ink);
+    box-shadow: 0 0 0 11px #1d1915, 0 0 0 12px #3a332c, 0 40px 90px -20px #3b2a1a66;
+    display: flex; flex-direction: column;
+  }
+  /* 종이 질감 */
+  .phone::before { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 5; opacity: .5; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  .status { display: flex; justify-content: space-between; align-items: center; padding: 18px 30px 0; font-size: 15px; font-weight: 600; position: relative; z-index: 2; }
+  .status i { width: 24px; height: 12px; border: 1.5px solid currentColor; border-radius: 4px; position: relative; }
+  .status i::after { content: ""; position: absolute; inset: 1.5px 6px 1.5px 1.5px; background: currentColor; border-radius: 1.5px; }
+  .screen { position: relative; z-index: 2; flex: 1; padding: 18px 26px 30px; display: flex; flex-direction: column; min-height: 0; }
+
+  .serif { font-family: "Noto Serif KR", serif; }
+  .amiri { font-family: "Amiri", serif; }
+  .naskh { font-family: "Noto Naskh Arabic", serif; }
+  .label { font-size: 11px; font-weight: 700; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
+  .rule { height: 1px; background: var(--hair); }
+
+  .in { opacity: 0; transform: translateY(16px); filter: blur(4px); animation: in .9s var(--ease) forwards; animation-delay: calc(var(--d, 0) * 90ms + 200ms); }
+  @keyframes in { to { opacity: 1; transform: none; filter: blur(0); } }
+
+  /* 장식: 8각 별 선화 */
+  .star { position: absolute; pointer-events: none; }
+  .star path { fill: none; stroke: var(--gold); stroke-width: .6; stroke-dasharray: 600; stroke-dashoffset: 600; animation: line 3.5s var(--ease) .4s forwards; }
+  @keyframes line { to { stroke-dashoffset: 0; } }
+
+  /* ====== 1. 시작 ====== */
+  .ob .ghost { position: absolute; top: 40px; right: -30px; font-size: 190px; line-height: 1; color: var(--henna); opacity: 0; direction: rtl; animation: ghost 1.6s var(--ease) .2s forwards; }
+  @keyframes ghost { from { opacity: 0; transform: translateY(20px) scale(1.04); filter: blur(10px); } to { opacity: .11; transform: none; filter: blur(0); } }
+  .ob .top { margin-top: 150px; }
+  .ob h2 { font-family: "Noto Serif KR"; font-size: 31px; line-height: 1.32; font-weight: 700; letter-spacing: -0.035em; margin-top: 12px; }
+  .ob h2 em { font-style: normal; color: var(--henna); }
+  .ob .lead { font-size: 14.5px; color: var(--ink2); line-height: 1.7; margin-top: 14px; }
+  .ob .picks { margin-top: auto; display: grid; gap: 12px; }
+  .pick { position: relative; display: grid; grid-template-columns: 1fr auto; align-items: center; padding: 18px 20px; border-radius: 22px; background: var(--card); box-shadow: 0 1px 0 var(--hair), 0 10px 30px -18px #5a3a2088; transition: transform .4s var(--spring), box-shadow .4s; }
+  .pick.sel { box-shadow: 0 0 0 1.5px var(--henna), 0 16px 34px -18px #9c3a2499; }
+  .pick .nm { font-family: "Noto Serif KR"; font-size: 20px; font-weight: 700; }
+  .pick .sub { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+  .pick .ar { font-family: "Amiri"; font-size: 34px; color: var(--henna); line-height: 1; }
+  .pick .radio { position: absolute; top: 14px; left: 14px; width: 8px; height: 8px; border-radius: 50%; background: var(--henna); transform: scale(0); transition: transform .4s var(--spring); }
+  .pick.sel .radio { transform: scale(1); }
+  .btn { width: 100%; height: 58px; border: 0; border-radius: 20px; background: var(--ink); color: var(--paper); font: inherit; font-size: 16px; font-weight: 700; letter-spacing: -.01em; display: flex; align-items: center; justify-content: center; gap: 10px; position: relative; overflow: hidden; cursor: pointer; }
+  .btn.henna { background: var(--henna); color: #fff6ee; }
+  .btn::after { content: ""; position: absolute; top: 0; bottom: 0; width: 45%; left: -60%; background: linear-gradient(100deg, transparent, #ffffff2e, transparent); animation: sheen 3.6s 2s infinite; }
+  @keyframes sheen { 0% { left: -60%; } 40%, 100% { left: 130%; } }
+  .btn svg { width: 18px; height: 18px; }
+  .ob .btn { margin-top: 18px; }
+
+  /* ====== 2. 홈 ====== */
+  .home .bar { display: flex; justify-content: space-between; align-items: center; }
+  .home .stamp-count { display: flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 600; }
+  .home .stamp-count svg { width: 16px; height: 16px; color: var(--henna); }
+  .home .hero { position: relative; margin-top: 26px; height: 120px; }
+  .home .hero .ghost { position: absolute; right: -18px; top: -26px; font-size: 118px; line-height: 1; color: var(--henna); opacity: .1; direction: rtl; }
+  .home .hero .k { font-family: "Noto Serif KR"; font-size: 44px; font-weight: 900; letter-spacing: -0.05em; margin-top: 8px; }
+  .home .hero .k small { font-size: 15px; font-weight: 500; color: var(--muted); letter-spacing: -0.01em; margin-left: 6px; }
+  .home .hero .ar { position: absolute; right: 0; bottom: 18px; font-family: "Amiri"; font-weight: 700; font-size: 34px; color: var(--henna); direction: rtl; clip-path: inset(0 0 0 100%); animation: wipe 1.3s var(--ease) .7s forwards; }
+  @keyframes wipe { to { clip-path: inset(0 0 0 0); } }
+  .map { position: relative; margin: 2px -26px 0; height: 200px; }
+  .map svg { width: 100%; height: 100%; display: block; }
+  .map .d { fill: #c2b19c; }
+  .map .route { fill: none; stroke: #c9b9a5; stroke-width: 1; stroke-dasharray: 1.5 4; stroke-linecap: round; }
+  .map .done { fill: none; stroke: var(--henna); stroke-width: 1.8; stroke-linecap: round; stroke-dasharray: 900; stroke-dashoffset: 900; animation: draw 2.2s var(--ease) .6s forwards; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  .map .node { fill: var(--paper); stroke: #b9a993; stroke-width: 1.2; }
+  .map .node.on { fill: var(--henna); stroke: var(--henna); }
+  .map .me { fill: var(--henna); }
+  .map .ring { fill: none; stroke: var(--henna); stroke-width: 1; transform-box: fill-box; transform-origin: center; opacity: 0; animation: ring 2.6s ease-out infinite 2.6s; }
+  @keyframes ring { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(5); opacity: 0; } }
+  .map .lbl { font: 600 9.5px "Pretendard Variable", sans-serif; fill: var(--muted); letter-spacing: .02em; }
+  .journey { display: flex; justify-content: space-between; align-items: center; margin-top: 4px; font-size: 12px; color: var(--muted); }
+  .journey b { color: var(--ink); font-weight: 700; }
+  .journey .line { flex: 1; height: 1px; background: var(--hair); margin: 0 10px; position: relative; }
+  .journey .line i { position: absolute; left: 0; top: -1px; height: 3px; width: 0; background: var(--henna); border-radius: 3px; animation: grow 1.4s var(--ease) 1s forwards; }
+  @keyframes grow { to { width: 33%; } }
+  .today { margin-top: auto; background: var(--card); border-radius: 28px; padding: 22px 22px 20px; box-shadow: 0 1px 0 var(--hair), 0 22px 44px -26px #5a3a2099; }
+  .today .head { display: flex; justify-content: space-between; align-items: baseline; }
+  .today h3 { font-family: "Noto Serif KR"; font-size: 21px; font-weight: 700; letter-spacing: -0.03em; }
+  .today .unit { font-size: 12px; color: var(--muted); }
+  .today ol { list-style: none; margin: 14px 0 18px; }
+  .today li { display: flex; gap: 12px; padding: 10px 0; border-top: 1px solid var(--hair); font-size: 14px; color: var(--ink2); }
+  .today li span { font-family: "Noto Serif KR"; color: var(--henna); font-weight: 700; width: 12px; }
+  .meta { display: flex; justify-content: space-between; margin-top: 16px; padding: 0 4px; }
+  .meta div { text-align: center; }
+  .meta b { display: block; font-family: "Noto Serif KR"; font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .meta span { font-size: 11px; color: var(--muted); }
+  .meta .sep { width: 1px; background: var(--hair); }
+
+  /* ====== 3. 레슨 ====== */
+  .ls .lhead { display: flex; align-items: center; gap: 14px; }
+  .ls .x svg { width: 20px; height: 20px; color: var(--muted); display: block; }
+  .ls .prog { flex: 1; height: 3px; background: var(--hair); border-radius: 3px; position: relative; }
+  .ls .prog i { position: absolute; left: 0; top: 0; bottom: 0; width: 46%; background: var(--henna); border-radius: 3px; transform-origin: left; animation: fill 1s var(--ease) .3s both; }
+  .ls .prog i::after { content: ""; position: absolute; right: -3px; top: -3px; width: 9px; height: 9px; border-radius: 50%; background: var(--henna); box-shadow: 0 0 0 4px #9c3a2422; }
+  @keyframes fill { from { transform: scaleX(0); } }
+  .ls .step { font-size: 12px; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .ls .kick { margin-top: 38px; }
+  .ls h2 { font-family: "Noto Serif KR"; font-size: 25px; font-weight: 700; letter-spacing: -0.035em; margin-top: 8px; }
+  .ls .ko { font-size: 14.5px; color: var(--ink2); margin-top: 8px; }
+  .ls .sent { margin-top: 30px; padding-bottom: 22px; border-bottom: 1px solid var(--hair); direction: rtl; text-align: right; font-family: "Noto Naskh Arabic"; font-size: 27px; line-height: 2; font-weight: 500; }
+  .slot { display: inline-flex; justify-content: center; align-items: center; min-width: 80px; height: 46px; vertical-align: middle; border-radius: 14px; background: var(--paper2); color: transparent; position: relative; overflow: hidden; transition: background .5s, color .5s, padding .5s var(--spring); }
+  .slot::before { content: ""; position: absolute; left: 14px; right: 14px; bottom: 9px; height: 2px; border-radius: 2px; background: var(--henna); animation: breathe 1.6s ease-in-out infinite; }
+  @keyframes breathe { 50% { transform: scaleX(.55); opacity: .5; } }
+  .slot.filled { background: var(--henna); color: #fff6ee; padding: 0 14px; }
+  .slot.filled::before { display: none; }
+  .ls .opts { margin-top: 18px; }
+  .opt { position: relative; display: flex; align-items: center; justify-content: space-between; height: 66px; padding: 0 6px; border-bottom: 1px solid var(--hair); transition: transform .35s var(--spring); }
+  .opt .w { font-family: "Noto Naskh Arabic"; font-size: 26px; font-weight: 600; transition: color .4s; }
+  .opt .n { font-family: "Noto Serif KR"; font-size: 14px; color: var(--muted); font-weight: 700; width: 18px; transition: opacity .3s; }
+  .opt .g { position: absolute; left: 34px; font-size: 12.5px; color: var(--muted); opacity: 0; transform: translateX(-8px); transition: all .5s var(--ease); }
+  .opt .bg { position: absolute; inset: 6px -10px; border-radius: 16px; background: var(--ok-soft); transform: scaleX(0); transform-origin: right; transition: transform .6s var(--ease); z-index: -1; }
+  .reveal .opt .g { opacity: 1; transform: none; }
+  .opt.press { transform: scale(.98); }
+  .opt.wrong .w { color: var(--bad); }
+  .opt.wrong { animation: shake .5s; }
+  @keyframes shake { 20% { transform: translateX(-7px); } 40% { transform: translateX(7px); } 60% { transform: translateX(-4px); } 80% { transform: translateX(3px); } }
+  .opt.right .bg { transform: scaleX(1); }
+  .opt.right .w, .opt.right .g { color: var(--ok); font-weight: 700; }
+  .opt.right .n { opacity: 0; }
+  .opt .check { position: absolute; left: 4px; width: 20px; height: 20px; }
+  .opt .check path { fill: none; stroke: var(--ok); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 24; stroke-dashoffset: 24; }
+  .opt.right .check path { animation: tick .5s var(--ease) .15s forwards; }
+  @keyframes tick { to { stroke-dashoffset: 0; } }
+  .sheet { position: absolute; left: 14px; right: 14px; bottom: 14px; z-index: 3; padding: 20px 20px 18px; border-radius: 30px; background: #fbf8f2ee; backdrop-filter: blur(14px); box-shadow: 0 -1px 0 var(--hair), 0 24px 50px -20px #3b2a1a55; transform: translateY(120%); transition: transform .7s var(--spring); }
+  .sheet.up { transform: none; }
+  .sheet .t { display: flex; align-items: center; gap: 8px; font-family: "Noto Serif KR"; font-size: 18px; font-weight: 700; color: var(--ok); }
+  .sheet p { font-size: 13.5px; color: var(--ink2); margin-top: 6px; line-height: 1.6; }
+  .sheet .btn { margin-top: 14px; height: 54px; background: var(--ok); }
+
+  /* ====== 4. 완료 ====== */
+  .dn { text-align: center; }
+  .dn .num { margin-top: 34px; font-family: "Amiri"; font-weight: 700; font-size: 120px; line-height: 1; color: var(--henna); }
+  .dn .numk { font-size: 12px; letter-spacing: .14em; color: var(--muted); font-weight: 700; }
+  .dn h2 { font-family: "Noto Serif KR"; font-size: 27px; font-weight: 700; letter-spacing: -0.035em; margin-top: 14px; }
+  .dn .lead { font-size: 14px; color: var(--ink2); margin-top: 8px; }
+  .passport { position: relative; margin: 26px auto 0; width: 220px; height: 150px; border-radius: 16px; background: var(--card); box-shadow: 0 1px 0 var(--hair), 0 18px 40px -22px #5a3a2088; overflow: hidden; }
+  .passport .lines { position: absolute; inset: 18px 18px auto; display: grid; gap: 9px; }
+  .passport .lines i { height: 2px; background: var(--paper2); border-radius: 2px; }
+  .passport .lines i:nth-child(2) { width: 70%; } .passport .lines i:nth-child(3) { width: 85%; }
+  .seal { position: absolute; right: 26px; bottom: 16px; width: 98px; height: 98px; opacity: 0; transform: scale(2.4) rotate(-30deg); animation: stamp .55s cubic-bezier(.5,0,.75,0) 1.1s forwards; color: var(--henna); }
+  @keyframes stamp { 70% { opacity: 1; transform: scale(.92) rotate(-12deg); } 100% { opacity: .92; transform: scale(1) rotate(-12deg); } }
+  .seal svg { width: 100%; height: 100%; }
+  .seal text { font-family: "Pretendard Variable"; font-size: 8.5px; font-weight: 700; letter-spacing: .25em; fill: currentColor; }
+  .seal .city { font-family: "Amiri"; font-weight: 700; font-size: 22px; letter-spacing: 0; }
+  .ink { position: absolute; right: 62px; bottom: 50px; width: 10px; height: 10px; border-radius: 50%; background: var(--henna); opacity: 0; animation: splat .8s ease-out 1.55s; }
+  @keyframes splat { 0% { opacity: .4; transform: scale(1); } 100% { opacity: 0; transform: scale(12); } }
+  .learned { margin-top: 26px; text-align: left; }
+  .learned .row { display: flex; justify-content: space-between; align-items: center; padding: 12px 2px; border-top: 1px solid var(--hair); }
+  .learned .row:last-child { border-bottom: 1px solid var(--hair); }
+  .learned .w { font-family: "Noto Naskh Arabic"; font-size: 22px; font-weight: 600; }
+  .learned .m { font-size: 13px; color: var(--ink2); }
+  .dn .btn { margin-top: auto; }
+  .dn .xp { display: flex; justify-content: center; gap: 14px; margin-top: 12px; font-size: 13px; font-weight: 600; color: var(--ink2); }
+  .dn .xp b { color: var(--henna); }
+
+  /* ====== 홈: 100일의 길 ====== */
+  .home .streak { display: inline-flex; align-items: center; gap: 5px; font-family: "Noto Serif KR"; font-weight: 700; font-size: 15px; color: var(--henna); }
+  .home .streak svg { width: 16px; height: 16px; }
+  .unitban { position: relative; margin-top: 16px; padding: 18px 20px; border-radius: 24px; background: var(--henna); color: #fbefe4; display: flex; justify-content: space-between; align-items: center; overflow: hidden; box-shadow: 0 18px 36px -22px #9c3a24cc; }
+  .unitban::after { content: ""; position: absolute; inset: 0; opacity: .12; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 64 64'%3E%3Cpath d='M32 6 L39 25 L58 32 L39 39 L32 58 L25 39 L6 32 L25 25 Z' fill='none' stroke='%23fff' stroke-width='2.4'/%3E%3C/svg%3E"); background-size: 44px; animation: drift2 30s linear infinite; }
+  @keyframes drift2 { to { background-position: 44px 44px; } }
+  .label.light { color: #f6d9c6; }
+  .unitban .un { font-family: "Noto Serif KR"; font-size: 22px; font-weight: 700; letter-spacing: -0.03em; margin-top: 4px; }
+  .unitban .uk { font-family: "Noto Naskh Arabic"; font-size: 14px; opacity: .85; margin-top: 2px; }
+  .unitban .unum { font-size: 70px; line-height: 1; opacity: .9; margin-right: 4px; }
+  .path { position: relative; flex: 1; margin: 6px -26px 0; overflow-y: auto; scrollbar-width: none; -webkit-mask-image: linear-gradient(#000 92%, transparent); mask-image: linear-gradient(#000 92%, transparent); }
+  .path svg.trail { position: absolute; left: 0; top: 0; width: 100%; pointer-events: none; }
+  .path svg.trail path { fill: none; stroke: #d9cebe; stroke-width: 7; stroke-linecap: round; }
+  .path svg.trail path.groove { stroke: #fbf6ee; stroke-width: 2; transform: translateY(1.5px); }
+  .path svg.trail path.done { stroke: var(--henna); stroke-dasharray: 2000; stroke-dashoffset: 2000; animation: draw 1.6s var(--ease) .5s forwards; stroke-width: 7; }
+  /* 노드: 두께 있는 메달. 윗면(빛) + 테두리 + 옆면(두께) + 바닥 그림자 */
+  .node { position: absolute; width: 70px; height: 70px; margin-left: -35px; border-radius: 50%; display: grid; place-items: center; opacity: 0; transform: translateY(-14px) scale(.6); animation: pop .8s var(--spring) forwards; }
+  @keyframes pop { to { opacity: 1; transform: none; } }
+  .node::after { content: ""; position: absolute; left: 8%; right: 8%; bottom: -20px; height: 14px; border-radius: 50%; background: radial-gradient(closest-side, #3b2a1a55, transparent); z-index: -2; }
+  .node .rim { position: absolute; inset: 6px; border-radius: 50%; pointer-events: none; }
+  .node .gloss { position: absolute; left: 16%; top: 9%; width: 44%; height: 26%; border-radius: 50%; background: linear-gradient(#ffffff99, #ffffff00); filter: blur(1px); pointer-events: none; }
+  .node .day { position: relative; font-family: "Noto Serif KR"; font-weight: 700; font-size: 19px; line-height: 1; text-align: center; }
+  .node .day small { display: block; font-family: "Pretendard Variable"; font-size: 8.5px; letter-spacing: .16em; font-weight: 800; margin-bottom: 3px; }
+
+  .node.done { background: radial-gradient(circle at 34% 28%, #d4704d 0%, #a8432a 46%, #7c2a17 100%);
+    box-shadow: inset 0 2px 1px #ffffff55, inset 0 -6px 10px #4a160b66, 0 1px 0 #7a2c1a, 0 8px 0 #6a2312, 0 9px 0 #4e190c; color: #fff1e4; }
+  .node.done .rim { border: 1.5px solid #ffffff33; box-shadow: inset 0 1px 2px #00000033; }
+  .node.done .ck { position: relative; width: 26px; height: 26px; filter: drop-shadow(0 1px 0 #5a1d0e); }
+
+  .node.now { width: 86px; height: 86px; margin-left: -43px; color: var(--henna);
+    background: radial-gradient(circle at 34% 26%, #fffdf8 0%, #f5ecdf 55%, #e2d4c0 100%);
+    box-shadow: 0 0 0 3.5px #c9a46a, 0 0 0 5px #8d6b3a55, inset 0 2px 1px #fff, inset 0 -7px 12px #b9a48a66, 0 10px 0 #b89a6c, 0 11px 0 #8d6b3a;
+    animation: pop .8s var(--spring) forwards, bob 3.2s ease-in-out 1.4s infinite; }
+  @keyframes bob { 50% { transform: translateY(-6px); } }
+  .node.now::after { animation: shadowbob 3.2s ease-in-out 1.4s infinite; bottom: -24px; }
+  @keyframes shadowbob { 50% { transform: scale(.8); opacity: .6; } }
+  .node.now .rim { inset: 9px; border: 1px dashed #c9a46a; animation: spin 26s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .node.now .day { font-size: 24px; text-shadow: 0 1px 0 #fff; }
+  .node.now .day small { color: #b28c55; }
+  .node.now::before { content: ""; position: absolute; inset: -12px; border-radius: 50%; border: 2px solid #c9a46a; opacity: 0; animation: halo 2.6s ease-out 1.8s infinite; }
+  @keyframes halo { 0% { transform: scale(.9); opacity: .8; } 100% { transform: scale(1.4); opacity: 0; } }
+
+  .node.lock { color: #a99c8b; background: radial-gradient(circle at 34% 28%, #f6f0e6 0%, #e7ddcf 55%, #d6c9b6 100%);
+    box-shadow: inset 0 2px 1px #ffffffcc, inset 0 -5px 9px #b8a68f55, 0 7px 0 #cdbfa9, 0 8px 0 #b6a68e; }
+  .node.lock .day { text-shadow: 0 1px 0 #fff, 0 -1px 0 #00000014; }
+  .node.lock .gloss { opacity: .7; }
+
+  .node.seal { width: 84px; height: 84px; margin-left: -42px; border-radius: 0; background: none; box-shadow: none; }
+  .node.seal::after { bottom: -14px; left: 18%; right: 18%; }
+  .node.seal svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .node.seal .day { font-size: 10px; letter-spacing: .08em; line-height: 1.15; }
+  .node.seal.done .day { color: #fff8e8; text-shadow: 0 1px 0 #7a5a2a; }
+  .node.seal.lock .day { color: #a99c8b; text-shadow: 0 1px 0 #fff; }
+  .seal-anim { animation: pop .8s var(--spring) forwards, sealspin 9s ease-in-out 2s infinite; }
+  @keyframes sealspin { 0%, 70%, 100% { rotate: 0deg; } 80% { rotate: 18deg; } 90% { rotate: -6deg; } }
+  .bubble { position: absolute; z-index: 4; width: 236px; margin-left: -118px; padding: 16px 16px 14px; border-radius: 22px; background: var(--card); box-shadow: 0 1px 0 var(--hair), 0 24px 44px -20px #3b2a1a66; opacity: 0; transform: translateY(10px) scale(.96); animation: bub .7s var(--spring) 1.5s forwards; }
+  @keyframes bub { to { opacity: 1; transform: none; } }
+  .bubble::before { content: ""; position: absolute; top: -7px; left: 50%; width: 14px; height: 14px; margin-left: -7px; background: var(--card); transform: rotate(45deg); border-radius: 3px; }
+  .bubble .t { font-family: "Noto Serif KR"; font-size: 16px; font-weight: 700; }
+  .bubble ol { list-style: none; margin: 8px 0 12px; }
+  .bubble li { font-size: 12.5px; color: var(--ink2); padding: 5px 0; border-top: 1px solid var(--hair); display: flex; gap: 8px; }
+  .bubble li span { color: var(--henna); font-family: "Noto Serif KR"; font-weight: 700; }
+  .bubble .btn { height: 46px; border-radius: 15px; font-size: 14.5px; }
+  .ubreak { position: absolute; left: 26px; right: 26px; display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .14em; }
+  .ubreak::before, .ubreak::after { content: ""; flex: 1; height: 1px; background: var(--hair); }
+
+  /* ====== 분위기: 빛, 격자 그림자, 금가루 ====== */
+  .tilt { perspective: 1400px; }
+  .tilt .phone { transition: transform .6s var(--ease); transform-style: preserve-3d; will-change: transform; }
+  .atmo { position: absolute; inset: 0; z-index: 1; pointer-events: none; overflow: hidden; }
+  .atmo .sun { position: absolute; width: 420px; height: 420px; right: -170px; top: -170px; border-radius: 50%;
+    background: radial-gradient(circle, #ffdcae 0%, #ffdcae66 35%, transparent 70%); opacity: .55; animation: sun 14s ease-in-out infinite alternate; }
+  @keyframes sun { to { transform: translate(-40px, 30px) scale(1.12); opacity: .75; } }
+  .atmo .lattice { position: absolute; inset: -60px; opacity: .085; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%235a3a20' stroke-width='3'%3E%3Cpath d='M32 6 L39 25 L58 32 L39 39 L32 58 L25 39 L6 32 L25 25 Z'/%3E%3Cpath d='M32 0V6M32 58V64M0 32H6M58 32H64M0 0L14 14M64 0L50 14M0 64L14 50M64 64L50 50'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 64px 64px;
+    -webkit-mask-image: radial-gradient(ellipse 60% 45% at 75% 18%, #000 0%, transparent 70%); mask-image: radial-gradient(ellipse 60% 45% at 75% 18%, #000 0%, transparent 70%);
+    transform: skewY(-8deg) rotate(-6deg); animation: drift 22s ease-in-out infinite alternate; }
+  @keyframes drift { to { background-position: 26px 18px; transform: skewY(-6deg) rotate(-4deg) translateX(-14px); } }
+  .atmo .dust { position: absolute; width: 3px; height: 3px; border-radius: 50%; background: #c9a46a; opacity: 0; animation: dust linear infinite; }
+  @keyframes dust { 0% { opacity: 0; transform: translate(0, 0); } 15% { opacity: .7; } 85% { opacity: .5; } 100% { opacity: 0; transform: translate(var(--dx), -160px); } }
+
+  /* 지도: 점 파동, 길 위의 빛 */
+  .map .d { animation: wave 5s ease-in-out infinite; animation-delay: var(--t); }
+  @keyframes wave { 0%, 12%, 100% { fill: #c2b19c; } 5% { fill: #b5502f; } }
+  .map .glint { fill: #fff8ef; filter: drop-shadow(0 0 4px #ffcf9a); }
+
+  /* 문장 단어가 차례로 */
+  .w-in { display: inline-block; opacity: 0; transform: translateY(10px); filter: blur(3px); animation: in .8s var(--ease) forwards; }
+
+  /* 정답·도장 금빛 별 */
+  .spark { position: absolute; width: 11px; height: 11px; margin: -5.5px 0 0 -5.5px; z-index: 6; pointer-events: none; background: #c9a046;
+    clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: spark .9s var(--ease) forwards; }
+  @keyframes spark { 0% { transform: translate(0,0) scale(.2) rotate(0); opacity: 1; } 100% { transform: translate(var(--x), var(--y)) scale(1) rotate(160deg); opacity: 0; } }
+  .ripple { position: absolute; z-index: 6; border-radius: 50%; border: 1.5px solid #c9a046; pointer-events: none; animation: ripple .8s var(--ease) forwards; }
+  @keyframes ripple { from { transform: scale(.3); opacity: .9; } to { transform: scale(1); opacity: 0; } }
+  .pick { transform-origin: center; }
+  .ob .picks .pick.sel:not(.in) { animation: lift 3.2s ease-in-out infinite; }
+  @keyframes lift { 50% { transform: translateY(-4px); box-shadow: 0 0 0 1.5px var(--henna), 0 26px 40px -20px #9c3a2499; } }
+  .ob .star { animation: slow 60s linear infinite; }
+  @keyframes slow { to { transform: rotate(360deg); } }
+  .today:not(.in) { animation: float 6s ease-in-out infinite; }
+  @keyframes float { 50% { transform: translateY(-3px); } }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="intro">
+    <div>
+      <h1>페이퍼 & 헤나 · 고급 버전</h1>
+      <p>종이 질감, 명조 제목, 아랍 서예체, 금색 선화. 홈은 DAY 1부터 DAY 100까지 이어지는 길이에요.</p>
+    </div>
+    <button class="replay" onclick="build()">모션 다시 보기 ↻</button>
+  </div>
+  <div class="phones" id="phones"></div>
+</div>
+
+<template id="t-ob">
+  <div class="status"><span>9:41</span><i></i></div>
+  <div class="screen ob">
+    <div class="ghost amiri">أهلًا</div>
+    <svg class="star" style="top:44px;left:-58px;width:150px;height:150px" viewBox="0 0 100 100"><path d="M50 2 L62 26 L88 14 L76 40 L98 50 L76 60 L88 86 L62 74 L50 98 L38 74 L12 86 L24 60 L2 50 L24 40 L12 14 L38 26 Z M50 22 L58 38 L76 32 L70 50 L76 68 L58 62 L50 78 L42 62 L24 68 L30 50 L24 32 L42 38 Z"/></svg>
+    <div class="top">
+      <p class="label in" style="--d:0">하루 세 문장 아랍어</p>
+      <h2 class="in" style="--d:1">어느 나라의 말로<br><em>떠나</em> 볼까요?</h2>
+      <p class="lead in" style="--d:2">학교에서 배운 푸스하로 시작해, 그 나라 사람들이 실제로 쓰는 말로 바꿔 말해요. 하루 세 문장씩, 백 일이면 삼백 문장이에요.</p>
+    </div>
+    <div class="picks">
+      <div class="pick in" style="--d:4"><div><p class="nm">이집트</p><p class="sub">카이로 사람처럼 · 100일 300문장</p></div><span class="ar">مصر</span></div>
+      <div class="pick sel in" style="--d:5"><div><p class="nm">요르단</p><p class="sub">암만 사람처럼 · 100일 300문장</p></div><span class="ar">الأردن</span></div>
+    </div>
+    <button class="btn in" style="--d:6">DAY 1 시작하기<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  </div>
+</template>
+
+<template id="t-home">
+  <div class="status"><span>9:41</span><i></i></div>
+  <div class="screen home">
+    <div class="bar in" style="--d:0">
+      <p class="label">요르단 방언 · 300문장</p>
+      <span class="streak"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c1 3.5-1.5 5-1.5 7.5 0 1.4 1 2.5 2.3 2.5 1.5 0 2.4-1.2 2.2-3 2.3 1.6 4 4.2 4 7a7 7 0 0 1-14 0c0-5 4.5-7.4 7-14Z"/></svg>12</span>
+    </div>
+    <div class="unitban in" style="--d:1">
+      <div><p class="label light">UNIT 3 · DAY 15–21</p><p class="un">부탁과 요청</p><p class="uk">أريد → بدّي · عايز</p></div>
+      <span class="unum amiri">٣</span>
+    </div>
+    <div class="path" id="path"></div>
+  </div>
+</template>
+
+<template id="t-ls">
+  <div class="status"><span>9:41</span><i></i></div>
+  <div class="screen ls">
+    <div class="lhead in" style="--d:0">
+      <span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span>
+      <div class="prog"><i></i></div><span class="step">7 / 15</span>
+    </div>
+    <p class="label kick in" style="--d:1">요르단 사람처럼</p>
+    <h2 class="in" style="--d:2">빈칸에 들어갈 말은?</h2>
+    <p class="ko in" style="--d:3">나 오늘은 그냥 집에서 쉬고 싶어.</p>
+    <div class="sent in" style="--d:4"><span class="slot">بدّي</span> أرتاح بالبيت اليوم وبس.</div>
+    <div class="opts">
+      <div class="opt in" style="--d:5" data-k="wrong"><span class="bg"></span><svg class="check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span class="n">1</span><span class="g">원하다 · 이집트</span><span class="w">عايز</span></div>
+      <div class="opt in" style="--d:6" data-k="right"><span class="bg"></span><svg class="check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span class="n">2</span><span class="g">원하다 · 요르단</span><span class="w">بدّي</span></div>
+      <div class="opt in" style="--d:7"><span class="bg"></span><svg class="check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span class="n">3</span><span class="g">원하다 · 푸스하</span><span class="w">أريد</span></div>
+    </div>
+    <div class="sheet"><p class="t">정답이에요</p><p>요르단에선 ‘원하다’를 <bdi class="naskh">بدّي</bdi>라고 해요. 푸스하의 <bdi class="naskh">أن</bdi>은 빠져요.</p><button class="btn">계속</button></div>
+  </div>
+</template>
+
+<template id="t-dn">
+  <div class="status"><span>9:41</span><i></i></div>
+  <div class="screen dn">
+    <p class="num in" style="--d:0">١٦</p>
+    <p class="numk in" style="--d:1">DAY SIXTEEN</p>
+    <h2 class="in" style="--d:2">16일차를 마쳤어요</h2>
+    <p class="lead in" style="--d:3">100일 중 16일, 300문장 중 48문장째예요.</p>
+    <span class="xp in" style="--d:3"><span>연속 <b>12일</b></span><span><b>+30</b> 경험치</span></span>
+    <div class="passport in" style="--d:4">
+      <div class="lines"><i></i><i></i><i></i></div>
+      <span class="ink"></span>
+      <div class="seal"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2.5"/><path id="arc" d="M50 50 m-31 0 a31 31 0 1 1 62 0" fill="none"/><text><textPath href="#arc" startOffset="50%" text-anchor="middle">JORDAN · DAY 16</textPath></text><text class="city" x="50" y="68" text-anchor="middle">١٦</text></svg></div>
+    </div>
+    <div class="learned in" style="--d:5">
+      <p class="label" style="margin-bottom:8px">오늘 익힌 요르단 표현</p>
+      <div class="row"><span class="m">원하다</span><span class="w">بدّي</span></div>
+      <div class="row"><span class="m">만약 ~라면</span><span class="w">إذا</span></div>
+      <div class="row"><span class="m">이 문장</span><span class="w">هالجملة</span></div>
+    </div>
+    <button class="btn in" style="--d:6">홈으로</button>
+  </div>
+</template>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script>
+
+// DAY 15~22 근처를 보여 주는 지그재그 길. 7일마다(단원 끝) 금색 별 도장 칸.
+const STAR = "M50 2 L62 26 L88 14 L76 40 L98 50 L76 60 L88 86 L62 74 L50 98 L38 74 L12 86 L24 60 L2 50 L24 40 L12 14 L38 26 Z";
+function dayPath(box) {
+  const W = 372, cx = W / 2, gap = 108, offs = [0, 62, 86, 62, 0, -62, -86, -62];
+  const NOW = 16, from = 14, to = 23;
+  let y = 18, html = "", pts = [], doneUntil = 0;
+  for (let d = from; d <= to; d += 1) {
+    if (d === 22) { html += `<div class="ubreak" style="top:${y - 34}px">UNIT 4 · 식당과 카페</div>`; y += 22; }
+    const x = cx + offs[d % offs.length];
+    const seal = d % 7 === 0;
+    const cls = d < NOW ? "done" : d === NOW ? "now" : "lock";
+    const delay = (d - from) * 70 + 300;
+    const sealSvg = (on) => `<svg viewBox="0 0 100 100">
+        <defs><linearGradient id="g${d}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${on ? "#f1d79a" : "#f3ece1"}"/><stop offset=".5" stop-color="${on ? "#c9a24e" : "#e2d7c7"}"/><stop offset="1" stop-color="${on ? "#9a7432" : "#cbbca6"}"/></linearGradient></defs>
+        <path transform="translate(0 7)" fill="${on ? "#7d5d27" : "#b9a991"}" d="${STAR}"/>
+        <path fill="url(#g${d})" stroke="${on ? "#fff3cf" : "#fff"}" stroke-opacity=".7" stroke-width="1.2" d="${STAR}"/>
+        <path fill="none" stroke="${on ? "#7d5d27" : "#c8baa4"}" stroke-opacity=".5" stroke-width="1" transform="translate(50 50) scale(.72) translate(-50 -50)" d="${STAR}"/></svg>`;
+    const inner = seal
+      ? `${sealSvg(d < NOW)}<span class="day">UNIT<br>${d / 7}</span>`
+      : d < NOW ? `<span class="rim"></span><span class="gloss"></span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>`
+      : `<span class="rim"></span><span class="gloss"></span><span class="day"><small>DAY</small>${d}</span>`;
+    html += `<div class="node ${cls} ${seal ? "seal seal-anim" : ""}" style="left:${x}px;top:${y}px;animation-delay:${delay}ms${seal ? `, ${delay + 2000}ms` : ""}">${inner}</div>`;
+    pts.push([x, y + (d === NOW ? 43 : seal ? 42 : 35)]);
+    if (d < NOW) doneUntil = pts.length;
+    if (d === NOW) {
+      html += `<div class="bubble" style="left:${cx}px;top:${y + 96}px"><p class="t">DAY 16 · 오늘의 세 문장</p><ol><li><span>1</span>나 오늘은 그냥 집에서 쉬고 싶어.</li><li><span>2</span>뭐 필요한 거 있으면 말해.</li><li><span>3</span>이 문장 좀 봐 줄 수 있어?</li></ol><button class="btn henna">시작하기</button></div>`;
+      y += 345;
+    } else y += gap;
+  }
+  const line = d3.line().curve(d3.curveCatmullRom.alpha(.5));
+  const H = y + 40;
+  box.style.minHeight = "0";
+  box.innerHTML = `<svg class="trail" viewBox="0 0 ${W} ${H}" style="height:${H}px"><path d="${line(pts)}"/><path class="groove" d="${line(pts)}"/><path class="done" d="${line(pts.slice(0, doneUntil + 1))}"/></svg>` + html;
+  box.scrollTop = 0;
+}
+
+function countUp(root) {
+  root.querySelectorAll("[data-count]").forEach(el => {
+    const to = +el.dataset.count, t0 = performance.now() + 900;
+    const tick = t => { const p = Math.min(1, Math.max(0, (t - t0) / 1100)); el.textContent = Math.round(to * (1 - Math.pow(1 - p, 4))); if (p < 1) requestAnimationFrame(tick); };
+    requestAnimationFrame(tick);
+  });
+}
+
+const timers = [];
+function demo(root) {
+  const slot = root.querySelector(".slot"), sheet = root.querySelector(".sheet");
+  const wrong = root.querySelector('[data-k="wrong"]'), right = root.querySelector('[data-k="right"]');
+  const at = (ms, fn) => timers.push(setTimeout(fn, ms));
+  at(2200, () => wrong.classList.add("press"));
+  at(2350, () => { wrong.classList.remove("press"); wrong.classList.add("wrong"); });
+  at(3300, () => wrong.classList.remove("wrong"));
+  at(3700, () => right.classList.add("press"));
+  at(3850, () => {
+    right.classList.remove("press"); right.classList.add("right"); slot.classList.add("filled"); root.querySelector(".opts").classList.add("reveal");
+    burst(root, right, 12);
+    burst(root, slot, 8);
+  });
+  at(4500, () => sheet.classList.add("up"));
+}
+
+// 등장 애니메이션이 끝나면 클래스를 떼서, 뒤에 붙는 다른 애니메이션(흔들림 등)과 겹치지 않게 한다
+document.addEventListener("animationend", e => {
+  if (e.animationName === "in") e.target.classList.remove("in");
+});
+
+// 요소 중심에서 금빛 별이 퍼진다
+function burst(root, el, n) {
+  const r = el.getBoundingClientRect(), p = root.getBoundingClientRect();
+  const cx = r.left - p.left + r.width / 2, cy = r.top - p.top + r.height / 2;
+  const rip = document.createElement("span");
+  const size = Math.min(r.width, 160);
+  Object.assign(rip.style, { left: cx - size / 2 + "px", top: cy - size / 2 + "px", width: size + "px", height: size + "px" });
+  rip.className = "ripple"; root.appendChild(rip);
+  for (let i = 0; i < n; i += 1) {
+    const s = document.createElement("span"), a = (i / n) * Math.PI * 2 + Math.random() * .4, d = 40 + Math.random() * 50;
+    s.className = "spark";
+    s.style.left = cx + "px"; s.style.top = cy + "px";
+    s.style.setProperty("--x", Math.cos(a) * d + "px"); s.style.setProperty("--y", Math.sin(a) * d + "px");
+    s.style.animationDelay = Math.random() * .12 + "s";
+    root.appendChild(s);
+    setTimeout(() => s.remove(), 1300);
+  }
+  setTimeout(() => rip.remove(), 1000);
+}
+
+// 빛, 격자 그림자, 금가루
+function atmosphere(ph) {
+  const a = document.createElement("div");
+  a.className = "atmo";
+  a.innerHTML = `<div class="sun"></div><div class="lattice"></div>` + Array.from({ length: 14 }, () => {
+    const dur = 9 + Math.random() * 8;
+    return `<span class="dust" style="left:${Math.random() * 100}%;top:${40 + Math.random() * 60}%;--dx:${(Math.random() - .5) * 60}px;animation-duration:${dur}s;animation-delay:-${Math.random() * dur}s"></span>`;
+  }).join("");
+  ph.prepend(a);
+}
+
+// 아랍어 문장을 단어 단위로 차례로 띄운다 (오른쪽부터)
+function wordsIn(el, base) {
+  let i = 0;
+  [...el.childNodes].forEach(node => {
+    if (node.nodeType !== 3) { node.classList.add("w-in"); node.style.animationDelay = base + i++ * 110 + "ms"; return; }
+    const frag = document.createDocumentFragment();
+    node.textContent.split(/(\s+)/).forEach(part => {
+      if (!part.trim()) { frag.append(part); return; }
+      const s = document.createElement("span"); s.className = "w-in"; s.textContent = part;
+      s.style.animationDelay = base + i++ * 110 + "ms"; frag.append(s);
+    });
+    node.replaceWith(frag);
+  });
+}
+
+// 마우스를 따라 살짝 기울어진다
+function tilt(wrap, ph) {
+  wrap.classList.add("tilt");
+  wrap.addEventListener("pointermove", e => {
+    const r = ph.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+    ph.style.transform = `rotateY(${x * 7}deg) rotateX(${-y * 7}deg)`;
+  });
+  wrap.addEventListener("pointerleave", () => { ph.style.transform = ""; });
+}
+
+function build() {
+  timers.splice(0).forEach(clearTimeout);
+  const box = document.getElementById("phones");
+  box.innerHTML = "";
+  const caps = { ob: "시작 · 방언 고르기", home: "홈 · 100일의 길", ls: "레슨 · 방언 빈칸", dn: "하루 완료 · 일차 도장" };
+  for (const kind of ["ob", "home", "ls", "dn"]) {
+    const wrap = document.createElement("div");
+    const ph = document.createElement("div");
+    ph.className = "phone";
+    ph.appendChild(document.getElementById("t-" + kind).content.cloneNode(true));
+    wrap.appendChild(ph);
+    wrap.insertAdjacentHTML("beforeend", `<p class="cap">${caps[kind]}</p>`);
+    box.appendChild(wrap);
+    atmosphere(ph);
+    tilt(wrap, ph);
+    if (kind === "home") dayPath(ph.querySelector("#path"));
+    if (kind === "ls") { const s = ph.querySelector(".sent"); s.classList.remove("in"); wordsIn(s, 600); demo(ph); }
+    if (kind === "dn") timers.push(setTimeout(() => burst(ph, ph.querySelector(".seal"), 14), 1650));
+  }
+}
+build();
+</script>
+</body>
+</html>

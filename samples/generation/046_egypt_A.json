@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ffeb0734e2374e287f459d1ec6b57f7300113dfa72ad05311d3bff3fbebffac1",
+  "idempotency_key": "d9498b5a-d4fe-4345-bdc6-36e7519195bd",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ممكن تبصلي على الجملة دي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "89810e7d-1115-4ce6-9ea6-62d0660cac03",
+  "operation": {
+    "id": "89810e7d-1115-4ce6-9ea6-62d0660cac03",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

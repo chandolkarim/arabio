@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e2c388247c0e784cfbc81ee20159de00210c7ce29d45f6e8e08966bf810b3aa3",
+  "idempotency_key": "7645111d-ce8a-47b7-865a-5def0e6fd07f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أنا آسف جدًا، سأتحقق من الأمر حالًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d3f60ab8-6d08-40c5-a56d-61e8f9df4d21",
+  "operation": {
+    "id": "d3f60ab8-6d08-40c5-a56d-61e8f9df4d21",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

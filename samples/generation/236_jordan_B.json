@@ -1,0 +1,23 @@
+{
+  "fingerprint": "565f8e89b65ff3810521c05b613b026be6a522927e9e3581c6ecc32722b92270",
+  "idempotency_key": "b63048ba-3c36-4eae-85e9-2e9d88106c0e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بالأول كان باين عليه بارد، بس طلع كتير حنون.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "4fac549e-2a31-4c10-9de4-d32006c0695c",
+  "operation": {
+    "id": "4fac549e-2a31-4c10-9de4-d32006c0695c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

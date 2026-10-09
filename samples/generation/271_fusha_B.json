@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2372e2a1f17c8bf062a21088d7ee59fedcef251e1c91b2c3edc96515851de8be",
+  "idempotency_key": "b9ec2f70-9968-4d2f-bf12-ee5e8de1fb7a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "اهدأ. سأتصل بالإسعاف فورًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c27621d5-801b-497f-a597-5ad162d2b1e0",
+  "operation": {
+    "id": "c27621d5-801b-497f-a597-5ad162d2b1e0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

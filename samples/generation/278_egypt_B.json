@@ -1,0 +1,23 @@
+{
+  "fingerprint": "becd774a8ae05aeee3b24060ff42f07f4f922fc349567527f1b1ae7ac0b311d0",
+  "idempotency_key": "96b1cc02-0bf7-47a2-a724-473a5a9dc6f0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "الشغلانة الثابتة والأسعار اللي بتغلى كل يوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "19e91a01-3f0a-40f4-ab7b-5d4cf2cd01bf",
+  "operation": {
+    "id": "19e91a01-3f0a-40f4-ab7b-5d4cf2cd01bf",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

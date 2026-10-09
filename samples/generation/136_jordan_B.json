@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5df862f83009b7e483ed30138ce655de6b0989dbbeab09871ef7d9636df307e5",
+  "idempotency_key": "f720bfe6-246a-4001-96dd-8553d8eb6d58",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "اليوم أربعطعش، يعني آخر موعد بعد بكرا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "296c02cd-739f-4e76-ae01-94de07664218",
+  "operation": {
+    "id": "296c02cd-739f-4e76-ae01-94de07664218",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

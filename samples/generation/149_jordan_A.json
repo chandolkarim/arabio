@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a584be292fa364ecb84adcc657edc1fea984910149a8191b363af58b7f24fdaa",
+  "idempotency_key": "be3eeca1-d265-4548-b910-d9564defa8ef",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شو في؟ مالك هيك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d89922b6-1408-439a-aad4-34b27b84df43",
+  "operation": {
+    "id": "d89922b6-1408-439a-aad4-34b27b84df43",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 800,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "955003cd7fc9b86a2ef9d875af8ae8080517a6614c0a5f2f6a247b8d93049b7d",
+  "idempotency_key": "dfbef718-c09b-457e-b5a4-2357c6665b9c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بتحب مزيكا إيه؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7b77c16d-1920-4ab5-9924-9c4fe0f7b820",
+  "operation": {
+    "id": "7b77c16d-1920-4ab5-9924-9c4fe0f7b820",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 750,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

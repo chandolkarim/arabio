@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d77689e08abd54f5ca789c11cf3827962c8ae9c1c1de8e0f01a40fdc6ba75569",
+  "idempotency_key": "72210a72-d2f4-4e0e-9564-1833a37f06f5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لا، مش حار أبدًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7577d059-4650-4d80-a21c-81c8716be50e",
+  "operation": {
+    "id": "7577d059-4650-4d80-a21c-81c8716be50e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

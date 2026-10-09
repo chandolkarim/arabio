@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a8952aa3c7ad13d61ba4f12f2620a5ad807b38bd2ac99313a907b966a0c43f02",
+  "idempotency_key": "f2495d87-6f09-46e4-8c04-648c0ddf13ed",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لهذا نشتري المنتجات المحلية أكثر هذه الأيام.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1eca0c9f-79ac-4d36-8c5c-269656e7e003",
+  "operation": {
+    "id": "1eca0c9f-79ac-4d36-8c5c-269656e7e003",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 207360
+  },
+  "complete": true,
+  "seconds": 4.32
+}

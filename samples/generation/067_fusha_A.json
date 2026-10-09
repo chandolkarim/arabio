@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1574c42eddaeac001e70977fcb86bf16863efd87d6fbd90c277dfc3406c7f0b0",
+  "idempotency_key": "71736937-6800-46da-b4a4-88fe0be773db",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا أتحمل الطعام الحار، هل هذا حار؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c2745a1e-2556-4ce9-a023-bd28d8ad9fa0",
+  "operation": {
+    "id": "c2745a1e-2556-4ce9-a023-bd28d8ad9fa0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

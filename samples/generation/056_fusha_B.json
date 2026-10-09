@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5d3bc83ab418d82908be24b1e249c29ff8f167605be6f487d1b9d919fbfcd179",
+  "idempotency_key": "8814fd3f-ebd4-4711-a086-0b856edb85ae",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "نعم، كنت أريد أن أذهب أيضًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "77e8dd95-46b5-4db0-9788-781866c53141",
+  "operation": {
+    "id": "77e8dd95-46b5-4db0-9788-781866c53141",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

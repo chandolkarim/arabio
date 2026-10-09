@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a61e14549620ff907d6503f68b169531112f951b5cb0d27922227281efd13fd0",
+  "idempotency_key": "95eb99b4-3057-4b0a-afbc-90f70b8cd42f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "إذا مشيت بتاخذ حوالي ربع ساعة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "89207215-c4e9-4727-9da1-62140d6fa96f",
+  "operation": {
+    "id": "89207215-c4e9-4727-9da1-62140d6fa96f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "19fda2ae8f186798ac8c927f168058aa58ca6045f8f02ae7a89554454392206f",
+  "idempotency_key": "6df05e6a-94e8-42f9-a6ca-54b7302afc84",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شو أكبر فرق بين كوريا وهون؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9f5d3486-8a94-425e-b648-48368732839a",
+  "operation": {
+    "id": "9f5d3486-8a94-425e-b648-48368732839a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "81e2fc00b82faaf41a8fef57b467c4953f33fe8dce55611bd2a34724ce150eda",
+  "idempotency_key": "96bd2b52-981d-483b-81f2-7e6a377e9eba",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ماذا كنت تفعل في مثل هذا الوقت من العام الماضي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "baabbe81-cab0-4d2d-8cc6-b3730a0ac694",
+  "operation": {
+    "id": "baabbe81-cab0-4d2d-8cc6-b3730a0ac694",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

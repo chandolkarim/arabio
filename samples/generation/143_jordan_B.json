@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ff7faf3d5100da0fa23bf6a71af71058e48c25ac368e512e24d57ad584802fc1",
+  "idempotency_key": "486f0430-e76e-46dd-a16b-f67573936e44",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "خسارة، بس ما في مشكلة. بنشوف بعض المرة الجاي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c38fc8dc-68ea-4394-9eea-a4fe8afb5e76",
+  "operation": {
+    "id": "c38fc8dc-68ea-4394-9eea-a4fe8afb5e76",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c0b74fa6c186dcbd6af3dc5d2df8402b1bb0288cd16bfb50dc4b01047d687d9b",
+  "idempotency_key": "152c6da5-9a8d-40d5-9765-ae09f2295fa5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "كلامك فيه حاجة صح، بس لازم نبص للناحية التانية كمان.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fab13fdc-e274-45b8-8a0f-9756369d1487",
+  "operation": {
+    "id": "fab13fdc-e274-45b8-8a0f-9756369d1487",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2600,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

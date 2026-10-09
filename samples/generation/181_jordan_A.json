@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1bb88fa629c4c0fa4d3f0ed301c29d24dbc6d5abf6305f16a9fd88de6ca12593",
+  "idempotency_key": "9ed44a30-ec91-46b6-949c-ec9b40738346",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لا تقلق كتير. كل إشي رح يكون تمام.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "621185ff-e9fd-43e7-a4db-b5a7c760ba91",
+  "operation": {
+    "id": "621185ff-e9fd-43e7-a4db-b5a7c760ba91",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

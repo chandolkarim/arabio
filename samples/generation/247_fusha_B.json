@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3271bd405ad630a0a6cf8dffd238fd24fbb4c949ec87ab614c45cd795d6ceba1",
+  "idempotency_key": "60d1bd9b-6484-478b-9774-601fc889d2ff",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "وأنا أيضًا كدت أبكي في ذلك المشهد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2a5cd197-60d4-490f-8542-df138a210e0a",
+  "operation": {
+    "id": "2a5cd197-60d4-490f-8542-df138a210e0a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

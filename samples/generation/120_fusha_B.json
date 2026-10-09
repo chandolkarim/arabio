@@ -1,0 +1,23 @@
+{
+  "fingerprint": "fd34afff822d3874fda8222872813fb1c7cff33d3d124c6ac87c8657c39a1097",
+  "idempotency_key": "3ccdd346-bdb5-4f3e-8ae4-e6d3a8f7c1c1",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أنا ذاهب في ذلك الاتجاه أيضًا، اتبعني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "175034af-fb9d-4971-8288-0e2ca830449c",
+  "operation": {
+    "id": "175034af-fb9d-4971-8288-0e2ca830449c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "132935c849878d501b5292f44b67a914887eebf4b68472c3aae7cf486c1a4b36",
+  "idempotency_key": "646ed0d2-1e16-444c-aec8-a5b9543ad451",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا، شكرًا. يكفيني اهتمامك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "547c7784-cde4-4760-80e9-8548e81e9474",
+  "operation": {
+    "id": "547c7784-cde4-4760-80e9-8548e81e9474",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

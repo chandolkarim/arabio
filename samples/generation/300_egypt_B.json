@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f456dfea8ad0fc544b428ad6bd7e5f13c826db6cc58cc7292a27686f2632feb3",
+  "idempotency_key": "81f12dc4-aa08-4435-898f-9fb4377a5f0d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ماشي، اتمرن كويس لحد ساعتها!",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2d6a0dea-185b-402e-a619-436699f22cc0",
+  "operation": {
+    "id": "2d6a0dea-185b-402e-a619-436699f22cc0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

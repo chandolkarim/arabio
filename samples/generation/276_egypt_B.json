@@ -1,0 +1,23 @@
+{
+  "fingerprint": "74781702567a5f1617dd55f81d52b19cc069fca164ac1e95313e8a9767397807",
+  "idempotency_key": "d2eda506-dbbb-4bed-aa8e-67176a43340e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ده لسه حاجة صعب نتخيلها، على الأقل في اللي حواليا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "03a7254e-31ba-42bc-88ac-65e42a9db3f8",
+  "operation": {
+    "id": "03a7254e-31ba-42bc-88ac-65e42a9db3f8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2500,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

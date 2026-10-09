@@ -1,0 +1,23 @@
+{
+  "fingerprint": "44cb508213d033fbd0735d2be8953327cd1dc3611cf008c31aa5fbb378fa0bb2",
+  "idempotency_key": "ee2df2cc-ab83-42fe-b83e-fd278f281550",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بتقدر تحمل لي هالشنطة شوي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "86e9bd15-db01-4971-b69e-915b19a137b4",
+  "operation": {
+    "id": "86e9bd15-db01-4971-b69e-915b19a137b4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

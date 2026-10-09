@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4111d7a2c9b954bacbdbc0ba11b829f567443f1159357db42021db45be314664",
+  "idempotency_key": "e9b490fc-33ee-42c5-bed9-6dc5133c634b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "كويس، الحمد لله. وإنت عامل إيه؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8decfb90-4ef8-481b-a9f7-f724aa5cc79f",
+  "operation": {
+    "id": "8decfb90-4ef8-481b-a9f7-f724aa5cc79f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

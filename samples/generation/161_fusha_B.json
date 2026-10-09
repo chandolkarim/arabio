@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0b0493a3b2db50d62dd44d6211f55956d0272980a7aefc7bd57d6ae4990d3e4d",
+  "idempotency_key": "3b67443c-bffd-4b5a-ac17-bf729c7bf244",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا بد أن تزور المدينة القديمة، الأجواء مختلفة تمامًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "651a0b61-b7ee-49d5-aaf4-331a5467b0bd",
+  "operation": {
+    "id": "651a0b61-b7ee-49d5-aaf4-331a5467b0bd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2650,
+    "completion_bytes": 207360
+  },
+  "complete": true,
+  "seconds": 4.32
+}

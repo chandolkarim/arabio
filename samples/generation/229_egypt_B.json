@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0b610802801ad3a0855f9b27e90f44ed43321f50bd6c7d5502ff7fddf132f0d8",
+  "idempotency_key": "90873aaf-72c6-43b5-950b-8bf67bca4410",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ده العادي بين الصحاب.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b6b8fc50-bfb2-4367-ad81-9b56dea67403",
+  "operation": {
+    "id": "b6b8fc50-bfb2-4367-ad81-9b56dea67403",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

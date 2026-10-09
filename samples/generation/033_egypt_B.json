@@ -1,0 +1,23 @@
+{
+  "fingerprint": "115bb1af65238b15e9d979a4b79560cfb679674ae62a5378d2639f30b83d4cfd",
+  "idempotency_key": "cea8aac6-3faa-45a0-8717-7d03a6a76900",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ساكن مع صاحبي جنب الجامعة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ed486911-5a8f-47e5-8d24-ba99fab0a560",
+  "operation": {
+    "id": "ed486911-5a8f-47e5-8d24-ba99fab0a560",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

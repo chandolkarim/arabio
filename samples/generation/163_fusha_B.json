@@ -1,0 +1,23 @@
+{
+  "fingerprint": "61053f5e719a36308bca789c79dc78140ba75b755ab1ec8563d1634212e37104",
+  "idempotency_key": "bfdbab6c-c52d-48c0-996e-14a2fccbc1ee",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لأنها كلمة عامية، فلا تجدها عادةً في القاموس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1f063a6b-d903-4341-b11d-a50bb5fbe3f3",
+  "operation": {
+    "id": "1f063a6b-d903-4341-b11d-a50bb5fbe3f3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

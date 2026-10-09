@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d9c08621c2e64492fde756f66281756430c85f6adf4fbcc20f23f31162a03945",
+  "idempotency_key": "77927f71-5848-4241-8659-2c790744444a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أريد أن أرتاح في البيت اليوم فقط.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "112f2a46-e604-4123-8093-872d80d1cd57",
+  "operation": {
+    "id": "112f2a46-e604-4123-8093-872d80d1cd57",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

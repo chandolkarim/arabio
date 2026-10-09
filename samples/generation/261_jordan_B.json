@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d001a7ebac789e1316fb99bb8318e100acd5517518157c2e7541c84e41b248d2",
+  "idempotency_key": "1c45ddee-8164-41bb-a8e8-0fe6348f9fa6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "رح أحكي معهم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1c8f2c08-5adc-4e96-891e-0707c4935002",
+  "operation": {
+    "id": "1c8f2c08-5adc-4e96-891e-0707c4935002",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 650,
+    "completion_bytes": 53760
+  },
+  "complete": true,
+  "seconds": 1.12
+}

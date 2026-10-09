@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f691c478dec7c64d93541e3bb07bfabfeb9f7e9e34b937c6445551e80a756120",
+  "idempotency_key": "433407df-e7d8-4dec-92ca-e1c3bce760e4",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "في طريقي إلى هنا قبل قليل، التقيت صدفة بصديق قديم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d06d5154-f4c0-47e3-adb7-5b946c33eb1f",
+  "operation": {
+    "id": "d06d5154-f4c0-47e3-adb7-5b946c33eb1f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2500,
+    "completion_bytes": 222720
+  },
+  "complete": true,
+  "seconds": 4.64
+}

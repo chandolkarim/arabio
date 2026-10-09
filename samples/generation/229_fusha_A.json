@@ -1,0 +1,23 @@
+{
+  "fingerprint": "85c6f4c74a6a2fd9d021cc653b56ddf6473ed7d6590a8ba2ca1add2b69291797",
+  "idempotency_key": "b10c01c4-7d90-4217-b121-14510208f5f3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لو لم تساعدني حينها، لكنت وقعت في مشكلة كبيرة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "20a99cae-37fc-4460-b546-4636c1d3dd49",
+  "operation": {
+    "id": "20a99cae-37fc-4460-b546-4636c1d3dd49",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7bfd478ea342caf7ffde2151e8d2549b6187413d155c0e9de9b7f53e4f583914",
+  "idempotency_key": "708b403e-5d41-45b5-a280-e12a3d4b99ec",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "عايز أشتغل في شركة كورية في الشرق الأوسط.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "241271c0-c675-4ca9-9cfc-d9ec938835b6",
+  "operation": {
+    "id": "241271c0-c675-4ca9-9cfc-d9ec938835b6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

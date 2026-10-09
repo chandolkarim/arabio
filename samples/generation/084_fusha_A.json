@@ -1,0 +1,23 @@
+{
+  "fingerprint": "66b8d0895b7c1b2f88207200975189353bf362975921291ba8acb522824b2684",
+  "idempotency_key": "deb89c78-b034-45ec-999c-2b7c169e78f9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "شكرًا، كان الطعام رائعًا. سأعود مرة أخرى.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2b02cf84-db6b-4d9a-b9d9-1b2de6f712cd",
+  "operation": {
+    "id": "2b02cf84-db6b-4d9a-b9d9-1b2de6f712cd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

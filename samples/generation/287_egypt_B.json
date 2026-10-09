@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d93ee49529de145b1ffe0776d96d3bcb4baba14e5f9772f00a651aa741b31d52",
+  "idempotency_key": "d6d941cd-43c7-4556-a817-92a2506d5b91",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "وبسببه صورة كوريا بقت أحلى بكتير.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "27f1c9cc-f5fa-465e-a38d-a3b7246dd5a4",
+  "operation": {
+    "id": "27f1c9cc-f5fa-465e-a38d-a3b7246dd5a4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "80f9b23e6a35fbc45d230b0c3677af9a23219f539190cc92410ae163b5d09cd1",
+  "idempotency_key": "d9f981bf-ae38-4b39-b2b7-1d8f5ba01e05",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "إذا وصلت إلى ذلك فقد أصبحت من أهل البلد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "48e2e0ab-c725-4952-ac03-bc30d803b32b",
+  "operation": {
+    "id": "48e2e0ab-c725-4952-ac03-bc30d803b32b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

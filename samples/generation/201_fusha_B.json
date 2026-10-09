@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5f5666be9f7e48856ee7532e000905d18bc3adf67cd6a883d027ac42282601db",
+  "idempotency_key": "6bf83a69-6f59-49f0-a65a-0a230798e555",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ربما سأعمل في دبي أو عمّان.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "57187ff5-f406-43ad-80d9-e40bcefe4509",
+  "operation": {
+    "id": "57187ff5-f406-43ad-80d9-e40bcefe4509",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e9a7d247ba1c6a7a5ec4a8912d5d2c99fe8628094c77223bf202f1298d7325ea",
+  "idempotency_key": "fa37492a-fea5-4dfb-9e02-33d6a31c5ce0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "كيف كانت العطلة؟ انبسطت؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "679fe00b-3cb0-4f32-9c98-a0bcd5961f7c",
+  "operation": {
+    "id": "679fe00b-3cb0-4f32-9c98-a0bcd5961f7c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

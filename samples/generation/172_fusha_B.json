@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7b5a2a00094abcdf03aa942113c197ee92ce866f91d09638e3510235c6e7effa",
+  "idempotency_key": "9143c94b-58d8-49f7-a7c6-2a1f75e96cc6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "في الحقيقة لا أحبه كثيرًا، فهو دسم جدًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d1a55584-1ff2-416f-a095-bd801873f8af",
+  "operation": {
+    "id": "d1a55584-1ff2-416f-a095-bd801873f8af",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

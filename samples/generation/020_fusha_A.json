@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3f15f092df4dce5eba5367e12700c854d0693bd7b6ffc0dce2d742da3f9674e7",
+  "idempotency_key": "96cb1ee5-fb1d-45a9-a7f3-7521f328515d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "عيد مبارك! هل تقضي العيد بشكل جميل؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "4ac4c165-9c18-4a17-8c9c-b9c0a6d4bf11",
+  "operation": {
+    "id": "4ac4c165-9c18-4a17-8c9c-b9c0a6d4bf11",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

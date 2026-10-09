@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e5e3e4c674c0735a765fed955d99c09a6af3220b8806053487a5c7834fbe3370",
+  "idempotency_key": "aff619d0-1904-4230-b8e0-60cf2e9b4ff3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "والداي وأخت صغيرة واحدة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1d376ee4-1f90-4664-aaa6-a4901ff92498",
+  "operation": {
+    "id": "1d376ee4-1f90-4664-aaa6-a4901ff92498",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

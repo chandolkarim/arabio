@@ -1,0 +1,23 @@
+{
+  "fingerprint": "610a1d98c4140ff7d89b4cfe6cf15cf59f3be57118618838526b09999703e820",
+  "idempotency_key": "f4ecfcd2-5e13-4529-a921-d7276cc2a9a9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لف يمين عند الإشارة الجاي لو سمحت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "bbf7ef71-32b4-4a52-ad57-e28425472ea5",
+  "operation": {
+    "id": "bbf7ef71-32b4-4a52-ad57-e28425472ea5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

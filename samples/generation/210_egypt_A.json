@@ -1,0 +1,23 @@
+{
+  "fingerprint": "cae5e370c4566f0a4b8c7353132c7e8dbd0744b8cd31546ad644c62cabd4577f",
+  "idempotency_key": "57a68b4a-1111-4470-b85c-2c3806e39c86",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "إنت أكيد هتندم على القرار ده بعدين.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5f5c9e91-3934-486d-9c57-8a331e3c1464",
+  "operation": {
+    "id": "5f5c9e91-3934-486d-9c57-8a331e3c1464",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

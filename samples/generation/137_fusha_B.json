@@ -1,0 +1,23 @@
+{
+  "fingerprint": "710dd4c04bc33f9a22e7cf47d7e9fa251c6a981d9cab5b0bcce92ea3b75f4c00",
+  "idempotency_key": "5d4e1e45-2452-4ae1-a9c9-ffb5a016f568",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "في حيّنا، معظمها تفتح بعد الظهر عندما تنتهي الصلاة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fb82c139-b226-4ea0-b9f5-82b80c9eacdc",
+  "operation": {
+    "id": "fb82c139-b226-4ea0-b9f5-82b80c9eacdc",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2550,
+    "completion_bytes": 207360
+  },
+  "complete": true,
+  "seconds": 4.32
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8a63346c1159c542b3021a78f5aebd30136eb72ab8263e2bffa725d708f0c726",
+  "idempotency_key": "12f51607-3273-4b53-bedf-1f00a8e22ea5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "عادةً ستة أشهر، لكن للطلاب يمكن ثلاثة أشهر أيضًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9769732d-3b24-4a42-b1a1-9c78076eec49",
+  "operation": {
+    "id": "9769732d-3b24-4a42-b1a1-9c78076eec49",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2450,
+    "completion_bytes": 222720
+  },
+  "complete": true,
+  "seconds": 4.64
+}

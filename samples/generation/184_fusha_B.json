@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e1b4fc1c398df5a8d429be28a65ae4fcecced5c8fd4aaafcb5b3dc25bc5959d4",
+  "idempotency_key": "777ab47f-019d-467c-948d-7ee7a60a8eaf",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "يا للأسف. احضر في المرة القادمة بالتأكيد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ca637500-89b0-49e4-a32d-dd5ae88c3735",
+  "operation": {
+    "id": "ca637500-89b0-49e4-a32d-dd5ae88c3735",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

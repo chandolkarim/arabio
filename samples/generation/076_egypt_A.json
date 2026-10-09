@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5e892205f6994544a95ecc96f09f699f341f1c2451cba643715e71b7f302924e",
+  "idempotency_key": "efdf703e-04ee-4b71-9ecd-4391929a8052",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "الأكل حلو أوي. تسلم إيدك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a85e8eb4-9122-44a0-b354-f9a3a2ed0ae0",
+  "operation": {
+    "id": "a85e8eb4-9122-44a0-b354-f9a3a2ed0ae0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

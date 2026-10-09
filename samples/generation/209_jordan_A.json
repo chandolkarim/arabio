@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7b6b684429c1a8b9fc8b68bc9675ce5d96199746b54778e92a5fa61455bee952",
+  "idempotency_key": "780b204b-8a83-423d-abf8-187871010502",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "قبل ما يخلص الفصل رح أصير أعرف أمزح باللهجة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0c30ca60-a629-4d65-a9ce-cf4f19c11652",
+  "operation": {
+    "id": "0c30ca60-a629-4d65-a9ce-cf4f19c11652",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

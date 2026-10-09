@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0ae2afdbcad57011dc344bd48848f26ee5231f0d6818f9618b321779a26998e8",
+  "idempotency_key": "c03c5514-a64f-4833-a83a-1554010ff1b8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "سألقي نظرة على محلات أخرى ثم أعود.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "502687a9-080d-48ca-af29-e2d42122d80b",
+  "operation": {
+    "id": "502687a9-080d-48ca-af29-e2d42122d80b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

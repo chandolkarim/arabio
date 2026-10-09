@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4a74848d0b363202e6149e00a73c583a0e9d76cc394cbd38c4b1d24ac00d7b95",
+  "idempotency_key": "97f4ac2f-767d-4549-89d4-4f39b8dcf466",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ممكن أقعد هون؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "77ed5e49-a9eb-4696-a3cf-0d604edbab48",
+  "operation": {
+    "id": "77ed5e49-a9eb-4696-a3cf-0d604edbab48",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 700,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

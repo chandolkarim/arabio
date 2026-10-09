@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ae5861901c50135e31f63e740f19e08798a4aebdf926c528d5976e7c3978e2fb",
+  "idempotency_key": "e7b08b5e-2132-4a95-a3ee-60d0696e91b7",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بس برضه لازم ترتاح في الويك إند.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ad67b5ac-79cf-48cc-b97a-bc8a8f7761fe",
+  "operation": {
+    "id": "ad67b5ac-79cf-48cc-b97a-bc8a8f7761fe",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

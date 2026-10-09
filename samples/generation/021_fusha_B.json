@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d84382c83efcf9e548466ed479b8f3f020b7254bd10a445f70520a6ea22c2e05",
+  "idempotency_key": "5708b984-eabd-4381-87ff-0af17c66cb20",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "شكرًا، سعدتُ جدًا بحضورك الحفل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8747fbc0-bc0e-4b5b-a03a-e46209efcae5",
+  "operation": {
+    "id": "8747fbc0-bc0e-4b5b-a03a-e46209efcae5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

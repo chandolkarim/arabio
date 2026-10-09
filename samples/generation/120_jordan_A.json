@@ -1,0 +1,23 @@
+{
+  "fingerprint": "eb6093646adfcf4cede3a516ab9a9cbd44a135c2aa4ff1d293eb52fe22d03d03",
+  "idempotency_key": "aefa5fa8-1b07-44b5-8c41-208f0313b4f4",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بتقدر تيجي معي لهناك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b8247860-8acb-417b-96ef-2dcb8dd9db92",
+  "operation": {
+    "id": "b8247860-8acb-417b-96ef-2dcb8dd9db92",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

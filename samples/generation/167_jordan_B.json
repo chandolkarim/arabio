@@ -1,0 +1,23 @@
+{
+  "fingerprint": "52c4071742d616356c4f3a5445cb33b07fba0b0e999c2909452869de3ae968f7",
+  "idempotency_key": "ed039a4d-d4a1-4382-a5fc-153903e81c12",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "إني أفهم اللهجة أصعب بكتير مما توقعت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "27b4cc2e-0f6b-461e-bb04-d301a83380b4",
+  "operation": {
+    "id": "27b4cc2e-0f6b-461e-bb04-d301a83380b4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

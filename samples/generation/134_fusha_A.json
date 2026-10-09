@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f2610fdcfed6380985be04b458c6add6f286ab2ab4d4943004df6383d8343639",
+  "idempotency_key": "ab7e11c5-b8bd-42e6-898b-c0a000983c32",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل وصلتَ بالفعل؟ أنا لم أخرج بعد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "32466b96-8703-4a30-9a13-8f74f11eac56",
+  "operation": {
+    "id": "32466b96-8703-4a30-9a13-8f74f11eac56",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

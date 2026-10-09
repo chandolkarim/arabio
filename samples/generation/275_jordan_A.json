@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a335c6a95081d67d30dff7e5183e245be2f6fbbe157d9ab3fcc2c07722a5e7de",
+  "idempotency_key": "6dc8466c-d067-45a0-aca9-5027d90fba98",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "هون مين اللي بدفع تكاليف الجيزة عادةً؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "067e4910-f8a5-473f-b0b7-64313c5ff136",
+  "operation": {
+    "id": "067e4910-f8a5-473f-b0b7-64313c5ff136",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4ae9715c32ff0ea41bbb1f2f22b614c48698e355bdef168c96c4fd3151693314",
+  "idempotency_key": "36721f78-5f46-42a7-a17b-171a1a0bb0cc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "كويس إنك قلتلي. هكتبلك دوا تاني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "302b8726-ab9b-4299-b03b-c8cadf5245a4",
+  "operation": {
+    "id": "302b8726-ab9b-4299-b03b-c8cadf5245a4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

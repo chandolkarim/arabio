@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e265af8244f950b9e0340560b3868211967d65a8e6595f3a83995e67b358d8a7",
+  "idempotency_key": "e53de3a7-3eff-450c-80c0-37fc3c5770f2",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "إيه أكتر لحظة مش هتنساها من الوقت اللي قضيته هنا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "98d1773a-21e2-43f8-8f37-d7cc9c163144",
+  "operation": {
+    "id": "98d1773a-21e2-43f8-8f37-d7cc9c163144",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2450,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "57f57b9801b280bfa6feb93b673b204df2d97ff29e404efb07528114c339ceb1",
+  "idempotency_key": "6c0bbab8-1db2-4f0a-8d62-01873bb29b92",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "عملت إيه امبارح؟ ما عرفتش أوصلك طول اليوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "45d184d1-6858-467d-b4d3-ee94ee0a01eb",
+  "operation": {
+    "id": "45d184d1-6858-467d-b4d3-ee94ee0a01eb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

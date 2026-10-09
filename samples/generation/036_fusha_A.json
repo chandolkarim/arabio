@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4c5ef6c58bcbe24982946a823a13f5c5ca3503931bade00ab452eeb92e200499",
+  "idempotency_key": "aac3deaa-a633-4e38-80f2-b5812a8af9b7",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ما أكلتك العربية المفضلة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "745928de-ce0f-415d-8c9f-ba1e29661e52",
+  "operation": {
+    "id": "745928de-ce0f-415d-8c9f-ba1e29661e52",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

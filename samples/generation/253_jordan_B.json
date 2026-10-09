@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e3c5873b5ff1864994d5342df272772807c5f7a48583e39bed369430333e12d5",
+  "idempotency_key": "f84f380e-3b64-41a6-bdba-0153ba32284b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، ضايل غرفة وحدة. إيمتى بتقدر تيجي تشوفها؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c0f5e2d4-c8cf-46a2-9c90-a899735ee203",
+  "operation": {
+    "id": "c0f5e2d4-c8cf-46a2-9c90-a899735ee203",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

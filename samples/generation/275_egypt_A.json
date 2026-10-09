@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b50b22d22b3be6e1cf024564ae4a42d698baa08ea3b1f8c66b56e2215973a30f",
+  "idempotency_key": "e88ee61c-6005-490f-842c-21bd2313cf93",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "هنا مين اللي بيدفع تكاليف الجواز عادةً؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5978ab9f-10be-4949-a943-41ea25f45621",
+  "operation": {
+    "id": "5978ab9f-10be-4949-a943-41ea25f45621",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

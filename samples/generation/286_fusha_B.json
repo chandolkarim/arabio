@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9d612cf0a07217b53b98d99271ddba98d2a3a20126302faa89c175623dfbbd0c",
+  "idempotency_key": "061e85b3-a5b9-43e5-9414-f89c24f76065",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "يقال إن قصص العائلة والأدب فيها يتناسبان مع الثقافة هنا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e986c2eb-e2aa-40f9-8e9b-48e0d150fa40",
+  "operation": {
+    "id": "e986c2eb-e2aa-40f9-8e9b-48e0d150fa40",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2800,
+    "completion_bytes": 215040
+  },
+  "complete": true,
+  "seconds": 4.48
+}

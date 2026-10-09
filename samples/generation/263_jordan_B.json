@@ -1,0 +1,23 @@
+{
+  "fingerprint": "733e9837c70511833b9007e1c734af57e0f94a7b906ba7d84eaf89b89898f8a0",
+  "idempotency_key": "876b6f9c-5c80-4cf3-8082-d97fc3e3b0f1",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "متذكر شو أكلت مبارح؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "db8114fa-5a98-4967-a5bf-dede6f79998a",
+  "operation": {
+    "id": "db8114fa-5a98-4967-a5bf-dede6f79998a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

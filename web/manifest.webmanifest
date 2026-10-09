@@ -1,0 +1,9 @@
+{
+  "name": "아라비오",
+  "short_name": "아라비오",
+  "lang": "ko",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3ede3",
+  "theme_color": "#9c3a24"
+}

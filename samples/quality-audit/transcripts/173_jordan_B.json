@@ -1,0 +1,87 @@
+{
+  "name": "173_jordan_B",
+  "day": 58,
+  "text": "لا، بمزح. مش صحيح.",
+  "variant": "jordan",
+  "side": "B",
+  "duration": 2.88,
+  "speech_span": 2.38,
+  "voiced": 1.42,
+  "chars": 12,
+  "dbfs": -26.8,
+  "peak": 0.4554,
+  "ratio": 0.19833333333333333,
+  "leading": 0.1,
+  "trailing": 0.4,
+  "clip": 0.0,
+  "length_factor": 2.34,
+  "volume_delta": -4.1,
+  "flags": [
+    "long_speech"
+  ],
+  "sha256": "fefdfc05b10019ed3b57bf2c2b686cb42b37f7c730c6176c0582a57db75fcb99",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "transcript": "لا بمزح نعم الصحيح نعم",
+  "match": 0.733,
+  "recognized_length_factor": 1.5,
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 1.0,
+      "text": " لا بمزح",
+      "tokens": [
+        50365,
+        20193,
+        4724,
+        2304,
+        11622,
+        5016,
+        50415
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.571149206161499,
+      "compression_ratio": 0.9302325581395349,
+      "no_speech_prob": 1.522887371763204e-10
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 1.0,
+      "end": 2.0,
+      "text": " نعم الصحيح",
+      "tokens": [
+        50415,
+        8717,
+        25957,
+        31767,
+        5016,
+        1829,
+        5016,
+        50465
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.571149206161499,
+      "compression_ratio": 0.9302325581395349,
+      "no_speech_prob": 1.522887371763204e-10
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 2.0,
+      "end": 3.0,
+      "text": " نعم",
+      "tokens": [
+        50465,
+        8717,
+        25957,
+        50515
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.571149206161499,
+      "compression_ratio": 0.9302325581395349,
+      "no_speech_prob": 1.522887371763204e-10
+    }
+  ]
+}

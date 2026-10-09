@@ -1,0 +1,23 @@
+{
+  "fingerprint": "fcfe44d4f7122c1f8d6b1e300a45928b75073173bdd124a3432c6ebf7b002d60",
+  "idempotency_key": "a074748b-53b7-42b2-a63f-1e2a70e3c0df",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "في كوريا الناس اللي مش بيتجوزوا بقوا كتير.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1d872971-fd9b-4d32-b13f-5e1211b8aa17",
+  "operation": {
+    "id": "1d872971-fd9b-4d32-b13f-5e1211b8aa17",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

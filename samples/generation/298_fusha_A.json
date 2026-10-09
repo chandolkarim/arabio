@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2dce512bead7b34cd95ef7b42665e9480f69079d5c70746c241e1468e5a0409a",
+  "idempotency_key": "b9dcf3d9-8ac1-455b-8983-0497db1635d8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "إذا جئت إلى كوريا فاتصل بي بالتأكيد. هذه المرة سأكون مرشدك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c44296e7-9325-43e1-b81f-051fe451a26b",
+  "operation": {
+    "id": "c44296e7-9325-43e1-b81f-051fe451a26b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2950,
+    "completion_bytes": 268800
+  },
+  "complete": true,
+  "seconds": 5.6
+}

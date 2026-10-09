@@ -1,0 +1,23 @@
+{
+  "fingerprint": "50f72aa5cd2c02555b645c42d597bebcd39aa156044479dbef3a8f329fe67f90",
+  "idempotency_key": "503ece0c-6d09-4ed7-b135-b1f950418b35",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كيف تراه كشخص؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "50adab3b-8987-4428-88e0-d25be97d3c58",
+  "operation": {
+    "id": "50adab3b-8987-4428-88e0-d25be97d3c58",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 700,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

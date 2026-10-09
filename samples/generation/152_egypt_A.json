@@ -1,0 +1,23 @@
+{
+  "fingerprint": "90efa981766939bce6e6ea9339991e11c9f5b3effaca7d5dc9356ae4b75db16e",
+  "idempotency_key": "1c3991db-09a4-474d-9d0e-cbf4dd9d6c3b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بتتعلم العامية بجد كده ليه؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1bbe89e4-82a5-40b3-8b52-96cad9f5be4a",
+  "operation": {
+    "id": "1bbe89e4-82a5-40b3-8b52-96cad9f5be4a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

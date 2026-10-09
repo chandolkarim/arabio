@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4517d046b9793d80f6212ce796afc4ebacbe29296877fd950744d6c1ea25e03e",
+  "idempotency_key": "3cc0dcf7-bf73-432f-92ce-e2890e614b66",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ما معنى هذه الكلمة؟ لا توجد في القاموس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "79ae8e6d-3527-4c7f-8037-962cf330854e",
+  "operation": {
+    "id": "79ae8e6d-3527-4c7f-8037-962cf330854e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

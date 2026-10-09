@@ -1,0 +1,23 @@
+{
+  "fingerprint": "472d89b79a649cd0704f3f15be2ae25dc95206ab69ce07094e6da7d2744a2601",
+  "idempotency_key": "027497a6-a701-4afb-ba51-3bca6f5e35d9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "المي مقطوعة من مبارح بالليل. إيمتى رح تصلحوها؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "92c5271b-fcd7-4537-92d6-64502bc8d0e9",
+  "operation": {
+    "id": "92c5271b-fcd7-4537-92d6-64502bc8d0e9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

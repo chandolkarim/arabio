@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8fedfd6b20df3df01f35816c8d7832e78ce92f8feffd826c7b53cfc3a37a9888",
+  "idempotency_key": "9d91da62-4b18-481e-bd8a-71c87e52baee",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أظن أن محفظتي سُرقت، أين يجب أن أبلّغ؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ad38760d-2acc-4aff-9e62-a45867d02e13",
+  "operation": {
+    "id": "ad38760d-2acc-4aff-9e62-a45867d02e13",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

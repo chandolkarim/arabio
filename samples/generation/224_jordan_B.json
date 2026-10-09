@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7ec5e7e5ba07ad978395798a48edfe34a78825cd36173bf4e2c539d79e2d2753",
+  "idempotency_key": "bd7e7364-7b4c-4c29-8cf2-00aada407d16",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "اللي صار صار، لا تشغل بالك كتير.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a5465027-6b5f-4a2f-9a87-67790ea81b9b",
+  "operation": {
+    "id": "a5465027-6b5f-4a2f-9a87-67790ea81b9b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6eabb5311945495b7f44a070fb695f2133e14295b66118b3edaa0a257e2f70bf",
+  "idempotency_key": "85f92047-aced-44fa-bf63-b7c3b9246e8a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "مع المحاضرات حوالي خمس ساعات باليوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "14cfba7f-b649-4129-926c-a4ffbab49ada",
+  "operation": {
+    "id": "14cfba7f-b649-4129-926c-a4ffbab49ada",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

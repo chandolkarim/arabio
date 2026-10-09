@@ -1,0 +1,23 @@
+{
+  "fingerprint": "38ac03ce9973a2b8f099ba3698cca8ab51851bc57f32f3f5ad2f6179092a6d8b",
+  "idempotency_key": "8dc77628-27f9-4338-b55e-4216f5506030",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هذا حساء اسمه الملوخية، يؤكل مع الأرز.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d8b06ea9-d184-4669-8d0f-6e655dff6e58",
+  "operation": {
+    "id": "d8b06ea9-d184-4669-8d0f-6e655dff6e58",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

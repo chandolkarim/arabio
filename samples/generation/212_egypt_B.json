@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2850f3a351e9baea127a0e07c5a19dd2fa059df66e3d2f7124fa4d0cd0a9864a",
+  "idempotency_key": "ed5ae910-1450-4575-9752-ad66461fe620",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "اتلخبطت عشان ما فهمتش ولا كلمة من سواق التاكسي في المطار.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5c790019-e218-4824-a9f4-178cd48e66b3",
+  "operation": {
+    "id": "5c790019-e218-4824-a9f4-178cd48e66b3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2850,
+    "completion_bytes": 268800
+  },
+  "complete": true,
+  "seconds": 5.6
+}

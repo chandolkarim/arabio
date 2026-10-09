@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a712d11ba88599ef27ad4df3a9ec56e8b5b42d1afe80866c8a2ef54fdcb68add",
+  "idempotency_key": "983e45b2-63c6-4547-9deb-bf459883f0ff",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لسه مكمّل شهر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "70a0205a-dad1-4351-babe-d66f80aea800",
+  "operation": {
+    "id": "70a0205a-dad1-4351-babe-d66f80aea800",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 700,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

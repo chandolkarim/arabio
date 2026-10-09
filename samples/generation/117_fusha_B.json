@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2f1bda63ff04a819c360bf0be887faf1c35d41e9d92edfedfe8913fb08f612c5",
+  "idempotency_key": "0515df2f-db27-475e-9b16-c78f5865dcc0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "تدفعها للسائق مباشرة داخل الحافلة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e54f8f1b-596b-4dee-8a8a-cb09cd920a48",
+  "operation": {
+    "id": "e54f8f1b-596b-4dee-8a8a-cb09cd920a48",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

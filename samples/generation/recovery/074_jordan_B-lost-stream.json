@@ -1,0 +1,15 @@
+{
+  "fingerprint": "cd6ec8cb1f55e5cdc9aaa8437715d0cb30cd0bd417c1579590573c617ed3742c",
+  "idempotency_key": "3a06661f-982f-442d-8982-b80e451e692c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، غلطنا. رح أغيرلك ياه هلّأ.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "error": "HTTP 409",
+  "operation_id": "473b5bf7-1c7c-4a02-8415-d3402129b912"
+}

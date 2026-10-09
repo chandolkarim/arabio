@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e4ca430f1d9abdb658b4399cb927ff3c7dd9983ccf223fdb01554931f09537d7",
+  "idempotency_key": "1c7dac54-8231-464a-9cfa-ecdaacae9efe",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بصراحة الشغل قليل، فناس كتير بتسافر بره.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e6fcaba7-fe6b-4769-9a50-8cca96d68dcd",
+  "operation": {
+    "id": "e6fcaba7-fe6b-4769-9a50-8cca96d68dcd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 230400
+  },
+  "complete": true,
+  "seconds": 4.8
+}

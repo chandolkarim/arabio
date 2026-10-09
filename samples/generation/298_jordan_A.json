@@ -1,0 +1,23 @@
+{
+  "fingerprint": "34d4651704ea467907135700f18c226c34e713fecd6ab12d5ff2cfccee63d97c",
+  "idempotency_key": "321c8439-682d-4739-9302-0a5c389b42f3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "إذا إجيت على كوريا لازم تحكيلي. هالمرة أنا اللي رح أفرجيك البلد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1fb9987c-7330-4e0e-be2b-eb8f0772a518",
+  "operation": {
+    "id": "1fb9987c-7330-4e0e-be2b-eb8f0772a518",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3200,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "392ac18a5343d70ee52852ea7e4fd6690f0c7a65433a46d61ce580ae7068985c",
+  "idempotency_key": "c5d1af48-7e5b-485c-a903-936e29e9654e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "دوشة وزحمة، بس أنا شايف إن ده اللي مخليها حلوة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d0ddc5f1-ee45-45ae-b1e1-6ea7d23f5745",
+  "operation": {
+    "id": "d0ddc5f1-ee45-45ae-b1e1-6ea7d23f5745",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 215040
+  },
+  "complete": true,
+  "seconds": 4.48
+}

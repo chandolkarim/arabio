@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4b3fcb06813a496e3981f0ecd4c68e805208688b910e7794adfba08d34d134c4",
+  "idempotency_key": "3cdb4aae-037c-4d9f-8c5e-e4e8928b761a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "كنت بالجيش بكوريا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a1acec74-8467-49f9-9858-e677fc6b5ef6",
+  "operation": {
+    "id": "a1acec74-8467-49f9-9858-e677fc6b5ef6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

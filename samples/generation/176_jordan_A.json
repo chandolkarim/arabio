@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a32a5433738ccfd1918df9dc369677d3657baf6d3426005d2588ab05b314ca40",
+  "idempotency_key": "e6a956cf-19dd-4d77-88cc-00e80fc26089",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بقدر أفوت لجوا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8a4812bd-5dac-436c-8fca-86e085cc9386",
+  "operation": {
+    "id": "8a4812bd-5dac-436c-8fca-86e085cc9386",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 750,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

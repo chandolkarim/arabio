@@ -1,0 +1,23 @@
+{
+  "fingerprint": "85a60dc09c7c61ef7f4f5b4b9d0686f041f617a47dfd558edfc3e84d2af70b6d",
+  "idempotency_key": "70821f56-276a-4d7f-8483-0d3bfcb99c94",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ليه الناس هنا بتتعشى متأخر أوي كده؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c5a08b9b-914a-46ad-86b8-1b3e6c026918",
+  "operation": {
+    "id": "c5a08b9b-914a-46ad-86b8-1b3e6c026918",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "21fd16f68aca920377c0453134a984eef01a0d780b4cd13c2bee0e4fbc62e531",
+  "idempotency_key": "688e1056-81de-4562-8361-2a4293f64fd3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بس قولي قبل الساعة عشرة بالليل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2645f708-28c8-4f1a-aa43-eb8bc629fce8",
+  "operation": {
+    "id": "2645f708-28c8-4f1a-aa43-eb8bc629fce8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

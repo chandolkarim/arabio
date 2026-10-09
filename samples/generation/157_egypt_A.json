@@ -1,0 +1,23 @@
+{
+  "fingerprint": "771b5b6047583ccde778ebcc75f2be3e10127d2bab30e8ce15369508c6a6d127",
+  "idempotency_key": "4a2ce1a9-5ee9-43b5-ba86-effcdf49bf3f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "مين اللي واقف هناك ده؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "cacb5ca3-eb7b-41ae-9559-f18e01d788e8",
+  "operation": {
+    "id": "cacb5ca3-eb7b-41ae-9559-f18e01d788e8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

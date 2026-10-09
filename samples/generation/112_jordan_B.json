@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2c5155fe8340990dec291feba418efc27867aa029b1fe923ceec545e661bea77",
+  "idempotency_key": "5a387cdc-efcd-4d1c-af02-3a6d0026c036",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ماشي. وبعدين وين؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9f441fd0-2f72-40df-9846-0a0ade310b94",
+  "operation": {
+    "id": "9f441fd0-2f72-40df-9846-0a0ade310b94",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

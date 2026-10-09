@@ -1,0 +1,23 @@
+{
+  "fingerprint": "563cccc4f499eb26c4547060429769778ee05c97029e7c8ebf9b141fa48126db",
+  "idempotency_key": "a2ff1bc8-68ca-4ead-984f-120e43f16391",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "وعشان كده الأخبار الكدابة بتنتشر أسرع بكتير.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "84020314-7200-46e3-8681-db4a48149430",
+  "operation": {
+    "id": "84020314-7200-46e3-8681-db4a48149430",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 230400
+  },
+  "complete": true,
+  "seconds": 4.8
+}

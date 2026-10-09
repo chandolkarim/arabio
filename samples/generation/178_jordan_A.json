@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b1e19400ef8d5a0d070ab1e757b09f80542af25f5a6dbd830b0a8d23671e30a3",
+  "idempotency_key": "2b906c04-d513-4633-bb60-46282191134e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "خلصت الواجب؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "998cf555-8bea-46d6-a418-e5e865cafe66",
+  "operation": {
+    "id": "998cf555-8bea-46d6-a418-e5e865cafe66",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 600,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

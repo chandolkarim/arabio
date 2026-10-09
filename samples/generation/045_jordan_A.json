@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6813424d7e415ffa97685cfcd9594235e29d3a186992c2b36498688309d56a9f",
+  "idempotency_key": "4c0bfd4a-f7ff-4494-a3a6-f0548914dd9b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "إذا بدك أي إشي احكيلي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2dba8568-fbdd-489c-8b4d-45dbfb1a7afe",
+  "operation": {
+    "id": "2dba8568-fbdd-489c-8b4d-45dbfb1a7afe",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

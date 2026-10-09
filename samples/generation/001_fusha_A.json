@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0ca7d3538c2fcd280f3855bfd648a2ba36cf5fdf18dfc442237f32324d4dbee0",
+  "idempotency_key": "7ee09bad-8d4d-419a-8879-b1df9c59d1c3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لم أرَكَ منذ زمن طويل! كيف حالك هذه الأيام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6def0ea4-61a4-49f7-9aa1-22bf66d4beae",
+  "operation": {
+    "id": "6def0ea4-61a4-49f7-9aa1-22bf66d4beae",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2150,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

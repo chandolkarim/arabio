@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c2f7cf7821f511a3c632c5fcb2b7da80628cf321d51c8c492ff243d857af091c",
+  "idempotency_key": "3e12983d-1e4a-40b9-9bb7-232615e0356a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "آخر كلام كام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "588ac494-84a5-4d4f-b180-6951eeed5f95",
+  "operation": {
+    "id": "588ac494-84a5-4d4f-b180-6951eeed5f95",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 650,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

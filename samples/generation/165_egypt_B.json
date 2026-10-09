@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6ee15deb04dd1e62672f491f29c19cd6180b6dfaf7c0a54354f94d04fbbaa188",
+  "idempotency_key": "8a459a2b-8855-40b0-b461-d74fb15b5747",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "معناهم قريب، بس واحدة فيهم بتتقال في المواقف الرسمية بس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8182de3c-9612-46bc-8033-a9b01a64eeac",
+  "operation": {
+    "id": "8182de3c-9612-46bc-8033-a9b01a64eeac",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2800,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

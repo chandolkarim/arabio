@@ -1,0 +1,23 @@
+{
+  "fingerprint": "cc4cff133448319f17c438ed0ddf0cdf17757e195a29f5ec71415de5c9f2ce11",
+  "idempotency_key": "5dd6ddbd-e610-47ca-a3e5-6b2b2cd6c110",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أكيد. فرصة متل هاي يمكن ما ترجع تيجي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e378cb7e-244b-4b9e-801a-37c41388970b",
+  "operation": {
+    "id": "e378cb7e-244b-4b9e-801a-37c41388970b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

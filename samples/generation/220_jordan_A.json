@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a906de31e973d5cc3c6d277ff650ebfb969dd821e4026ce048574ecc2164e409",
+  "idempotency_key": "1823c8e5-39d1-4af1-8480-c53a12e0d2d6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "السنة الماضية بمتل هالوقت شو كنت تعمل؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fb157d0f-1f1b-4d7d-921b-3dbf4aa7a976",
+  "operation": {
+    "id": "fb157d0f-1f1b-4d7d-921b-3dbf4aa7a976",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

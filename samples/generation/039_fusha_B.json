@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1a3f8954db7f0c763e3491e915881970f51d89731a200c6d2faf4c586afe0076",
+  "idempotency_key": "e4d45a26-f5d3-40e9-bf61-af78aab937ea",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أحب المسلسلات والأغاني الكورية كثيرًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c4551367-b176-497c-bcc9-cb448510df93",
+  "operation": {
+    "id": "c4551367-b176-497c-bcc9-cb448510df93",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1b30c8afaa1758b6ded5bb65ec858ebfdf5ed150e2bb2fc164b6650b2f9d8b12",
+  "idempotency_key": "83e36029-c70e-42e8-99a6-2ac6fa279152",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "هقعد ترم واحد وبعدين أرجع كوريا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f7f924d4-9fbc-4eee-a0d8-288b3e664478",
+  "operation": {
+    "id": "f7f924d4-9fbc-4eee-a0d8-288b3e664478",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

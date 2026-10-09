@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0c1791e44a397fef51e5e9c0c58645efdd6cbd05e1d72fa49d539ad1575a2c43",
+  "idempotency_key": "3f13b03c-2cff-4a77-ba24-3129b971247b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "هالكتاب لمين؟ حدا تركه هون.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ce0216c7-c63b-465a-b36a-8f597bb80bc7",
+  "operation": {
+    "id": "ce0216c7-c63b-465a-b36a-8f597bb80bc7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

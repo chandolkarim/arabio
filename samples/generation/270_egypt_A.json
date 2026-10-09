@@ -1,0 +1,23 @@
+{
+  "fingerprint": "bcd963d7bdcaa7b80fd071fb66ebd01d81d4460ea6089dbf417eef370c36ef64",
+  "idempotency_key": "e22272ae-de9d-4f9c-ba5d-298c097500ec",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لما جيت الأسبوع اللي فات قلتولي إن الورقة دي مش مطلوبة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9369c036-1cb6-4fee-adea-70a62e245ca6",
+  "operation": {
+    "id": "9369c036-1cb6-4fee-adea-70a62e245ca6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2750,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

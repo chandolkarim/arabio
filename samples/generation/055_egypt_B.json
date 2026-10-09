@@ -1,0 +1,23 @@
+{
+  "fingerprint": "627a6e366e9f3e23cb90dcbc884660b64d0a6524a0d9594111ddfcd15aac70f5",
+  "idempotency_key": "73f5f774-0e03-458f-9f5f-a5ae3d7468f0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "خلاص، هوديك مطعم أعرفه.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "af7fba6e-139b-488f-b705-0d581431e936",
+  "operation": {
+    "id": "af7fba6e-139b-488f-b705-0d581431e936",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1150,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

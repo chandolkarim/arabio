@@ -1,0 +1,23 @@
+{
+  "fingerprint": "25880618cff2e924cc57e6fcbc4d4c1452b0f214c7f1a1c2b2df3afd4f568971",
+  "idempotency_key": "809abe9c-2d19-4d38-930b-bb725f8399cb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لو كنت محلي، كنت رح تمسك هالفرصة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "62caee3e-32ab-401e-97bc-2834b899d5e3",
+  "operation": {
+    "id": "62caee3e-32ab-401e-97bc-2834b899d5e3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

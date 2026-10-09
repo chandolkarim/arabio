@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4a0e8a76974af63ec925d9151455c127b0eb137616c8af44ad6c2852a829e2eb",
+  "idempotency_key": "ef7f9a4d-690f-495d-885b-23b2a017ed56",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "كان عندي سخونية فقعدت في السرير طول اليوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6d5a59f6-cdbc-416a-b1c0-9a4c042ebc73",
+  "operation": {
+    "id": "6d5a59f6-cdbc-416a-b1c0-9a4c042ebc73",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

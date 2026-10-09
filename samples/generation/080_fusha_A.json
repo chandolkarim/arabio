@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7c10bb689c4bc9227db49420aff36e9236d270bd748b985ae44284ba9b85485b",
+  "idempotency_key": "f49a0b3e-0474-4a0c-a920-5fd0d03a5f19",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل يمكنني الدفع بالبطاقة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7051e30e-51f8-4825-a779-6fdd2a2794e1",
+  "operation": {
+    "id": "7051e30e-51f8-4825-a779-6fdd2a2794e1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7be9f79502e3917ed1049c00f5dc85ccbf93996b2a4c96b88c4cb662a50d9a4b",
+  "idempotency_key": "3591f4bf-9638-48da-a3e9-db30060adde8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل تظن أن هذا العمل سينتهي اليوم؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "42bf613b-2f5b-47f9-98db-90d97ffa641c",
+  "operation": {
+    "id": "42bf613b-2f5b-47f9-98db-90d97ffa641c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

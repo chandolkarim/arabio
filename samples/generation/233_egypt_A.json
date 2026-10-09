@@ -1,0 +1,23 @@
+{
+  "fingerprint": "63d877a6c8c88584509c53db88753e6ec54d1787b93f23c668b329fc47214bb7",
+  "idempotency_key": "6175e2bd-5288-4c66-b8f3-62d86397ee80",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "إيه أصعب حاجة في عيشتك هنا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a7360e31-efe9-4d90-b8c2-e9b4ce7b9223",
+  "operation": {
+    "id": "a7360e31-efe9-4d90-b8c2-e9b4ce7b9223",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

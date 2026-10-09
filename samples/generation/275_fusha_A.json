@@ -1,0 +1,23 @@
+{
+  "fingerprint": "861efbb0329476553ad5180d4d2380f6ff5cbb4f8a4439fbea682724237cd7d3",
+  "idempotency_key": "8414d55c-f278-416e-b6bc-4b1a995950cb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "من يتحمل تكاليف الزواج عادةً هنا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ec9204d0-bc40-4370-b6ae-4f001f81f218",
+  "operation": {
+    "id": "ec9204d0-bc40-4370-b6ae-4f001f81f218",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "53036b446d1612b798c849a728e5e645337e92880f21f4ed4361adfd04893a94",
+  "idempotency_key": "67524f50-7a69-4519-b9eb-0978828e2128",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "دوس على الزرار ده واكتب المكان اللي عايز تروحه.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9c664621-d970-4dd1-b53d-4a0643d84266",
+  "operation": {
+    "id": "9c664621-d970-4dd1-b53d-4a0643d84266",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

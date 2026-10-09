@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6afdf93739dd921bb6d6980bb52d9b2feb53404377e0fc74689b9ae887fed5c9",
+  "idempotency_key": "4725af80-f118-43a9-b8d0-2b6551b2d376",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل يمكنني أن أرى قائمة الطعام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "61d39731-50a6-42c7-b54a-1a381e50a1e7",
+  "operation": {
+    "id": "61d39731-50a6-42c7-b54a-1a381e50a1e7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

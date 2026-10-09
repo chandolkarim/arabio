@@ -1,0 +1,23 @@
+{
+  "fingerprint": "163c583bc3cc2650c14bb47518c8172313c39cceda562d0c08713dde4bd586d5",
+  "idempotency_key": "bfc8f404-256c-4fe9-ba25-45c94240d450",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "إيه ده؟ أول مرة أشوف الأكل ده.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d7015d6e-f1e7-489c-9e7c-a3078e40aae0",
+  "operation": {
+    "id": "d7015d6e-f1e7-489c-9e7c-a3078e40aae0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

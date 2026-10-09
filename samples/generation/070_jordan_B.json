@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ee56d1fdbf324e7d583f7b0c0422e7cc1e8b3c822c82bf92c3b11894e92df301",
+  "idempotency_key": "815b8a62-6cdf-4d3c-9eeb-43faaafc2d82",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ماشي، القهوة بتكون جاهزة هلّأ.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5ad0630f-405b-4f9a-a24c-e3e5b030c733",
+  "operation": {
+    "id": "5ad0630f-405b-4f9a-a24c-e3e5b030c733",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

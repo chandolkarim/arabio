@@ -1,0 +1,23 @@
+{
+  "fingerprint": "147df40ad4b12f000cbb467739281cc601b1dce25d2cfb9ff5152f4ba8e79235",
+  "idempotency_key": "5598e834-32e3-4d35-aede-27bb3d380461",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "مش هروح المطعم ده تاني أبدًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6ec13c39-9cf5-4257-8b34-c203b9e11c48",
+  "operation": {
+    "id": "6ec13c39-9cf5-4257-8b34-c203b9e11c48",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1450,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

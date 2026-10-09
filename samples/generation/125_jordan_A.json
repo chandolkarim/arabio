@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ece7d35d8b10de364b173c37fa9d067752cba26d0e5681a17e66857a401894a1",
+  "idempotency_key": "d6026655-74c6-4d78-9bd9-8ceada5137d2",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "الباصات اللي رايحة لهناك أي ساعة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "edfa0c90-79c3-4f0f-a7c9-dd8352f2e125",
+  "operation": {
+    "id": "edfa0c90-79c3-4f0f-a7c9-dd8352f2e125",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

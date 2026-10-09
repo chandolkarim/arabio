@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a328d4c3d629218dd8c1e3680e2e82f8653ab2e8d752671fc837291478032ad2",
+  "idempotency_key": "0196fd48-c2a0-4312-b584-1da1c04c8039",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "خلص، رح آخدك على مطعم بعرفه.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a29b2068-4130-4a28-9c9d-35bcc5e3d110",
+  "operation": {
+    "id": "a29b2068-4130-4a28-9c9d-35bcc5e3d110",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

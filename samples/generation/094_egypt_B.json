@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e508ab0f31452d05be66fdd6f0cacb8e3723cbd534cddaa9fbfc37b140a979a4",
+  "idempotency_key": "d7ce45b0-b220-43a8-92d9-cf96600bed72",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "الكيلو بخمستاشر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "01ad0789-1007-4b39-9344-487f514211d3",
+  "operation": {
+    "id": "01ad0789-1007-4b39-9344-487f514211d3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 800,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

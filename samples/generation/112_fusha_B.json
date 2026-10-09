@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0bf5e4ec5b668e962b96c9c20b4d95333ed82d5cf7106e0380397eab7912cdaa",
+  "idempotency_key": "fb454284-2e72-4079-a5fd-ebd5df625dee",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "حسنًا. وإلى أين بعد ذلك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ef18dcfc-8772-42c5-828e-7b98eceef1a1",
+  "operation": {
+    "id": "ef18dcfc-8772-42c5-828e-7b98eceef1a1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "35c3cbfec81a32d544ea2538e497dbfdd3788cc439b80dd3f2b7aebe9a0b25b6",
+  "idempotency_key": "72fdd125-e771-4cb9-a427-a1146e9cccb3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لا، لسا ما تغديت لأني كنت مشغول.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b7c30f1a-cc30-422c-8d15-73f60e7bf569",
+  "operation": {
+    "id": "b7c30f1a-cc30-422c-8d15-73f60e7bf569",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

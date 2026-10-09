@@ -1,0 +1,23 @@
+{
+  "fingerprint": "bbd5a843b4c1f806e04a773172f80552dc2fefabeb1abba946173be2ad36a916",
+  "idempotency_key": "2c7d1c04-fcfe-43bb-ba8f-f2b65d1677a0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "يعني عيلة صاحب البيت مثلًا، قرايبهم كلهم ساكنين جنب بعض وبيتجمعوا كل أسبوع.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d6211557-4611-4361-856c-06cddac092d4",
+  "operation": {
+    "id": "d6211557-4611-4361-856c-06cddac092d4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3750,
+    "completion_bytes": 407040
+  },
+  "complete": true,
+  "seconds": 8.48
+}

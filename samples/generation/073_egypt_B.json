@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b0afadf73e96509661b8d7447431860053e5236f5d9f29c509a6b2f0d65010b8",
+  "idempotency_key": "6bc2132b-02ee-4b47-95de-a5c1fb7c9163",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "آسف جدًا، هشوف حالًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "db7b5b00-4caf-472a-a3d5-5dd0ce4ee210",
+  "operation": {
+    "id": "db7b5b00-4caf-472a-a3d5-5dd0ce4ee210",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9384d8194022e655c3382b5fc43818338aee9da2b85be82b46f9cead91ee9eb0",
+  "idempotency_key": "d12d6f46-3043-4203-811b-864ff835ef52",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لازم تروح البلد القديمة، الجو هناك مختلف خالص.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "96198611-0fb3-46ab-803f-49df07dec6cc",
+  "operation": {
+    "id": "96198611-0fb3-46ab-803f-49df07dec6cc",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

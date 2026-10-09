@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c1191888b0c0479f8ac6c75aded846a163e14087bc7efe12c26ac2df99099ee4",
+  "idempotency_key": "81374229-ae51-4bec-a883-8ba83e8ffee7",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "بطني تؤلمني كثيرًا ولم أنم طوال الليل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "683b840d-f858-4a2e-b8ad-3d0568d93a18",
+  "operation": {
+    "id": "683b840d-f858-4a2e-b8ad-3d0568d93a18",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

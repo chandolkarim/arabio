@@ -1,0 +1,23 @@
+{
+  "fingerprint": "df2dd060d23e44f492a3f38cad1c8e8384e2a2e0fe51c17f43709b96de53ab39",
+  "idempotency_key": "542e5d66-868b-4b0e-854c-59307bda00bd",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بمنطقتنا بتفتح بعد المغرب وبتضل فاتحة للفجر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "64c10f95-65b9-4250-86da-99ede2af9399",
+  "operation": {
+    "id": "64c10f95-65b9-4250-86da-99ede2af9399",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

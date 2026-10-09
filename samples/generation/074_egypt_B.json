@@ -1,0 +1,23 @@
+{
+  "fingerprint": "14cebb387ac2677d84cf4c7df16a9d06cf6e3d487d7f2bf5dd4581e0140198d4",
+  "idempotency_key": "f96cbdff-d4cd-47e7-97cb-232bca1f8843",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "آه، غلطنا. هغيرهولك على طول.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7078154f-e837-4d97-b6b8-9a834c1f1ca8",
+  "operation": {
+    "id": "7078154f-e837-4d97-b6b8-9a834c1f1ca8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

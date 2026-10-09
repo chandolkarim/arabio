@@ -1,0 +1,23 @@
+{
+  "fingerprint": "748cd54616d36e28fd83981cff6abb8a3484f8c4db5882bb50142deed0457274",
+  "idempotency_key": "89d97ccc-7583-4c8a-be6b-75a07a000bce",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، كان كتير زاكي متل ما حكيت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6009f9f6-766d-4ad3-943a-23530023a8e5",
+  "operation": {
+    "id": "6009f9f6-766d-4ad3-943a-23530023a8e5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

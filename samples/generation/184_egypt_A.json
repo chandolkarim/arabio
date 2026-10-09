@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c1cebb81df8a593c933a47d3545ac9bdf36cbea0a30599e41bd83a2de081d6a1",
+  "idempotency_key": "3da00321-0be6-44bd-9215-56c0caef7f88",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "متشكر على العزومة، بس شكلي مش هقدر آجي المرة دي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5e4deae3-142d-4f72-98cd-6a14e73b0e0c",
+  "operation": {
+    "id": "5e4deae3-142d-4f72-98cd-6a14e73b0e0c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2400,
+    "completion_bytes": 261120
+  },
+  "complete": true,
+  "seconds": 5.44
+}

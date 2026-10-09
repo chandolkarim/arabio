@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7dcf4b017c2dab14a03f12e7c9f4c00dc5e175def5662bf63e48aefb14d638b4",
+  "idempotency_key": "a5103608-b790-41c3-a446-cfc4b297093e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل يجد طلاب الجامعة هنا عملًا بسهولة بعد التخرج؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9678fc74-e426-4842-897f-048c48c61625",
+  "operation": {
+    "id": "9678fc74-e426-4842-897f-048c48c61625",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2400,
+    "completion_bytes": 207360
+  },
+  "complete": true,
+  "seconds": 4.32
+}

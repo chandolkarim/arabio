@@ -1,0 +1,23 @@
+{
+  "fingerprint": "88f0dc14d5c043b3f1e74a035e6e4b7852f44121710b62c5f0496c9a56c627f9",
+  "idempotency_key": "5ecee6db-a05e-4ea8-96ea-b83c2b6fd12a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "إذا معك الفاتورة رح أبدلك ياه.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "45f53c3e-b801-4ac1-8f52-004bbca961e4",
+  "operation": {
+    "id": "45f53c3e-b801-4ac1-8f52-004bbca961e4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

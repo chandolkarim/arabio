@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d09a063a9cc4b88d7fd0f6ae33f2bfca0e391f62b4f65733b9b846f21c7a4ae0",
+  "idempotency_key": "33db4405-d591-4489-bfd7-aa0f100a1f22",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "تركت هاتفي في البيت وذهبت إلى المتحف.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "70aa11d9-bcbb-4913-baa0-fe2063af58ba",
+  "operation": {
+    "id": "70aa11d9-bcbb-4913-baa0-fe2063af58ba",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

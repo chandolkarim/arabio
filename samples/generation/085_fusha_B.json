@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9072cb5fb8c9f899b7aa60d8d23a8dd96362acc04028ef99614c0bdff7a80438",
+  "idempotency_key": "def89e09-fccc-47dd-b5f3-e0d1cc13051c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "بثلاثمئة. إنها من الجلد الطبيعي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b4f6a672-f493-42ea-9433-54bb9a5c93b6",
+  "operation": {
+    "id": "b4f6a672-f493-42ea-9433-54bb9a5c93b6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

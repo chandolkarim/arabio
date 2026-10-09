@@ -1,0 +1,23 @@
+{
+  "fingerprint": "892386632e32c2c816adf4a4bc51bd7034d642c6d37ebd02a8d24ae84c7d675a",
+  "idempotency_key": "472d76b8-b796-4e0d-89d8-febb67f57244",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أنا بفكر إنه الصح نتعلم اللهجة قبل الفصحى.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "62f8546a-de75-4f92-b56e-22907fc85495",
+  "operation": {
+    "id": "62f8546a-de75-4f92-b56e-22907fc85495",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

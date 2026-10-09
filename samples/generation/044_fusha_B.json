@@ -1,0 +1,23 @@
+{
+  "fingerprint": "458148ce4f752d43ca503e9b11411efcf85fce49901954745b1f7595b0321ba7",
+  "idempotency_key": "83e1ec3f-df74-46d7-a1af-1f0b2089c030",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "حسنًا، استرح جيدًا ونلتقي غدًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c0d7cf09-617f-45b0-be6f-e42cc2c4dcf2",
+  "operation": {
+    "id": "c0d7cf09-617f-45b0-be6f-e42cc2c4dcf2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1ffecaf6e69424bbffb8fea092e4caf5b60dd68502efe1a301f178743a466337",
+  "idempotency_key": "dcd3624f-9d9b-4b55-a9b2-b8b307983413",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "يعني لازم أدرس وبس هالويكند.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b31b85b0-6488-4992-a979-ac3b3e3b6a8a",
+  "operation": {
+    "id": "b31b85b0-6488-4992-a979-ac3b3e3b6a8a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

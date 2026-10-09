@@ -1,0 +1,23 @@
+{
+  "fingerprint": "57c98d5269f8c129d2807291c66a108b6ae01b8aecabacc57e7c419c561bcc26",
+  "idempotency_key": "1975795f-89bc-4c87-9bc6-8edd9259ae19",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ما رح تلاقي هالسعر بأي محل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c7f99f17-a600-4627-9f11-0ff7db7d495e",
+  "operation": {
+    "id": "c7f99f17-a600-4627-9f11-0ff7db7d495e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

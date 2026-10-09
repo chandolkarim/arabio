@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e9085ae3278cc398aaecbfccb1f28ff710b21703ae53d827022d811e1a638a72",
+  "idempotency_key": "8f033f08-cf5a-4407-bccc-685020514077",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "طبعًا، حتى إنني بحثت عن مكان للإقامة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a199e212-7aa5-4aa9-b6b3-9b62ddc28fbc",
+  "operation": {
+    "id": "a199e212-7aa5-4aa9-b6b3-9b62ddc28fbc",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

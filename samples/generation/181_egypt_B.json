@@ -1,0 +1,23 @@
+{
+  "fingerprint": "44618dcb8d8bf5af4df290cf90941e144e2513f3300d00db63d784b22d0ec51e",
+  "idempotency_key": "e10ce8de-d77a-45cc-b740-b55443405b02",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "شكرًا إنك قلت كده.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "473dcb79-c929-4e5f-acdc-0d1b8739b8d2",
+  "operation": {
+    "id": "473dcb79-c929-4e5f-acdc-0d1b8739b8d2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

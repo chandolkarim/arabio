@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9000a876c47932b7a7ec55454db440c651beba566f65b46573c0f60a4dd3abdb",
+  "idempotency_key": "52d64877-138f-493a-9fea-1f1182c382e8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ضيعت الباسبور. أكلم السفارة إزاي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d59dedd8-5e2f-43b0-aa48-d8f1fbb98a2f",
+  "operation": {
+    "id": "d59dedd8-5e2f-43b0-aa48-d8f1fbb98a2f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

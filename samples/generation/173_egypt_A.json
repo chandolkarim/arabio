@@ -1,0 +1,23 @@
+{
+  "fingerprint": "96ac75e7c2bb6dfda145d10b5c9d40d9855b64a69357feb97365eee46f4a20e5",
+  "idempotency_key": "3d551be6-68f3-4b28-ae4f-8ed4adf19838",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بجد؟ مش مصدق.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "66197d1c-c351-4b61-8749-9166a6de9fae",
+  "operation": {
+    "id": "66197d1c-c351-4b61-8749-9166a6de9fae",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 650,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1a2e73f8dfc6720fc6b728d609241c3cb8a884c8f6bd8d72ed079b0e015ae17e",
+  "idempotency_key": "eb55057f-c560-4600-829c-2a0b1ba5cabd",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل يمكن أن آخذه معي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "567b5371-35d1-4354-b3dd-3a4b085088ef",
+  "operation": {
+    "id": "567b5371-35d1-4354-b3dd-3a4b085088ef",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

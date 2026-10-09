@@ -1,0 +1,23 @@
+{
+  "fingerprint": "559a887b33b3a7c74bca8ebcb4bf1b3cd0736a1ad57480d58703d8d84fb3ffc9",
+  "idempotency_key": "498490f1-29b9-4477-b6ab-74ad774542ab",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أقل مدة للعقد قديش شهر؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "bcfc71e7-0a8c-46ed-b021-fa620afa5ce6",
+  "operation": {
+    "id": "bcfc71e7-0a8c-46ed-b021-fa620afa5ce6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1150,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

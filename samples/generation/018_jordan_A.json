@@ -1,0 +1,23 @@
+{
+  "fingerprint": "56d7a0fe6b07784773ff7a327ee2c93aa1db67f94bc9351e55048600abd3e94a",
+  "idempotency_key": "d88fe119-6c28-43e0-b89b-1072c345bc6c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بنشوف بعض مرة تانية لما يكون عنا وقت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "542075c6-99e3-485e-b004-fc74f5ee08e6",
+  "operation": {
+    "id": "542075c6-99e3-485e-b004-fc74f5ee08e6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

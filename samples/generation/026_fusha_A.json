@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f1b5ee0b7e1a3d6087a0cee19706df726a5cc8ed5e83162583c19090e8fd11f7",
+  "idempotency_key": "87e1c935-9ed8-4bcf-9171-00e0b379ebb8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "منذ متى تدرس العربية؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "39b5ed48-ea7c-46f5-81e3-f8172754ea06",
+  "operation": {
+    "id": "39b5ed48-ea7c-46f5-81e3-f8172754ea06",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

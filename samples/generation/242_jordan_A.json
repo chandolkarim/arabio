@@ -1,0 +1,23 @@
+{
+  "fingerprint": "cc6dc072c1da85897bdfed738a5fb201749113cda951025b1556a23ea260c6a6",
+  "idempotency_key": "c2ff105b-2045-430d-afd3-a6d869632b5d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "هالأيام بستحي كتير أحكي عربي قدام الناس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9f4a18de-f385-4029-8505-3ce18e5123fb",
+  "operation": {
+    "id": "9f4a18de-f385-4029-8505-3ce18e5123fb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

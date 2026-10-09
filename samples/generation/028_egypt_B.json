@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9785d8fa8d33f1f22dc7aa0f55317976a2f58cd11a4ee6e234a8e027173e279e",
+  "idempotency_key": "1a875a85-aca5-40db-a071-f705ad2d22f5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "اتعلمته في الجامعة، بس العامية لسه مش قوية عندي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e2997ee6-2d0f-4c21-98f2-e58ec85abdd6",
+  "operation": {
+    "id": "e2997ee6-2d0f-4c21-98f2-e58ec85abdd6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2400,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

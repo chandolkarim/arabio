@@ -1,0 +1,23 @@
+{
+  "fingerprint": "99d1b491db5f6c68492fc3a2b70995d31a18ec1d25180a8928258ff9057929b6",
+  "idempotency_key": "46acd0da-ce85-4896-9558-95a42e5b97cc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل اعتدتَ على الحياة هنا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2c37d30f-8ebf-4591-8402-16f3773e3fa0",
+  "operation": {
+    "id": "2c37d30f-8ebf-4591-8402-16f3773e3fa0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9287196ff16a483c0b9d3ff5ad938f7258800971e1b99ba42d3f87e2a12ca193",
+  "idempotency_key": "3fd07e80-2518-4cb3-bfac-d7b675768232",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أنا شايف إن الصح نتعلم العامية قبل الفصحى.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ccfab18c-d5e9-4b25-9b60-0b2b1077d7b7",
+  "operation": {
+    "id": "ccfab18c-d5e9-4b25-9b60-0b2b1077d7b7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

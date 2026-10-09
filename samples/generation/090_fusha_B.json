@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2410b1a67e376fb6cc952db8c668a07c3caeede2325b7086612149c5ae95e802",
+  "idempotency_key": "def38ca3-38fc-452c-addc-8cd45902e140",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "مئتان وعشرون، ولا أستطيع أن أنزل أكثر من ذلك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3af34060-1a67-49d0-a1bf-c2ebe2bbb713",
+  "operation": {
+    "id": "3af34060-1a67-49d0-a1bf-c2ebe2bbb713",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

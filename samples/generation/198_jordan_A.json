@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b2df3a46596db43e79237445995a7b8c07a2990201857ccd4501e112ca125418",
+  "idempotency_key": "bd239680-287c-47a8-a5b6-698373ca9600",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شكله الامتحان هالمرة رح يكون أصعب مما توقعت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "147b56d4-a1dd-40ef-928e-0b637b21ed36",
+  "operation": {
+    "id": "147b56d4-a1dd-40ef-928e-0b637b21ed36",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

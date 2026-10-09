@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0c93504f8c6c90c3573fa03823b74ad3b84181d244d8140a99e55835bc8c8ac2",
+  "idempotency_key": "d6d8e5e7-ca18-4994-89c3-e9ca24ddddbf",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "هرجع آخر ديسمبر وأجهز للترم الجاي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9eff301b-35fd-4ac7-a578-fa17d7d96d6b",
+  "operation": {
+    "id": "9eff301b-35fd-4ac7-a578-fa17d7d96d6b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

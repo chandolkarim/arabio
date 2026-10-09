@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5816da9ba8d8672888c9f031b57996cfc515cf29fbad80314777a80f54612890",
+  "idempotency_key": "c51584b8-2c47-42b4-8cf1-d69e07ca70e5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "نعم، المكان فارغ.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "005debca-5a8e-45ff-9959-ad45200e9592",
+  "operation": {
+    "id": "005debca-5a8e-45ff-9959-ad45200e9592",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

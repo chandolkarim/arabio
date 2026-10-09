@@ -1,0 +1,23 @@
+{
+  "fingerprint": "86ec69aecac79a558217f04d9b9fb93e01214e38bb7b0100421f55a77e062220",
+  "idempotency_key": "e410b6a9-1b1b-44e6-8536-71238b528d0d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "نسيت المفتاح داخل الغرفة وأغلقت الباب.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0af702b7-cfd0-47f4-bd55-c12cf471283f",
+  "operation": {
+    "id": "0af702b7-cfd0-47f4-bd55-c12cf471283f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

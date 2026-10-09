@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f6792906c21681cc27d43670e690fa0c28289f584423c3f1d7a646f20909c42e",
+  "idempotency_key": "2d45fdfd-84db-4e52-8f0a-ba5558f1b296",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أيوه، هرجعلك خمستاشر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9edcda39-de55-485f-95d2-a730de658829",
+  "operation": {
+    "id": "9edcda39-de55-485f-95d2-a730de658829",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

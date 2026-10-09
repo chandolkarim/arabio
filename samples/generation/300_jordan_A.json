@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c7490e8980d0965771ce8aeb2c1bec21439b925c8a55d69542e13871ad6029fc",
+  "idempotency_key": "46fde554-364c-480a-9ac3-7fdbdea65caa",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "المرة الجاي لما نشوف بعض خلينا نحكي باللهجة بس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d344be44-a056-4a21-9499-47e52ef32408",
+  "operation": {
+    "id": "d344be44-a056-4a21-9499-47e52ef32408",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

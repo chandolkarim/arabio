@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6771f41b5d69d0fa00c41cbee1eed88cfdeec2c07cd1e1afae5de3a7e4ca398a",
+  "idempotency_key": "00eafbef-3bc6-41ce-8781-b107885bb028",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لازم تروح على أقرب مركز أمني وتقدم شكوى.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6049d081-f26a-41f2-99a8-875eca7e11c2",
+  "operation": {
+    "id": "6049d081-f26a-41f2-99a8-875eca7e11c2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

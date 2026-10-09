@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5b3bb1e176ce50e5e68bd3071d3dfa2c66ffc8481926a2de780804d7b7865554",
+  "idempotency_key": "116492e5-69bc-471e-80bd-24c23d405ada",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "الكيلو بخمسة عشر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8f557389-23bd-4c6a-98ac-5ceac91d761d",
+  "operation": {
+    "id": "8f557389-23bd-4c6a-98ac-5ceac91d761d",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

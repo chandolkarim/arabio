@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2f12311b78793ddbfa8b10a93ceba0d669141eec5e9c944f7bdc9bc92dee6bfc",
+  "idempotency_key": "f9b36054-bf12-4d44-a473-5e6e644c7003",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ليش ما بتسأل عني هالأيام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e269633b-9e44-4c37-8b00-ec88dbb9a0f7",
+  "operation": {
+    "id": "e269633b-9e44-4c37-8b00-ec88dbb9a0f7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

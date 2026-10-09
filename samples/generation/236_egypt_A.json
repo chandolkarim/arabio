@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b16920a6e8dc0d0957a63f0e4ec63d7d37b060967c3a068cdedcf5004caebc6d",
+  "idempotency_key": "15ef0e1b-8cea-4248-8315-52075aaf9448",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "شايفه شخص عامل إزاي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "aadac212-9768-4f8c-ab07-9c53957bc70f",
+  "operation": {
+    "id": "aadac212-9768-4f8c-ab07-9c53957bc70f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

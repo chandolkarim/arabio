@@ -1,0 +1,23 @@
+{
+  "fingerprint": "34b53667e29c2aabce4045552950ace412124044b6dc0cfff3aa8aec605f1043",
+  "idempotency_key": "3deb3957-65d0-4575-b628-ea191c9f076c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "قديش الأجار بالشهر؟ والفواتير لحالها؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fdee9612-c592-4221-a879-93ce90842e41",
+  "operation": {
+    "id": "fdee9612-c592-4221-a879-93ce90842e41",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

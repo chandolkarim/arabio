@@ -1,0 +1,23 @@
+{
+  "fingerprint": "84153293ec6bca6ac1fb8443db61b5ae0ecbad45a5e7c4625e3b529042300e27",
+  "idempotency_key": "c2826823-7a9f-4392-b234-f75ded611a6e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "متقلقش أوي. كله هيبقى تمام.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8eba65ef-c0b7-4540-8f16-3c7b8bb402d0",
+  "operation": {
+    "id": "8eba65ef-c0b7-4540-8f16-3c7b8bb402d0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

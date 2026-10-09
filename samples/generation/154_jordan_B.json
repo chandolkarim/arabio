@@ -1,0 +1,23 @@
+{
+  "fingerprint": "921d546af0be619e2ece2ee7b413fcb4fd1716f11492d661ecdd0f5755afd934",
+  "idempotency_key": "70965b77-bc98-478c-9932-a02ae83b3b37",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بالفصحى بنحكيها هيك، بس بالواقع الناس بتحكيها هيك أكتر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "12364854-d6de-43dd-93e5-786b292f1163",
+  "operation": {
+    "id": "12364854-d6de-43dd-93e5-786b292f1163",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2750,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

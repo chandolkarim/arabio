@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0bf843e4934a5ed6fe8384aa2ac46fb28cb01889ee6b75b1d94839b4e87e7c77",
+  "idempotency_key": "599043a5-9bd3-42fe-9d3c-944ee27a65fd",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ما أكبر همّ لديك هذه الأيام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e8fba9cf-c27c-4d45-9540-9ed48039c9a9",
+  "operation": {
+    "id": "e8fba9cf-c27c-4d45-9540-9ed48039c9a9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

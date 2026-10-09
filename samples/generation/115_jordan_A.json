@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d56d5fab92f865a9fc9b7bb75e63a0e6cbab3d038b5b0370e3906abb84d3c116",
+  "idempotency_key": "1ad07f77-2da6-4fd3-a0e4-9798bcbc28b9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "هالباص بمر من قدام الجامعة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a8051975-38e3-4fa2-8520-3824a2753d74",
+  "operation": {
+    "id": "a8051975-38e3-4fa2-8520-3824a2753d74",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6b377b7bd7c2def5935ebc9677fbee199c33b8c61799c14cba12e789a7a9b1e6",
+  "idempotency_key": "2d87eca7-8905-4352-a3a3-75937f1dca87",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "كول كمان، لسا في كتير.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8cd1b757-5dd5-4143-83bb-1c2b8906aa08",
+  "operation": {
+    "id": "8cd1b757-5dd5-4143-83bb-1c2b8906aa08",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

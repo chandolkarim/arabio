@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b8107d9e46836b3c1d41bdf90ca28f1877f3ea7d95d67d9962941b29b43e7acb",
+  "idempotency_key": "11882855-53f1-44dc-acb9-816e93fad618",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كيف تظن أن هذه المدينة ستتغير بعد عشر سنوات؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "075c57df-e885-4ee4-b564-ec0098ac244b",
+  "operation": {
+    "id": "075c57df-e885-4ee4-b564-ec0098ac244b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2200,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

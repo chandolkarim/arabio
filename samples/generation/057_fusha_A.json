@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e74edac5c5159db80fdeacecc0c50301c355c2e581f706856f1326bccafce6dd",
+  "idempotency_key": "66a31be8-0f3a-4210-b207-d2014fdccfad",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أريد أن أفهم كلمات هذه الأغنية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "72462e1f-83ab-419c-bd9d-c8b5b9b581b7",
+  "operation": {
+    "id": "72462e1f-83ab-419c-bd9d-c8b5b9b581b7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

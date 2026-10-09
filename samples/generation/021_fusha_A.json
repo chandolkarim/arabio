@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3617be1359f85248a95e2027e5157cd32746e8df28940f1bcf0c4c14539630f1",
+  "idempotency_key": "1e0dd010-6f08-4d60-bf25-a81649453fcc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "مبروك الزواج! أتمنى لك حياة سعيدة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b944b1de-9aa7-4a50-a5d9-118e2974434e",
+  "operation": {
+    "id": "b944b1de-9aa7-4a50-a5d9-118e2974434e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

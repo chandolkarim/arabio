@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ccf4c66405bd96756464357145077530eaccabc6b2f00eecb757ca72bf20d92b",
+  "idempotency_key": "225dfc71-efa4-4ccf-9c3e-edb3067950f0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "نعم، جربه خلف تلك الستارة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0f0db234-a2a0-47c6-ad41-4aa3d474505c",
+  "operation": {
+    "id": "0f0db234-a2a0-47c6-ad41-4aa3d474505c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

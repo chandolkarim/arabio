@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8a7ea970d89aaf579e2d41547e5ac29ba02f61b9f6b25233463432a407553d10",
+  "idempotency_key": "86b8be8c-2b54-41f3-9746-d6b68decf177",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كم ساعة تدرس العربية في اليوم؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "990745cb-0975-4547-8a6d-0cc53685ee82",
+  "operation": {
+    "id": "990745cb-0975-4547-8a6d-0cc53685ee82",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

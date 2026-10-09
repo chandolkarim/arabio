@@ -1,0 +1,23 @@
+{
+  "fingerprint": "737219275832873062d66d74888cf917459c74a09ccedf470a23d68e84b7cadd",
+  "idempotency_key": "9d0dd913-428f-4477-a665-11854f77e2ee",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "معناهم قريب، بس وحدة منهم بتنحكى بس بالمواقف الرسمية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "efb71e52-33e6-4df5-8222-acc0e245dbe5",
+  "operation": {
+    "id": "efb71e52-33e6-4df5-8222-acc0e245dbe5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2650,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

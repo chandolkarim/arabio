@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5ef4792e2b940f72a83cba59a6859b064375d348fd0bef439d2dcf24a26e23a4",
+  "idempotency_key": "c5ed363a-a7b3-4d75-b1a1-6da3707a7d19",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بدفع الأجرة فين؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f5547924-e292-439a-bce6-43a20f3c1f3a",
+  "operation": {
+    "id": "f5547924-e292-439a-bce6-43a20f3c1f3a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 800,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "eb5aecc92cf5ad43daacfadee27a863640be08a476de849fe1b4a20cf57a035a",
+  "idempotency_key": "5f9609ca-1795-4c21-8e38-08acbe369f3d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "إيه أسرع طريقة أروح بيها المطار؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "da99a971-2f3d-44d5-9512-5bbd043956af",
+  "operation": {
+    "id": "da99a971-2f3d-44d5-9512-5bbd043956af",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

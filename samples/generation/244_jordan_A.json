@@ -1,0 +1,23 @@
+{
+  "fingerprint": "bbdc19c2a54c9632defbdece9c375fa66fb5883c1b639a2c9a73492f28a2a032",
+  "idempotency_key": "e2c9d65a-af3e-4691-86ce-6cdd045b900d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "يا ترى ليش الناس هون كرماء هيك مع الضيوف؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2000d239-b662-4223-80d4-a086e7aa1c52",
+  "operation": {
+    "id": "2000d239-b662-4223-80d4-a086e7aa1c52",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

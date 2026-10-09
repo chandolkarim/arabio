@@ -1,0 +1,23 @@
+{
+  "fingerprint": "40c963fe149b14bea833e42f64872c57b7afc59f2de39455c2e126268688ca9a",
+  "idempotency_key": "4b8467f7-3278-4b6d-ad89-71cea92d9ec3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "مش جوعان؟ إنت ما أكلت إشي من الصبح.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "09500edc-6fc5-4783-a74d-db418e60d26e",
+  "operation": {
+    "id": "09500edc-6fc5-4783-a74d-db418e60d26e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

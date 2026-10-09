@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>아라비오 · 검수</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="arabio.css">
+<style>
+body{display:block;max-width:760px;margin:auto;padding:24px 20px 60px}.review-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}.review-head a{color:var(--henna)}h1{font-size:25px;margin:0}.review-controls{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.review-controls label{display:grid;gap:8px;font-size:13px;flex:1}.review-controls select{padding:12px;background:transparent;border:1px solid #cfbda8;color:inherit;font:inherit;min-width:180px}.review-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:24px}.review-nav button{padding:10px 14px;border:1px solid #cfbda8;background:transparent;font:inherit;color:inherit;cursor:pointer}.review-nav button:disabled{opacity:.4;cursor:default}.review-dialogue{border-top:2px solid var(--henna);padding:24px 0 8px}.review-dialogue h2{font-size:18px;margin-bottom:18px}.review-variant{margin-bottom:28px}.review-variant h3{font-size:14px;color:var(--henna);margin-bottom:16px}.review-line{margin:18px 0}.review-line .arabic{font-size:30px;line-height:1.7;margin:8px 0}.review-line p{line-height:1.6}.review-line audio{width:100%;margin-top:10px}.review-note{font-size:13px;line-height:1.8;color:var(--muted)}.review-variant details{margin-top:16px}summary{cursor:pointer}.review-line small{color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="review-head"><h1>아라비오 · 검수</h1><a href="./">앱으로 돌아가기</a></header>
+<p class="review-note">1~100일차의 대화와 음성을 바로 확인하세요. 여기서 듣거나 이동해도 학습 진도·경험치는 바뀌지 않아요.</p>
+<div id="review"><p>불러오는 중…</p></div>
+<script>
+(async () => {
+  const root = document.getElementById('review');
+  if (!['localhost','127.0.0.1','[::1]'].includes(location.hostname)) {
+    root.textContent = '검수 화면은 이 컴퓨터의 localhost에서만 열 수 있어요.';
+    return;
+  }
+  const esc = s => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const names = {fusha:'푸스하 · 아이만',egypt:'이집트 · 아슈라프',jordan:'요르단 · 야잔'};
+  try {
+    const data = await fetch('data/sentences.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error();return r.json();});
+    root.innerHTML = `<div class="review-controls"><label>일차<select id="review-day" aria-label="검수 일차">${Array.from({length:100},(_,i)=>`<option value="${i+1}">DAY ${i+1} · ${esc(data.sentences.find(s=>s.day===i+1).unitName)}</option>`).join('')}</select></label><label>음성<select id="review-voice" aria-label="검수 음성"><option value="all">세 목소리 모두</option>${Object.entries(names).map(([v,n])=>`<option value="${v}">${n}</option>`).join('')}</select></label></div><div class="review-nav"><button id="review-prev">이전 일차</button><span id="review-position"></span><button id="review-next">다음 일차</button></div><main id="review-dialogues"></main>`;
+    const daySelect = document.getElementById('review-day');
+    const voiceSelect = document.getElementById('review-voice');
+    const requested = Number(new URLSearchParams(location.search).get('day'));
+    daySelect.value = requested>=1&&requested<=100 ? String(requested) : '8';
+    function render() {
+      root.querySelectorAll('audio').forEach(a=>a.pause());
+      const day = Number(daySelect.value);
+      const variants = voiceSelect.value==='all' ? Object.keys(names) : [voiceSelect.value];
+      document.getElementById('review-position').textContent=`${day} / 100`;
+      document.getElementById('review-prev').disabled=day===1;
+      document.getElementById('review-next').disabled=day===100;
+      document.getElementById('review-dialogues').innerHTML=data.sentences.filter(s=>s.day===day).map((s,i)=>`<article class="review-dialogue"><h2>대화 ${i+1} · ${esc(s.unitName)} <small>#${s.id}</small></h2>${variants.map(v=>`<section class="review-variant"><h3>${names[v]}</h3>${['A','B'].map(side=>`<div class="review-line"><small>${side}</small><p class="arabic" dir="rtl" lang="ar">${esc(s[v][side])}</p><p>${esc(s.ko[side])}</p>${s[v].audio[side]?`<audio controls preload="none" aria-label="${names[v]} 대화 ${i+1} ${side}" src="audio/${encodeURIComponent(s[v].audio[side])}"></audio>`:'<p class="review-note">음성 준비 중</p>'}</div>`).join('')}${v!=='fusha'?`<details><summary>표현 설명</summary><ul>${[...(s.notesByDialect[v]||[]),...(s.memosByDialect[v]||[])].map(n=>`<li>${esc(n)}</li>`).join('')}</ul></details>`:''}</section>`).join('')}</article>`).join('');
+      history.replaceState(null,'',`?day=${day}`);
+      root.querySelectorAll('audio').forEach(a=>{
+        a.addEventListener('play',()=>root.querySelectorAll('audio').forEach(other=>{if(other!==a)other.pause();}));
+        a.addEventListener('error',()=>{const note=document.createElement('p');note.className='review-note';note.textContent='음성을 불러오지 못했어요. 새로고침 후 다시 확인해주세요.';a.replaceWith(note);});
+      });
+    }
+    daySelect.addEventListener('change',render);
+    voiceSelect.addEventListener('change',render);
+    document.getElementById('review-prev').addEventListener('click',()=>{daySelect.value=String(Number(daySelect.value)-1);render();});
+    document.getElementById('review-next').addEventListener('click',()=>{daySelect.value=String(Number(daySelect.value)+1);render();});
+    render();
+  } catch {
+    root.textContent='검수 데이터를 불러오지 못했어요. 서버 실행 상태를 확인해주세요.';
+  }
+})();
+</script>
+</body>
+</html>

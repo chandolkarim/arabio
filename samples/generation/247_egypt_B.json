@@ -1,0 +1,23 @@
+{
+  "fingerprint": "59b9af3170d348bfa624f13780bbd4fb089136649271c80d5e6e9c9c78f363e4",
+  "idempotency_key": "950c5fcb-daba-4f62-9675-f7913df87a00",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "وأنا كمان كنت هعيط في المشهد ده.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2529d2e2-e1c5-4505-b1e7-22849cc578b3",
+  "operation": {
+    "id": "2529d2e2-e1c5-4505-b1e7-22849cc578b3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

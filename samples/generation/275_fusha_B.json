@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d0b2c182e658978978173704d2744fb5128036910cf3c76648e5f9de6af73c8c",
+  "idempotency_key": "5ebde00f-07e3-4fb9-b757-0555c4bef154",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "في الغالب يجب على العريس أن يجهز البيت والمهر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c627fc5e-046c-4d44-ae8e-66361600ae3f",
+  "operation": {
+    "id": "c627fc5e-046c-4d44-ae8e-66361600ae3f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

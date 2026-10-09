@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8e02ee2f17667d2a24dcdd37fae7c9327a18ee54c86493e1cfa03b10fe7b9934",
+  "idempotency_key": "d74383bc-c359-4524-9a7c-d06cb51902f9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ما مكونات هذا الطبق؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2451ad83-cd5c-483c-b974-7f56fe7de5c8",
+  "operation": {
+    "id": "2451ad83-cd5c-483c-b974-7f56fe7de5c8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

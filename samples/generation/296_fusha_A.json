@@ -1,0 +1,23 @@
+{
+  "fingerprint": "664d6c169676ae8be991e36316a98aceb5733bbc6898897952f4701f0bec77c0",
+  "idempotency_key": "7c808277-bad7-4d22-a5fc-14f212d67b07",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "عندما جئت أول مرة لم أكن أفهم كلمة واحدة، والآن أفهم حتى النكات.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a2838181-dfae-4639-baec-ec525c82ae68",
+  "operation": {
+    "id": "a2838181-dfae-4639-baec-ec525c82ae68",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3200,
+    "completion_bytes": 284160
+  },
+  "complete": true,
+  "seconds": 5.92
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e9d12ef62277147fdcc6d71c67d60d24ba394dac16b661af16220a8825ada00c",
+  "idempotency_key": "98c19849-fcff-474d-bdac-7f89d04b2efc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "الساعة قربت عالتلاتة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fb757d68-e61c-40f2-a4e3-c8ff017825f4",
+  "operation": {
+    "id": "fb757d68-e61c-40f2-a4e3-c8ff017825f4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

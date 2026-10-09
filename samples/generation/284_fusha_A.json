@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8ed427ed7455f85f8914a17c6ec3151ecdbe15bc287b1f7b54a6b8d81ec97aa0",
+  "idempotency_key": "6588cc51-6550-49bd-84b7-ce043260591c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "يبدو أن الأطفال هذه الأيام ينظرون إلى هواتفهم طوال اليوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "03cbd110-b9f9-4b21-8f03-9e7f3ce61588",
+  "operation": {
+    "id": "03cbd110-b9f9-4b21-8f03-9e7f3ce61588",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2850,
+    "completion_bytes": 230400
+  },
+  "complete": true,
+  "seconds": 4.8
+}

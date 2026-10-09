@@ -1,0 +1,23 @@
+{
+  "fingerprint": "53a6979480461d0bb56441e5b5cfdc2298a3de82b2d574a321a7f6244fb5560c",
+  "idempotency_key": "136e0b74-cdbd-4182-aa6b-2ead7df70874",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "وأنا كمان كان نفسي أقابلك من زمان.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ae34396e-1b85-4b2d-8364-33c238480e81",
+  "operation": {
+    "id": "ae34396e-1b85-4b2d-8364-33c238480e81",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

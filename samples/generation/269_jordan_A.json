@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4879aa2bf182a2091da3d525b0c5e316d8031bc57dea0b5f47cbcdd0e0c00d5e",
+  "idempotency_key": "dff32832-4d79-4c73-871a-650f8398a097",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "قدمت كل الأوراق، إيمتى تقريبًا بتطلع النتيجة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b3a59ecd-9c43-4683-b0f6-a621e17de3ad",
+  "operation": {
+    "id": "b3a59ecd-9c43-4683-b0f6-a621e17de3ad",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

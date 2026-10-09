@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ac4ec0e94e8437505e4b89bf3a8e67867808c174032c0f4dc2d4732e34091d26",
+  "idempotency_key": "ca09fced-f175-4a71-86e0-e9712b191003",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "الناس هون أحنّ بكتير، وبحكوا حتى مع ناس ما بعرفوهم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8104a224-723c-4596-a94d-1868a62c4d73",
+  "operation": {
+    "id": "8104a224-723c-4596-a94d-1868a62c4d73",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2550,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

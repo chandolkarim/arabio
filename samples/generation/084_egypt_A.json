@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9ea7f596fd3b6e4d327a205f9a308d035489e264c7034ce5b8f51dac9567a45c",
+  "idempotency_key": "a564cb20-33c1-47a0-843d-c99f60d36486",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "تسلم إيدكم، الأكل كان تحفة. هاجي تاني أكيد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "bc162d82-bf46-45a0-869e-d2fe0ada7c80",
+  "operation": {
+    "id": "bc162d82-bf46-45a0-869e-d2fe0ada7c80",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2150,
+    "completion_bytes": 245760
+  },
+  "complete": true,
+  "seconds": 5.12
+}

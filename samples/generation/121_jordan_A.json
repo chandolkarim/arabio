@@ -1,0 +1,23 @@
+{
+  "fingerprint": "be13c6c5d50b0cd4a14ac63de9b698bfad6951f58c79cf1268fa11d38c5ea48b",
+  "idempotency_key": "c1d6eaa8-7b19-46fd-a72f-6d19d0718ba2",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شو أسرع طريقة أروح فيها عالمطار؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "732f71c5-d1f0-44d8-8429-ff451357d741",
+  "operation": {
+    "id": "732f71c5-d1f0-44d8-8429-ff451357d741",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

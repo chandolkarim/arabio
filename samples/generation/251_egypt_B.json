@@ -1,0 +1,23 @@
+{
+  "fingerprint": "634c01117d6bd6444eea777a12bcafbf88196401a7f2b7bb1cf7ddb400a7747c",
+  "idempotency_key": "c01fa386-0372-4a7f-bafa-9266a66519c5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "طبعًا. فرصة زي دي يمكن ما تجيش تاني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c913a906-0f1f-475b-b6a4-9b8b13c69ff1",
+  "operation": {
+    "id": "c913a906-0f1f-475b-b6a4-9b8b13c69ff1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

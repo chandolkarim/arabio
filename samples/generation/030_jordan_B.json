@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f085066b87bf7eb8572cee83206ba42b93dda626d972bf14e12ed6eb5210a7fe",
+  "idempotency_key": "9954c0b5-78ae-4e7a-b803-a256f75e056e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "رح أضل فصل واحد وبعدين برجع على كوريا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2ba7a8c2-291e-4d48-8c97-1020e0ab7dda",
+  "operation": {
+    "id": "2ba7a8c2-291e-4d48-8c97-1020e0ab7dda",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

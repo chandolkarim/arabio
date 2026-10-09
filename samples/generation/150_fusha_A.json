@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d143a57d8816d2b6d8c13c91835e14975829705fc2aa325395e5b2ffee9bba8e",
+  "idempotency_key": "2e315ef9-931e-459d-a546-8c195543dfd3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ماذا قلتَ الآن؟ لم أسمع جيدًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f6c85381-f72f-46df-9319-559a5e2888ad",
+  "operation": {
+    "id": "f6c85381-f72f-46df-9319-559a5e2888ad",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

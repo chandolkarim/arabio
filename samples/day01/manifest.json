@@ -1,0 +1,29 @@
+{
+  "service": "Sawtak Arabi",
+  "model": "ArabicTTS v1",
+  "enhance_pronunciation": false,
+  "day": 1,
+  "sentence_ids": [
+    "001",
+    "002",
+    "003"
+  ],
+  "samples": [
+    {
+      "dialect": "egypt",
+      "voice": "أشرف",
+      "voice_id": "3e88109c-4903-5b09-a250-b43305ea3b82",
+      "text": "egypt.txt",
+      "audio": "egypt-ashraf.wav",
+      "duration_seconds": 12.16
+    },
+    {
+      "dialect": "jordan",
+      "voice": "يزن",
+      "voice_id": "3a2e57a2-5730-5102-8208-77b1997354b8",
+      "text": "jordan.txt",
+      "audio": "jordan-yazan.wav",
+      "duration_seconds": 13.6
+    }
+  ]
+}

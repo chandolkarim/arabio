@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8c2b706c7be0eb9579a668b4d0cbb033a86af5ad4ed44edec9b6fbbd69529d7f",
+  "idempotency_key": "afd410d8-3df8-4ce0-b226-91b6fb1ee471",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "رح أفكر شوي وبرجعلك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e87f936e-b275-470e-aef5-290d09c4208c",
+  "operation": {
+    "id": "e87f936e-b275-470e-aef5-290d09c4208c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

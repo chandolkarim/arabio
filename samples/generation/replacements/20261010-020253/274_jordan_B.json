@@ -1,0 +1,23 @@
+{
+  "fingerprint": "deb1a32a6a97f00f3534de204fe7f8844da40a5f451ac6e3b84969a6b45b2c95",
+  "idempotency_key": "35b4e175-920e-4cde-8212-eea7e97527d3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بفكر لأنه البيوت وتكاليف الجيزة كتير غالية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3d2225f2-b063-4fd8-89e7-273635694a23",
+  "operation": {
+    "id": "3d2225f2-b063-4fd8-89e7-273635694a23",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2150,
+    "completion_bytes": 384000
+  },
+  "complete": true,
+  "seconds": 8.0
+}

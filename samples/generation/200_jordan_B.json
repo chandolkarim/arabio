@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b59ddd6d71ac7b77caf785824f8d8e299c9ff7cbda0e0a5af271040c4e01ced1",
+  "idempotency_key": "fca69660-6014-47a8-9905-f22c68e85192",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "رح أرجع آخر كانون الأول وأجهز للفصل الجاي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3676e82b-c98a-4cd3-8e0d-c375f45ca069",
+  "operation": {
+    "id": "3676e82b-c98a-4cd3-8e0d-c375f45ca069",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

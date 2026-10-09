@@ -1,0 +1,23 @@
+{
+  "fingerprint": "704fa95ab0ef4eaafc1211b92b80c5e01fde1050b6af8daa852343b7423054bd",
+  "idempotency_key": "3dbd5d7a-837e-4f7d-8c4b-469951bd6e37",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "اليوم بتخلص الساعة تنتين، وبعدها عندي موعد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0ed34282-ad1f-4119-99fb-6243702feed1",
+  "operation": {
+    "id": "0ed34282-ad1f-4119-99fb-6243702feed1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2150,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

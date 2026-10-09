@@ -1,0 +1,23 @@
+{
+  "fingerprint": "cfbaeffad7374bf31ab0ebfb7e7403ac3d6509b336d68ae7e5b2b105b4b96b4d",
+  "idempotency_key": "c1a148d0-3724-4cb6-b40e-2eda09199ebb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "واحد قهوة تركي لو سمحت، سكر خفيف.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a3ac4f03-9399-4929-94f6-b46ce3743c76",
+  "operation": {
+    "id": "a3ac4f03-9399-4929-94f6-b46ce3743c76",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

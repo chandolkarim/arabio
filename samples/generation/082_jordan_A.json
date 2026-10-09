@@ -1,0 +1,23 @@
+{
+  "fingerprint": "cf89e97469056a55f92cb9ea06352934460c704a60824146a0e802bf9b4d1b01",
+  "idempotency_key": "1667e3a0-d9a9-4c84-932e-2d9136d8c348",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ممكن كل واحد يدفع لحاله؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fefbca49-f145-4ee4-a38c-15660c4fb826",
+  "operation": {
+    "id": "fefbca49-f145-4ee4-a38c-15660c4fb826",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

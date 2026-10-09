@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5711b67ef6d4c9f13129958fc69cafde38d70a7c2ce760b695a3da0b89094d7e",
+  "idempotency_key": "3c3a2c52-8b3d-476b-a1d9-cb5872a18746",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بالأول ما صدقت، بس بعدين انبسطت كتير.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "37b0c4bd-be33-492b-8be7-662def38ad34",
+  "operation": {
+    "id": "37b0c4bd-be33-492b-8be7-662def38ad34",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "146322eb6733f2cd4275153e1b9d0bc4e802436c4e3e71a2225422b535230cce",
+  "idempotency_key": "b35c6fb3-6d63-4241-88be-5b3f4d007216",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ما أكثر مكان يستحق الزيارة هنا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ab438f73-7921-46e0-97b5-0173f6f6574b",
+  "operation": {
+    "id": "ab438f73-7921-46e0-97b5-0173f6f6574b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

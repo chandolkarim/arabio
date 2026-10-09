@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2c0312424ebe2ccdb1035aa07e84237dafef9507fd29f74f5d89aaed8f97639d",
+  "idempotency_key": "a3194d86-e1f1-4e93-9ad7-37bf35dd3996",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بتلتمية. دي جلد طبيعي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "35e72937-f6aa-45f8-8ebb-1e19fa5f68f6",
+  "operation": {
+    "id": "35e72937-f6aa-45f8-8ebb-1e19fa5f68f6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

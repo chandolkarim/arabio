@@ -1,0 +1,23 @@
+{
+  "fingerprint": "97b6d1c62703eaf655c0a2797bb9f5d61ee71422551ea19c11a4984fcc2ca7b2",
+  "idempotency_key": "9d450fc0-462a-4dc8-8a29-05ef023b8a09",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ممكن كمان شوي صوص؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "848adce1-6823-4c5f-b032-fcc086ebd991",
+  "operation": {
+    "id": "848adce1-6823-4c5f-b032-fcc086ebd991",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

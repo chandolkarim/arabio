@@ -1,0 +1,23 @@
+{
+  "fingerprint": "df7926cb413123aa6b59578e48887460fc70aa4fd5223aff5349dc0038c20e39",
+  "idempotency_key": "c9781ed7-c461-4183-b276-95d88a29da66",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "قلت إيه دلوقتي؟ ما سمعتش كويس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "28e1842f-5ec8-4d9f-bb75-bdf8745b8071",
+  "operation": {
+    "id": "28e1842f-5ec8-4d9f-bb75-bdf8745b8071",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

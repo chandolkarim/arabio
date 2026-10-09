@@ -1,0 +1,23 @@
+{
+  "fingerprint": "474ac8a782373229e0d082cc48c094f94c6d165a841a22d75f0a66706e6eddca",
+  "idempotency_key": "c20fc929-94f2-4b07-b8aa-8a4ff05ff106",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "يبدو أن ثقافة العائلة مختلفة كثيرًا بين كوريا وهنا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6450c0fc-6bde-4843-92d6-0a2330f81171",
+  "operation": {
+    "id": "6450c0fc-6bde-4843-92d6-0a2330f81171",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2550,
+    "completion_bytes": 207360
+  },
+  "complete": true,
+  "seconds": 4.32
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "01da2f57eed5737052a5a5d6f011769f195a4c63fd3d0d2c1c80c1aedf12cf3a",
+  "idempotency_key": "96f12dbf-f053-4a37-bd14-7d051e63eb5e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "مهما فكرت، أظن أن ذلك مستحيل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "fded6b23-3255-41b6-ab6c-0b40111ad1e7",
+  "operation": {
+    "id": "fded6b23-3255-41b6-ab6c-0b40111ad1e7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1450,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

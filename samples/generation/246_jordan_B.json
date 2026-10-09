@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c38c4dddb9962c4ceb5cdb0b0a03b4c0feee417d299e26569f11782a186b8e55",
+  "idempotency_key": "dcffff7f-ae1a-4fb9-8402-a4a3bfc8a2bf",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أكيد. والناس هون خصوصًا بفكروا هيك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "179c6b66-51ae-435f-944c-55ba922491c9",
+  "operation": {
+    "id": "179c6b66-51ae-435f-944c-55ba922491c9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

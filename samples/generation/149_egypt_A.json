@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2a081997ba89db27a918a6c18de2b7883d9ff4b6b1aaa2f58ded330b108308eb",
+  "idempotency_key": "053b701e-92e5-4e9d-9f3a-178b278f5e64",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "في إيه؟ مالك كده؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "854a194c-c21a-40be-ac2b-c21ff6fe97a6",
+  "operation": {
+    "id": "854a194c-c21a-40be-ac2b-c21ff6fe97a6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

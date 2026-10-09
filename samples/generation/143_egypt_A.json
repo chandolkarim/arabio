@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f71a5dd5591728d6b96f411cfaa2d231af107b660b98f0db4d5a9be98218459d",
+  "idempotency_key": "ca36f9f3-4e4f-4072-a09a-c484239b7599",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "جالي حاجة فجأة، شكلي مش هقدر آجي النهارده.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "04214661-fb7d-46f1-8e3a-8a3d12e30225",
+  "operation": {
+    "id": "04214661-fb7d-46f1-8e3a-8a3d12e30225",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 261120
+  },
+  "complete": true,
+  "seconds": 5.44
+}

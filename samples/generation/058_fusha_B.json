@@ -1,0 +1,23 @@
+{
+  "fingerprint": "833852b7ed863610f0e6eec639dee0512d43106c3b52e0485a748a982ce7cfea",
+  "idempotency_key": "401afe7d-7084-420a-a387-180cc14fa9d1",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "نعم، إنها مكتوبة بجانب الصندوق.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f0beea0e-d370-4ace-8dbb-61d38aad4c41",
+  "operation": {
+    "id": "f0beea0e-d370-4ace-8dbb-61d38aad4c41",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

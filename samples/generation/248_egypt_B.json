@@ -1,0 +1,23 @@
+{
+  "fingerprint": "12b55852e98f83351e7e2d9d1dc4f0b0ab8fd7a6be7f91e7b7f6ef0e6fde968c",
+  "idempotency_key": "1b84a467-23c7-4779-ac2f-5c471852366e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "يعني الأغنية بترجعلك كل ذكريات الوقت ده.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a9f9d21f-103c-4f77-b1e5-2cbf786f4da0",
+  "operation": {
+    "id": "a9f9d21f-103c-4f77-b1e5-2cbf786f4da0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

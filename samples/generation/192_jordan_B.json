@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1eb5021d96c15d6e0aba254cd2b57904b6df7792c66f804041d8940149acfd9b",
+  "idempotency_key": "6a578d08-643d-4f5b-8db8-bd0faa399df0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "رح أطلع بكير، حوالي سبعة الصبح.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b7ccb2e1-60f5-45d9-8d5c-1905a9f5e6a1",
+  "operation": {
+    "id": "b7ccb2e1-60f5-45d9-8d5c-1905a9f5e6a1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

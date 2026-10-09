@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8ab4f9af1dd5e79331b7e6bfd669453088f367ea4926fe5256025b0d4792bf07",
+  "idempotency_key": "77f0a314-dd50-4272-a58f-205910093f90",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "تبدو سعيدًا اليوم. هل حدث شيء جميل؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9d282f38-41fd-4fb9-9826-5ecde0981ad1",
+  "operation": {
+    "id": "9d282f38-41fd-4fb9-9826-5ecde0981ad1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

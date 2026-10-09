@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9d9dc4e4ccd1de39c092320e7f2e9e31d10a7f51e8fb56f170d14d7b9a901199",
+  "idempotency_key": "a53bf28d-4c94-433a-b604-caecb72d4909",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لنلتقِ في المقهى أمام البوابة الرئيسية للجامعة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7a4f51ca-b051-48b1-927c-e14f7f8a3565",
+  "operation": {
+    "id": "7a4f51ca-b051-48b1-927c-e14f7f8a3565",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

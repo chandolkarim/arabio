@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c0201ab272c587aa637faa47ea92d9f7838141e609ba88f61b30defde388b5f2",
+  "idempotency_key": "6a994eae-f726-47d2-9b8e-4d980f1e02ad",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بكوريا صاروا كتير الناس اللي ما بتجوزوا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5a60370b-56f8-42e8-bc7b-275bfadf8033",
+  "operation": {
+    "id": "5a60370b-56f8-42e8-bc7b-275bfadf8033",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

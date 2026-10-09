@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ac8c8ca5c2ef8b27d86a49b3a5cfc2c6de2c513cd1bbda77c37b3d87b88e87bb",
+  "idempotency_key": "33ebed00-bb19-4bad-8a07-ee2dcd1ebd36",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "برأيك أي وحدة أحسن؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1fb494c7-076e-44bc-ac30-10d2f98a3c09",
+  "operation": {
+    "id": "1fb494c7-076e-44bc-ac30-10d2f98a3c09",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

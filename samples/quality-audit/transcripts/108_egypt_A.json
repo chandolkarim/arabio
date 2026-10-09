@@ -1,0 +1,55 @@
+{
+  "name": "108_egypt_A",
+  "day": 36,
+  "text": "في صرافة قريبة من هنا؟",
+  "variant": "egypt",
+  "side": "A",
+  "duration": 3.84,
+  "speech_span": 3.34,
+  "voiced": 3.28,
+  "chars": 17,
+  "dbfs": -21.8,
+  "peak": 0.8034,
+  "ratio": 0.19647058823529412,
+  "leading": 0.12,
+  "trailing": 0.38,
+  "clip": 0.0,
+  "length_factor": 2.1,
+  "volume_delta": -1.0,
+  "flags": [
+    "long_speech"
+  ],
+  "sha256": "098bea3c04a47baf3e2b2ca132d81533acde8ff92fe78ad3b4562164d6df1e89",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "transcript": "في صرفة و ريبا من هنا",
+  "match": 0.848,
+  "recognized_length_factor": 0.94,
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 3.42,
+      "text": " في صرفة و ريبا من هنا",
+      "tokens": [
+        50365,
+        8978,
+        20328,
+        28480,
+        3660,
+        4032,
+        12602,
+        1829,
+        3555,
+        995,
+        9154,
+        34105,
+        50536
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.6098791531154087,
+      "compression_ratio": 0.8043478260869565,
+      "no_speech_prob": 2.3730523324161368e-08
+    }
+  ]
+}

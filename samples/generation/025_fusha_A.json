@@ -1,0 +1,23 @@
+{
+  "fingerprint": "179c83b75361763e06e226aefa76fb7e08db57158e1557450347941377cdffb3",
+  "idempotency_key": "15376242-34bc-4aed-b175-63d9c02eb99e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ما تخصصك في الجامعة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c76c7759-bb4a-4042-85d7-d36f9e25b48c",
+  "operation": {
+    "id": "c76c7759-bb4a-4042-85d7-d36f9e25b48c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

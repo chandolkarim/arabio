@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a3079db1dcd14676e9ec1dd77d8a7c532d415cef218a180563d469517e9fea2b",
+  "idempotency_key": "d9dba93c-8a7d-4e4f-8f4a-5abf30049e84",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "برأيك قديش تعلم اللغة بساعد إنك تفهم البلد؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b6546d0c-8ba9-4bb2-88ab-b80099488261",
+  "operation": {
+    "id": "b6546d0c-8ba9-4bb2-88ab-b80099488261",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2150,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

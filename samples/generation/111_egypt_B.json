@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6621a9b844db683bd94184db1c5b4e29bc7a8e09ada0a1a38ee8600d528ad906",
+  "idempotency_key": "b384de41-8ef4-48b3-946d-0233e6aedbc8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "العداد بايظ، هوديك بأربعين وخلاص.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f52713d0-7184-49e2-9811-e93a2575335c",
+  "operation": {
+    "id": "f52713d0-7184-49e2-9811-e93a2575335c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

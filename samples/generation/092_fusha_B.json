@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e6ba35c8049dc349e18517b99790673df4daf07fb9496069d961003450482e1d",
+  "idempotency_key": "55660b05-db6a-455e-b196-00264fc4eb6d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "سأرى إن كان موجودًا في المخزن.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3790c736-4e75-43a6-a8e1-0f2cc221e58b",
+  "operation": {
+    "id": "3790c736-4e75-43a6-a8e1-0f2cc221e58b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

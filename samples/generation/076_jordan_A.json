@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9003b72c8c09c635c4f9f480cf731b2a9781f11c9fbb35498e4a834e2804879e",
+  "idempotency_key": "10e3a494-e133-4f77-8e4f-c831fc66cefd",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "الأكل كتير زاكي. يسلموا إيديك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "24c8c166-0ddc-45e7-afec-83ff889e7020",
+  "operation": {
+    "id": "24c8c166-0ddc-45e7-afec-83ff889e7020",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

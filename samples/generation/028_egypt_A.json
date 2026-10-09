@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a22b9d452ca164ae6c6fad0f2e81b909234a28f2f686b7e08605e496a0b8a6e6",
+  "idempotency_key": "9717ce42-21f3-45df-babd-d87e42f438a0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "عربيك حلو أوي! اتعلمته فين؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2952c2ac-b8bf-42fe-9cb5-0e560846bae0",
+  "operation": {
+    "id": "2952c2ac-b8bf-42fe-9cb5-0e560846bae0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

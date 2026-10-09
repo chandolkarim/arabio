@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e1b22db86261fa9cdd1b65cff9937d5c0714070799fb45038a8c27b38a7f4be1",
+  "idempotency_key": "c7deede6-e098-43ec-9993-d9e44c0813ac",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بصراحة مش بحبه أوي، دسم زيادة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "be5913be-027d-41ef-9afc-3aea94b86d2e",
+  "operation": {
+    "id": "be5913be-027d-41ef-9afc-3aea94b86d2e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

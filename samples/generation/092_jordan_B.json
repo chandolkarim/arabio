@@ -1,0 +1,23 @@
+{
+  "fingerprint": "de38a849570230c31b3b91a14fe4f7c3b59f667eb8064a39bc7b13db5227a831",
+  "idempotency_key": "e1d0c365-a200-4595-82c2-83f984f51d40",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "رح أشوف إذا في بالمستودع.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "12ac2f11-2fe8-43bd-99df-4ba5e9e2d334",
+  "operation": {
+    "id": "12ac2f11-2fe8-43bd-99df-4ba5e9e2d334",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

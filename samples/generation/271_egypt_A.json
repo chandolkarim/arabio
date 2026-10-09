@@ -1,0 +1,23 @@
+{
+  "fingerprint": "91218a959f63f4b38c1b070c9047305df52680ef58b20fe5e6678b31b3a05e4e",
+  "idempotency_key": "ff385cb1-8279-4f60-b5f3-4959929339d9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "الحقوني! صاحبي وقع فجأة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "66ec6d79-2e6d-4c36-aef4-4f69864b8874",
+  "operation": {
+    "id": "66ec6d79-2e6d-4c36-aef4-4f69864b8874",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

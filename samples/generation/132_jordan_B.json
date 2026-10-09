@@ -1,0 +1,23 @@
+{
+  "fingerprint": "870155812b59c7ef22ccea89e55134aa6ab4d147a6dc7044f1d04f13297c8c0a",
+  "idempotency_key": "af0f33c6-0447-4ddd-9edd-4bbd4b027908",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "خلينا نلتقي بالكافيه اللي قدام باب الجامعة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a1bcd87a-3563-4bec-9ba0-22d5b6c1df58",
+  "operation": {
+    "id": "a1bcd87a-3563-4bec-9ba0-22d5b6c1df58",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2150,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ca6295a9dd9391ae3c2caab23583f3dfe8f07465acbbab0df366e7b56d7a6491",
+  "idempotency_key": "38359da4-9c4a-4ab1-983f-814cdb854ac3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "الإيجار مئتان وخمسون، وتدفع الكهرباء والماء على حدة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b45d54f8-6b2e-41f7-9aa7-7cfe977c07d8",
+  "operation": {
+    "id": "b45d54f8-6b2e-41f7-9aa7-7cfe977c07d8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2600,
+    "completion_bytes": 215040
+  },
+  "complete": true,
+  "seconds": 4.48
+}

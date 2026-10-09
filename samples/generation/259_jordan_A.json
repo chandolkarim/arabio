@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5390276ffaf825617b36df7f38031b2771b3b740ed19fc090ffd34b51cb29547",
+  "idempotency_key": "73b6f8c9-55e3-4440-83f7-190d53395773",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "النت بقطع وبرجع طول اليوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "4defac86-9cbe-49c6-9eb3-6abdf875d7cb",
+  "operation": {
+    "id": "4defac86-9cbe-49c6-9eb3-6abdf875d7cb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

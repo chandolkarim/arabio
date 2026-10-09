@@ -1,0 +1,23 @@
+{
+  "fingerprint": "88477302563524e2e915246d7618a70faeefbc8d4abb8ed35cbcc9b99a962a51",
+  "idempotency_key": "ba50a946-467c-4c9e-9d9b-a184e59bff8f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "كيلو البندورة بقديش؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1f9edc75-0b76-4f0a-95bf-4c306a588dfd",
+  "operation": {
+    "id": "1f9edc75-0b76-4f0a-95bf-4c306a588dfd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

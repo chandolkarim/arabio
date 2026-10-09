@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f75d5ad85245cdbaedd17a8e2f63a6fe987de4fb52a867d3acae3cf54f589ef9",
+  "idempotency_key": "531395e2-edf1-4ba8-8720-f329748d13b8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لا، هفضل هنا وأسافر مدن تانية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9c8d1c6a-32ef-4a2f-91d0-e7b168ff6fd2",
+  "operation": {
+    "id": "9c8d1c6a-32ef-4a2f-91d0-e7b168ff6fd2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

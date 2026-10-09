@@ -1,0 +1,23 @@
+{
+  "fingerprint": "42fde7e451924abeda184f10127390f5a740c049d2163bcfabd75081992ba8c1",
+  "idempotency_key": "49cb7a84-d7ba-48c5-ad34-6173c0704285",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "بالطبع، سأحضرها حالًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d23edbef-b165-4f2c-9124-c17644ada426",
+  "operation": {
+    "id": "d23edbef-b165-4f2c-9124-c17644ada426",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

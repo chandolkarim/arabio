@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0f8a7ef97dc4ced4a3e6bdf3239b4d70290e91371563fd3d6681314c16395e99",
+  "idempotency_key": "dc6f250e-436f-40ea-856a-e0c39d2bca65",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "آه، أخطأنا. سأغيره لك حالًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "4032a647-69f2-49d3-a5f7-8420a3d99247",
+  "operation": {
+    "id": "4032a647-69f2-49d3-a5f7-8420a3d99247",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

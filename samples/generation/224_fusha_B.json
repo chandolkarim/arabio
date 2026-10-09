@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9a02717f53d8c212f4360dfef8307aba10728dafcba8a6141026f4acbe2412fc",
+  "idempotency_key": "5eda4816-bd48-4af2-8caf-6da1d9c6acf9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لقد مضى الأمر، فلا تشغل بالك به كثيرًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b4b35f0f-2d1e-4b74-8828-bdeaead7da27",
+  "operation": {
+    "id": "b4b35f0f-2d1e-4b74-8828-bdeaead7da27",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

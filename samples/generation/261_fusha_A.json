@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8659e28c941618df78e601ae02b94deea63fb67b7927132490f8bf436d2674f7",
+  "idempotency_key": "60b17277-45bf-4ad2-8ff9-82f4a677d629",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "الطابق العلوي مزعج جدًا كل ليلة، لا أستطيع النوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d64cd39b-108e-4cce-9e38-cb15084183dd",
+  "operation": {
+    "id": "d64cd39b-108e-4cce-9e38-cb15084183dd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2450,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

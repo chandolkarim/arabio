@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3fde4b5149a8f9cfa6baf4a33e85b5ee5ee49edf097961d8fb77f094315e1218",
+  "idempotency_key": "85fcfb0f-2bd7-4e6c-a6bb-34c2125be9de",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بتدفعها للسواق جوه الأتوبيس على طول.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0dd37208-ef71-4607-86a0-f14025335286",
+  "operation": {
+    "id": "0dd37208-ef71-4607-86a0-f14025335286",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

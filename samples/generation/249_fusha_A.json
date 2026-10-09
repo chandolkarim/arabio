@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d0fc54bddf50595fd09409c4fe8876eef13a1857609606fdc6400d37510e16fd",
+  "idempotency_key": "02ae2514-007b-4ab2-b36b-72fff8d91daa",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أصبحت مرتاحًا أكثر بكثير لأنك قلت ذلك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "027fa96d-b2a5-4d7b-9fb1-54c390bab2ea",
+  "operation": {
+    "id": "027fa96d-b2a5-4d7b-9fb1-54c390bab2ea",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

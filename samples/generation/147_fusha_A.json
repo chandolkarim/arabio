@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4ea406a0bd71fd9eedb4168bbc7a6d629c2d9ba447ac5e2d165322fd7f31bc43",
+  "idempotency_key": "bf3a062a-9d7a-4595-ae24-45908cd553ec",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "قلتَ \"إن شاء الله نلتقي غدًا\"، هل ستأتي حقًا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "35d6bfba-f65d-48b4-919e-cf7963052074",
+  "operation": {
+    "id": "35d6bfba-f65d-48b4-919e-cf7963052074",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

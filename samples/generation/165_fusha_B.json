@@ -1,0 +1,23 @@
+{
+  "fingerprint": "fc389074e58096e6f7830afae49136d9fab396007179bf7874d8bff0ed09c882",
+  "idempotency_key": "0ffe67c8-3e57-435c-86c5-faf6830c0e20",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "معناهما متقارب، لكن إحداهما تستخدم في المواقف الرسمية فقط.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d707eeee-9bb7-4265-aec2-692992cb3f66",
+  "operation": {
+    "id": "d707eeee-9bb7-4265-aec2-692992cb3f66",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2900,
+    "completion_bytes": 245760
+  },
+  "complete": true,
+  "seconds": 5.12
+}

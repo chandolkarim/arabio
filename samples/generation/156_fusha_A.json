@@ -1,0 +1,23 @@
+{
+  "fingerprint": "793c3166ba82647287431e00d7fd7c4a9773ea64c0b99ae27e4ddc98ea18de63",
+  "idempotency_key": "305a1d41-f2fa-416c-8130-9d0608b43d93",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كيف عرفتَ هذا الخبر؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d8ea6208-6670-4e44-8b1e-3523c8bd7bdb",
+  "operation": {
+    "id": "d8ea6208-6670-4e44-8b1e-3523c8bd7bdb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

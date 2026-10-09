@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a92796146b229ec95ca494b78243053e530f04eb7b26b3d72caccb6422e06139",
+  "idempotency_key": "9c89e5bf-4eef-4a6e-8dca-744a3a28cc57",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "وأنا جاي قبل شوي شفت صاحب قديم بالصدفة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "05e4249f-0a46-4252-a4b8-9c320c8bae41",
+  "operation": {
+    "id": "05e4249f-0a46-4252-a4b8-9c320c8bae41",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

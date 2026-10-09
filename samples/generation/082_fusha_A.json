@@ -1,0 +1,23 @@
+{
+  "fingerprint": "81afc6b4055697f7bf71341ab63a1f15a859c32bb6fbada0b388ee5ddff629a4",
+  "idempotency_key": "e24f2945-940b-436e-8016-84fca2aa365f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل يمكن أن يدفع كل واحد حسابه؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a5cc396a-2869-4529-92bc-ecc08628fdfb",
+  "operation": {
+    "id": "a5cc396a-2869-4529-92bc-ecc08628fdfb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

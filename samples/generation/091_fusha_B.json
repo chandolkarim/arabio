@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e6c4abad138b5b9dc223b3472cf37d9caea9a389f78a75b5d0489c7b26fc02a3",
+  "idempotency_key": "dd2f1ee1-f923-43f7-baf3-8fa8229a73df",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لدينا الأسود والبني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "538cb25f-b3ee-40fa-9a93-5ee989aa082c",
+  "operation": {
+    "id": "538cb25f-b3ee-40fa-9a93-5ee989aa082c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

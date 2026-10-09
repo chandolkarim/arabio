@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6dbe507be70737cab5097e966879ff4517f34de6b05b0cb7ecd7b5fa9e0a3296",
+  "idempotency_key": "9e0f4f69-0c35-45b2-bd57-317bd3493b84",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "وين ساكن هلّأ؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ab6eced7-e32a-41c0-8b6f-ab7d3dcdaa72",
+  "operation": {
+    "id": "ab6eced7-e32a-41c0-8b6f-ab7d3dcdaa72",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 700,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

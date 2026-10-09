@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8479eb2295eab7815a0c65325740aaba4735a51d4703ca46b26f9f2d0892d775",
+  "idempotency_key": "5e451b7e-fcd2-45dd-9708-c6bf0d8aa16f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أنت هنا. المكان الذي تقصده في الشارع التالي مباشرة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f49781d8-09e6-48d4-aead-f90b90c5c165",
+  "operation": {
+    "id": "f49781d8-09e6-48d4-aead-f90b90c5c165",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2550,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

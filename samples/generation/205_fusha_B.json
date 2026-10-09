@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8125be78ca877aec13e6193bdcbe28f36168d4076867abba245dd73fe0c55bfd",
+  "idempotency_key": "00d2e4d0-5db6-4ac1-bccb-c42f1c81da74",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "فكرة جيدة. لقد أرهقت نفسك كثيرًا مؤخرًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9aa8423c-511c-47b2-9b8b-af11a9d8824a",
+  "operation": {
+    "id": "9aa8423c-511c-47b2-9b8b-af11a9d8824a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

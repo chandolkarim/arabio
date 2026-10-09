@@ -1,0 +1,23 @@
+{
+  "fingerprint": "de1f0d8b300cb17f71265f91df23c3bc7132a4bb63b07519a8ae9e004b98048d",
+  "idempotency_key": "18204e7c-abc3-49bc-abdd-46ce36ddb346",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "مشكور كتير على العزيمة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c226b617-660e-4a30-8ab9-aef379ed9cdb",
+  "operation": {
+    "id": "c226b617-660e-4a30-8ab9-aef379ed9cdb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1150,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

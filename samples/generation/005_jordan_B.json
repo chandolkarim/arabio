@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ba57d2d425aebf8877e4b85038a16dea82688e069bb2df5c8a839b5fd72a0a19",
+  "idempotency_key": "2ef9dcd9-1e8e-41f7-b948-ea3c2a1de268",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، لأنه ما نمت تقريبًا مبارح بالليل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c17b2728-98e6-4edc-808b-237389987325",
+  "operation": {
+    "id": "c17b2728-98e6-4edc-808b-237389987325",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "197d24bbbcc5c4126d34597cbca667858835f5e22bd4ed4bf1c91a7c98f81ab8",
+  "idempotency_key": "718006b2-c51a-4870-9dc4-c641802308af",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أنا نفسي أدوق أكل البلد دي على أصوله.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3236be9b-f85c-41cc-bd50-de7d7d59bc07",
+  "operation": {
+    "id": "3236be9b-f85c-41cc-bd50-de7d7d59bc07",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

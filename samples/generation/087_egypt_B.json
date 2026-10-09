@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d4e853aef3ff36d89a4bb4ac4d071e8b53aebbe97d7008011c7d028afd67c279",
+  "idempotency_key": "7ee4d326-383b-4ea5-a54f-349a9533d300",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لو طالب هنزلك شوية كمان.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f9a52348-0c7f-4a55-96b1-e6bb8ad8eb55",
+  "operation": {
+    "id": "f9a52348-0c7f-4a55-96b1-e6bb8ad8eb55",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

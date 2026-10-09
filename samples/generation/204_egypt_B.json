@@ -1,0 +1,23 @@
+{
+  "fingerprint": "81134991936604ef84867e2a420a9280880c9c7b8527ca29fab8abb75f11fde4",
+  "idempotency_key": "69271681-0816-4e1c-a139-015a2dfc29f5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أوعى تنسى، أنا هموت وأعرف.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "faa065a2-a28e-47e8-a0f9-ac4c993d9838",
+  "operation": {
+    "id": "faa065a2-a28e-47e8-a0f9-ac4c993d9838",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

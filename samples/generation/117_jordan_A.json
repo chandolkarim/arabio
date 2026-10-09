@@ -1,0 +1,23 @@
+{
+  "fingerprint": "47f8490335e1219c0b6fe2e4a4bc53ee6d27d61e6a87ddba06f1514c6004a8ec",
+  "idempotency_key": "0ccef69d-8678-4231-9b13-8bb77c6bf218",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "الأجرة وين بندفعها؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c13b58a9-6101-44bd-a3e4-8915eb37a823",
+  "operation": {
+    "id": "c13b58a9-6101-44bd-a3e4-8915eb37a823",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

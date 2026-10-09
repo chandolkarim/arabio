@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e2abc5682028d3a14110b2eef525f39306eebb0194a60fd254e7b2eb6d0534f0",
+  "idempotency_key": "5d85303f-10fe-4dc6-af0d-9639c9e2b974",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "عايز أبقى مترجم فوري أو دبلوماسي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6cc1158d-dc4d-4a43-acfa-06464d89b83e",
+  "operation": {
+    "id": "6cc1158d-dc4d-4a43-acfa-06464d89b83e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

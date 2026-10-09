@@ -1,0 +1,23 @@
+{
+  "fingerprint": "53fd47e61be5691b67c789c2f4fd0088894d91f0d7d6ad2a17442ba813b572e4",
+  "idempotency_key": "ac77e262-179f-48fd-95a8-c7773e49345b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بطني بوجعني كتير وما نمت طول الليل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "71f59f8a-805a-4e3d-a1b9-35c083a55ec7",
+  "operation": {
+    "id": "71f59f8a-805a-4e3d-a1b9-35c083a55ec7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

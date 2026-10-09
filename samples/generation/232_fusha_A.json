@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9b7a8286137ce58485f14f1ca15ca9466cc1e290896dab3ce98feeb594cff1f0",
+  "idempotency_key": "423ead37-293e-427a-8496-ee78278e16b3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "تبدو حزينًا قليلًا هذه الأيام، هل حدث شيء؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a29e2bf0-9939-476d-93a7-64e1feeee797",
+  "operation": {
+    "id": "a29e2bf0-9939-476d-93a7-64e1feeee797",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

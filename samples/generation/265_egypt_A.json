@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6320c053ee95f15ca6e21c77cee6cd3af90be6df2bf937c3d396fae4388dea9a",
+  "idempotency_key": "d56ffb82-ff62-4d95-aaab-aedb9a01a56c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "عندي حساسية من البنسلين.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a820df99-5dac-4e47-a2e0-7871f6167a22",
+  "operation": {
+    "id": "a820df99-5dac-4e47-a2e0-7871f6167a22",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

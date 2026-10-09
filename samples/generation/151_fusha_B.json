@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7bcc404d4b143ed3ae304a3a7f33d89fa87cdbf2daba287355568cd243cd6326",
+  "idempotency_key": "4779ea95-bee6-4473-aa23-4d2d2b851dd9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كانت عندي حمى فبقيت في السرير طوال اليوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9c644db4-f2af-4a9d-9ae7-2b1f7ceac51a",
+  "operation": {
+    "id": "9c644db4-f2af-4a9d-9ae7-2b1f7ceac51a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

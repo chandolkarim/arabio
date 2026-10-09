@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7aeea7583250c51c52bbc115b9ab54f68259cdc85c038dbd895275f18131f619",
+  "idempotency_key": "2f41b5d9-072e-44a4-b8d0-ffab75fe3ced",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ماشي، سيّف نمرتي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "524943e3-224f-4808-bbb7-2e613f19adfd",
+  "operation": {
+    "id": "524943e3-224f-4808-bbb7-2e613f19adfd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

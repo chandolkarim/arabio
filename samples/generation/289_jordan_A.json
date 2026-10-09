@@ -1,0 +1,23 @@
+{
+  "fingerprint": "bd1225a9e274445e9d03f2cf7149dc88e82c3675391f7cc6ff3a5f25f8ad7d37",
+  "idempotency_key": "7b2e919b-6497-4a80-9417-9f19f35192d1",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "الناس هون شو رأيهم بشغل النسوان؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "31f1a539-7415-47dd-bc30-02eec97f3a53",
+  "operation": {
+    "id": "31f1a539-7415-47dd-bc30-02eec97f3a53",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

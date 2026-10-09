@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1a26c8b3c4fd8b8340de74f8b5dfb3427499160be1c3e88ff58372a5e3331484",
+  "idempotency_key": "f1972aa5-433c-44bc-ab66-f555d45f7d60",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "اضغط على هذا الزر واكتب المكان الذي تريد الذهاب إليه.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "26c6a48d-2aa1-494b-8edd-96c8fc888fe2",
+  "operation": {
+    "id": "26c6a48d-2aa1-494b-8edd-96c8fc888fe2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2650,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

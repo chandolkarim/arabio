@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1edcd3e9845b3338d34219e8dbb9b208d0a28c4e3d192b1a6a1ceadb54e5ecfb",
+  "idempotency_key": "413e0aa8-e8a9-4e16-9eec-df090e084d57",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "دي ملوخية، بتتاكل مع الرز.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f111498b-bc1c-493f-b9ef-e4f3ce6de7e5",
+  "operation": {
+    "id": "f111498b-bc1c-493f-b9ef-e4f3ce6de7e5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "296677615a1bc92a478619efa5edd23339738ba9e46ae62b90a4fdb127c316f1",
+  "idempotency_key": "f21298d7-0d87-480d-9c90-91fef36485bc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "كتير ناس بعرفوا الأخبار من التيك توك قبل النشرة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c7145d11-9487-4464-9d1d-d8766b6ee7cf",
+  "operation": {
+    "id": "c7145d11-9487-4464-9d1d-d8766b6ee7cf",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2400,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

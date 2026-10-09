@@ -1,0 +1,23 @@
+{
+  "fingerprint": "cd3cd6df54f91a8744ecb583744fafcc079774a29a0be1dc22c756c2567ee7fe",
+  "idempotency_key": "fa43781a-1788-478a-9805-80d5e36d7f40",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا تلمس ذلك من فضلك، إنه قديم جدًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "63fffcbf-c733-4cd3-b919-febcb2e75c7b",
+  "operation": {
+    "id": "63fffcbf-c733-4cd3-b919-febcb2e75c7b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

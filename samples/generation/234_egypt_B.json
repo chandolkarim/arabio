@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1e88c40b55f84d30fff6b8680c3d858f5ff31159e4ae9bf43f283b44fe881c1e",
+  "idempotency_key": "62b3ca91-976a-45e2-b976-9a3fcca3e9cd",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أيوه، بقيت أحسن بكتير من ساعة ما بقى عندي صحاب.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1b6b65e2-1773-4121-a5f4-ba5bf19d5177",
+  "operation": {
+    "id": "1b6b65e2-1773-4121-a5f4-ba5bf19d5177",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 299520
+  },
+  "complete": true,
+  "seconds": 6.24
+}

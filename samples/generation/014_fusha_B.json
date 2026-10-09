@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5849e8893432f15bb142e734371ba7d687fb5ad59acbe887436da2da42024a1e",
+  "idempotency_key": "b50b7dff-0301-4f99-a453-aa1512fdd3d9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا، وصلتُ أنا أيضًا للتو.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e2110722-2c5d-4b78-b419-5bb7c63d3d95",
+  "operation": {
+    "id": "e2110722-2c5d-4b78-b419-5bb7c63d3d95",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

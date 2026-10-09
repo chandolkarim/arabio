@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d3bd7e7c83065cb1f6ca5b310649c8ed1e02d323f910893557bacf563e543ca8",
+  "idempotency_key": "4bb75737-1950-4d05-a313-f5ca2b3ba1e1",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بدي أرتاح بالبيت اليوم وبس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "64a57de1-343c-4a50-8b62-6b869a2991b3",
+  "operation": {
+    "id": "64a57de1-343c-4a50-8b62-6b869a2991b3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

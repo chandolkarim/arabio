@@ -1,0 +1,23 @@
+{
+  "fingerprint": "37c63f0163d2fa3a635c50494eaa266bc826528e41b5b9a1c55d88ede063778f",
+  "idempotency_key": "a16f38a4-aa49-4b57-b13e-b370361dad05",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "الكهربا بتقطع كل شوية، هو ده العادي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "86b539ec-0b85-49e9-93b7-d837e3d4c6d1",
+  "operation": {
+    "id": "86b539ec-0b85-49e9-93b7-d837e3d4c6d1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

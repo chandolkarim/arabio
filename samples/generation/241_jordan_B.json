@@ -1,0 +1,23 @@
+{
+  "fingerprint": "680716d2955c9ced16d4f686d09f65823579cbf3cec604e5f93993777e4e7d86",
+  "idempotency_key": "32c10737-d8ec-46af-9715-be1807d1e21c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "زعلت شوي، بس ما في مشكلة. إنت ما كنت قاصد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "cd273091-5bc2-4668-9e9d-64bcd0334f64",
+  "operation": {
+    "id": "cd273091-5bc2-4668-9e9d-64bcd0334f64",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

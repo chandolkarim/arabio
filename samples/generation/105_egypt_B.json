@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c11bf10fcccf3ab92a22f452e8e344b80c54fa45d3b4b2a467a6ede9eca25580",
+  "idempotency_key": "dfd35595-b51f-4bfc-abb0-9e6bb08db247",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أيوه، عندنا تغيير بس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0a954333-38d7-4fe4-ae14-d8a8ce924470",
+  "operation": {
+    "id": "0a954333-38d7-4fe4-ae14-d8a8ce924470",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

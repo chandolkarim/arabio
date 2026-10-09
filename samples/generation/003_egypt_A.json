@@ -1,0 +1,23 @@
+{
+  "fingerprint": "81e87ca65e224f044ef31daaf1560254d9a8939f6957c8410e931b9fb3b60ee6",
+  "idempotency_key": "41ce1f44-b599-4c2f-b52a-0b5fd989cceb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "إزي العيلة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "bd357378-1fd5-45da-b08f-fe3a461ab4b5",
+  "operation": {
+    "id": "bd357378-1fd5-45da-b08f-fe3a461ab4b5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 550,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

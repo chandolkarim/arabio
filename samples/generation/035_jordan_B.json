@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2b287ffda06335013068f420054686d5275ddf17ebe2ded822f10d58c606a700",
+  "idempotency_key": "c3b71e03-9222-406f-9035-e2df6ceccfec",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "هالأيام بسمع أغاني عربية كتير.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "83cd4ef3-85c5-4480-a696-d180f89fb3d2",
+  "operation": {
+    "id": "83cd4ef3-85c5-4480-a696-d180f89fb3d2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

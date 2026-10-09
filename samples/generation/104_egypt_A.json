@@ -1,0 +1,23 @@
+{
+  "fingerprint": "27c89ced286f72ded26f2c8953b4192bed5d49ac1c224b763719207d85aff48c",
+  "idempotency_key": "c3c8a9f2-a4d1-4afa-a0d3-7bfa09bcb2f7",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "باظ بعد يوم واحد من ما اشتريته.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "00d3db15-895b-4bca-9931-1c78280df510",
+  "operation": {
+    "id": "00d3db15-895b-4bca-9931-1c78280df510",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

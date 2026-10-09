@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b959927496868e6f8ebe1a704462d223269785768878fff822f04e3c7a09f30d",
+  "idempotency_key": "dee34449-fb4a-479c-8d66-f2c56057527d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "اتعودت على الحياة هنا شوية؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1497c389-e317-458c-859b-52d53fb0b8f4",
+  "operation": {
+    "id": "1497c389-e317-458c-859b-52d53fb0b8f4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

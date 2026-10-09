@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1ba1bce3dfebc68b4b85fd20055b71d1c8d56d334a6c7cedf714c652f7c53678",
+  "idempotency_key": "4c47e0e3-443b-4c55-a6b4-83525cf0d80e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "التأمين بغطي هون؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e676093f-85ae-42c0-a0a2-85901a80a0b8",
+  "operation": {
+    "id": "e676093f-85ae-42c0-a0a2-85901a80a0b8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

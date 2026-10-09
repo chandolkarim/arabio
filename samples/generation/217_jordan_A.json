@@ -1,0 +1,23 @@
+{
+  "fingerprint": "adbb51cc3d274f8faa5ad05ba81a3042a8a4d061b75edea24e6563e8423ddd94",
+  "idempotency_key": "f604bd17-0b75-4a7b-830d-cd42a1cfdb61",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "صارلي إشي غريب كتير بالسوق مبارح.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a808d78a-0105-47b6-b453-025a7f3a7138",
+  "operation": {
+    "id": "a808d78a-0105-47b6-b453-025a7f3a7138",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

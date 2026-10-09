@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5b1fa36c457c7d21d96ef5b60f87085d33d6b9c8903a5ae146adb022878d56cc",
+  "idempotency_key": "4c50e892-995d-44c0-acd3-3612f9194d73",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ما جيتش المحاضرة امبارح ليه؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "21b8729c-39a6-4442-b0e1-5456f5882517",
+  "operation": {
+    "id": "21b8729c-39a6-4442-b0e1-5456f5882517",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

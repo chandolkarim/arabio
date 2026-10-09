@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2e472f7ab8e2f92adff9409e007de143b98d80b1588f4d62179fa10c30158a78",
+  "idempotency_key": "a46d4a5f-4124-4ea0-91bb-1624871580bb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "صح، في البلدين احترام الكبار حاجة أساسية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "60cc2be7-0aaf-43cf-8731-4dc691c28a0c",
+  "operation": {
+    "id": "60cc2be7-0aaf-43cf-8731-4dc691c28a0c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 222720
+  },
+  "complete": true,
+  "seconds": 4.64
+}

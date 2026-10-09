@@ -1,0 +1,23 @@
+{
+  "fingerprint": "721a9c9232df37a34f64005c4fe2ce71d060b1a059c6b6ad30fd45fd6b0fe025",
+  "idempotency_key": "50c36524-ff34-46d4-b417-9b952b5710c1",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "اليوم قديش بالشهر؟ إيمتى آخر موعد للواجب؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "267de2aa-e5bd-4ea0-8a94-284a3735c5f3",
+  "operation": {
+    "id": "267de2aa-e5bd-4ea0-8a94-284a3735c5f3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "aec40183c539466b09b1be4925c83c3debb865b7dded78b25bdeb9b5a890f442",
+  "idempotency_key": "bf962f35-db00-4bc3-aa0c-e6748c39f902",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "المحلات بتفضل فاتحة لحد إمتى في رمضان؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "0945f271-b105-48aa-926e-f097e1a5e7d3",
+  "operation": {
+    "id": "0945f271-b105-48aa-926e-f097e1a5e7d3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

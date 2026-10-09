@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7ea04f8190fb8fa26006b4b291d0a1e0dce054a4f68eeb15f823115eda94a552",
+  "idempotency_key": "b06b1fa6-33e3-467c-8a62-578d7ce0fcbb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شو بتعمل عادةً بوقت فراغك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2249963e-38f9-47bf-88c3-2afcaa74c559",
+  "operation": {
+    "id": "2249963e-38f9-47bf-88c3-2afcaa74c559",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

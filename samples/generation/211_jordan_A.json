@@ -1,0 +1,23 @@
+{
+  "fingerprint": "040562bed87cb4aaed7520f97c73e2a8567feda72d4f5a3d10381c8724ad04f5",
+  "idempotency_key": "7f4a1435-97a9-4b9a-b768-8083aa5702f3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شو عملت مبارح؟ ما قدرت أوصلك طول اليوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2ef9a162-670e-40e9-ae5a-8cfc78ccede6",
+  "operation": {
+    "id": "2ef9a162-670e-40e9-ae5a-8cfc78ccede6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b2b5176fdc36a843d696803509ff94f93eda6c75ba06f374b94bdf83a5afda1c",
+  "idempotency_key": "40abe4e4-d264-4c40-a744-34099b42b72e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لا تقلق، أنا ماشي من هون لأنه أقل أزمة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "293cbe4e-6b78-462c-9c65-3849954e5571",
+  "operation": {
+    "id": "293cbe4e-6b78-462c-9c65-3849954e5571",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

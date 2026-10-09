@@ -1,0 +1,23 @@
+{
+  "fingerprint": "bee69e22ff47841d0d758fbc9f5880a846319278ec0f3c6c6220a488f112d62c",
+  "idempotency_key": "072f5d90-f8a1-474b-8380-72291c36259b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "إذا اشتريت اثنتين، بكم ستعطيني؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "098e0506-f3d1-4395-8052-6c5b78da0aa6",
+  "operation": {
+    "id": "098e0506-f3d1-4395-8052-6c5b78da0aa6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

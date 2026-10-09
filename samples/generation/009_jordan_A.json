@@ -1,0 +1,23 @@
+{
+  "fingerprint": "32e19f05eafd9f666e67e450093d75e246714046b7dd6f91a140c86bb50ed016",
+  "idempotency_key": "cbea2284-b3a7-4343-8f36-3da5f4a5d2b0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "الجو كتير شوب، صح؟ تعوّدت عليه؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9faf822b-6e23-459c-8ed1-3bec291cc3c5",
+  "operation": {
+    "id": "9faf822b-6e23-459c-8ed1-3bec291cc3c5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

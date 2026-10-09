@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6ebf8ae5f550fbce9b0a08bc1e8610b3bdc5654aa36b68ddc3bbc219cd2a2cb4",
+  "idempotency_key": "86c9ddab-68bc-438f-802d-5213c435be52",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "نعم، وصل هذا الصباح.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c462de33-8f9d-49cf-be62-fc0622a207be",
+  "operation": {
+    "id": "c462de33-8f9d-49cf-be62-fc0622a207be",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

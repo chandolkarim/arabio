@@ -1,0 +1,23 @@
+{
+  "fingerprint": "95357243bfa83f94d722cb7503cffa5c7e768f0ef82eb3fa8a2fad1920d1e2c6",
+  "idempotency_key": "88bd882f-8de4-4d2f-87b9-93fc5ced2732",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ماشي، أنا فاهم وجهة نظرك برضه.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3aada086-2190-4335-a611-a6d34f1622c9",
+  "operation": {
+    "id": "3aada086-2190-4335-a611-a6d34f1622c9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

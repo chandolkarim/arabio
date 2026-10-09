@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b59023a750f09b88987b13b40604dba3996260f0f0e10bd1daa426facd5c12c9",
+  "idempotency_key": "50b0904d-c1fb-40f3-9f17-728e423da0ae",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "وماذا تريد أن تشرب؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9ec85eeb-9498-4433-9c3c-b69b0cfedbcb",
+  "operation": {
+    "id": "9ec85eeb-9498-4433-9c3c-b69b0cfedbcb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

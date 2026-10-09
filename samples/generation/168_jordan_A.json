@@ -1,0 +1,23 @@
+{
+  "fingerprint": "5fb161ad9b602c8a3187c15516d96a91e1c60cf9210246c3cb7d9b6f50e36df5",
+  "idempotency_key": "e0669f99-7417-41eb-bb88-f6188ad40b39",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "وبالآخر شو قررت؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a5a672c3-21b5-40e4-902b-839e44b64bd9",
+  "operation": {
+    "id": "a5a672c3-21b5-40e4-902b-839e44b64bd9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 800,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

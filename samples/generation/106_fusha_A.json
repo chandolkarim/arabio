@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8a59a3eebdcb3d1c4486e699659e089b4f3fd4e3cf83751d38b441f542addc0c",
+  "idempotency_key": "0f5732ab-66cf-4efc-add8-e858a08a7afc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "عفوًا، هل تعرف أين محطة المترو؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2d1a9e27-b894-4384-a0ce-fe9ee4e01b30",
+  "operation": {
+    "id": "2d1a9e27-b894-4384-a0ce-fe9ee4e01b30",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

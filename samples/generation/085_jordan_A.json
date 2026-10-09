@@ -1,0 +1,23 @@
+{
+  "fingerprint": "90cb557ad83a60b4af7eb2c669043012686c27b46400f4eedbcf9a2abe061d86",
+  "idempotency_key": "eecae827-3580-44d7-b71b-8ce0ef20aa52",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "هالشنطة بقديش؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ef6fe490-0807-4413-b6bf-94db2475ba81",
+  "operation": {
+    "id": "ef6fe490-0807-4413-b6bf-94db2475ba81",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 700,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

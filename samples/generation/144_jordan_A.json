@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c6da624fc0fb0cb02c1c18ae33b874edaf5f232e8180dc402178b0b1951aab63",
+  "idempotency_key": "34ccc36e-d6cb-44ec-9b9a-af7f94312f57",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لأي ساعة لازم أقرر وأحكيلك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "eeea5aa6-bd53-4d2a-adb8-d1ad33a7502c",
+  "operation": {
+    "id": "eeea5aa6-bd53-4d2a-adb8-d1ad33a7502c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

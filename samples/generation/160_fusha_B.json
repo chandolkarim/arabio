@@ -1,0 +1,23 @@
+{
+  "fingerprint": "51a6c820be40072920a713cd7484c07da26e939d9b2d9bc29ae8502d1db23785",
+  "idempotency_key": "b425a5e6-5395-4c09-8229-afb05b558041",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ذاك أرخص، لكن هذا أفضل بكثير من حيث الجودة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "12b3f52e-83d1-41ba-b7fc-b8275c5d40f0",
+  "operation": {
+    "id": "12b3f52e-83d1-41ba-b7fc-b8275c5d40f0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2150,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

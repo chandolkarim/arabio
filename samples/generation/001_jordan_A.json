@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6313d64bcf3d8a384e427d7680523a24e1e095b340625c8bffaf79b776297387",
+  "idempotency_key": "25e87070-31f5-4e08-8412-be320e84f8bc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "من زمان ما شفتك! كيفك هالأيام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "65d74e7f-abf9-4128-abe4-aa31e7a1c491",
+  "operation": {
+    "id": "65d74e7f-abf9-4128-abe4-aa31e7a1c491",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

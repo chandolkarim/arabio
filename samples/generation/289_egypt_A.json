@@ -1,0 +1,23 @@
+{
+  "fingerprint": "307762c82408ab1c68ed8a269b0b8073467de0b10a95d3af724916cb1dd1e373",
+  "idempotency_key": "b948e290-7ce2-49ac-bfe9-17137b17c90d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "الناس هنا شايفين إيه في موضوع شغل الستات؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f136556b-ee49-43b2-97d0-a3cdaa3da092",
+  "operation": {
+    "id": "f136556b-ee49-43b2-97d0-a3cdaa3da092",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

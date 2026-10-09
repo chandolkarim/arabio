@@ -1,0 +1,23 @@
+{
+  "fingerprint": "201349d4a5e3021cd9ab73b7ee7c0047d2429bdebcbfebb271127f5a08ffe135",
+  "idempotency_key": "01a8cb38-be4b-4be6-ad81-b73bbed9a78b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لو ما ساعدتني وقتها، كان رح أوقع بمصيبة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "df6405be-0bd8-4f36-8f36-c43cda298288",
+  "operation": {
+    "id": "df6405be-0bd8-4f36-8f36-c43cda298288",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

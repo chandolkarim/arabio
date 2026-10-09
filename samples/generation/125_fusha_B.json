@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c72cc31881df3d531b2f8eb892a37efd18faab71c05e3e4abb5446272465023a",
+  "idempotency_key": "d6a4586f-4293-4323-93a9-c5655564bdcb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كل ساعتين بدءًا من الثامنة صباحًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "855cb964-3b57-4382-ae69-a7073d3a5107",
+  "operation": {
+    "id": "855cb964-3b57-4382-ae69-a7073d3a5107",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

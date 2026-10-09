@@ -1,0 +1,23 @@
+{
+  "fingerprint": "23acb48c13068d02c67739f6979564f091db87ecd53edf5785c109cc61e5adbe",
+  "idempotency_key": "29dedaba-302b-443f-8224-fbfe1b26ecec",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بقالي أكتر من نص ساعة طالب والأكل لسه ما جاش.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "03ddd504-7496-4e1e-a50f-d60846fdde09",
+  "operation": {
+    "id": "03ddd504-7496-4e1e-a50f-d60846fdde09",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

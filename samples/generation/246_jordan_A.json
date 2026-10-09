@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f0bf75a877ac229bbe1940831c7b180e14a8d0691494857ffe004b307fca37f8",
+  "idempotency_key": "02f9afff-25b9-46f1-9f3d-2b1063dc7879",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بتفكر إنه العيلة أهم من المصاري؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "724401af-0397-487b-b2d7-c02392daf7c7",
+  "operation": {
+    "id": "724401af-0397-487b-b2d7-c02392daf7c7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

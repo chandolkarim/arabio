@@ -1,0 +1,23 @@
+{
+  "fingerprint": "66b128d02729819c09bf2df6b1c9821901f4a3b317069c371604aab7119a572f",
+  "idempotency_key": "86047a49-5eec-4db9-a297-19a4e60aaeb0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ألا تعرف الطرق الآن أفضل من أهل البلد؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a9d01f71-adfc-48ca-880f-2b708ba0a37f",
+  "operation": {
+    "id": "a9d01f71-adfc-48ca-880f-2b708ba0a37f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

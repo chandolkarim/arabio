@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6b4acf6b907c4c82bc4fdecea64faad90416d205527286886e2c81b3b75f7c8e",
+  "idempotency_key": "4d0fd647-11bb-49a1-a8cb-f4c08ca15552",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شو في بهالطبق؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d1985b77-fef1-483f-93e2-21c80eb2abd9",
+  "operation": {
+    "id": "d1985b77-fef1-483f-93e2-21c80eb2abd9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 700,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

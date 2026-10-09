@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c1a0ff76f631a5d2c69f7feedeb54e4c7512ea35160123191cfa5329ddee1788",
+  "idempotency_key": "afed5c83-be7f-48d6-a393-4e9430049f52",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "عايز تشتغل إيه بعد التخرج؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "853c2b71-9b53-46bb-9916-29754b9a57eb",
+  "operation": {
+    "id": "853c2b71-9b53-46bb-9916-29754b9a57eb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

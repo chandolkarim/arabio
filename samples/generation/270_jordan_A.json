@@ -1,0 +1,23 @@
+{
+  "fingerprint": "76c016447226538b38615a07ba43c82d9d8aa406bdda52adbe1ebf28df5e24ee",
+  "idempotency_key": "956f4f22-1d75-41b2-b192-f79b551668ad",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "لما إجيت الجمعة الماضية حكيتولي إنه هالورقة مش مطلوبة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3c219b1d-24fb-4c41-8fe8-a72fe879a4fc",
+  "operation": {
+    "id": "3c219b1d-24fb-4c41-8fe8-a72fe879a4fc",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2700,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "13717e3520d7c2c8b6997da37adbb8bdd8eb60e84e97b96639a4f8c18fbba993",
+  "idempotency_key": "d8455a03-c94e-48d9-a5f1-b2f50ff55110",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أنا مش بقدر آكل حراق، ده حراق؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "82c561f4-2d08-4f23-aed9-58f87868edc8",
+  "operation": {
+    "id": "82c561f4-2d08-4f23-aed9-58f87868edc8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

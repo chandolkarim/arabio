@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d1bab61d5560b0591c90826dc659e3895b770053f9d20ede5b4812739e28e546",
+  "idempotency_key": "67bda678-9654-4bd9-9bd2-1778c51e1a5e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا أستطيع أن أقول اسمه، لكنه شخص موثوق.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "09c5b079-8174-4afc-afcf-bbe20d96a493",
+  "operation": {
+    "id": "09c5b079-8174-4afc-afcf-bbe20d96a493",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

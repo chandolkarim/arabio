@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0389366e7d8bd22f7537a1ccc97e39b812b5166077a6ffb25ec91c89c696083e",
+  "idempotency_key": "77a25a82-8c19-4544-bab4-13b20e1e0dc8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ماذا كان حلمك عندما كنت صغيرًا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "505082fa-0d24-40b2-8766-e8a1b865537d",
+  "operation": {
+    "id": "505082fa-0d24-40b2-8766-e8a1b865537d",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a978920f82da9e5cd8a98ee1ab2452d3b227be07ee5aca2920e0413e9cfb9255",
+  "idempotency_key": "6451860c-9220-40a4-9c93-6b13c44d47d1",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بتقدر تطلع هلّأ؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d6bb20e8-89bc-457a-a76e-801a7e59d235",
+  "operation": {
+    "id": "d6bb20e8-89bc-457a-a76e-801a7e59d235",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 800,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

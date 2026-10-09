@@ -1,0 +1,23 @@
+{
+  "fingerprint": "78fccdf983fa393517828473f62e42c215efe79415b178995bbfd8a42868b2fa",
+  "idempotency_key": "7884d6ec-9868-4267-a59b-a0c30edda045",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أظن أن السبب هو غلاء السكن وتكاليف الزواج.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9944199c-778d-4b51-befd-f1ca686cc16f",
+  "operation": {
+    "id": "9944199c-778d-4b51-befd-f1ca686cc16f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

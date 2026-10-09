@@ -1,0 +1,23 @@
+{
+  "fingerprint": "11d91b30c8c9fe6f459d6b5fa140b1ec77dd51577d24fb71734db28e4567f8c1",
+  "idempotency_key": "12bc77f5-9529-482b-80e4-04ba26b8dbbc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أشاهد كرة القدم أو أقرأ في المقهى.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "083f1387-346c-41e5-a99d-2f0093c78287",
+  "operation": {
+    "id": "083f1387-346c-41e5-a99d-2f0093c78287",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

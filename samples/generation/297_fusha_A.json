@@ -1,0 +1,23 @@
+{
+  "fingerprint": "41e34fb11d7c83694e802ec25d3bbe097aa822d3aa5491dc55f9a4953ec5e7b2",
+  "idempotency_key": "2665e5d0-ee9e-41f9-a431-b906f673a324",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "بفضل الناس الذين التقيتهم هنا، أصبح هذا البلد وطني الثاني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e18257b4-1c73-4b1b-b501-570c9a2846c5",
+  "operation": {
+    "id": "e18257b4-1c73-4b1b-b501-570c9a2846c5",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2900,
+    "completion_bytes": 238080
+  },
+  "complete": true,
+  "seconds": 4.96
+}

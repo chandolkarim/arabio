@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f5b0df0d09b60dd51cadec57c1f9fa84a92d949dae22195db34122e0273b2bb0",
+  "idempotency_key": "acbe6e71-5b8e-4138-93ef-a349a7edf872",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "النهارده بتخلص الساعة اتنين، وبعدها عندي ميعاد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "53623e89-4ac7-493c-9417-d0665c7fb353",
+  "operation": {
+    "id": "53623e89-4ac7-493c-9417-d0665c7fb353",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7cb2e9e268b21d92aeaa8fed389cc215ac06a1a1257eee91028d342f40a9813d",
+  "idempotency_key": "3952b065-76ac-4f35-be31-c55b59a603e5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "سأذهب إلى مدينة أخرى غدًا، أين محطة الحافلات؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "02d5b6ea-0cbc-4117-a03a-14f36599faf7",
+  "operation": {
+    "id": "02d5b6ea-0cbc-4117-a03a-14f36599faf7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

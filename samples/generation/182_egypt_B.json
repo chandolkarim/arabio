@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ca2260ec9f018ec9790d47fa1769a42c75ede6ced657cf6f89e82414ecef29af",
+  "idempotency_key": "30560bfc-81ac-41b7-bb72-94ed3a3e9835",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "حاضر، مش هقول لحد خالص.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8307cbf0-f3c2-43d3-8ead-8eca00dc250b",
+  "operation": {
+    "id": "8307cbf0-f3c2-43d3-8ead-8eca00dc250b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1150,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

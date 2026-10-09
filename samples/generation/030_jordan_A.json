@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a3968991238edbd6404310eff7e442ba99f11ef7c360c379480a4356aac1a474",
+  "idempotency_key": "8738a3f6-280b-4e3d-bc85-8d2234954ecc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "قديش رح تضل هون؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e19a0604-51ed-4b0f-9987-8e681fb0794f",
+  "operation": {
+    "id": "e19a0604-51ed-4b0f-9987-8e681fb0794f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 800,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

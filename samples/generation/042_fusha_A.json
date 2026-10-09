@@ -1,0 +1,23 @@
+{
+  "fingerprint": "63633773e51753c27905e28670a1715ae349bfcd8e03da0348b71c2aa06b5153",
+  "idempotency_key": "4f6b62c2-36c4-498f-b5fc-765a88614ebf",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "سعدتُ جدًا بلقائك. لنتحدث مرة أخرى.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5f95c548-f592-4d8c-97f0-f9f2e417a56f",
+  "operation": {
+    "id": "5f95c548-f592-4d8c-97f0-f9f2e417a56f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

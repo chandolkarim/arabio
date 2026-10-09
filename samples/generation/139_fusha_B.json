@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4efb6d86d2ca0e0d3cbc0731e4087ae9ef1f76621137f08a508dcc4f757668b8",
+  "idempotency_key": "d2957f1d-17f7-4cc1-9658-401842eb6d8c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "رائع. أنا لا أستطيع أبدًا أن أستيقظ قبل التاسعة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "46a8314f-d58f-4ccf-bf5f-52a95f5a1967",
+  "operation": {
+    "id": "46a8314f-d58f-4ccf-bf5f-52a95f5a1967",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2400,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

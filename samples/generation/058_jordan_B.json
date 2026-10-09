@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9cdc7c404ace4294b45efd5468499b92c36ac2549369b83340c1a373af3b950c",
+  "idempotency_key": "efe97155-b11f-4fde-9706-e0b489ee846e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، مكتوب جنب الكاشير.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ede60543-6746-4987-a9f6-76a073afde29",
+  "operation": {
+    "id": "ede60543-6746-4987-a9f6-76a073afde29",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

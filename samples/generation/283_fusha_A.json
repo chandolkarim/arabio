@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ada5906bb4897bb1975c50c3ab51a1c66d0d99ad62d5ee82bcfdc85350322f6a",
+  "idempotency_key": "ac32961c-aa43-4d55-b88c-898c85b5a2a4",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل تظن أن وسائل التواصل الاجتماعي تقرّب بين الناس؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1c6c8a22-e5f0-4d8d-9982-b0841754b74b",
+  "operation": {
+    "id": "1c6c8a22-e5f0-4d8d-9982-b0841754b74b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2500,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

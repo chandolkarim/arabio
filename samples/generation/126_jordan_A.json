@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9608649f138277897643308c77cb78aeb68c4e28ae1d6e12c646eb483f23165b",
+  "idempotency_key": "ff3a3683-5ad1-402c-b7df-40915155d942",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "تذكرتين رايح جاي لو سمحت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7a4b6347-7b46-4e49-b516-a03426c355bc",
+  "operation": {
+    "id": "7a4b6347-7b46-4e49-b516-a03426c355bc",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

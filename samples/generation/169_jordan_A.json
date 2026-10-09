@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c955c06992f28be8179f0dd54582820b68c9c8d628c485eed7c95a0a32970f37",
+  "idempotency_key": "0ac77dab-38bd-40ba-9c2b-d4d3525e1325",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بتعرف هالشخص؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9f08ae8c-5583-4090-91f3-475e344676ae",
+  "operation": {
+    "id": "9f08ae8c-5583-4090-91f3-475e344676ae",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 650,
+    "completion_bytes": 53760
+  },
+  "complete": true,
+  "seconds": 1.12
+}

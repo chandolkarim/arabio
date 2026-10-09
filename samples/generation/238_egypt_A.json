@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6764d8c6c85a9a8a8037e1e99e69c7f7331ac8ce41ee08e2455d9e112812b0a9",
+  "idempotency_key": "58c43530-753a-46a2-a70f-b4e15159a304",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بصراحة، أنا مش موافق على الرأي ده.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a6f7d6ff-637a-4a8e-853c-4f57c37ec007",
+  "operation": {
+    "id": "a6f7d6ff-637a-4a8e-853c-4f57c37ec007",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9c3897e54298cebd452d034c27fcf103f6ebb79baa44c31b7ffb511c159ccea7",
+  "idempotency_key": "356f7302-6585-4781-8e9f-166df5fd0f55",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "جرب تطفي الراوتر وتشغله تاني، ولو ما اشتغلش كلمني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e6de3967-7347-49c0-90ca-2e57e3bf7c3d",
+  "operation": {
+    "id": "e6de3967-7347-49c0-90ca-2e57e3bf7c3d",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2500,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

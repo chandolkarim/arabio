@@ -1,0 +1,23 @@
+{
+  "fingerprint": "317ed29cb6ff3b55ef469823c60d052e61323d45c68a9c55299b00187e8510a4",
+  "idempotency_key": "344ee678-efac-4062-a083-87f2230b88aa",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أنا بس بتفرج.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "21dd1452-eead-4b56-ac40-a7bd34a3a68e",
+  "operation": {
+    "id": "21dd1452-eead-4b56-ac40-a7bd34a3a68e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 650,
+    "completion_bytes": 69120
+  },
+  "complete": true,
+  "seconds": 1.44
+}

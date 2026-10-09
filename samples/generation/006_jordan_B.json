@@ -1,0 +1,23 @@
+{
+  "fingerprint": "bf807c6cb134634b11649d3def0e973c05e915f66e74377b76903a83ddbaeda3",
+  "idempotency_key": "984aed5c-fa84-402b-b295-59099865a5f3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "الواجبات كتير، فالموضوع متعب شوي، بس ممتع.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c750bf49-41cb-4b27-bc3b-9594f854557c",
+  "operation": {
+    "id": "c750bf49-41cb-4b27-bc3b-9594f854557c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

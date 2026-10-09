@@ -1,0 +1,23 @@
+{
+  "fingerprint": "863765c5d3804a6bf9007415fc2e4e879649d9314900822d0a544c6033503598",
+  "idempotency_key": "66d1b518-3e57-46ed-8421-dc2802817c66",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ممكن تيك أواي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b7d21963-901f-4481-b8a5-cafd38062d7e",
+  "operation": {
+    "id": "b7d21963-901f-4481-b8a5-cafd38062d7e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 700,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

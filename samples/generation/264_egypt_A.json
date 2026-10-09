@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8fae93912970c6d07e371fa89d5ae2605aa0899fc8e6535654c49bb11b58552c",
+  "idempotency_key": "8f0c30a0-b1e6-4b18-9a7a-70070a90547e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "الدوا ده باخده كام مرة في اليوم؟ قبل الأكل ولا بعده؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f704dd7d-890d-4fb2-898a-c571177e34c3",
+  "operation": {
+    "id": "f704dd7d-890d-4fb2-898a-c571177e34c3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2600,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d2a52fa7b141150cc0090e502ff32f28cb1eb83a0352714087781efb96849073",
+  "idempotency_key": "b316388b-78f2-4c76-b578-5c9e54d018f9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أخبرني قبل العاشرة الليلة فقط.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6796da14-ef61-42c8-b70f-34ea8b0bbdaa",
+  "operation": {
+    "id": "6796da14-ef61-42c8-b70f-34ea8b0bbdaa",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

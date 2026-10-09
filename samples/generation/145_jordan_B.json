@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3d727deed78d722adc9484129add2d55640b05b68705891f522ddb7d0cf0306f",
+  "idempotency_key": "c2b13bcd-a37d-4602-b7be-5d526e4f2092",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "هاي تالت مرة بتحكي هالحكي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a782e435-59fd-4556-807e-1e7492620365",
+  "operation": {
+    "id": "a782e435-59fd-4556-807e-1e7492620365",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

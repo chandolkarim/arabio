@@ -1,0 +1,23 @@
+{
+  "fingerprint": "273c253da6ce4960a79554c7866a6808e2ef084ee5b8fb58ff9b7f156a23cdc0",
+  "idempotency_key": "ae77a7d8-08f4-412e-b250-d9faa8f5fa10",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ممكن أطلب منك خدمة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6f123cf1-3b4f-48b8-87a9-76d4d05f3d72",
+  "operation": {
+    "id": "6f123cf1-3b4f-48b8-87a9-76d4d05f3d72",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 950,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

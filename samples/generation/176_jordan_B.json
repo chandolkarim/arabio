@@ -1,0 +1,23 @@
+{
+  "fingerprint": "271254de238199dab91596e882ee979fd03ec840a1444c87b8787ed366cd7b12",
+  "idempotency_key": "9a4e0b90-d813-43cc-8a43-d7efb655f058",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ما بزبط تفوت هلّأ لأنه وقت الصلاة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1c572795-8eb4-4438-bb67-e5d24084e6e6",
+  "operation": {
+    "id": "1c572795-8eb4-4438-bb67-e5d24084e6e6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

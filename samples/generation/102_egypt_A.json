@@ -1,0 +1,23 @@
+{
+  "fingerprint": "26fe48a83b4daf9502dae0c33b3e8a19c08d2491fce88122e86b8b58d791c02c",
+  "idempotency_key": "d27deaf8-8352-4e84-8892-3ca909bf8add",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "هلف على محلات تانية وأرجع.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "05f2fbe3-7b58-4404-94db-12cb7bdbcccf",
+  "operation": {
+    "id": "05f2fbe3-7b58-4404-94db-12cb7bdbcccf",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

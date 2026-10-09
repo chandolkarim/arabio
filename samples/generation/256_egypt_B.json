@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a0aad75df704863d3af63844bfdec26155d51d60eaa32c5e524242aa52bbeb5a",
+  "idempotency_key": "cc335585-006c-48d9-a372-b2db318af328",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "هبعتلك السباك النهارده بعد الضهر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "820e7d12-b6e3-4244-9888-bc3ac480f7ee",
+  "operation": {
+    "id": "820e7d12-b6e3-4244-9888-bc3ac480f7ee",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

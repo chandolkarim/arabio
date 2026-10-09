@@ -1,0 +1,23 @@
+{
+  "fingerprint": "866ebee5d17ec2a235ca18004d51402fc70160536db0408c30b843dacf53691f",
+  "idempotency_key": "b48965d1-0de5-4ab7-8f56-369fceb8a25e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "إيه ده! أنا مستحيل أصحى قبل تسعة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f4056d58-fe3b-4128-9048-3f7bc152cf94",
+  "operation": {
+    "id": "f4056d58-fe3b-4128-9048-3f7bc152cf94",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

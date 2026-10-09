@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e494c3856020fb741ee90973a0ef5405c8a5e0d7e9f6e0cc6fe785f1ecd45b7a",
+  "idempotency_key": "09815d08-b66a-4100-b180-9a7b61f72d7f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "الناس بتدي بقشيش قد إيه عادةً؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e0a1b0b0-67d4-435b-ac7b-072b7a4e6e52",
+  "operation": {
+    "id": "e0a1b0b0-67d4-435b-ac7b-072b7a4e6e52",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

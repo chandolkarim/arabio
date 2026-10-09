@@ -1,0 +1,23 @@
+{
+  "fingerprint": "32ac0b9f32d053b5af6da58c1c149bf9e398316f2dc865886993936367035279",
+  "idempotency_key": "b04772c3-afd7-4143-8c25-6bf3e7e8bc53",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "كنت عايز أفاصل في السعر، وفي الآخر اشتريتها بأغلى من سعرها الأصلي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8ac32963-2b17-4fd4-8a9f-19e2b8df8ee9",
+  "operation": {
+    "id": "8ac32963-2b17-4fd4-8a9f-19e2b8df8ee9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3300,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

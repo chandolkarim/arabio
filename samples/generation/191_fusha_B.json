@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0b73eaaeb4e835609ad6dc6b1f3e98e26a05c9221bfe73c84ad1640932c2ec4b",
+  "idempotency_key": "c1549a44-b11a-4b0c-9f5a-0c043a1336e5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا، سأبقى هنا وأسافر إلى مدن أخرى.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "df16968c-c4ae-49c2-8822-8051c3b4e0cb",
+  "operation": {
+    "id": "df16968c-c4ae-49c2-8822-8051c3b4e0cb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

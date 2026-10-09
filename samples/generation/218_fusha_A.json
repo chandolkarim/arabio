@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2e4e2753895bb9bff7e7b895bf7eef4ffb0a1a6f14b5c95f2e931ed7fe1f0e48",
+  "idempotency_key": "d5074991-598c-4433-a116-b6738cf05de6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "حاولت أن أخفض السعر، لكنني في النهاية اشتريته بأغلى من سعره الأصلي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5746fb4a-606a-432a-9bc4-9301a4191b20",
+  "operation": {
+    "id": "5746fb4a-606a-432a-9bc4-9301a4191b20",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3350,
+    "completion_bytes": 261120
+  },
+  "complete": true,
+  "seconds": 5.44
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "52b787f085958f8c4b28262b0bdb597d3251af62674cf224f3e59168783d5c2d",
+  "idempotency_key": "321ef4f0-542e-4bc7-9070-2c69a4ad85c0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ربما يكون للطالب الذي كان جالسًا هنا قبل قليل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b0e362b2-389b-4d08-a882-92b6b55a84dd",
+  "operation": {
+    "id": "b0e362b2-389b-4d08-a882-92b6b55a84dd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

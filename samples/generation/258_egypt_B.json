@@ -1,0 +1,23 @@
+{
+  "fingerprint": "05e81edf136de67a22b9a89c6e8c1959f58357892c52806addfadd2017799179",
+  "idempotency_key": "85f0b590-1e98-42eb-ad76-07faecf660c8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "عشان إحنا في الصيف والكهربا مش مكفية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b75667e1-fc14-4e08-a286-06f55e05233a",
+  "operation": {
+    "id": "b75667e1-fc14-4e08-a286-06f55e05233a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

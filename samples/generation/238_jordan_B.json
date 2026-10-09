@@ -1,0 +1,23 @@
+{
+  "fingerprint": "97a58775c0a35216aab5f238f4430300591bd3f0d4d2e7413c2abec099785a41",
+  "idempotency_key": "5758970f-ee2f-4ded-84b3-fa604071115b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ليش؟ شو اللي مش عاجبك فيه؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "21c3e08a-9725-4d1d-ab17-1bbcaceade7c",
+  "operation": {
+    "id": "21c3e08a-9725-4d1d-ab17-1bbcaceade7c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b079e7d461af13ee9a9bc9906c4c580f4c6a954df38e89df4a893fe1603e340a",
+  "idempotency_key": "2bf5f048-4d79-477c-b72e-cf1798c1fcf8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لو كنت رئيس هذا البلد، ما أول شيء تريد أن تغيره؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "aa444446-ae9e-466c-8356-0090d5e92ccc",
+  "operation": {
+    "id": "aa444446-ae9e-466c-8356-0090d5e92ccc",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2400,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

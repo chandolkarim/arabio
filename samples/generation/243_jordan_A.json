@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3257ed68825b783a307f047e02c14ba9ac9ede3238fe374e47ea1ada76480abb",
+  "idempotency_key": "0423087e-20d8-452a-a1a7-bfdba85fa6c2",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "انصدمت كتير بسبب هالموضوع.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9dc0093f-fd0c-4e88-afba-ba9f5632518e",
+  "operation": {
+    "id": "9dc0093f-fd0c-4e88-afba-ba9f5632518e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

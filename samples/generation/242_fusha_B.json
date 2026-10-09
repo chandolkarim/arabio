@@ -1,0 +1,23 @@
+{
+  "fingerprint": "caf5c4bf6b568c8fa7b11a7cc8f3ff23837d8b392bf6498124e66195361e8a86",
+  "idempotency_key": "9ec469d6-0356-4735-83e5-6a3bfbf44987",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا بأس إن أخطأت. الجميع يعرف أنك تجتهد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b3815022-da45-4abc-9c83-94f73b5cb278",
+  "operation": {
+    "id": "b3815022-da45-4abc-9c83-94f73b5cb278",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

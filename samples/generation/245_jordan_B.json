@@ -1,0 +1,23 @@
+{
+  "fingerprint": "340b6f24ffc7a4e8bf2c91221fb71daeea4776d027c506496899f7ad441e75f2",
+  "idempotency_key": "f40030e6-3efe-4c3f-aeba-99220eab3190",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "صح، من لما إجيت لهون وأنا حاسس فيها أكتر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8035ceb5-f8ca-4dda-bd28-562a234f607c",
+  "operation": {
+    "id": "8035ceb5-f8ca-4dda-bd28-562a234f607c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

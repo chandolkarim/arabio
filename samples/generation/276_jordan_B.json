@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c9046206ba2763be0282fce9aacbdeadb93b27ad1e3b38d7aa12cc57b711c612",
+  "idempotency_key": "625f083d-bafb-44c4-8d49-7c8a251b48eb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "هاد لسا إشي صعب نتخيله، عالأقل بين اللي حواليّ.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c402ca0f-29db-4eac-97ef-0566828bdd5f",
+  "operation": {
+    "id": "c402ca0f-29db-4eac-97ef-0566828bdd5f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

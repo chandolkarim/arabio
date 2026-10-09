@@ -1,0 +1,23 @@
+{
+  "fingerprint": "daba1eb7f93a3c3ef0e33100172a8fd148f7ddc77fdf082059584fd04d7c0014",
+  "idempotency_key": "1e9062ed-f547-4246-8bdc-e154c071bb50",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "عندي حمى منذ أمس وجسمي كله يؤلمني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "291cc1d7-e74f-4ee6-9296-2fb30f0f18b9",
+  "operation": {
+    "id": "291cc1d7-e74f-4ee6-9296-2fb30f0f18b9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

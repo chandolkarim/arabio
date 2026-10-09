@@ -1,0 +1,23 @@
+{
+  "fingerprint": "53b000b889c10715f0d7292f6307ea5462174e2ec60176f5b86225a41fd1742b",
+  "idempotency_key": "2b2abb1a-06c4-4d9c-b8cc-8d47022d4a72",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "اللي فات مات، ما تشغلش بالك أوي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b2418690-8423-4793-bd2a-b837d354812c",
+  "operation": {
+    "id": "b2418690-8423-4793-bd2a-b837d354812c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

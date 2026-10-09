@@ -1,0 +1,23 @@
+{
+  "fingerprint": "232f6f7321ebcc3f85fe3e15fb5935c00faba64e0ee554728e3a9c0474041aa1",
+  "idempotency_key": "f6b8950c-8802-469d-a3a8-ee631f4a8692",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لأننا في الصيف هذه الأيام والكهرباء غير كافية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "42504139-9996-4c87-8d0b-42c2f11c868e",
+  "operation": {
+    "id": "42504139-9996-4c87-8d0b-42c2f11c868e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6793b53e08a19fc754d8d801a900e315225e8dd4192c5b93165df7ee4264619a",
+  "idempotency_key": "cbf0f92b-53dc-4bc8-998e-73c032d24d59",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أنا كتير مشغول هالأيام وما عندي وقت أرتاح أبدًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f16198f5-7a86-4483-8e21-03be5cad3470",
+  "operation": {
+    "id": "f16198f5-7a86-4483-8e21-03be5cad3470",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2400,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

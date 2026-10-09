@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f2f66bcfaccc24b51ac862017655df366cf6e5559ca758d9b62d77c871b1b3c5",
+  "idempotency_key": "efc6d21e-b48e-4460-92f6-8eb97c57adea",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بس احكيلي قبل الساعة عشرة الليلة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2fe25baf-da8e-487c-a79d-6ac7ed277ef4",
+  "operation": {
+    "id": "2fe25baf-da8e-487c-a79d-6ac7ed277ef4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

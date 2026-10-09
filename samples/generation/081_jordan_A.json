@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2ce8943ff1dbb6676a2619e481ed63f1568e50717ab8a4d31546ec5368ef8ae1",
+  "idempotency_key": "f7eb8b49-6fa2-432b-bead-a01134fa7644",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أنا رح أدفع اليوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "4ef355e9-f9d0-40bd-bc86-c8ada3c3e2e7",
+  "operation": {
+    "id": "4ef355e9-f9d0-40bd-bc86-c8ada3c3e2e7",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

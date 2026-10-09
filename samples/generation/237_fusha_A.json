@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6595d9b4f783db815b478421b89be5a8c55690369780d700069a4147cd4cb459",
+  "idempotency_key": "345dbb2b-8c7a-45be-9f72-313d33d48fd3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "في رأيك، ماذا يجب أن أفعل؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "90dba644-ff26-4a06-9792-11b2a50cec7a",
+  "operation": {
+    "id": "90dba644-ff26-4a06-9792-11b2a50cec7a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

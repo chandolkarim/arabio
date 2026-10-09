@@ -1,0 +1,23 @@
+{
+  "fingerprint": "926ff7fdd905b6ee96fb7130b3d8f0d4e4bd25e786a4eac972b69656eda46823",
+  "idempotency_key": "56cf64a9-d875-4d0d-9b1d-5ec4b5acf424",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "نعم، يمكنك فتحها.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "213e2fb1-ea1d-4f63-86f4-bc87d6bc1ff0",
+  "operation": {
+    "id": "213e2fb1-ea1d-4f63-86f4-bc87d6bc1ff0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

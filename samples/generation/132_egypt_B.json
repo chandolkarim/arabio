@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f8a395b18405dec8631cc4bacba3fa2e45134dba17275b4f6b6ef3b372249d4a",
+  "idempotency_key": "00be941a-d335-41cf-a661-41fd84c4944d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "نتقابل في الكافيه اللي قدام باب الجامعة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9f9d04ff-5899-4f08-811f-a11d2a29ae14",
+  "operation": {
+    "id": "9f9d04ff-5899-4f08-811f-a11d2a29ae14",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "980ed13d9e90a4fe477bc0c3ba7cb319c38fd3f053cd97f4b09a41f83812ccee",
+  "idempotency_key": "d4c27a28-3b1c-49cf-95cc-763b42996352",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "نعم، لدي واجب أيضًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "32936125-4b6f-428c-b83c-c55ce27d92d9",
+  "operation": {
+    "id": "32936125-4b6f-428c-b83c-c55ce27d92d9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

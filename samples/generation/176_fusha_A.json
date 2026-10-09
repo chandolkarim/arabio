@@ -1,0 +1,23 @@
+{
+  "fingerprint": "bc56d045b39e7f95c829bcf90137a5c70c27f48512f53613157229c8dfd396ae",
+  "idempotency_key": "d4423d16-03e0-448f-b14e-365389774fde",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل يمكنني الدخول إلى هنا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "86886b52-da42-436b-b14f-64dd453ed59b",
+  "operation": {
+    "id": "86886b52-da42-436b-b14f-64dd453ed59b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

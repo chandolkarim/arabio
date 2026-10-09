@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e457e4b26bc3d97a7a48624b8b97d217612253de5a2c69532dd733284a102b4c",
+  "idempotency_key": "dd4f7290-e797-4488-bdd4-3dbc1180be16",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا بأس، تعالَ على مهلك. سأدخل قبلك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "33b3ac6b-f9c0-4088-8e6e-3f47a0868ebd",
+  "operation": {
+    "id": "33b3ac6b-f9c0-4088-8e6e-3f47a0868ebd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

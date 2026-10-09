@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6081f8843b4f907a710e18189786e41282b13e7647398a8509f28b7e7c9029f7",
+  "idempotency_key": "0d21101b-8194-4bd3-a124-e0719d2ff958",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لغتك العربية ممتازة! أين تعلمتها؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "84b2f69a-8e01-42e5-aabd-9a469fbe938e",
+  "operation": {
+    "id": "84b2f69a-8e01-42e5-aabd-9a469fbe938e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

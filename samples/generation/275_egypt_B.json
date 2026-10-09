@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8ee31445856dcf741c4e92399b3ae163a81799aeab8ee6bf3a95a56d1566db26",
+  "idempotency_key": "f8deeba5-71f6-444b-8eb3-f03372f21281",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "غالبًا العريس هو اللي لازم يجهز الشقة والمهر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ea9cfcdb-a504-4705-bf66-5625cabb86ea",
+  "operation": {
+    "id": "ea9cfcdb-a504-4705-bf66-5625cabb86ea",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

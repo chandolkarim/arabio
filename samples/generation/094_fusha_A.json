@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b2819b7a0fa2e4b056ce4b3071a41e277aeff4af25232877222d40cb906e9b28",
+  "idempotency_key": "3e03968c-cf86-4050-8aa3-09f0251d0a12",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "بكم كيلو الطماطم؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "458ae183-56f9-4477-b081-2b05ef16b067",
+  "operation": {
+    "id": "458ae183-56f9-4477-b081-2b05ef16b067",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 850,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

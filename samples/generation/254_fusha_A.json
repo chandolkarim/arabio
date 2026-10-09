@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3f59bf075f37552eed116e4b2fdf7de1d4c5f608ed30c688506a14e9735947cb",
+  "idempotency_key": "9397bf54-c9ca-4607-9ec4-b5e358eca9af",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كم الإيجار الشهري؟ وهل الفواتير منفصلة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1a730139-c36d-45b3-be01-d5ca18802d0e",
+  "operation": {
+    "id": "1a730139-c36d-45b3-be01-d5ca18802d0e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

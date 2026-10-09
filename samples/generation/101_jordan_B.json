@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3106bb03da501df024c86792fc7f91c07c6e40d41b18b1f6b6e12ab09a1fd004",
+  "idempotency_key": "f742199c-b486-4e6b-8585-d09bc479e7cd",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ماشي، بس هالسعر لليوم بس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7d309f20-0f89-41a8-a765-b6820952d60f",
+  "operation": {
+    "id": "7d309f20-0f89-41a8-a765-b6820952d60f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

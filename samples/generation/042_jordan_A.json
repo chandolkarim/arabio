@@ -1,0 +1,23 @@
+{
+  "fingerprint": "edbee208a69a0c6721c61500c0eaa38864fcae2091361f8aee279ea70471a04c",
+  "idempotency_key": "a3e0f697-f3bd-4d93-a0ec-e9d89512c7ce",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "تشرفت فيك كتير. بنحكي مرة تانية.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "336d7060-d5f7-4e5a-95b6-4505b7a70e20",
+  "operation": {
+    "id": "336d7060-d5f7-4e5a-95b6-4505b7a70e20",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "547aad932a7dac04c306327055a1d6904169424e431e8b94d6b1a80674800693",
+  "idempotency_key": "94aa764b-0c1c-4e82-9120-5a43d9175160",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أكيد، حاسس إني بقيت بفهم الكلام أحسن.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "cb831fe8-f772-48d7-96f4-4611d08acc45",
+  "operation": {
+    "id": "cb831fe8-f772-48d7-96f4-4611d08acc45",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

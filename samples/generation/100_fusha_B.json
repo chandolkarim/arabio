@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2b2f7a7c9233ae624288030fe00678b3e0bd71ca1a6d472bdc4633f993fada9e",
+  "idempotency_key": "9bca77b9-7bed-483f-bccd-af39c5d89c29",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "خذ راحتك. نادِني إذا احتجت شيئًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9a807431-f43e-434d-b67c-cfde9e546ecf",
+  "operation": {
+    "id": "9a807431-f43e-434d-b67c-cfde9e546ecf",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

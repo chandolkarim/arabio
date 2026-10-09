@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3c9c94daa1c3dd3584ea6378496884da9e5fda79920c1010ed6b35941b22acf8",
+  "idempotency_key": "926d3437-0622-4775-8d55-c590e9f5de81",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل المسافة قريبة بحيث يمكن المشي إليها من هنا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3d2ee379-b32a-4bc1-a2c7-305aed9d8bf3",
+  "operation": {
+    "id": "3d2ee379-b32a-4bc1-a2c7-305aed9d8bf3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

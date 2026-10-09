@@ -1,0 +1,23 @@
+{
+  "fingerprint": "da4d90fc488d83910f16c42efbd20ad9c1eeb4a334fe113d795c2d542cb45444",
+  "idempotency_key": "a6766980-ca3f-4e56-bdbc-b19a9ecb707b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بقالك قد إيه بتدرس عربي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3de22d41-ec8a-4485-90b7-a8576a7e7856",
+  "operation": {
+    "id": "3de22d41-ec8a-4485-90b7-a8576a7e7856",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

@@ -1,0 +1,48 @@
+{
+  "name": "039_jordan_A",
+  "day": 13,
+  "text": "بتعرف إشي عن كوريا؟",
+  "variant": "jordan",
+  "side": "A",
+  "duration": 3.04,
+  "speech_span": 2.78,
+  "voiced": 2.28,
+  "chars": 15,
+  "dbfs": -30.6,
+  "peak": 0.1898,
+  "ratio": 0.18533333333333335,
+  "leading": 0.0,
+  "trailing": 0.26,
+  "clip": 0.0,
+  "length_factor": 2.19,
+  "volume_delta": -7.9,
+  "flags": [
+    "long_speech"
+  ],
+  "sha256": "8aaa6d33446ee92fd50530e83786ea5f11e3a4d8c690804f8b8342027ce3d683",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "transcript": "في شام Korea",
+  "match": 0.2,
+  "recognized_length_factor": 0.33,
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 0.96,
+      "text": " في شام Korea",
+      "tokens": [
+        50365,
+        8978,
+        13412,
+        10943,
+        6307,
+        50413
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.7040786061968122,
+      "compression_ratio": 0.6538461538461539,
+      "no_speech_prob": 1.537639737758667e-10
+    }
+  ]
+}

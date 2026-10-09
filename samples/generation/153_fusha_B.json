@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f45c672628f63d46c388ab0f7d208769d674349dd0ea0386ed46eec4819a264d",
+  "idempotency_key": "268ddf1e-9250-4f99-ac24-d3e4cb46f24e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "يقول صديقي إن الحر شديد في النهار، فاعتادوا على النشاط ليلًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "e6cd8201-ec3d-414a-8f7b-a9beca4a87c9",
+  "operation": {
+    "id": "e6cd8201-ec3d-414a-8f7b-a9beca4a87c9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3050,
+    "completion_bytes": 245760
+  },
+  "complete": true,
+  "seconds": 5.12
+}

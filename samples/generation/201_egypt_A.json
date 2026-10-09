@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b079ea6a976646e5c4446573fff3d0676faf8119634dda54e4ba7b684b8c4a59",
+  "idempotency_key": "7fa2a2d8-4ae3-4116-b3b8-314fbec59c13",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "تفتكر بعد خمس سنين هتكون فين وبتعمل إيه؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "459348d2-6864-4870-8a37-8b8a81845515",
+  "operation": {
+    "id": "459348d2-6864-4870-8a37-8b8a81845515",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

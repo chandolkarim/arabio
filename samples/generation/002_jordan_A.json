@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e433f61e31f9f2ca0c6742c1f9bc297f86a6d341a51440efd7a99647f066f458",
+  "idempotency_key": "0b5b2b4a-b3dd-4d0e-bb28-26500bd352ea",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "صباح الخير. نمت منيح؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "08779819-e33e-47ba-9474-49dc86b089ac",
+  "operation": {
+    "id": "08779819-e33e-47ba-9474-49dc86b089ac",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

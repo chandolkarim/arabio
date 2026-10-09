@@ -1,0 +1,23 @@
+{
+  "fingerprint": "da79de22607a29e93616d2dff299c72475dd7ecd8398f806f2e2a71f05f148cf",
+  "idempotency_key": "4f2dbf57-2c65-4e38-8952-ce8acd4df323",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "طبعًا، حطه في الفيشة اللي هناك.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "05612890-efc5-4862-b32d-7265f74c8edf",
+  "operation": {
+    "id": "05612890-efc5-4862-b32d-7265f74c8edf",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

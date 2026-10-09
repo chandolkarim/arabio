@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3e175d695694664d4ac1474595d72f8703efa76d1c75cde38193936ad29b799d",
+  "idempotency_key": "67bd39ef-9571-4f45-8bd0-ab855842c9e5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "صحاب كتير ليا بدأوا يتعلموا كوري بسبب الكي بوب.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c2fd7a48-5184-4ff0-888f-6a903174faa1",
+  "operation": {
+    "id": "c2fd7a48-5184-4ff0-888f-6a903174faa1",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 238080
+  },
+  "complete": true,
+  "seconds": 4.96
+}

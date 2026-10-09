@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8bdec52d5facfe71f906e393e58d26429c0697a81e4c691550e5663daee64754",
+  "idempotency_key": "152ed415-72c5-4130-b5bc-c2d4857e27cb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أيوه، خلصت بدري عن ما كنت فاكر فجيت الأول.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f2eee0ba-5593-4122-b189-b80fb7000b6e",
+  "operation": {
+    "id": "f2eee0ba-5593-4122-b189-b80fb7000b6e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 222720
+  },
+  "complete": true,
+  "seconds": 4.64
+}

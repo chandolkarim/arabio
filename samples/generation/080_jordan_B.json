@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d3bacde95b858a96510159300e8fc607ad1770708bd5ad9a119d8d67a7af242c",
+  "idempotency_key": "20d5ff1c-4895-4b51-ad51-bc2163cb1563",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آسف، كاش بس.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2485bd18-1557-481d-895e-785a08b1d943",
+  "operation": {
+    "id": "2485bd18-1557-481d-895e-785a08b1d943",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 600,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

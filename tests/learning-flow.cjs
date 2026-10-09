@@ -1,0 +1,36 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const timers = [];
+const node = { addEventListener(){}, querySelectorAll(){return []}, style:{setProperty(){}}, classList:{remove(){}}, innerHTML:'' };
+const context = vm.createContext({ console, document:{getElementById:()=>node,addEventListener(){},querySelector(){return null}}, window:{}, localStorage:{getItem(){return null}}, setTimeout:fn=>timers.push(fn), clearTimeout(){}, requestAnimationFrame:fn=>fn() });
+const source = fs.readFileSync('web/app.js','utf8').split('(async function boot()')[0];
+vm.runInContext(source,context);
+vm.runInContext(`
+DATA = ${fs.readFileSync('web/data/sentences.json','utf8')};
+state = {dialect:'egypt', progress:{}};
+globalThis.assert = undefined;
+`,context);
+const run = code => vm.runInContext(code,context);
+assert.equal(run('lessonQueue(sentencesOfDay(1), "lesson").length'),12);
+assert.equal(run('lessonQueue(sentencesOfDay(1), "lesson").map(x=>x.type).join(",")'),'0,3,0,3,0,3,1,4,1,6,6,6');
+assert.equal(run('lessonQueue(sentencesOfDay(1), "lesson").map(x=>x.index).join(",")'),'0,0,1,1,2,2,0,1,2,0,1,2');
+assert.equal(run('lessonQueue(sentencesOfDay(1), "review").map(x=>x.type).join(",")'),'4,6,4,6,4,6');
+run('const actualFinish = finishLesson; renderStep = () => {}; let finishCount=0; finishLesson=()=>finishCount++; startLesson(1); next(); next();');
+assert.equal(timers.length,1,'double click must queue one transition');
+timers.shift()();
+assert.equal(run('lesson.cursor'),1);
+for(let i=1;i<12;i++){run('next()');timers.shift()();}
+assert.equal(run('finishCount'),1);
+run('show=()=>{}; saveState=()=>{}; burst=()=>{}; finishLesson=actualFinish; startLesson(1); lesson.ratings={"001":true,"002":false,"003":true}; finishLesson(); finishLesson();');
+assert.equal(run('progress().xp'),30,'completion must award XP only once');
+assert.equal(run('progress().completedDays.join(",")'),'1');
+assert.equal(run('Object.keys(progress().srs).length'),3);
+assert.equal(run('progress().srs["002"].hard'),1);
+assert.equal(run('progress().srs["002"].due === today(1)'),true);
+run('startLesson(1, sentencesOfDay(1), "again");');
+assert.equal(run('progress().xp'),30,'starting or abandoning a lesson must not save results');
+run('lesson.ratings={"001":true,"002":false,"003":true}; finishLesson();');
+assert.equal(run('progress().completedDays.length'),1,'repeat must not duplicate completion');
+assert.equal(run('progress().srs["001"].due === today(3)'),true,'remembered expressions advance in SRS');
+console.log('PASS: phase order, review order, transition guard, atomic completion, repeat progress and SRS scheduling');

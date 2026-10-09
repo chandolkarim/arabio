@@ -1,0 +1,23 @@
+{
+  "fingerprint": "61ae0000bf222dcd4737dcb0237610245bc356dce440358e39a69996c12db8f0",
+  "idempotency_key": "7ddcba33-cc1c-4428-a893-18caef710333",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بشمال البلد، وبالتكسي بتاخذ عشرين دقيقة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5338fed8-e2a8-4c4a-b3a7-813956ae0f5a",
+  "operation": {
+    "id": "5338fed8-e2a8-4c4a-b3a7-813956ae0f5a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

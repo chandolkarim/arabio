@@ -1,0 +1,23 @@
+{
+  "fingerprint": "cb2ec0c6fd8b5850fb5342715e140d117eb36b655dbfdb874027217c7a8f6e4d",
+  "idempotency_key": "e725ee29-efcc-46cf-b1ae-28b145e31c9d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، رح أرجعلك خمسطعش.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7c39bb5c-6721-42c1-b20d-1a02c90ef60f",
+  "operation": {
+    "id": "7c39bb5c-6721-42c1-b20d-1a02c90ef60f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

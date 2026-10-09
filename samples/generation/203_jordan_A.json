@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f20cd6219315b5dc3b4ec271fa0d7099f0aab988919bccf5d2ec966e43e99389",
+  "idempotency_key": "3cf5e463-d6ce-4753-abbc-aaf3b5d755f6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بتتوقع هالشغل يخلص اليوم؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c6d7419a-1707-4ddf-8017-b97c23b0b58c",
+  "operation": {
+    "id": "c6d7419a-1707-4ddf-8017-b97c23b0b58c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

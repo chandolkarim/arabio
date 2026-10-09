@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6cdb971119f1b44470f1dae9e3ec4f75ffa0b60cd4358c272c4e4c7df7ffcb3e",
+  "idempotency_key": "c9e6a450-cf60-4973-8fa5-3347e7599bf5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شكله ثقافة العيلة كتير مختلفة بين كوريا وهون.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "57a37d02-d5d9-4e88-bd4f-84beb1ec262c",
+  "operation": {
+    "id": "57a37d02-d5d9-4e88-bd4f-84beb1ec262c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

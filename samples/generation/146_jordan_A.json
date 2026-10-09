@@ -1,0 +1,23 @@
+{
+  "fingerprint": "2a0b23d6da4eb353e1f9ebf72fd20c38aefd3c3b0a4abee12531decccd689827",
+  "idempotency_key": "b1b68c32-76cc-49a1-98a7-26d80f094198",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شكله الناس هون ما بلتزموا بالمواعيد كتير.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "69b6de2b-31e1-4239-a036-8100261f54fa",
+  "operation": {
+    "id": "69b6de2b-31e1-4239-a036-8100261f54fa",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

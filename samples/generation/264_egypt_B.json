@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a38dda8c50865bde04c3e066d910c8b0efdfbf4d6fb6ea3e95929cedc69bf8c7",
+  "idempotency_key": "4fbcc2d6-41f8-4e91-944c-180729f318f1",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "تلات مرات في اليوم، وبعد الأكل لازم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "ef765c1b-e028-4d8f-915c-bf17b8ffb44b",
+  "operation": {
+    "id": "ef765c1b-e028-4d8f-915c-bf17b8ffb44b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

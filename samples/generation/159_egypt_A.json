@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c3d2d8ea2105b620d1dda5cab8dd9005fd34c168670ba79ca8541dfe6d24580a",
+  "idempotency_key": "ccef1372-bcb8-4cb5-a000-27336cf6d45d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "مين اللي قالك كده؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "589f8bf9-c689-42d9-a0af-7c43f5964c63",
+  "operation": {
+    "id": "589f8bf9-c689-42d9-a0af-7c43f5964c63",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

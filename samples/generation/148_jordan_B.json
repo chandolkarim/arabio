@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b7270ca1fda7275cd8a19a02e72ce83b047dc083507278293ffc5ee6b75f8198",
+  "idempotency_key": "9aa3d920-ac39-470a-91d3-77e658cac67e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "هاي ملوخية، بتنوكل مع الرز.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a9cb8460-3b6d-4eb7-af3c-181b052b47bd",
+  "operation": {
+    "id": "a9cb8460-3b6d-4eb7-af3c-181b052b47bd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

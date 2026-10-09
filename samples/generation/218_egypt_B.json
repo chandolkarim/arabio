@@ -1,0 +1,23 @@
+{
+  "fingerprint": "7048baf1475d557394fa07274d2bdc19d73a6b8abfca10a29c7b3268151d8f5c",
+  "idempotency_key": "a4fc30a9-1bcd-49be-a8d3-25740c13a4a0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "هههه، كلنا اتضحك علينا كده في الأول.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "4a9f21fc-42ed-43a1-a56a-c3243ce91ae4",
+  "operation": {
+    "id": "4a9f21fc-42ed-43a1-a56a-c3243ce91ae4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

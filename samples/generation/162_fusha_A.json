@@ -1,0 +1,23 @@
+{
+  "fingerprint": "01624f2fad04d23f02c4113cae7fcd7dc21763f6ede007478698ccd59532de36",
+  "idempotency_key": "f86ba117-72ef-409f-8b0b-ff9be7593021",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ما أكبر فرق بين كوريا وهنا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c18cd43a-c2bc-4d32-a599-9c11d59cfb5b",
+  "operation": {
+    "id": "c18cd43a-c2bc-4d32-a599-9c11d59cfb5b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

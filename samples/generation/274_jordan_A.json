@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8fbd2120a0530a420518a32a1a55d3b36202d0339ed4f01877cb6f1263b45f35",
+  "idempotency_key": "eb29870d-049b-4119-9a52-21c84d4dfc2c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شكله الشباب هالأيام بتجوزوا متأخر.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c09395c2-80b6-42d7-b9b1-9b9fe8fbd22f",
+  "operation": {
+    "id": "c09395c2-80b6-42d7-b9b1-9b9fe8fbd22f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

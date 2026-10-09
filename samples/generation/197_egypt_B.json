@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0120460fbb28e131ae93cb5ccf59b32e5336871814b1ad857c26085fedde11bd",
+  "idempotency_key": "f58004f1-55ca-453b-bb6b-f0fae2584541",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لو ركبت تاكسي لسه تلحقه.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "09969910-013d-4f90-8574-83ce6816ba77",
+  "operation": {
+    "id": "09969910-013d-4f90-8574-83ce6816ba77",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

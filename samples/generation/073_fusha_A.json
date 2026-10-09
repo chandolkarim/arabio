@@ -1,0 +1,23 @@
+{
+  "fingerprint": "180b9f750d99d23a8ad0d4e817e3111d4a043bee30da516a0c8c99b2f433bde8",
+  "idempotency_key": "d49cc971-242c-4996-a338-94f3a208a7bb",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "طلبتُ منذ أكثر من نصف ساعة ولم يصل الطعام بعد.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "17525b36-7425-48c9-8365-486ec38039aa",
+  "operation": {
+    "id": "17525b36-7425-48c9-8365-486ec38039aa",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2300,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "11642935ef01978c34ccb8aca76507d311fa22fb2028107ace0bc46373c230d1",
+  "idempotency_key": "836c0b8b-3bfd-4de7-9e3a-dca99372bef3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "الليلة اللي غنينا فيها كلنا واحنا بنتفرّج عالنجوم بالصحرا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "dc20f035-21a9-455c-a945-66ba9fca602c",
+  "operation": {
+    "id": "dc20f035-21a9-455c-a945-66ba9fca602c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2900,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

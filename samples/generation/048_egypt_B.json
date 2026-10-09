@@ -1,0 +1,23 @@
+{
+  "fingerprint": "aac7404cc16e13c85d08ebc70aef4fff576b6df0a0b688bc52d0dab02972a08b",
+  "idempotency_key": "64550e62-8a0c-4243-a912-f3f03be6af46",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "آه، بس رجعهولي لما تخلص.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "35dafc1e-7498-4db4-8f91-4313490ed022",
+  "operation": {
+    "id": "35dafc1e-7498-4db4-8f91-4313490ed022",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

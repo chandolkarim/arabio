@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f8e451cec4b16dec3c0086006516971c4c448fecf06eb2203243d0e104ff15c3",
+  "idempotency_key": "ce857849-2eb8-45a5-944f-d0ff5f7d8569",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لو اشتريت اتنين، هتديهوملي بكام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "d5aa09c5-6a66-4a4f-92d8-33a851491366",
+  "operation": {
+    "id": "d5aa09c5-6a66-4a4f-92d8-33a851491366",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

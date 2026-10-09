@@ -1,0 +1,23 @@
+{
+  "fingerprint": "532f38477cc6485d5f61c90912f8cb83ec91b54be12e58fd8617fc2693d1ef5d",
+  "idempotency_key": "21232980-e6b9-478a-8b3f-a334738e0e35",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بتقدر تحكي للدكتور إشي بدالي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "27c90eb9-b76d-4bdc-81a2-7da7667b70d3",
+  "operation": {
+    "id": "27c90eb9-b76d-4bdc-81a2-7da7667b70d3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1450,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

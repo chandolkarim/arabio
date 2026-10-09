@@ -1,0 +1,23 @@
+{
+  "fingerprint": "88adf39047aac975372dae76294f930321f01a1190dd7088debff437fd5d7443",
+  "idempotency_key": "936ce688-88a8-4638-a8d0-f8ef802c87f8",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل يمكنني أن أستعير قلمك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a6ec4789-dbc6-4479-a3fd-5320ac073590",
+  "operation": {
+    "id": "a6ec4789-dbc6-4479-a3fd-5320ac073590",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

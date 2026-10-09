@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ed3b2aa8f48d29b3ce79f3f67123782d5122e2967f3dbb71bb3f43d960b77261",
+  "idempotency_key": "8e8e0c8c-cb23-491a-8224-f5e55a0941d7",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، سامحني. خذ خمسة كمان.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1d69c53e-a3a6-43db-87ec-2597efd27e06",
+  "operation": {
+    "id": "1d69c53e-a3a6-43db-87ec-2597efd27e06",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

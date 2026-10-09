@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f60061e24394151dd54fb263d113daedab4911b0de93f732c2af1ad94b04da74",
+  "idempotency_key": "ea790379-8f59-4243-8f4a-eb4474718bcd",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "سامحني، كنت كتير مشغول عشان الامتحانات.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "bd0f3175-af08-429b-9a0b-886c3f06ee56",
+  "operation": {
+    "id": "bd0f3175-af08-429b-9a0b-886c3f06ee56",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1950,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

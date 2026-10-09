@@ -1,0 +1,23 @@
+{
+  "fingerprint": "45a0949f33d3a853050e055a6672e4b59e7e9dc720c267154baff82682191f17",
+  "idempotency_key": "b5e7f778-f68a-45f0-bd67-c0fde8917401",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "إجيت عشان أدرس عربي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f3ac3acd-f38e-49ba-9f27-dcaaa4e27c69",
+  "operation": {
+    "id": "f3ac3acd-f38e-49ba-9f27-dcaaa4e27c69",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

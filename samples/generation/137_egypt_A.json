@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b187db79841f4510ffeb5019df3c7ceddfb903d130bb68d9e350b75fb8364fc8",
+  "idempotency_key": "0283cdab-efaa-40fa-9105-0d0ec7fa0a8f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "المحلات بتفتح يوم الجمعة كمان؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "87cea527-85b0-484b-8962-baf77cd62812",
+  "operation": {
+    "id": "87cea527-85b0-484b-8962-baf77cd62812",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1500,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

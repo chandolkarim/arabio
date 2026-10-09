@@ -1,0 +1,23 @@
+{
+  "fingerprint": "95225c046517a09476ace31344faea79302d46bebc5c9fae3e2025ddfff2af64",
+  "idempotency_key": "25fc5659-ee11-4dfd-a247-843c19746ec1",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "يعني الأغنية بترجعلك كل ذكريات هداك الوقت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "4b4111ab-7bda-4072-b059-f77270468b4e",
+  "operation": {
+    "id": "4b4111ab-7bda-4072-b059-f77270468b4e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

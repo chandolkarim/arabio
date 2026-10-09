@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1c975c50178a0cb5f7db6062dd867055ae43b539961cee494ffeef1c892f7eeb",
+  "idempotency_key": "ea883a9f-3651-40b2-945d-4a73e971f1ee",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كيف كان ذلك الفيلم؟ هل يستحق المشاهدة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "250c7e2e-2469-44a0-b1cf-b0c58c2b871b",
+  "operation": {
+    "id": "250c7e2e-2469-44a0-b1cf-b0c58c2b871b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

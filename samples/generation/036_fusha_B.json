@@ -1,0 +1,23 @@
+{
+  "fingerprint": "97cc6b89982e9ef1fe4a7e7eb9359ddc2b631511d797a8d3f82bae76bec034fa",
+  "idempotency_key": "03697d6c-8d88-4b25-b972-ed8b32a224ec",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لم أجرب كل شيء بعد، لكن حتى الآن الفلافل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "6286a364-06f3-4022-8370-b2bc3145b6ee",
+  "operation": {
+    "id": "6286a364-06f3-4022-8370-b2bc3145b6ee",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

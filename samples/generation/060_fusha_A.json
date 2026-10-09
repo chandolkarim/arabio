@@ -1,0 +1,23 @@
+{
+  "fingerprint": "62b745f885d959efadadfac03f55c9acd9c34969040387c9ce648d71d186ca6c",
+  "idempotency_key": "31f0466b-20ab-4544-b859-208c12787350",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل يمكنني استخدام الحمّام؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "3dd88c1b-7524-4577-81c6-2bf1f43f4e23",
+  "operation": {
+    "id": "3dd88c1b-7524-4577-81c6-2bf1f43f4e23",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1300,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

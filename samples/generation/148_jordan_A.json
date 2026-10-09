@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ff25d728f77233f015a1d1be8c57ab7444b0fb2a82bf76336447cfa3dd2c13c6",
+  "idempotency_key": "ed03fb90-a1e7-42ce-b8cf-22b85c788869",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "شو هاد؟ أول مرة بشوف هالأكل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2c0b527d-c46f-4e3c-adbb-f3ec0ffde89e",
+  "operation": {
+    "id": "2c0b527d-c46f-4e3c-adbb-f3ec0ffde89e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1400,
+    "completion_bytes": 115200
+  },
+  "complete": true,
+  "seconds": 2.4
+}

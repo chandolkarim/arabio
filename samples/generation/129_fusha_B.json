@@ -1,0 +1,23 @@
+{
+  "fingerprint": "65e7ea9aeb6fa0fd4effc735fef2c352da5859ac1d12dce7a7df3d70c76abb2d",
+  "idempotency_key": "222d4c53-794d-4e0c-8262-8e8621137501",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "الآن صعب قليلًا، لكن بعد نصف ساعة يمكنني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "017bfc2c-5514-43ea-8ea6-75593c301555",
+  "operation": {
+    "id": "017bfc2c-5514-43ea-8ea6-75593c301555",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2050,
+    "completion_bytes": 207360
+  },
+  "complete": true,
+  "seconds": 4.32
+}

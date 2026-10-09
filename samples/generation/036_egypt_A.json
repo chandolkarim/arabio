@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f5b48e58662f7b68cc9e81cee1c990e70b888248314dda43643f7012caa0e514",
+  "idempotency_key": "c9b49982-83b0-4b28-9f14-4115ad3f13f0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أكلتك العربي المفضلة إيه؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "38fc0c58-b421-4b38-a3be-5a9437dbc4a2",
+  "operation": {
+    "id": "38fc0c58-b421-4b38-a3be-5a9437dbc4a2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1250,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

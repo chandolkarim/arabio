@@ -1,0 +1,23 @@
+{
+  "fingerprint": "a16a51704ce18625e74eebc28b37c4c1bc6de41160d48f6715119e2c7f98481e",
+  "idempotency_key": "61a10079-1dfd-4444-a268-936746ce1edd",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "يا ترى ليه الناس هنا كرماء أوي كده مع الضيوف؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "83d21891-14e2-4987-b819-07f8fd11106e",
+  "operation": {
+    "id": "83d21891-14e2-4987-b819-07f8fd11106e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 184320
+  },
+  "complete": true,
+  "seconds": 3.84
+}

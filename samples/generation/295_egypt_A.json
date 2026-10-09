@@ -1,0 +1,23 @@
+{
+  "fingerprint": "701bc2dd01b813febf06066f174c7ef081b0ff5394a7449e0d30100b8979c249",
+  "idempotency_key": "ef15dc42-7b42-4572-8455-22d84d67ac1d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "كان في حاجة نفسي أقولها قبل ما أمشي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9684e280-1c4e-40e6-a5b9-4766e5c16841",
+  "operation": {
+    "id": "9684e280-1c4e-40e6-a5b9-4766e5c16841",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 99840
+  },
+  "complete": true,
+  "seconds": 2.08
+}

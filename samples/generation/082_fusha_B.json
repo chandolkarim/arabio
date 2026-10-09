@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f8505bcd380b903c435106b1f1272ee7aaa01fbf20c70f389db5121b380a5a73",
+  "idempotency_key": "953a0c24-5a79-4ce3-a814-42e5876c0774",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "نعم، سأحسب لكل شخص ما طلبه.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f7c9ba2b-602a-41e7-9b4b-ba104b79d393",
+  "operation": {
+    "id": "f7c9ba2b-602a-41e7-9b4b-ba104b79d393",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

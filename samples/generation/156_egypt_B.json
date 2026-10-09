@@ -1,0 +1,23 @@
+{
+  "fingerprint": "6ef45c2c13abab1f63e229b699d0899e4a60a7611be7169ff4927f6f92bd81ab",
+  "idempotency_key": "4a1d0f9c-6cef-4a6f-bcbb-b31561b22798",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "صاحبي نزله على الجروب.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "afe35d11-2300-4c9f-82ca-eba1a1ade33f",
+  "operation": {
+    "id": "afe35d11-2300-4c9f-82ca-eba1a1ade33f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

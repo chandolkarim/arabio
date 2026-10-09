@@ -1,0 +1,23 @@
+{
+  "fingerprint": "de94d751c715601ac355d4abf444594de03caa35600f07e3f61bd9def523fa8a",
+  "idempotency_key": "3690879b-6234-4310-b3a1-41ed2567417e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "شكلك مضايق شوية اليومين دول، في حاجة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "9941a60d-5f6c-479d-bb9f-c8fea4ede580",
+  "operation": {
+    "id": "9941a60d-5f6c-479d-bb9f-c8fea4ede580",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

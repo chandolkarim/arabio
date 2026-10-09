@@ -1,0 +1,23 @@
+{
+  "fingerprint": "9d2dd4b63082c948c532a3c22633764360d471347ce16c1503a8699304770d8d",
+  "idempotency_key": "d02c41a3-0b32-44f5-81f3-a9b120336227",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "رايح فين؟ وريني الخريطة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "cd0099db-f0b8-4256-8fbf-0da2b2a6688c",
+  "operation": {
+    "id": "cd0099db-f0b8-4256-8fbf-0da2b2a6688c",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1200,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

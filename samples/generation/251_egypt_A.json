@@ -1,0 +1,23 @@
+{
+  "fingerprint": "13f0ada64a5bc3eb6f200ee91f870e108b926820d05cddd9d87bd148f5ed061b",
+  "idempotency_key": "ab70dc71-dd75-4d05-8746-7010ef75ff3c",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "لو كنت مكاني، كنت هتمسك الفرصة دي؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c103ccce-234e-4595-899e-ed3c57d161e4",
+  "operation": {
+    "id": "c103ccce-234e-4595-899e-ed3c57d161e4",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1700,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

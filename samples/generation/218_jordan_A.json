@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f6c449addbbd3dad3714fb76865be10f769ad879824c28fb0512805283e180e7",
+  "idempotency_key": "8ac3ab3d-41d0-46b7-9f89-29b6b1bc0cfe",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "كنت بدي أفاصل بالسعر، وبالآخر اشتريتها بأغلى من سعرها الأصلي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "12f0fcd9-c744-4a22-a633-7e7eff4848e3",
+  "operation": {
+    "id": "12f0fcd9-c744-4a22-a633-7e7eff4848e3",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3050,
+    "completion_bytes": 215040
+  },
+  "complete": true,
+  "seconds": 4.48
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0deb150fd543eb7b399df80d4ef1b031e5dafa8fb752f85e0e0bc9e33d1e535a",
+  "idempotency_key": "4cd0ae25-6566-4df2-a979-52158e63b6c4",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "صاحبي بحكي إنه الدنيا شوب كتير بالنهار، فتعودوا يطلعوا بالليل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1d6e7bad-f0ee-49b3-a8c1-1fec5f4bbc6b",
+  "operation": {
+    "id": "1d6e7bad-f0ee-49b3-a8c1-1fec5f4bbc6b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3100,
+    "completion_bytes": 215040
+  },
+  "complete": true,
+  "seconds": 4.48
+}

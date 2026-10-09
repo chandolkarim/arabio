@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ee9b211d10caddac1a003dcb76bdeab29b87f935829cb9c03daa818dbb689ec1",
+  "idempotency_key": "902d036d-faf6-47cb-bacb-820c9d9b2899",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "والكبار ليسوا مختلفين كثيرًا، أليس كذلك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "39ed4377-5c77-439f-91b7-9e0cccc2ad99",
+  "operation": {
+    "id": "39ed4377-5c77-439f-91b7-9e0cccc2ad99",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2000,
+    "completion_bytes": 168960
+  },
+  "complete": true,
+  "seconds": 3.52
+}

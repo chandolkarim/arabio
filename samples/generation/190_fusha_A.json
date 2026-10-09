@@ -1,0 +1,23 @@
+{
+  "fingerprint": "836f0496e506fffba84c09df5477f244e0bd61a9e2fb9dc39e523d8c9fa9a04a",
+  "idempotency_key": "333932a1-4ba8-4011-8761-e6d885caee8a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "ماذا ستفعل في عطلة نهاية هذا الأسبوع؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5d782aad-82c5-4e89-84c1-951c54085dbd",
+  "operation": {
+    "id": "5d782aad-82c5-4e89-84c1-951c54085dbd",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

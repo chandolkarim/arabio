@@ -1,0 +1,23 @@
+{
+  "fingerprint": "199ae470a7d9b3f07c3321ef05d0dfbe85290ad9d3e2acf2d61872867ad350f5",
+  "idempotency_key": "303cc51c-ac80-4e12-a474-8df6ac2221e6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أعتقد عشان الشقق وتكاليف الجواز غالية أوي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a088a240-2fd2-4098-8a72-d93add858be0",
+  "operation": {
+    "id": "a088a240-2fd2-4098-8a72-d93add858be0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2100,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

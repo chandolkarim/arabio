@@ -1,0 +1,23 @@
+{
+  "fingerprint": "58d1455d1d5b4da4494b59480d063f073aec60e761867cc28a7d651b0e2c5a54",
+  "idempotency_key": "abb3c1ff-af63-494a-9147-491f84caabf7",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "إيه؟ لما تقول كده فجأة كده بتوترني.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "313e4815-96e6-43ff-88a3-bb1bf399da02",
+  "operation": {
+    "id": "313e4815-96e6-43ff-88a3-bb1bf399da02",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1750,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

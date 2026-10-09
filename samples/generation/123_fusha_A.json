@@ -1,0 +1,23 @@
+{
+  "fingerprint": "678fc0d7a8edf13682719186fb5fd5f3256acc19540ac6e01fcc4ff3e2760697",
+  "idempotency_key": "f7a54bec-4131-4c5f-b81f-639830af6b58",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "يا سيدي، أظن أنك أخذت طريقًا خاطئًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7fbb6e25-ed75-4bba-8714-14ce9c8b3a80",
+  "operation": {
+    "id": "7fbb6e25-ed75-4bba-8714-14ce9c8b3a80",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

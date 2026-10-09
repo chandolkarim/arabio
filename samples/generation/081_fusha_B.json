@@ -1,0 +1,23 @@
+{
+  "fingerprint": "78b7780affb925b31360456c30acfa83a3ce2acde28e48fd53f2cdbc2aa55c5d",
+  "idempotency_key": "7db4f5de-1e66-4032-9d84-245d87b33d91",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا، لقد دفعتَ أنت المرة الماضية أيضًا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "26017e07-530a-4728-8c06-7f22926d6c64",
+  "operation": {
+    "id": "26017e07-530a-4728-8c06-7f22926d6c64",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

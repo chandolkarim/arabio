@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ba988d43a455e903e97d6a8e7f9a32d819024fffcd0573719596739f59ccfe0f",
+  "idempotency_key": "abc5b990-2e9c-4613-954f-2124a31fa1b9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بطني بتوجعني أوي وما نمتش طول الليل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8c573b4a-62b0-4044-acca-7c58851ee791",
+  "operation": {
+    "id": "8c573b4a-62b0-4044-acca-7c58851ee791",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 207360
+  },
+  "complete": true,
+  "seconds": 4.32
+}

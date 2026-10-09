@@ -1,0 +1,23 @@
+{
+  "fingerprint": "fe3b4ceb43c51daeb95deea03ff9ea401397724eed6105883682c0b7bee0131c",
+  "idempotency_key": "bdeca5ca-9db7-4b4b-85ba-f4bc0bafc7ba",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "كتير من صحابي بلّشوا يتعلموا كوري بسبب الكي بوب.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "500cda5c-1cbe-47f6-a87b-3bed1d49103e",
+  "operation": {
+    "id": "500cda5c-1cbe-47f6-a87b-3bed1d49103e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2400,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

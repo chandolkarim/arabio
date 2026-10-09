@@ -1,0 +1,23 @@
+{
+  "fingerprint": "66973cb86d7502c351d70d62f18a4ab721c2e2abc6dc9eb241833a78f31b03ba",
+  "idempotency_key": "b532889a-3455-4129-80b5-4d423c16218a",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "الناس هنا أكثر ودًا بكثير، ويتحدثون حتى مع الغرباء.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "2d7cab1e-75d6-485d-aa11-fe4792dd3e65",
+  "operation": {
+    "id": "2d7cab1e-75d6-485d-aa11-fe4792dd3e65",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2550,
+    "completion_bytes": 230400
+  },
+  "complete": true,
+  "seconds": 4.8
+}

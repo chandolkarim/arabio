@@ -1,0 +1,23 @@
+{
+  "fingerprint": "916d47611b7b44d152763b20b73190d342752b4f83ca2aa220cea861cf8e28f0",
+  "idempotency_key": "61cc38d5-d21c-4f3a-be91-2d207dfbbe1d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "بصراحة، أنا مش موافق على هالرأي.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "02285d7d-9793-4e26-82e8-853f29d9a02f",
+  "operation": {
+    "id": "02285d7d-9793-4e26-82e8-853f29d9a02f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

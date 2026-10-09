@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0000dea72ed179f4b23cffadecb60bf64a4e0ab87979a50d38921808257d75c8",
+  "idempotency_key": "00e036ab-2bcf-4794-8b7b-65657f68b9e3",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "رحت فين الويك إند اللي فات؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "936f4e14-13d1-4e9d-8828-23fc9500e3c8",
+  "operation": {
+    "id": "936f4e14-13d1-4e9d-8828-23fc9500e3c8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

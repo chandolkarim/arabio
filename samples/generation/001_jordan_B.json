@@ -1,0 +1,23 @@
+{
+  "fingerprint": "706f9794f9a61f31877e09af985f576043a1ffaf6a6afbdc79e0937e23eac976",
+  "idempotency_key": "827fc3e8-9bef-440d-af78-33fbbee718ba",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "منيح، الحمد لله. وإنت كيفك؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f6e05c44-9781-4a03-b33f-6513498fff88",
+  "operation": {
+    "id": "f6e05c44-9781-4a03-b33f-6513498fff88",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

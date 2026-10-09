@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8a2a207533b1e7fb7372058d188146e0facdb1bf004129395359797337fc4088",
+  "idempotency_key": "eb5fbff7-76a5-42ea-a790-f8bcb299986f",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "الاختلاط أمر طبيعي، لكن أظن أن ما يستحق الحفاظ عليه يجب أن يُحفظ.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b51655fa-675a-4cbc-a4cc-4a7cd1e7844d",
+  "operation": {
+    "id": "b51655fa-675a-4cbc-a4cc-4a7cd1e7844d",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3250,
+    "completion_bytes": 268800
+  },
+  "complete": true,
+  "seconds": 5.6
+}

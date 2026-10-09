@@ -1,0 +1,23 @@
+{
+  "fingerprint": "fe5d536758d0e837a054afad1ab8190c276fac5c42801e2d1b3acbd361748c7c",
+  "idempotency_key": "79d553e0-5460-42fc-b71e-61ee023e41e5",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "نعم، أعطني إياها. إنها أثقل مما توقعت!",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8cbfdc37-d84b-4ae6-b936-0217d83bbe36",
+  "operation": {
+    "id": "8cbfdc37-d84b-4ae6-b936-0217d83bbe36",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 192000
+  },
+  "complete": true,
+  "seconds": 4.0
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "12cae17fc857c773154810f58ecc458143812d53bb24ca2907e57c6d8c7fc596",
+  "idempotency_key": "1656ef8d-3c91-482c-84a5-939ba8f55d9e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "إيمتى بتخلص المحاضرة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1146a93a-3146-4475-bcae-a966da24536e",
+  "operation": {
+    "id": "1146a93a-3146-4475-bcae-a966da24536e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

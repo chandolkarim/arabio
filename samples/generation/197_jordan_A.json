@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e62f938ab0dc9f6fc8477d9fc8c9a8d624229a4d25fd781c34970bbd28d41984",
+  "idempotency_key": "80852944-a586-4477-b3f5-07fb559ad844",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "إذا ضلينا هيك رح يفوتني القطار.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "79655e99-73ef-4f97-9a0c-1130a36c04e0",
+  "operation": {
+    "id": "79655e99-73ef-4f97-9a0c-1130a36c04e0",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1550,
+    "completion_bytes": 145920
+  },
+  "complete": true,
+  "seconds": 3.04
+}

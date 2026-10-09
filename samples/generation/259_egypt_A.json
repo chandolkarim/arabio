@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b783b1ea8a796ceb9dd1196b7955b3b21e0a9557b16a2a8d9ff89628592c1696",
+  "idempotency_key": "7eb3e185-9d6c-4a7d-a6ac-5e3002601fe0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "النت بيفصل ويرجع طول اليوم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "325871b6-69eb-46bb-8d43-fe034205f718",
+  "operation": {
+    "id": "325871b6-69eb-46bb-8d43-fe034205f718",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1350,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

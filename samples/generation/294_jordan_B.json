@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b85e1e1042e9ef398b258bfc7941c29fde09017165a4e915e95d609eaccc8d77",
+  "idempotency_key": "280bc9e1-f542-4dfe-bd4f-42cfbb13f6b9",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "أنا بفكر إنك ما رح تعرف الناس على شو بتضحك إلا لما تعرف لغتهم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "58717de6-6ee0-4b72-98c9-2da0caf53991",
+  "operation": {
+    "id": "58717de6-6ee0-4b72-98c9-2da0caf53991",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3100,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

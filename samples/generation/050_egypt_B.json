@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ecfa24224c7f5528fb6ba9d61ff781a6d103e41978d1fb33b6f6554204015560",
+  "idempotency_key": "014e24d0-3450-4d51-8788-9ff106ef8a3d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "هقولهالك بكلمة شبهها.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "77505623-f12f-4e5b-aa3f-dd7d32ed9b47",
+  "operation": {
+    "id": "77505623-f12f-4e5b-aa3f-dd7d32ed9b47",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1050,
+    "completion_bytes": 84480
+  },
+  "complete": true,
+  "seconds": 1.76
+}

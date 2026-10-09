@@ -1,0 +1,23 @@
+{
+  "fingerprint": "cce047e16e6d4b5e85b42813a013587bfff81af4461d671d7882d31c74296a0d",
+  "idempotency_key": "fd451af5-d1a0-40f5-9ee0-e927a8332b78",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "أضعت جواز سفري. كيف أتواصل مع السفارة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5d8d9e8f-1644-4f16-b65a-c6e506a68ba9",
+  "operation": {
+    "id": "5d8d9e8f-1644-4f16-b65a-c6e506a68ba9",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1900,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

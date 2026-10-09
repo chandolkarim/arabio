@@ -1,0 +1,23 @@
+{
+  "fingerprint": "8502200ca7f34dc07dd0e767cbd3053e5e63f0128715f081970436f37b1e3802",
+  "idempotency_key": "af2aac63-fa8e-45d5-91f6-e66c5bd460b7",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "كم محطة يجب أن أركب؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c364f704-5daf-4881-b10d-41c457341e64",
+  "operation": {
+    "id": "c364f704-5daf-4881-b10d-41c457341e64",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 92160
+  },
+  "complete": true,
+  "seconds": 1.92
+}

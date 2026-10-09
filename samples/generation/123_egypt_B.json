@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3a761043a144ef1fbc3565bea900667aef82110261ebf65432a5a8ffae50c52c",
+  "idempotency_key": "d3c70cc9-8708-43db-81dd-3b5876dc2b1b",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "متقلقش، أنا ماشي من هنا عشان الطريق ده أقل زحمة.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "8c688551-f9c5-4e1d-afb7-9f43ae8659c8",
+  "operation": {
+    "id": "8c688551-f9c5-4e1d-afb7-9f43ae8659c8",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2400,
+    "completion_bytes": 199680
+  },
+  "complete": true,
+  "seconds": 4.16
+}

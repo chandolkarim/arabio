@@ -1,0 +1,23 @@
+{
+  "fingerprint": "b51520dde27cd954b97744d5ed9eeb24c92ec1c84d9576f4642b2e1779cd3f98",
+  "idempotency_key": "5b7e6389-02ed-4bdb-a7a7-93b5372e44bc",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "أقول الجملة دي إزاي بالعربي عشان تبقى طبيعية؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a4398339-1289-4e0e-9b0a-9997bad168a2",
+  "operation": {
+    "id": "a4398339-1289-4e0e-9b0a-9997bad168a2",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

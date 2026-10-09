@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c1d36ac7531a87f77e5d8cb834764720063ac74c0c7d2c31b0f55be2c4945f0a",
+  "idempotency_key": "920b0a8f-f0b0-4ad5-9ddf-2c6bb66eace0",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لنلتقِ مرة أخرى عندما يكون لدينا وقت.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a456a071-34b8-46e1-bca7-2e5404d00ba6",
+  "operation": {
+    "id": "a456a071-34b8-46e1-bca7-2e5404d00ba6",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

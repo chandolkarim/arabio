@@ -1,0 +1,23 @@
+{
+  "fingerprint": "18da736137316ccc843ae5f4fa268aee051fddda87443ff48de52ab09420e3c2",
+  "idempotency_key": "fb4058c7-35e8-412b-b645-b45477258229",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ممكن أقعد هنا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a55d7c90-9a96-4a12-bb56-84e45c118017",
+  "operation": {
+    "id": "a55d7c90-9a96-4a12-bb56-84e45c118017",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 700,
+    "completion_bytes": 53760
+  },
+  "complete": true,
+  "seconds": 1.12
+}

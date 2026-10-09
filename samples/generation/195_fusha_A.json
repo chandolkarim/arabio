@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4aa747228102a7aa79f1c654d70f65ad218b74cc09bae299022ad9a3a7fd90aa",
+  "idempotency_key": "1c00a461-adaa-4b1a-8f4e-153f022a14ab",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "سأبدأ دروسًا خصوصية في العربية من الشهر القادم.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "850b1978-9464-4d19-bde8-d3f75309212b",
+  "operation": {
+    "id": "850b1978-9464-4d19-bde8-d3f75309212b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2350,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

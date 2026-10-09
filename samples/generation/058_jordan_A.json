@@ -1,0 +1,23 @@
+{
+  "fingerprint": "e84c41a864be78de5c02bdc5178ed54e4891198c690e40d54dcb7a72bc7084bd",
+  "idempotency_key": "3950b5f8-cfc8-4834-82a0-753f871457c1",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "ممكن تعطيني باسورد الواي فاي لو سمحت؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "cc1a399f-49c8-4c47-8954-3e0ab3d81f29",
+  "operation": {
+    "id": "cc1a399f-49c8-4c47-8954-3e0ab3d81f29",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1850,
+    "completion_bytes": 138240
+  },
+  "complete": true,
+  "seconds": 2.88
+}

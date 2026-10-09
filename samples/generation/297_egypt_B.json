@@ -1,0 +1,23 @@
+{
+  "fingerprint": "1f699deee2b40f5070cb72da17156feb206f1f1213f8836dce79cfa7b58e9cd7",
+  "idempotency_key": "65eec864-33e6-4ae1-ab11-4721d5878563",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ارجع في أي وقت. هنا بيتك على طول.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "81f9879d-fd09-4261-9ea0-d76eacb9f685",
+  "operation": {
+    "id": "81f9879d-fd09-4261-9ea0-d76eacb9f685",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 107520
+  },
+  "complete": true,
+  "seconds": 2.24
+}

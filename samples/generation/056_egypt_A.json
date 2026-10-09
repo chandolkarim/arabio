@@ -1,0 +1,23 @@
+{
+  "fingerprint": "3bcf135f6207ff42d9c4fb7532abc9afaf0e3184de45efb144259a82176a34f3",
+  "idempotency_key": "0d9af394-bdb8-4129-b1a8-5a395b3a9839",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "تيجي ننزل وسط البلد الويك إند ده؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "a68f1097-9601-40e4-ac8b-e4a2c3ea5f0f",
+  "operation": {
+    "id": "a68f1097-9601-40e4-ac8b-e4a2c3ea5f0f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1650,
+    "completion_bytes": 122880
+  },
+  "complete": true,
+  "seconds": 2.56
+}

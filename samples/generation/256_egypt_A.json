@@ -1,0 +1,23 @@
+{
+  "fingerprint": "0dc219f556a2445fb3068a439753bba2f06512b77859ae0bd19f2d9bd06088b8",
+  "idempotency_key": "166dced5-a1b9-44a0-9fe5-d0e372cfb0a2",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "المية مقطوعة من امبارح بالليل. هتصلحوها إمتى؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "b0796fcc-5718-47fd-8ad3-966e68e57780",
+  "operation": {
+    "id": "b0796fcc-5718-47fd-8ad3-966e68e57780",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 2250,
+    "completion_bytes": 153600
+  },
+  "complete": true,
+  "seconds": 3.2
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "c696a75ecfa425cc4ed43a6015dec5c4c3f1f376520cbfabc60123dae34cb6ae",
+  "idempotency_key": "4863236b-654d-48af-9155-f14f3b37abff",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل شاهدت ذلك الفيلم؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7b682760-89b3-4ad8-94a7-d5bffe6b4180",
+  "operation": {
+    "id": "7b682760-89b3-4ad8-94a7-d5bffe6b4180",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1000,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

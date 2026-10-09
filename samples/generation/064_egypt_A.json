@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f67a47ea06cfa72436d3237499f6e0cbe8fba877f8ecf9c8b280c9707ba4cd5e",
+  "idempotency_key": "43611bf2-c860-4f95-8766-30c6261287f6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "في ترابيزة لاتنين؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "af841ab6-9696-439d-a7ff-f149168d183a",
+  "operation": {
+    "id": "af841ab6-9696-439d-a7ff-f149168d183a",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

@@ -1,0 +1,23 @@
+{
+  "fingerprint": "82057d8cc1f558dadb97ab8bc18f937199e1ce5cc3ef785ff4ad4216af5430c8",
+  "idempotency_key": "4b82f2f9-ca91-40df-a54b-5c73b6d875df",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "عندكم أكل من غير لحمة؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "5754f371-8f8e-4c2b-b543-3ec221230f0f",
+  "operation": {
+    "id": "5754f371-8f8e-4c2b-b543-3ec221230f0f",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1100,
+    "completion_bytes": 76800
+  },
+  "complete": true,
+  "seconds": 1.6
+}

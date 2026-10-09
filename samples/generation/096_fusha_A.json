@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d1a2428ef506ba7ca96838069efca1db94c4ac477ce99fe088428289107e243b",
+  "idempotency_key": "0331529a-c146-4ba6-b4db-528229813342",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "هل يمكنك أن تعطيني نصف كيلو فقط؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "7fb4a90d-ded4-443f-8af2-49ec73176c94",
+  "operation": {
+    "id": "7fb4a90d-ded4-443f-8af2-49ec73176c94",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1600,
+    "completion_bytes": 130560
+  },
+  "complete": true,
+  "seconds": 2.72
+}

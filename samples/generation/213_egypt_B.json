@@ -1,0 +1,23 @@
+{
+  "fingerprint": "edfa84a96693b43a17e030221edb0bb7be9e8016db0bed38b515b4e2299ff192",
+  "idempotency_key": "7f76ce54-6d50-4a4f-b91f-3b409e73bab6",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "صاحبي عزمني في بلده فاتغديت مع أهله.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "46980b0a-c5f1-4a5a-a242-3494a8c0b90b",
+  "operation": {
+    "id": "46980b0a-c5f1-4a5a-a242-3494a8c0b90b",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 176640
+  },
+  "complete": true,
+  "seconds": 3.68
+}

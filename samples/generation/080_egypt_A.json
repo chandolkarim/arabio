@@ -1,0 +1,23 @@
+{
+  "fingerprint": "ac99ac90a61e0c19f294a66d3d3b4fc437f8a7a9f18cd74d4f91ed3f9ac9454b",
+  "idempotency_key": "f139fa42-c9a8-4fa6-848b-cdfee2b7888e",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "ممكن أدفع بالفيزا؟",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "183bcaa2-49f4-4a85-bf2e-afc6a514a70e",
+  "operation": {
+    "id": "183bcaa2-49f4-4a85-bf2e-afc6a514a70e",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 900,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

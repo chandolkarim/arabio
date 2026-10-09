@@ -1,0 +1,23 @@
+{
+  "fingerprint": "d7ed3b093f637649b801e7ffe0c564ad3f67fd021c714bda5023a6d4a8a933ce",
+  "idempotency_key": "44455ba2-4902-4206-b707-729b020e2c34",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3a2e57a2-5730-5102-8208-77b1997354b8",
+    "input": "آه، إجا الصبح.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "f90cebaf-c22f-480b-8bd5-de2c4d029191",
+  "operation": {
+    "id": "f90cebaf-c22f-480b-8bd5-de2c4d029191",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 700,
+    "completion_bytes": 61440
+  },
+  "complete": true,
+  "seconds": 1.28
+}

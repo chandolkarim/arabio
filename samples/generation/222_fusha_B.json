@@ -1,0 +1,23 @@
+{
+  "fingerprint": "f01e3124ba756a2fc1443e9e41e1afd94b6a3932c342376cd05d6a796ec499b6",
+  "idempotency_key": "d1451d0c-1bae-4c17-aba6-20abef3baa21",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "381f4457-7cc6-5fb4-84e5-f9dd14ac93d3",
+    "input": "لا، هذه أول مرة، فلم أعرف ماذا أفعل.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "c3e7ddf8-afd7-470e-ad3b-d075d3aed629",
+  "operation": {
+    "id": "c3e7ddf8-afd7-470e-ad3b-d075d3aed629",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 1800,
+    "completion_bytes": 161280
+  },
+  "complete": true,
+  "seconds": 3.36
+}

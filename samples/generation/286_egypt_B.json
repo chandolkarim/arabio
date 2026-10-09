@@ -1,0 +1,23 @@
+{
+  "fingerprint": "4ba36eaee91460331a7b51ad2c3ffa0b691659c4846e5126efa5d45b4be66c86",
+  "idempotency_key": "6c87d341-0dd1-4ff9-b143-6863159cc31d",
+  "payload": {
+    "model": "arabic-tts-1",
+    "voice": "3e88109c-4903-5b09-a250-b43305ea3b82",
+    "input": "بيقولوا إن حكايات العيلة والأدب اللي فيها ماشيين مع الثقافة هنا.",
+    "response_format": "pcm",
+    "sample_rate": 24000,
+    "enhance_pronunciation": false
+  },
+  "submitted": true,
+  "operation_id": "1c3885b9-dc05-4f5e-9651-942b3579effb",
+  "operation": {
+    "id": "1c3885b9-dc05-4f5e-9651-942b3579effb",
+    "state": "terminal",
+    "outcome": "completed",
+    "charged_micros": 3200,
+    "completion_bytes": 245760
+  },
+  "complete": true,
+  "seconds": 5.12
+}
