@@ -335,7 +335,7 @@ function show(html, { tabs = true, tab = null } = {}) {
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     app.animate([{ opacity: 0, transform: "translateY(14px)" }, { opacity: 1, transform: "translateY(0)" }], { duration: 420, easing: "cubic-bezier(.2,.8,.2,1)" });
   }
-  app.dataset.screen = tab || (app.querySelector(".ob") ? "onboarding" : "lesson");
+  app.dataset.screen = tab || "lesson";
   tabbar.hidden = !tabs;
   tabbar.querySelectorAll("button").forEach((b) => {
     b.classList.toggle("on", b.dataset.go === tab);
@@ -352,108 +352,76 @@ tabbar.addEventListener("click", (e) => {
   if (go) SCREENS[go]();
 });
 
-// ---------- 시작: 방언 고르기 ----------
+// ---------- 홈: 나라별 학습 경로 ----------
 
-function screenOnboarding() {
-  window.onscroll = null;
-  const savedDialect = DIALECTS[state.dialect];
-  show(`
-    <section class="ob">
-      <div class="top">
-        <h1 class="brand-name in" style="--d:0">아라비오</h1>
-      </div>
-      ${savedDialect ? `<div class="resume-learning in" style="--d:1"><p>${savedDialect.name} 아랍어 · ${progress().completedDays.length}일 완료</p><button class="btn henna" id="resume-learning">학습 이어하기 ${ICON.arrow}</button></div>` : ""}
-      <div class="picks">
-        ${Object.entries(DIALECTS).map(([key, d], i) => `
-          <button class="pick in" style="--d:${4 + i}" data-dialect="${key}">
-            <span class="pick-index" aria-hidden="true">0${i + 1}</span><span><span class="nm">${d.name}</span><span class="sub" style="display:block">${d.city} · 100일 300문장</span></span>
-            <span class="arn" lang="ar" dir="rtl">${d.ar}</span><span class="pick-arrow">${ICON.arrow}</span>
-          </button>`).join("")}
-      </div>
-      <p class="foot in" style="--d:6">나중에 설정에서 바꿀 수 있어요. 진도는 방언별로 따로 저장돼요.</p>
-    </section>`, { tabs: false });
-  document.getElementById("resume-learning")?.addEventListener("click", screenHome);
-  app.querySelectorAll("[data-dialect]").forEach((b) => b.addEventListener("click", () => {
-    state.dialect = b.dataset.dialect;
-    progress();
-    saveState();
-    screenHome();
-  }));
-}
-
-// ---------- 홈: 100일의 길 ----------
-
-function unitBanner(u) {
-  return `
-    <div class="swap">
-      <p class="label">UNIT ${u.unit} · DAY ${u.firstDay}–${u.lastDay} · ${u.level}</p>
-      <p class="un">${esc(u.name)}</p>
-      <p class="uk" dir="rtl" lang="ar">${esc(u.key.startsWith("(") ? "" : u.key.replace(/→/g, "←"))}</p>
-    </div>
-    <span class="unum">${arNum(u.unit)}</span>`;
-}
-
+let homeUnlock = null;
+const HOME_ICON = {
+  chat: '<svg viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-6 3V6a2 2 0 0 1 2-2Z"/><path d="M7 9h10M7 13h7"/></svg>',
+  lock: '<svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg>',
+};
 function screenHome() {
-  const p = progress();
-  const now = nextDay();
-  const finished = p.completedDays.length >= 100;
-  const st = streak();
-  const due = dueReviews().length;
+  if (!DIALECTS[state.dialect]) state.dialect = "egypt";
+  const p = progress(), now = nextDay(), finished = p.completedDays.length >= 100;
+  const u = unitOfDay(now), country = state.dialect, due = dueReviews().length;
   show(`
-    <header class="topbar">
-      <span class="wordmark">아라비오</span>
-      <span class="streak ${st ? "" : "off"}">${ICON.flame} ${st}일 연속</span>
-    </header>
-    <section class="home-hero in">
-      <div><h1>${DIALECTS[state.dialect].name} 아랍어</h1>
-      <p class="hero-note">${finished ? "100일 학습 완료" : `DAY ${now} · ${esc(unitOfDay(now).name)}`}</p></div>
-      <span class="country-script" lang="ar" dir="rtl">${DIALECTS[state.dialect].ar}</span>
+    <div class="world-scene" aria-hidden="true"><img src="assets/landmarks/${country}.jpg" alt="" width="960" height="${country === "egypt" ? 542 : 1440}"></div>
+    <header class="world-masthead"><span>${ICON.flame} ${streak()}일</span><b>아라비오</b><span>${p.xp} XP</span></header>
+    <section class="world-hero" aria-label="${country === "egypt" ? "기자 피라미드" : "페트라 알카즈네"} 배경">
+      <img src="assets/landmarks/${country}.jpg" alt="${country === "egypt" ? "이집트 기자의 피라미드" : "요르단 페트라의 알카즈네"}" width="960" height="${country === "egypt" ? 542 : 1440}" fetchpriority="high">
+      <div class="world-title"><small>${country === "egypt" ? "CAIRO · EGYPT" : "AMMAN · JORDAN"}</small><div lang="ar" dir="rtl">${DIALECTS[country].ar}</div><p>${DIALECTS[country].name} 아랍어 <span>100일 · 300문장</span></p></div>
     </section>
-    <div class="home-stats"><div><b>${p.completedDays.length}<small> / 100</small></b><span>완료한 날</span></div><div><b>${Object.keys(p.srs).length}<small> 문장</small></b><span>배운 문장</span></div><div><b>${p.xp}<small> XP</small></b><span>경험치</span></div></div>
-    <section class="today-card in" style="--d:1"><div class="today-heading"><span class="eyebrow">${finished ? "다시 만나는 세 문장" : "오늘의 세 문장"}</span><span class="day-chip">DAY ${now}</span></div>
-      <p class="daily-ar" lang="ar" dir="rtl">${esc(sentencesOfDay(now)[0][state.dialect].blank)}</p>
-      <h2>${esc(sentencesOfDay(now)[0].gloss[sentencesOfDay(now)[0][state.dialect].blank] || unitOfDay(now).name)}</h2><p class="lesson-types">대화 / 표현 비교 / 연습 / 말하기</p>
-      <button class="btn henna" id="today-start">${finished ? "다시 연습하기" : "오늘 학습 시작"} ${ICON.arrow}</button>
-    </section>
-    ${due ? `<button class="review-link" id="review"><span>오늘 복습 <b>${due}문장 복습</b></span>${ICON.arrow}</button>` : ""}
-    <div class="journey-heading"><h2>학습 단원</h2><label class="unit-select"><span class="sr-only">학습 단원</span><select id="unit-select">${DATA.units.map(u => `<option value="${u.unit}" ${u.unit === unitOfDay(now).unit ? "selected" : ""}>UNIT ${u.unit} · ${esc(u.name)}</option>`).join("")}</select></label></div>
-    <div class="unitban" id="unitban">${unitBanner(unitOfDay(now))}</div>
-    <div class="path" id="path"></div>`, { tab: "home" });
-  document.getElementById("today-start").addEventListener("click", () => startLesson(now, sentencesOfDay(now), finished ? "again" : "lesson"));
-  document.getElementById("review")?.addEventListener("click", screenReview);
-  renderPath(now, finished, unitOfDay(now).unit);
-  document.getElementById("unit-select").addEventListener("change", e => {
-    const unit = Number(e.target.value);
-    document.getElementById("unitban").innerHTML = unitBanner(DATA.units.find(u => u.unit === unit));
-    renderPath(now, finished, unit);
+    <div class="world-picker" role="group" aria-label="학습 나라 선택">${Object.entries(DIALECTS).map(([key,d])=>`<button data-country="${key}" aria-pressed="${key === country}">${d.name} <span lang="ar">${d.ar}</span></button>`).join("")}</div>
+    ${due ? `<button class="world-review" id="review">오늘 복습 · ${due}문장 ${ICON.arrow}</button>` : ""}
+    <section class="world-unit"><div><label for="unit-select">UNIT ${String(u.unit).padStart(2,"0")}</label><h1 id="world-unit-name">${esc(u.name)}</h1></div><select id="unit-select" aria-label="학습 단원 선택">${DATA.units.map(unit=>`<option value="${unit.unit}" ${unit.unit===u.unit ? "selected" : ""}>UNIT ${unit.unit} · ${esc(unit.name)}</option>`).join("")}</select></section>
+    <div class="world-progress" id="world-progress"></div>
+    <section class="world-path" id="path" aria-label="단원 학습 경로"></section>
+    <div id="world-next"></div>
+    <details class="world-credit"><summary>사진 출처</summary><a href="https://commons.wikimedia.org/wiki/File:Giza_Pyramids_Panorama.jpg">Giza Pyramids Panorama · Benjamin Inbar</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><br><a href="https://commons.wikimedia.org/wiki/File:Petra_Treasury.jpg">Petra Treasury · David Bjorgen</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a><p>원본 사진에 화면 크롭·색 필터를 적용했습니다.</p></details>`, {tab:"home"});
+  app.dataset.country = country;
+  renderPath(now, finished, u.unit);
+  document.getElementById("review")?.addEventListener("click",screenReview);
+  document.getElementById("unit-select").addEventListener("change",e=>renderPath(now,finished,Number(e.target.value)));
+  app.querySelectorAll("[data-country]").forEach(button=>button.addEventListener("click",()=>{
+    const nextCountry=button.dataset.country;
+    if (nextCountry===state.dialect) return;
+    homeUnlock=null;
+    state.dialect=nextCountry;progress();saveState();screenHome();
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      const pill=app.querySelector(".world-picker");
+      pill.animate([{transform:"translateX("+(nextCountry==="jordan"?-8:8)+"px)"},{transform:"translateX(0)"}],{duration:500,easing:"cubic-bezier(.2,.85,.25,1.12)"});
+    }
+  }));
+  const hero=app.querySelector(".world-hero");
+  hero.addEventListener("pointermove",e=>{
+    if(e.pointerType!=="mouse" || matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+    const r=hero.getBoundingClientRect();hero.style.setProperty("--px",((e.clientX-r.left)/r.width-.5)*9+"px");hero.style.setProperty("--py",((e.clientY-r.top)/r.height-.5)*7+"px");
   });
+  hero.addEventListener("pointerleave",()=>{hero.style.setProperty("--px","0px");hero.style.setProperty("--py","0px")});
+  homeUnlock=null;
 }
 
 function renderPath(now, finished, selectedUnit) {
-  const unit = DATA.units.find(u => u.unit === selectedUnit);
-  const done = new Set(progress().completedDays);
-  const days = Array.from({ length: unit.lastDay - unit.firstDay + 1 }, (_, i) => unit.firstDay + i);
-  const box = document.getElementById("path");
-  box.innerHTML = days.map((day, index) => {
-    const completed = done.has(day);
-    const current = !finished && day === now;
-    const locked = !completed && !current;
-    const list = sentencesOfDay(day);
-    return `<article class="day-entry ${current ? "current" : ""} ${completed ? "completed" : ""} in" style="--d:${index}">
-      <button class="day-row" data-day="${day}" ${locked ? "disabled" : ""} aria-label="${day}일차${completed ? " 다시 학습" : current ? " 학습 시작" : " 잠김"}">
-        <span class="day-index">${String(day).padStart(2, "0")}</span>
-        <span class="day-copy"><b>${esc(list[0].ko[list[0].blankSide])}</b><small>${current ? "학습 가능" : completed ? "학습 완료 · 다시 연습" : "이전 학습 완료 후 시작"} · 3문장</small></span>
-        <span class="day-status" aria-hidden="true">${completed ? "✓" : locked ? "—" : ICON.arrow}</span>
-      </button>
-      ${current ? `<div class="day-detail"><ol>${list.map(sentence => `<li>${esc(sentence.ko[sentence.blankSide])}</li>`).join("")}</ol><button class="btn henna" id="start">DAY ${day} 시작 ${ICON.arrow}</button></div>` : ""}
-    </article>`;
+  const unit=DATA.units.find(u=>u.unit===selectedUnit),done=new Set(progress().completedDays);
+  const days=Array.from({length:unit.lastDay-unit.firstDay+1},(_,i)=>unit.firstDay+i);
+  const positions=[32,60,38,26,54,76,42];let y=40;
+  const points=days.map((day,i)=>{const point={day,x:positions[i%positions.length]*4,y};y+=day===now&&!finished?190:110;return point});
+  const height=y+10;
+  const route=points.map((point,i)=>i===0?`M${point.x} ${point.y}`:`C${points[i-1].x} ${points[i-1].y+55} ${point.x} ${point.y-55} ${point.x} ${point.y}`).join(" ");
+  const lastDone=points.findLastIndex(point=>done.has(point.day));
+  const travelled=points.slice(0,lastDone+1).map((point,i)=>i===0?`M${point.x} ${point.y}`:`C${points[i-1].x} ${points[i-1].y+55} ${point.x} ${point.y-55} ${point.x} ${point.y}`).join(" ");
+  const box=document.getElementById("path");box.style.height=height+"px";
+  box.innerHTML=`<svg class="world-route" viewBox="0 0 400 ${height}" preserveAspectRatio="none" aria-hidden="true"><path d="${route}"/><path class="travelled" d="${travelled}" pathLength="1"/></svg>`+points.map(({day,x,y},i)=>{
+    const completed=done.has(day),current=!finished&&day===now,locked=!completed&&!current;
+    return `<div class="world-node ${completed?"completed":""} ${current?"current":""} ${homeUnlock?.country===state.dialect&&current?"unlocked":""}" style="left:${x/4}%;top:${y-30}px;--delay:${i*65}ms"><button data-day="${day}" ${locked?"disabled":""} aria-label="${day}일차 ${completed?"다시 학습":current?"학습 시작":"잠김"}">${completed?ICON.check:locked?HOME_ICON.lock:HOME_ICON.chat}</button><small>DAY ${String(day).padStart(2,"0")}</small></div>${current?`<div class="world-day-card ${x>200?"left":"right"}" style="top:${y-35}px"><small>${homeUnlock?.country===state.dialect?"다음 단계 열림":"오늘의 학습"}</small><h2>${day}일차 대화</h2><p>푸스하 + ${DIALECTS[state.dialect].name} 암미야<br>대화 3개 · 듣기 · 말하기</p><button id="today-start">학습 시작 ${ICON.arrow}</button></div>`:""}`;
   }).join("");
-  box.querySelectorAll("[data-day]:not(:disabled)").forEach(button => button.addEventListener("click", () => {
-    const day = Number(button.dataset.day);
-    startLesson(day, sentencesOfDay(day), done.has(day) ? "again" : "lesson");
-  }));
-  document.getElementById("start")?.addEventListener("click", () => startLesson(now));
-  window.onscroll = null;
+  document.getElementById("world-unit-name").textContent=unit.name;
+  const count=days.filter(day=>done.has(day)).length;
+  document.getElementById("world-progress").innerHTML=`<span>${count} / ${days.length} 완료</span><div>${days.map(day=>`<i class="${done.has(day)?"done":""}"></i>`).join("")}</div>`;
+  const nextUnit=DATA.units.find(u=>u.unit===unit.unit+1);
+  document.getElementById("world-next").innerHTML=nextUnit?`<div class="world-next">${HOME_ICON.chat}<div><small>다음 단원 · UNIT ${String(nextUnit.unit).padStart(2,"0")}</small><h2>${esc(nextUnit.name)}</h2></div>${HOME_ICON.lock}</div>`:`<div class="world-next"><div><small>100일 · 300문장</small><h2>${finished?"전체 학습 완료":"마지막 단원"}</h2></div></div>`;
+  box.querySelectorAll("[data-day]:not(:disabled)").forEach(button=>button.addEventListener("click",()=>{const day=Number(button.dataset.day);startLesson(day,sentencesOfDay(day),done.has(day)?"again":"lesson")}));
+  document.getElementById("today-start")?.addEventListener("click",()=>startLesson(now));
+  window.onscroll=null;
 }
 
 // ---------- 레슨 ----------
@@ -684,6 +652,7 @@ function finishLesson() {
   let unitJustDone = null;
   if (counts && !p.completedDays.includes(lesson.day)) {
     p.completedDays.push(lesson.day);
+    homeUnlock = {country:state.dialect, day:lesson.day};
     const u = unitOfDay(lesson.day);
     if (unitDone(u)) unitJustDone = u;
   }
@@ -814,5 +783,6 @@ const SCREENS = { home: screenHome, review: screenReview, records: screenRecords
     return;
   }
   if ("speechSynthesis" in window) speechSynthesis.getVoices();
-  screenOnboarding();
+  if (!state.dialect) state.dialect = "egypt";
+  screenHome();
 })();

@@ -1,7 +1,11 @@
 # 아라비오 (Arabio)
 
+현재 메인 화면 디자인과 수정 위치는 [DESIGN.md](DESIGN.md)를 참고하세요. 나라별 사진 배경·단계형 학습 경로가 실제 `web/` 앱에 반영되어 있습니다.
+
 한국인 아랍어 학습자가 하루 세 문장씩, 같은 문장을 푸스하와 방언(이집트·요르단)으로 익히는 웹 앱입니다.
-홈은 오늘 학습 카드와 단원별로 선택해 보는 DAY 1–100 학습 경로이며, 단원(7일)을 끝낼 때마다 금색 별 도장을 얻습니다.
+처음 열면 바로 학습 메인으로 들어가며(기본 이집트), 메인 위쪽에서 이집트·요르단을 바꿀 수 있습니다. 메인은 나라 사진 배경과 단원별 곡선 학습 경로이고, 단원(7일)을 끝낼 때마다 별 도장을 얻습니다.
+
+배포: https://chandolkarim.github.io/arabio/ (main에 push하면 GitHub Actions가 `web/`을 Pages로 배포)
 
 ## 실행
 
@@ -19,6 +23,8 @@ cd web && python3 -m http.server 8765              # http://localhost:8765 에�
 | `web/index.html` | 앱 화면 틀 |
 | `web/app.js` | 화면과 학습 흐름(시작, 100일의 길, 레슨 5단계, 하루 완료, 복습, 기록, 설정) |
 | `web/style.css` | 기본 레이아웃과 학습 애니메이션 |
+| `web/world.css` | 메인 화면(나라 사진·학습 경로) 배치와 팔레트. `style.css`, `arabio.css` 다음에 읽힘 |
+| `web/assets/landmarks/` | 메인 배경 사진(출처·라이선스는 앱 하단 ‘사진 출처’) |
 | `web/arabio.css` | 아라비오 디자인 시스템: 크림색·헤나, 중앙 워드마크, 아랍어 타이포그래피, 단원 목록과 조작 모션 |
 | `web/design_drafts.html` | 디자인 시안 페이지 |
 | `web/audio/` | 대사별 음성. `{id}_{fusha\|egypt\|jordan}_{A\|B}.m4a` (MP3·WAV도 지원) |
@@ -49,6 +55,8 @@ API 키는 웹 폴더 밖 `~/.config/arabio/sawtak.env`의 `SAWTAK_API_KEY`에 �
 키를 소스 코드·브라우저·공유 파일에 넣지 않습니다.
 원본 WAV는 `samples/generation/wav/`에 보관하고, 웹에서는 `web/audio/`의 압축 M4A만 재생합니다.
 설정에서 0.8·1·1.2배 음성 재생 속도를 선택할 수 있습니다.
+
+음량은 `python3 scripts/normalize_audio.py`로 원본 WAV의 말소리 크기를 -20 dB에 맞춰 M4A를 다시 만듭니다(일부만: 파일 이름을 인자로). 처음 실행 시 기존 M4A는 `samples/audio-prenorm/`에 백업합니다. 실행 후 `python3 build_data.py`로 음성 버전(해시)을 갱신하세요.
 
 ```bash
 python3 scripts/generate_audio.py --limit 6  # 첫 대화의 세 변형 A/B
