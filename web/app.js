@@ -490,8 +490,8 @@ function renderStep() {
   ({ 0: stepPreview, 1: stepMeaning, 3: stepCompare, 4: stepDialectBlank, 6: stepRecall })[entry.type](s);
 }
 
-function dialogueLines(s, variant, korean = true) {
-  return ["A", "B"].map(side => `<div class="dialogue-line"><div class="speaker-line"><span>${side}</span>${playBtn(variant, side, "듣기")}</div>${ar(esc(s[variant][side]))}${korean ? `<p class="dialogue-ko">${esc(s.ko[side])}</p>` : ""}</div>`).join("");
+function dialogueLines(s, variant, korean = true, mark = false) {
+  return ["A", "B"].map(side => `<div class="dialogue-line"><div class="speaker-line"><span>${side}</span>${playBtn(variant, side, "듣기")}</div>${ar(mark && side === s.blankSide ? withMark(s[variant][side], s[variant].blank) : esc(s[variant][side]))}${korean ? `<p class="dialogue-ko">${esc(s.ko[side])}</p>` : ""}</div>`).join("");
 }
 
 function stepPreview(s) {
@@ -585,12 +585,10 @@ function stepCompare(s) {
       <span class="expression-arrow" aria-hidden="true">↓</span>
       <div><span class="label">${DIALECTS[d].name}</span>${ar(esc(s[d].blank), "big")}</div>
     </div>
-    <div class="target-example in" style="--d:3">${playBtn(d, s.blankSide, "문장 듣기")}${ar(withMark(s[d][s.blankSide], s[d].blank))}<p class="dialogue-ko">${esc(s.ko[s.blankSide])}</p></div>
-    <details class="other"><summary>전체 대화와 설명</summary>
-      <div class="dialogue-preview">${dialogueLines(s, d)}</div>
+    <div class="dialogue-preview in" style="--d:3">${dialogueLines(s, d, true, true)}</div>
+    ${(s.notesByDialect[d] || []).length || (s.memosByDialect[d] || []).length ? `<div class="compare-notes in" style="--d:4"><p class="label">설명</p>
       <ul class="notes">${(s.notesByDialect[d] || []).map(n => `<li>${mixed(n)}</li>`).join("")}</ul>
-      ${(s.memosByDialect[d] || []).map(memo => `<p class="memo">${mixed(memo)}</p>`).join("")}
-    </details>
+      ${(s.memosByDialect[d] || []).map(memo => `<p class="memo">${mixed(memo)}</p>`).join("")}</div>` : ""}
     <details class="other"><summary>${DIALECTS[other].name} 표현도 보기</summary>${ar(esc(s[other].A))}${ar(esc(s[other].B))}</details>
     <button class="btn henna" style="margin-top:24px" id="go">${lesson.index === lesson.list.length - 1 ? "연습 시작" : "다음 푸스하 대화"} ${ICON.arrow}</button>`);
   document.getElementById("go").addEventListener("click", next);
