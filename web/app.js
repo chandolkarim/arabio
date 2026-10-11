@@ -3,7 +3,10 @@
 // 진도: 브라우저 localStorage에 방언별로 저장한다.
 
 const STORE_KEY = "three-sentences-arabic-v1";
-const REVIEW_INTERVALS = [1, 3, 7, 14, 30]; // '외웠어요'를 누를 때마다 다음 복습까지 늘어나는 날 수
+const REVIEW_INTERVALS = [1, 3, 7, 14, 30];
+// 음성 속도: 기본 1.0배(자연스러운 속도), 느리게 0.7·0.8배, 고급 학습자용 1.1·1.2배 (교수님 조언)
+const RATES = [0.7, 0.8, 1, 1.1, 1.2];
+const rateLabel = (r) => `${r.toFixed(1)}×`; // '외웠어요'를 누를 때마다 다음 복습까지 늘어나는 날 수
 const DIALECTS = {
   egypt: { name: "이집트", ar: "مصر", en: "EGYPT", city: "카이로", lang: "ar-EG" },
   jordan: { name: "요르단", ar: "الأردن", en: "JORDAN", city: "암만", lang: "ar-JO" },
@@ -26,7 +29,7 @@ function loadState() {
 }
 
 function normalizeState(raw) {
-  const value = { dialect: Object.keys(DIALECTS).includes(raw?.dialect) ? raw.dialect : null, progress: {}, audioRate: [0.8, 1, 1.2].includes(raw?.audioRate) ? raw.audioRate : 1 };
+  const value = { dialect: Object.keys(DIALECTS).includes(raw?.dialect) ? raw.dialect : null, progress: {}, audioRate: RATES.includes(raw?.audioRate) ? raw.audioRate : 1 };
   for (const d of Object.keys(DIALECTS)) {
     const p = raw?.progress?.[d];
     if (!p || typeof p !== "object") continue;
@@ -141,12 +144,6 @@ function shuffle(list) {
 const arNum = (n) => String(n).replace(/\d/g, (d) => "٠١٢٣٤٥٦٧٨٩"[d]);
 const ar = (html, extra = "") => `<p class="ar ${extra}" dir="rtl" lang="ar">${html}</p>`;
 
-function withSlot(text, word, filled = false) {
-  const i = text.indexOf(word);
-  if (i < 0) return esc(text);
-  return `${esc(text.slice(0, i))}<span class="slot${filled ? " filled" : ""}" role="img" aria-label="${filled ? esc(word) : "빈칸"}"><span aria-hidden="true">${esc(word)}</span></span>${esc(text.slice(i + word.length))}`;
-}
-
 function withMark(text, word) {
   const i = word ? text.indexOf(word) : -1;
   if (i < 0) return esc(text);
@@ -239,14 +236,6 @@ function mixed(text) {
   return esc(text).replace(/[؀-ۿ]+(?:[ .…]+[؀-ۿ]+)*/g, (m) => `<bdi dir="rtl" lang="ar" class="ar-inline">${m}</bdi>`);
 }
 
-function variantLabel(s, word) {
-  const other = state.dialect === "egypt" ? "jordan" : "egypt";
-  if (word === s[state.dialect].blank) return DIALECTS[state.dialect].name;
-  if (word === s[other].blank) return DIALECTS[other].name;
-  if (word === s.fusha.blank) return "푸스하";
-  return "";
-}
-
 const ICON = {
   arrow: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`,
   x: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>`,
@@ -291,29 +280,6 @@ function burst(el, n = 12) {
     document.body.appendChild(s);
     setTimeout(() => s.remove(), 1300);
   }
-}
-
-// 아랍어 문장을 단어 단위로 차례로 띄운다
-function wordsIn(el, base = 300) {
-  if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  let i = 0;
-  [...el.childNodes].forEach((node) => {
-    if (node.nodeType !== 3) {
-      node.classList.add("w-in");
-      node.style.animationDelay = `${base + i++ * 100}ms`;
-      return;
-    }
-    const frag = document.createDocumentFragment();
-    node.textContent.split(/(\s+)/).forEach((part) => {
-      if (!part.trim()) { frag.append(part); return; }
-      const s = document.createElement("span");
-      s.className = "w-in";
-      s.textContent = part;
-      s.style.animationDelay = `${base + i++ * 100}ms`;
-      frag.append(s);
-    });
-    node.replaceWith(frag);
-  });
 }
 
 // 등장 애니메이션이 끝나면 클래스를 떼서 다른 애니메이션과 겹치지 않게 한다
@@ -647,6 +613,7 @@ function frame(inner) {
     <header class="lhead">
       <button class="icon" id="quit" aria-label="그만하기">${ICON.x}</button>
       <div class="prog"><i style="width:${(lessonPos() / total) * 100}%"></i></div>
+      <button class="speed-chip" id="speed" aria-label="음성 속도 바꾸기, 지금 ${rateLabel(state.audioRate || 1)}">${rateLabel(state.audioRate || 1)}</button>
       <span class="stepno">${lessonPos() + 1} / ${total}</span>
     </header>
     <div class="lesson-stage"><span>${({0:"01 푸스하 · 대화 보기",3:"01 암미야 · 표현 비교",1:"02 연습하기",4:lesson.mode === "review" ? "복습" : "02 연습하기",6:"03 말하기"})[lesson.queue[lesson.cursor].type]}</span><span>표현 ${lesson.index + 1} / ${lesson.list.length}</span></div>
@@ -655,6 +622,13 @@ function frame(inner) {
   requestAnimationFrame(() => {
     const bar = app.querySelector(".prog i");
     if (bar) bar.style.width = `${((lessonPos() + 1) / total) * 100}%`;
+  });
+  document.getElementById("speed").addEventListener("click", (e) => {
+    state.audioRate = RATES[(RATES.indexOf(state.audioRate || 1) + 1) % RATES.length];
+    if (currentAudio) currentAudio.playbackRate = state.audioRate;
+    e.currentTarget.textContent = rateLabel(state.audioRate);
+    e.currentTarget.setAttribute("aria-label", `음성 속도 바꾸기, 지금 ${rateLabel(state.audioRate)}`);
+    saveState();
   });
   document.getElementById("quit").addEventListener("click", () => {
     if (confirm("지금 그만두면 이번 학습 진도는 저장되지 않아요. 그만할까요?")) screenHome();
@@ -792,27 +766,82 @@ function stepCompare(s) {
   document.getElementById("go").addEventListener("click", next);
 }
 
+// 단어 블록으로 방언 문장 만들기 (교수님 조언: 보기 고르기보다 직접 꺼내 조립하게).
+// 긴 문장은 핵심 표현 주변 최대 7단어만 블록으로, 나머지는 미리 채워 둔다.
+// 함정 블록: 같은 자리의 푸스하·다른 방언 표현(s[d].wrong)에서 문장에 없는 단어 2개.
+const PUNCT = /[،؟!.,:;"'«»…]/g;
+const bare = (w) => plainAr(w.replace(PUNCT, ""));
+
+function blockWindow(words, key) {
+  const k = key.split(/\s+/).map(bare);
+  let ks = words.findIndex((_, i) => k.every((w, j) => bare(words[i + j] || "") === w));
+  if (ks < 0) ks = 0;
+  const ke = Math.min(words.length, ks + k.length);
+  let start = ks, end = ke;
+  while (end - start < Math.min(7, words.length)) {
+    if (start > 0 && (end >= words.length || ks - start <= end - ke)) start--;
+    else if (end < words.length) end++;
+    else break;
+  }
+  return [start, end];
+}
+
 function stepDialectBlank(s) {
   const d = state.dialect;
   const side = s.blankSide;
-  quiz({
-    kicker: `${DIALECTS[d].name} 사람처럼`,
-    teacher: "ammiya",
-    title: "빈칸에 들어갈 말은?",
-    prompt: `<p class="ko in" style="--d:2">${esc(s.ko[side])}</p><div class="sent" id="sent">${ar(withSlot(s[d][side], s[d].blank))}</div>`,
-    answer: s[d].blank,
-    wrong: s[d].wrong,
-    arabic: true,
-    glossOf: (o) => [s.gloss[o], variantLabel(s, o)].filter(Boolean).join(" · "),
-    onRight: () => {
-      const slot = document.querySelector("#sent .slot");
-      slot.classList.add("filled");
-      slot.setAttribute("aria-label", s[d].blank);
-      speak(s, d, side);
-    },
-    sheetBody: () => `<div style="display:flex;align-items:center;gap:10px">${playBtn(d, side)}${ar(esc(s[d][side]))}</div><p style="margin-top:6px">${esc(s[d].blank)} = ${esc(s.gloss[s[d].blank] || "")}</p>`,
+  const words = s[d][side].trim().split(/\s+/);
+  const [start, end] = blockWindow(words, s[d].blank);
+  const target = words.slice(start, end);
+  const inLine = new Set(target.map(bare));
+  const decoys = [...new Set(s[d].wrong.flatMap(o => o.split(/\s+/)).map(w => w.replace(PUNCT, "")))]
+    .filter(w => w && !inLine.has(bare(w))).slice(0, 2);
+  const bank = shuffle([...target.map(w => w.replace(PUNCT, "")), ...decoys]).map((w, i) => ({ i, w }));
+  const picked = [];
+  frame(`
+    <p class="label in" style="--d:0">${DIALECTS[d].name} 사람처럼</p>
+    <h2 class="title in" style="--d:1">단어를 눌러 문장을 완성하세요</h2>
+    <p class="ko in" style="--d:2">${esc(s.ko[side])}</p>
+    <div class="build in" style="--d:3" dir="rtl" lang="ar" id="build"></div>
+    <div class="blocks in" style="--d:4" dir="rtl" lang="ar" id="bank">${bank.map(b => `<button class="blk" data-i="${b.i}">${esc(b.w)}</button>`).join("")}</div>
+    <div class="build-actions in" style="--d:5"><button class="btn ghost" id="clear">다시</button><button class="btn henna" id="check" disabled>확인</button></div>`);
+  const build = document.getElementById("build");
+  const bankBox = document.getElementById("bank");
+  const fixed = (list) => list.map(w => `<span class="fixed">${esc(w)}</span>`).join(" ");
+  const draw = () => {
+    build.innerHTML = `${fixed(words.slice(0, start))} ${picked.length
+      ? picked.map(i => `<button class="blk in-line" data-i="${i}">${esc(bank[i].w)}</button>`).join("")
+      : `<span class="drop">여기에 단어가 들어가요</span>`} ${fixed(words.slice(end))}`;
+    bankBox.querySelectorAll(".blk").forEach(b => b.classList.toggle("used", picked.includes(Number(b.dataset.i))));
+    document.getElementById("check").disabled = picked.length === 0;
+  };
+  bankBox.addEventListener("click", (e) => {
+    const b = e.target.closest(".blk");
+    if (!b || build.dataset.done || picked.includes(Number(b.dataset.i))) return;
+    picked.push(Number(b.dataset.i));
+    draw();
   });
-  wordsIn(document.querySelector("#sent .ar"), 300);
+  build.addEventListener("click", (e) => {
+    const b = e.target.closest(".blk");
+    if (!b || build.dataset.done) return;
+    picked.splice(picked.indexOf(Number(b.dataset.i)), 1);
+    draw();
+  });
+  document.getElementById("clear").addEventListener("click", () => {
+    if (build.dataset.done) return;
+    picked.length = 0;
+    draw();
+  });
+  document.getElementById("check").addEventListener("click", () => {
+    if (build.dataset.done) return;
+    build.dataset.done = "true";
+    const right = picked.length === target.length && picked.every((i, j) => bare(bank[i].w) === bare(target[j]));
+    build.classList.add(right ? "ok" : "bad");
+    if (!right) lesson.mistakes[s.id] = true;
+    else { burst(build, 12); speak(s, d, side); }
+    openSheet({ good: right, title: right ? "정답이에요" : "아쉬워요, 정답은 이거예요", teacher: "ammiya",
+      body: `<div style="display:flex;align-items:center;gap:10px">${playBtn(d, side)}${ar(esc(s[d][side]))}</div><p style="margin-top:6px">${esc(s[d].blank)} = ${esc(s.gloss[s[d].blank] || "")}</p>` });
+  });
+  draw();
 }
 
 // End with each original A/B dialogue; do not splice unrelated source dialogues.
@@ -966,7 +995,7 @@ function screenSettings() {
     <div class="setting in" style="--d:2">
       <p class="small muted">푸스하: 아이만 · 이집트: 아슈라프 · 요르단: 야잔<br>AI 생성 음성 · 발음 검수 중. 없는 음성은 준비 중으로 표시해요.<br>문장 300개 · 15단원 · 100일 (원어민 검수 전 초안)</p>
     </div>
-    <div class="setting"><div class="audio-speed"><label for="audio-speed">음성 재생 속도</label><select id="audio-speed">${[[0.8,"천천히 · 0.8배"],[1,"기본 · 1배"],[1.2,"빠르게 · 1.2배"]].map(([value,label])=>`<option value="${value}" ${(state.audioRate || 1) === value ? "selected" : ""}>${label}</option>`).join("")}</select></div></div>
+    <div class="setting"><div class="audio-speed"><label for="audio-speed">음성 재생 속도</label><select id="audio-speed">${RATES.map(value=>`<option value="${value}" ${(state.audioRate || 1) === value ? "selected" : ""}>${value === 1 ? "기본 · 1.0배" : value < 1 ? `느리게 · ${value}배` : `빠르게 · ${value}배`}</option>`).join("")}</select></div></div>
     ${['localhost', '127.0.0.1', '[::1]'].includes(location.hostname) ? `<div class="setting"><p>로컬 검수 · 진도 저장 없이 모든 일차 확인</p><a class="btn ghost" href="admin.html?day=8">관리자 검수 열기</a></div>` : ''}`, { tab: "settings" });
   document.getElementById("audio-speed").addEventListener("change", e => {
     state.audioRate = Number(e.target.value);

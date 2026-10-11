@@ -96,3 +96,16 @@ body{background:#e4e7e1}.tabbar{background:#f4f3f1ef;backdrop-filter:blur(12px);
 .world-cat{position:absolute;z-index:1;width:118px;height:118px;pointer-events:none;animation:teacher-pop .7s cubic-bezier(.2,.85,.3,1.25) .3s both}
 .world-cat.right{right:-6px}.world-cat.left{left:-6px}
 @media(prefers-reduced-motion:reduce){.world-cat{animation:none}}
+/* 음성 속도 버튼 (레슨 위쪽) */
+.speed-chip{flex:none;min-width:52px;height:32px;margin-right:8px;border:1px solid var(--hair);border-radius:16px;background:#fff;color:var(--henna);font:700 13px var(--font);cursor:pointer}
+.speed-chip:active{transform:scale(.95)}
+/* 단어 블록 문장 만들기 */
+.build{min-height:74px;margin-top:18px;padding:12px 4px;border-bottom:2px solid var(--hair);display:flex;flex-wrap:wrap;gap:8px 6px;align-items:center;font:22px/1.6 "Noto Naskh Arabic",Amiri,serif;color:var(--ink)}
+.build .fixed{color:var(--muted)}.build .drop{font:13px var(--font);color:var(--muted)}
+.build.ok{border-color:var(--ok)}.build.bad{border-color:#c0392b}
+.blocks{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.blk{font:22px/1.4 "Noto Naskh Arabic",Amiri,serif;padding:6px 14px;border:1px solid var(--hair);border-radius:12px;background:#fff;color:var(--ink);box-shadow:0 3px 0 var(--hair);cursor:pointer;transition:transform .12s}
+.blk:active{transform:translateY(2px);box-shadow:0 1px 0 var(--hair)}
+.blk.used{visibility:hidden}.blk.in-line{background:var(--ok-soft);border-color:var(--henna)}
+.build-actions{display:grid;grid-template-columns:1fr 2fr;gap:10px;margin-top:26px}.build-actions .btn{margin-top:0}
+.btn:disabled{opacity:.45;cursor:default}
