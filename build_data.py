@@ -13,7 +13,14 @@ from dialect_notes import split_notes
 
 TAG = re.compile(r"\s*\(?\s*(?:ID\d+\s*)?(?:\d+단원\s*(?:복습|미리 보기|핵심)|단원 핵심|복습)\s*\)?")
 INTERNAL = ("예시", "바꿔도 됨", "화폐", "구조 복습")
+REWRITE = {}
 GRAMMAR = re.compile(r"부정|진행|미래|명령|수동|분사|강조|어순|발음|소유|목적어|접미|접두|의문|조건|가정")
+
+
+def load_rewrite():
+    if not TIPS.exists():
+        return {}
+    return {r["원래 설명"]: r["알아두면 좋은 점"] for r in csv.DictReader(TIPS.open(encoding="utf-8-sig"))}
 
 
 def tips(notes):
@@ -37,13 +44,16 @@ def tips(notes):
         label = text.split(":", 1)[0]
         if ":" in text and not GRAMMAR.search(label) and not re.search(r"[가-힣A-Za-z]", rest):
             continue  # 라벨 + 아랍어 대응뿐인 줄
-        out.append(text)
+        text = REWRITE.get(text, text)
+        if text and text not in out:
+            out.append(text)
     return out
 from pathlib import Path
 
 HERE = Path(__file__).parent
 SRC = HERE / "sentences_300.csv"
 WORDS = HERE / "word_gloss.csv"  # 단어를 누르면 보이는 뜻 (발음 기호를 뺀 형태 → 한국어 뜻)
+TIPS = HERE / "tips_rewrite.csv"  # 원래 설명 → 형태가 보이게 고쳐 쓴 설명 (빈칸이면 뺌)
 PHRASES = HERE / "phrase_gloss.csv"  # 숙어·굳은 표현은 한 덩어리로 뜻을 보여 준다
 WEB = HERE / "web"
 OUT = WEB / "data" / "sentences.json"
@@ -57,6 +67,7 @@ def options(row, ko_name):
 
 
 def main():
+    REWRITE.update(load_rewrite())
     rows = list(csv.DictReader(SRC.open(encoding="utf-8-sig")))
     audio_files = {p.name for p in AUDIO.iterdir() if p.suffix in {".m4a", ".mp3", ".wav"}} if AUDIO.exists() else set()
 

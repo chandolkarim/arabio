@@ -736,7 +736,7 @@ function stepCompare(s) {
     <div class="dialogue-preview in" style="--d:3">${dialogueLines(s, d, true, true)}</div>
     ${(s.tipsByDialect?.[d] || []).length ? `<div class="compare-notes in" style="--d:4"><p class="label">알아두면 좋은 점</p>
       <ul class="notes">${s.tipsByDialect[d].map(n => `<li>${mixed(n)}</li>`).join("")}</ul></div>` : ""}
-    <div class="other-dialect in" style="--d:5"><p class="label">${DIALECTS[other].name}에선 이렇게 말해요</p>${ar(wordify(s[other].A))}${ar(wordify(s[other].B))}</div>
+    <details class="other"><summary>${DIALECTS[other].name} 표현도 보기</summary>${ar(wordify(s[other].A))}${ar(wordify(s[other].B))}</details>
     <button class="btn henna" style="margin-top:24px" id="go">${lesson.index === lesson.list.length - 1 ? "연습 시작" : "다음 푸스하 대화"} ${ICON.arrow}</button>`);
   document.getElementById("go").addEventListener("click", next);
 }
