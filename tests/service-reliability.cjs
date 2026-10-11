@@ -6,7 +6,7 @@ const audio = [];
 const node = { dataset:{}, style:{setProperty(){}}, classList:{remove(){}}, querySelectorAll(){return []}, querySelector(){return null}, getAnimations(){return []}, addEventListener(){}, setAttribute(){}, removeAttribute(){} };
 let notice = null;
 const context = vm.createContext({
-  console, document:{getElementById(id){return id==='service-status'?notice:node},querySelector(){return null},querySelectorAll(){return []},addEventListener(){},createElement(){return {dataset:{},setAttribute(){}}},body:{appendChild(n){notice=n}}},
+  console, document:{getElementById(id){return id==='service-status'?notice:node},querySelector(){return null},querySelectorAll(){return []},addEventListener(){},createElement(){return {dataset:{},setAttribute(){}}},body:{appendChild(n){notice=n}},documentElement:{dataset:{}}},
   window:{matchMedia(){return {matches:true}},scrollTo(){}},
   localStorage:{getItem(){return null},setItem(){writes++}},setTimeout(){},requestAnimationFrame(fn){fn()},
   Audio:class{constructor(src){this.src=src;this.handlers={};this.paused=true;audio.push(this)}addEventListener(k,fn){this.handlers[k]=fn}pause(){this.paused=true}play(){this.paused=false;return Promise.resolve()}},

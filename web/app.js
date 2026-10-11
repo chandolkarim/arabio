@@ -329,6 +329,8 @@ function bindPlay(s, root = app) {
 
 function show(html, { tabs = true, tab = null } = {}) {
   stopAudio();
+  // Country colours (world.css) follow the chosen dialect on every screen, lessons included.
+  document.documentElement.dataset.country = DIALECTS[state.dialect] ? state.dialect : "egypt";
   document.querySelector(".sheet")?.remove();
   app.getAnimations().forEach(animation => animation.cancel());
   app.innerHTML = html;
