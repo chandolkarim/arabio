@@ -499,11 +499,29 @@ tabbar.addEventListener("click", (e) => {
   if (go) SCREENS[go]();
 });
 
+// ---------- 고양이 선생님: 꾸꾸(푸스하, 점잖은 말투)와 아꿍(암미야, 친근한 말투) ----------
+
+const TEACHERS = {
+  fusha: { name: "꾸꾸", role: "푸스하 선생님", img: "kkuku",
+    praise: ["훌륭해요!", "정확해요. 잘 들었네요.", "아주 좋아요."],
+    sad: ["괜찮아요, 같이 다시 볼까요?", "아깝네요. 정답을 확인해 봐요."] },
+  ammiya: { name: "아꿍", role: "암미야 선생님", img: "akkung",
+    praise: ["오, 완전 현지인인데?", "맞아! 잘했어!", "그거지!"],
+    sad: ["아깝다! 다시 보자.", "괜찮아, 다음엔 맞힐 거야!"] },
+};
+const pick = (list) => list[Math.floor(Math.random() * list.length)];
+
+function teacher(who, mood, text, cls = "") {
+  const t = TEACHERS[who];
+  return `<div class="teacher ${cls}"><img src="assets/teachers/${t.img}-${mood}.webp" alt="${t.role} ${t.name}" width="64" height="64"><p class="say"><b>${t.name} · ${t.role}</b>${esc(text)}</p></div>`;
+}
+
 // ---------- 첫 방문 안내: 누구를 위한 앱인지 ----------
 
 function screenIntro() {
   show(`
     <section class="intro">
+      <div class="intro-cats in"><figure><img src="assets/teachers/kkuku-smile.webp" alt="푸스하 선생님 꾸꾸" width="120" height="120"><figcaption>꾸꾸<small>푸스하 선생님</small></figcaption></figure><figure><img src="assets/teachers/akkung-smile.webp" alt="암미야 선생님 아꿍" width="120" height="120"><figcaption>아꿍<small>암미야 선생님</small></figcaption></figure></div>
       <p class="intro-mark in">아라비오</p>
       <h1 class="in" style="--d:1">문법과 단어는 아는데,<br>막상 말하려면 막히나요?</h1>
       <p class="intro-body in" style="--d:2">아라비오는 푸스하를 배운 분이 같은 문장을 이집트·요르단 방언으로 비교하며, <b>실제로 꺼내 쓸 수 있는 문장</b>으로 익히도록 만든 앱이에요.</p>
@@ -665,19 +683,20 @@ function dialogueLines(s, variant, korean = true, mark = false) {
 function stepPreview(s) {
   frame(`<p class="label in">${esc(s.unitName)} · 푸스하</p>
     <h2 class="title in" style="--d:1">대화를 먼저 읽고 들어보세요</h2>
-    ${lesson.index === 0 ? `${lesson.mode === "lesson" ? `<p class="lesson-purpose in" style="--d:1">오늘은 푸스하로 아는 표현을 방언으로 바꿔 말하는 연습이에요.</p>` : ""}<p class="ko word-hint in" style="--d:1">모르는 아랍어 단어는 눌러 보세요. 뜻이 나와요.</p>` : ""}
+    ${teacher("fusha", "smile", lesson.index === 0 && lesson.mode === "lesson" ? "오늘은 푸스하로 아는 표현을 방언으로 바꿔 말하는 연습이에요. 먼저 푸스하로 읽고 들어 볼까요?" : "이번 대화도 먼저 푸스하로 읽고 들어 봐요.", "in")}
+    ${lesson.index === 0 ? `<p class="ko word-hint in" style="--d:1">모르는 아랍어 단어는 눌러 보세요. 뜻이 나와요.</p>` : ""}
     <div class="dialogue-preview in" style="--d:2">${dialogueLines(s, "fusha")}</div>
     <button class="btn henna in" style="--d:3;margin-top:24px" id="go">${DIALECTS[state.dialect].name} 암미야 보기 ${ICON.arrow}</button>`);
   document.getElementById("go").addEventListener("click", next);
 }
 
-function openSheet({ good, title, body }) {
+function openSheet({ good, title, body, teacher: who }) {
   document.querySelector(".sheet")?.remove();
   const sh = document.createElement("div");
   sh.className = `sheet ${good ? "" : "bad"}`;
   sh.setAttribute("role", "region");
   sh.setAttribute("aria-labelledby", "feedback-title");
-  sh.innerHTML = `<p class="t" id="feedback-title">${title}</p><div class="msg">${body}</div><button class="btn ${good ? "ok" : ""}" id="next">계속</button>`;
+  sh.innerHTML = `${who ? teacher(who, good ? "praise" : "sad", pick(TEACHERS[who][good ? "praise" : "sad"]), "in-sheet") : ""}<p class="t" id="feedback-title">${title}</p><div class="msg">${body}</div><button class="btn ${good ? "ok" : ""}" id="next">계속</button>`;
   document.body.appendChild(sh);
   requestAnimationFrame(() => requestAnimationFrame(() => sh.classList.add("up")));
   sh.querySelector("#next").addEventListener("click", next);
@@ -686,7 +705,7 @@ function openSheet({ good, title, body }) {
 }
 
 // 3지선다 공통
-function quiz({ kicker, title, prompt, answer, wrong, arabic, glossOf, onRight, sheetBody }) {
+function quiz({ kicker, title, prompt, answer, wrong, arabic, glossOf, onRight, sheetBody, teacher: who }) {
   const opts = shuffle([answer, ...wrong]);
   frame(`
     <p class="label in" style="--d:0">${kicker}</p>
@@ -718,7 +737,7 @@ function quiz({ kicker, title, prompt, answer, wrong, arabic, glossOf, onRight, 
       box.classList.add("reveal");
       if (right) burst(correct, 12);
       onRight?.();
-      openSheet({ good: right, title: right ? "정답이에요" : "아쉬워요, 정답은 이거예요", body: sheetBody() });
+      openSheet({ good: right, title: right ? "정답이에요" : "아쉬워요, 정답은 이거예요", body: sheetBody(), teacher: who });
     }, right ? 0 : 450);
   }));
 }
@@ -728,6 +747,7 @@ function stepMeaning(s) {
   const hasAudio = Boolean(s.fusha.audio[side]);
   quiz({
     kicker: hasAudio ? "푸스하 · 듣기" : "푸스하 · 읽기",
+    teacher: "fusha",
     title: hasAudio ? "들리는 문장의 뜻은?" : "이 문장의 뜻은?",
     prompt: hasAudio ? `<div class="listen in" style="--d:2">${playBtn("fusha", side, "다시 듣기")}</div>` : `${ar(esc(s.fusha[side]))}<p class="small muted">음성 준비 중 · 읽기 문제로 진행해요.</p>`,
     answer: s.ko[side],
@@ -749,6 +769,7 @@ function stepCompare(s) {
   const other = d === "egypt" ? "jordan" : "egypt";
   frame(`<p class="label in">푸스하 → ${DIALECTS[d].name}</p>
     <h2 class="title in" style="--d:1">${esc(s.gloss[s[d].blank] || s.gloss[s.fusha.blank] || "핵심 표현")}</h2>
+    ${teacher("ammiya", "smile", `${DIALECTS[d].name}에선 이렇게 말해!`, "in")}
     <div class="expression-pair in" style="--d:2">
       <div><span class="label">푸스하</span>${ar(esc(s.fusha.blank), "big")}</div>
       <span class="expression-arrow" aria-hidden="true">↓</span>
@@ -767,6 +788,7 @@ function stepDialectBlank(s) {
   const side = s.blankSide;
   quiz({
     kicker: `${DIALECTS[d].name} 사람처럼`,
+    teacher: "ammiya",
     title: "빈칸에 들어갈 말은?",
     prompt: `<p class="ko in" style="--d:2">${esc(s.ko[side])}</p><div class="sent" id="sent">${ar(withSlot(s[d][side], s[d].blank))}</div>`,
     answer: s[d].blank,
@@ -789,6 +811,7 @@ function stepRecall(s) {
   const d = state.dialect;
   frame(`<p class="label in">${DIALECTS[d].name} · 대화 ${lesson.index + 1}</p>
     <h2 class="title in" style="--d:1">한국어만 보고 대화해 보세요</h2>
+    ${teacher("ammiya", "smile", `이번엔 네가 ${DIALECTS[d].name} 사람처럼 말해 봐!`, "in")}
     <p class="ko">상대의 말을 읽고, ‘핵심 표현’이 표시된 역할을 아랍어로 말해 보세요.${canRecord ? " 녹음해 두면 정답의 원어민 음성과 비교할 수 있어요." : ""}</p>
     <div class="recall card in" style="--d:2">${["A","B"].map(side => `<p class="who">${side}${side === s.blankSide ? " · 핵심 표현" : ""}</p><p class="big-ko">${esc(s.ko[side])}</p>`).join("")}</div>
     ${canRecord ? `<div class="mine in" style="--d:3" id="mine" data-sid="${s.id}"></div>` : ""}
@@ -849,6 +872,7 @@ function finishLesson() {
       ${isDay ? `<p class="num in" style="--d:0">${arNum(dayN)}</p><p class="label numk in" style="--d:1">DAY ${dayN}</p>` : `<p class="num in" style="--d:0">✓</p>`}
       <h2 class="title in" style="--d:2">${isDay ? `${dayN}일차를 마쳤어요` : "복습을 마쳤어요"}</h2>
       <p class="lead in" style="--d:3">${isDay ? `100일 중 ${p.completedDays.length}일, 300문장 중 ${p.completedDays.length * 3}문장째예요.` : `${lesson.list.length}문장 복습 완료`}</p>
+      <div class="done-cats in" style="--d:3"><img src="assets/teachers/kkuku-celebrate.webp" alt="푸스하 선생님 꾸꾸가 축하해요" width="96" height="96"><img src="assets/teachers/akkung-celebrate.webp" alt="암미야 선생님 아꿍이 축하해요" width="96" height="96"></div>
       ${isDay ? `<p class="lesson-purpose in" style="--d:3">오늘 익힌 문장, 실제 상황에서 꺼내 써 보세요.</p>` : ""}
       <p class="xp in" style="--d:3"><span>연속 <b>${streak()}일</b></span><span><b>+${gained}</b> 경험치</span></p>
       ${isDay ? `

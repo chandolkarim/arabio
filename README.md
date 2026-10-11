@@ -26,6 +26,7 @@ cd web && python3 -m http.server 8765              # http://localhost:8765 에�
 | `web/app.js` | 화면과 학습 흐름(시작, 100일의 길, 레슨 5단계, 하루 완료, 복습, 기록, 설정) |
 | `web/style.css` | 기본 레이아웃과 학습 애니메이션 |
 | `web/world.css` | 메인 화면(나라 사진·학습 경로) 배치와 팔레트. `style.css`, `arabio.css` 다음에 읽힘 |
+| `web/assets/teachers/` | 고양이 선생님 꾸꾸(푸스하)·아꿍(암미야) 일러스트, 표정 4종(smile·praise·sad·celebrate) |
 | `web/assets/landmarks/` | 메인 배경 사진(출처·라이선스는 앱 하단 ‘사진 출처’) |
 | `web/arabio.css` | 아라비오 디자인 시스템: 크림색·헤나, 중앙 워드마크, 아랍어 타이포그래피, 단원 목록과 조작 모션 |
 | `web/design_drafts.html` | 디자인 시안 페이지 |

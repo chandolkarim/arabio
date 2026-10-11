@@ -70,3 +70,14 @@ body{background:#e4e7e1}.tabbar{background:#f4f3f1ef;backdrop-filter:blur(12px);
 .intro-note{font-size:12.5px;line-height:1.6;color:var(--muted);text-align:center}
 .lesson-purpose{margin-top:10px;padding:10px 12px;border-left:2px solid var(--clay);background:#ffffff66;font-size:13.5px;line-height:1.6;color:var(--ink2)}
 .done-screen .lesson-purpose{margin:12px auto 0;max-width:320px;text-align:left}
+/* 고양이 선생님 */
+.teacher{display:flex;align-items:flex-end;gap:10px;margin:14px 0 4px}
+.teacher img{width:64px;height:64px;flex:none;animation:teacher-pop .5s cubic-bezier(.2,.85,.3,1.25) both}
+.teacher .say{position:relative;flex:1;background:#fff;border:1px solid var(--hair);border-radius:14px 14px 14px 4px;padding:9px 12px;font-size:14px;line-height:1.55;color:var(--ink);box-shadow:0 4px 14px #293b3410}
+.teacher .say b{display:block;font-size:11px;font-weight:700;color:var(--henna);margin-bottom:2px}
+.sheet .teacher{margin:0 0 10px}.sheet .teacher .say{font-size:15px}
+.intro-cats{display:flex;gap:10px;margin-bottom:6px}.intro-cats figure{margin:0;text-align:center}.intro-cats img{width:120px;height:120px;display:block}
+.intro-cats figcaption{font-size:14px;font-weight:700;color:var(--ink)}.intro-cats small{display:block;font-size:11px;font-weight:500;color:var(--muted)}
+.done-cats{display:flex;justify-content:center;gap:4px;margin-top:10px}.done-cats img{width:96px;height:96px}
+@keyframes teacher-pop{from{opacity:0;transform:translateY(8px) scale(.9)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.teacher img{animation:none}}
