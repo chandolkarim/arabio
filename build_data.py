@@ -13,6 +13,7 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 SRC = HERE / "sentences_300.csv"
+WORDS = HERE / "word_gloss.csv"  # 단어를 누르면 보이는 뜻 (발음 기호를 뺀 형태 → 한국어 뜻)
 WEB = HERE / "web"
 OUT = WEB / "data" / "sentences.json"
 AUDIO = WEB / "audio"
@@ -75,7 +76,9 @@ def main():
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     temporary = OUT.with_suffix('.json.tmp')
-    temporary.write_text(json.dumps({"units": units, "sentences": sentences}, ensure_ascii=False),
+    words = ({r["단어"]: r["뜻"] for r in csv.DictReader(WORDS.open(encoding="utf-8-sig")) if r["뜻"]}
+             if WORDS.exists() else {})
+    temporary.write_text(json.dumps({"units": units, "sentences": sentences, "words": words}, ensure_ascii=False),
                          encoding="utf-8")
     temporary.replace(OUT)
     with_audio = sum(1 for s in sentences for k in VARIANTS if s[k]["audio"])

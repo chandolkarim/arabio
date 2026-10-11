@@ -151,6 +151,59 @@ function withMark(text, word) {
   return `${esc(text.slice(0, i))}<mark>${esc(word)}</mark>${esc(text.slice(i + word.length))}`;
 }
 
+// ---------- 단어 눌러서 뜻 보기: DATA.words는 word_gloss.csv(발음 기호를 뺀 형태 → 뜻) ----------
+
+const AR_WORD = /[\u0621-\u064a\u064b-\u065f\u0670\u0640]+/g;
+const plainAr = (word) => word.replace(/[\u064b-\u065f\u0670\u0640]/g, "");
+
+function wordify(text) {
+  return esc(text).replace(AR_WORD, (w) => DATA?.words?.[plainAr(w)] ? `<span class="w" role="button" tabindex="0" data-w="${plainAr(w)}">${w}</span>` : w);
+}
+
+// wordify + 핵심 표현 강조. 빈칸·핵심 표현은 단어 경계로 맞춰져 있어 앞뒤를 따로 감싸도 단어가 잘리지 않는다.
+function arText(text, mark = "") {
+  const i = mark ? text.indexOf(mark) : -1;
+  if (i < 0) return wordify(text);
+  return `${wordify(text.slice(0, i))}<mark>${wordify(mark)}</mark>${wordify(text.slice(i + mark.length))}`;
+}
+
+let glossPop = null;
+
+function hideGloss() {
+  glossPop?.remove();
+  glossPop = null;
+  document.querySelectorAll(".w.on").forEach(w => w.classList.remove("on"));
+}
+
+function showGloss(el) {
+  hideGloss();
+  const pop = glossPop = document.createElement("div");
+  pop.id = "wpop";
+  pop.className = "wpop";
+  pop.setAttribute("role", "status");
+  pop.innerHTML = `<b lang="ar" dir="rtl">${esc(el.textContent)}</b><span>${esc(DATA.words[el.dataset.w])}</span>`;
+  document.body.appendChild(pop);
+  const r = el.getBoundingClientRect();
+  const left = Math.min(Math.max(8, r.left + r.width / 2 - pop.offsetWidth / 2), innerWidth - pop.offsetWidth - 8);
+  const above = r.top - pop.offsetHeight - 10;
+  pop.style.left = `${left + scrollX}px`;
+  pop.style.top = `${(above > 8 ? above : r.bottom + 10) + scrollY}px`;
+  el.classList.add("on");
+}
+
+if (typeof document !== "undefined" && document.addEventListener) {
+  document.addEventListener("click", (e) => {
+    const w = e.target.closest?.(".w");
+    if (w) w.classList.contains("on") ? hideGloss() : showGloss(w);
+    else if (!e.target.closest?.("#wpop")) hideGloss();
+  });
+  document.addEventListener("keydown", (e) => {
+    const w = e.target.closest?.(".w");
+    if (w && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); showGloss(w); }
+    if (e.key === "Escape") hideGloss();
+  });
+}
+
 // 아랍어 조각이 섞인 한국어 설명을 순서가 꼬이지 않게 감싼다.
 function mixed(text) {
   return esc(text).replace(/[؀-ۿ]+(?:[ .…]+[؀-ۿ]+)*/g, (m) => `<bdi dir="rtl" lang="ar" class="ar-inline">${m}</bdi>`);
@@ -169,6 +222,8 @@ const ICON = {
   x: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>`,
   play: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.9l10-6.5a1 1 0 0 0 0-1.7l-10-6.5A1 1 0 0 0 8 5.5Z"/></svg>`,
   check: `<svg class="check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>`,
+  mic: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>`,
+  stop: `<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6.5" y="6.5" width="11" height="11" rx="2"/></svg>`,
   flame: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c1 3.5-1.5 5-1.5 7.5 0 1.4 1 2.5 2.3 2.5 1.5 0 2.4-1.2 2.2-3 2.3 1.6 4 4.2 4 7a7 7 0 0 1-14 0c0-5 4.5-7.4 7-14Z"/></svg>`,
 };
 
@@ -262,6 +317,10 @@ function resetAudioButtons() {
     button.innerHTML = `${ICON.play}${esc(button.dataset.playLabel || "듣기")}`;
     button.setAttribute("aria-pressed", "false");
   });
+  (app.querySelectorAll?.("[data-mine]") || []).forEach(button => {
+    button.innerHTML = `${ICON.play}내 목소리`;
+    button.setAttribute("aria-pressed", "false");
+  });
   document.querySelectorAll?.(".sheet [data-play]").forEach(button => {
     button.innerHTML = `${ICON.play}${esc(button.dataset.playLabel || "듣기")}`;
     button.setAttribute("aria-pressed", "false");
@@ -276,7 +335,7 @@ function stopAudio() {
   if ("speechSynthesis" in window) window.speechSynthesis.cancel();
 }
 
-document.addEventListener("visibilitychange", () => { if (document.hidden) stopAudio(); });
+document.addEventListener("visibilitychange", () => { if (document.hidden) { stopAudio(); stopRecording(); } });
 
 function speak(s, variant, side, button = null) {
   const file = s[variant].audio[side];
@@ -309,6 +368,60 @@ function speak(s, variant, side, button = null) {
   }
 }
 
+// ---------- 내 목소리 녹음: 말하기 단계에서 원어민 음성과 비교. 녹음은 이 기기 메모리에만 있고 어디에도 보내지 않는다. ----------
+
+const canRecord = typeof navigator !== "undefined" && !!navigator.mediaDevices?.getUserMedia && typeof MediaRecorder !== "undefined";
+let recorder = null;
+
+function stopRecording() {
+  if (recorder?.state === "recording") recorder.stop();
+}
+
+async function toggleRecording(id, onChange) {
+  if (recorder?.state === "recording") { recorder.stop(); return; }
+  stopAudio();
+  let stream;
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+  } catch {
+    notify("마이크를 쓸 수 없어요. 브라우저 설정에서 마이크 권한을 허용해 주세요.");
+    return;
+  }
+  const chunks = [];
+  const rec = new MediaRecorder(stream);
+  recorder = rec;
+  rec.ondataavailable = e => { if (e.data.size) chunks.push(e.data); };
+  rec.onstop = () => {
+    stream.getTracks().forEach(track => track.stop());
+    if (recorder === rec) recorder = null;
+    if (chunks.length && lesson) {
+      if (lesson.recordings[id]) URL.revokeObjectURL(lesson.recordings[id]);
+      lesson.recordings[id] = URL.createObjectURL(new Blob(chunks, { type: rec.mimeType || chunks[0].type }));
+    }
+    onChange();
+  };
+  rec.start();
+  onChange();
+  setTimeout(() => { if (rec.state === "recording") rec.stop(); }, 15000); // 한 문장 기준 최대 15초
+}
+
+function playMine(url, button) {
+  if (url === currentAudioFile && currentAudio && !currentAudio.paused) { stopAudio(); return; }
+  stopAudio();
+  const audio = new Audio(url);
+  currentAudio = audio;
+  currentAudioFile = url;
+  button.textContent = "재생 중 · 멈추기";
+  button.setAttribute("aria-pressed", "true");
+  audio.addEventListener("ended", () => { if (currentAudio === audio) stopAudio(); }, { once: true });
+  audio.play().catch(() => { if (currentAudio === audio) { stopAudio(); notify("녹음을 재생하지 못했어요. 다시 녹음해 주세요."); } });
+}
+
+function forgetRecordings() {
+  stopRecording();
+  Object.values(lesson?.recordings || {}).forEach(url => URL.revokeObjectURL(url));
+}
+
 const playBtn = (variant, side, label = "듣기") => `<button class="play" data-play data-play-label="${esc(label)}" data-variant="${variant}" data-side="${side}" aria-pressed="false">${ICON.play}${label}</button>`;
 
 function bindPlay(s, root = app) {
@@ -329,6 +442,8 @@ function bindPlay(s, root = app) {
 
 function show(html, { tabs = true, tab = null } = {}) {
   stopAudio();
+  stopRecording();
+  hideGloss();
   // Country colours (world.css) follow the chosen dialect on every screen, lessons included.
   document.documentElement.dataset.country = DIALECTS[state.dialect] ? state.dialect : "egypt";
   document.querySelector(".sheet")?.remove();
@@ -442,7 +557,8 @@ function lessonQueue(list, mode) {
 
 function startLesson(day, list = sentencesOfDay(day), mode = "lesson") {
   window.onscroll = null;
-  lesson = { day, list, mode, queue: lessonQueue(list, mode), cursor: 0, index: 0, ratings: {}, mistakes: {}, transitioning: false };
+  forgetRecordings();
+  lesson = { day, list, mode, queue: lessonQueue(list, mode), cursor: 0, index: 0, ratings: {}, mistakes: {}, recordings: {}, transitioning: false };
   renderStep();
 }
 
@@ -473,6 +589,7 @@ function frame(inner) {
 function next() {
   if (lesson.transitioning) return;
   stopAudio();
+  stopRecording();
   const activeLesson = lesson;
   lesson.transitioning = true;
   document.querySelector(".sheet")?.classList.remove("up");
@@ -493,12 +610,13 @@ function renderStep() {
 }
 
 function dialogueLines(s, variant, korean = true, mark = false) {
-  return ["A", "B"].map(side => `<div class="dialogue-line"><div class="speaker-line"><span>${side}</span>${playBtn(variant, side, "듣기")}</div>${ar(mark && side === s.blankSide ? withMark(s[variant][side], s[variant].blank) : esc(s[variant][side]))}${korean ? `<p class="dialogue-ko">${esc(s.ko[side])}</p>` : ""}</div>`).join("");
+  return ["A", "B"].map(side => `<div class="dialogue-line"><div class="speaker-line"><span>${side}</span>${playBtn(variant, side, "듣기")}</div>${ar(arText(s[variant][side], mark && side === s.blankSide ? s[variant].blank : ""))}${korean ? `<p class="dialogue-ko">${esc(s.ko[side])}</p>` : ""}</div>`).join("");
 }
 
 function stepPreview(s) {
   frame(`<p class="label in">${esc(s.unitName)} · 푸스하</p>
     <h2 class="title in" style="--d:1">대화를 먼저 읽고 들어보세요</h2>
+    ${lesson.index === 0 ? `<p class="ko word-hint in" style="--d:1">모르는 아랍어 단어는 눌러 보세요. 뜻이 나와요.</p>` : ""}
     <div class="dialogue-preview in" style="--d:2">${dialogueLines(s, "fusha")}</div>
     <button class="btn henna in" style="--d:3;margin-top:24px" id="go">${DIALECTS[state.dialect].name} 암미야 보기 ${ICON.arrow}</button>`);
   document.getElementById("go").addEventListener("click", next);
@@ -591,7 +709,7 @@ function stepCompare(s) {
     ${(s.notesByDialect[d] || []).length || (s.memosByDialect[d] || []).length ? `<div class="compare-notes in" style="--d:4"><p class="label">설명</p>
       <ul class="notes">${(s.notesByDialect[d] || []).map(n => `<li>${mixed(n)}</li>`).join("")}</ul>
       ${(s.memosByDialect[d] || []).map(memo => `<p class="memo">${mixed(memo)}</p>`).join("")}</div>` : ""}
-    <details class="other"><summary>${DIALECTS[other].name} 표현도 보기</summary>${ar(esc(s[other].A))}${ar(esc(s[other].B))}</details>
+    <details class="other"><summary>${DIALECTS[other].name} 표현도 보기</summary>${ar(wordify(s[other].A))}${ar(wordify(s[other].B))}</details>
     <button class="btn henna" style="margin-top:24px" id="go">${lesson.index === lesson.list.length - 1 ? "연습 시작" : "다음 푸스하 대화"} ${ICON.arrow}</button>`);
   document.getElementById("go").addEventListener("click", next);
 }
@@ -623,15 +741,33 @@ function stepRecall(s) {
   const d = state.dialect;
   frame(`<p class="label in">${DIALECTS[d].name} · 대화 ${lesson.index + 1}</p>
     <h2 class="title in" style="--d:1">한국어만 보고 대화해 보세요</h2>
-    <p class="ko">상대의 말을 읽고, ‘핵심 표현’이 표시된 역할을 아랍어로 말해 보세요.</p>
+    <p class="ko">상대의 말을 읽고, ‘핵심 표현’이 표시된 역할을 아랍어로 말해 보세요.${canRecord ? " 녹음해 두면 정답의 원어민 음성과 비교할 수 있어요." : ""}</p>
     <div class="recall card in" style="--d:2">${["A","B"].map(side => `<p class="who">${side}${side === s.blankSide ? " · 핵심 표현" : ""}</p><p class="big-ko">${esc(s.ko[side])}</p>`).join("")}</div>
+    ${canRecord ? `<div class="mine in" style="--d:3" id="mine" data-sid="${s.id}"></div>` : ""}
     <div class="answer" id="answer"><button class="btn" id="reveal">말해봤어요 · 정답 확인</button></div>`);
+  let revealed = false;
+  const renderMine = () => {
+    const box = document.getElementById("mine");
+    if (!box || box.dataset.sid !== s.id) return; // 녹음이 끝나기 전에 다음 문장으로 넘어간 경우
+
+    const url = lesson.recordings[s.id];
+    const recording = recorder?.state === "recording";
+    box.innerHTML = `<button class="btn line rec${recording ? " on" : ""}" id="rec" aria-pressed="${recording}">${recording ? `${ICON.stop}녹음 중 · 멈추기` : `${ICON.mic}${url ? "다시 녹음하기" : "녹음하며 말하기"}`}</button>
+      ${url && !recording ? `<div class="mine-play"><button class="play" data-mine aria-pressed="false">${ICON.play}내 목소리</button>${revealed ? playBtn(d, s.blankSide, "원어민") : ""}</div>` : ""}`;
+    box.querySelector("#rec").addEventListener("click", () => toggleRecording(s.id, renderMine));
+    box.querySelector("[data-mine]")?.addEventListener("click", e => playMine(url, e.currentTarget));
+    bindPlay(s, box);
+  };
+  if (canRecord) renderMine();
   document.getElementById("reveal").addEventListener("click", () => {
+    revealed = true;
+    stopRecording();
+    if (canRecord) renderMine();
     const box = document.getElementById("answer");
     box.innerHTML = `<div class="dialogue-preview in">${dialogueLines(s, d, false)}</div>
       <p class="rating-hint">${lesson.mistakes[s.id] ? "연습에서 틀린 표현은 내일 다시 복습해요." : "헷갈린 표현은 내일, 기억한 표현은 복습 일정에 반영해요."}</p>
       <div class="rate"><button class="btn ghost" data-rate="0">헷갈려요</button><button class="btn henna" data-rate="1">말할 수 있어요</button></div>`;
-    bindPlay(s);
+    bindPlay(s, box);
     box.querySelectorAll("[data-rate]").forEach(button => button.addEventListener("click", () => {
       if (lesson.transitioning) return;
       lesson.ratings[s.id] = button.dataset.rate === "1" && !lesson.mistakes[s.id];

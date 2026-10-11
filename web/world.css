@@ -44,3 +44,14 @@ body{background:#e4e7e1}.tabbar{background:#f4f3f1ef;backdrop-filter:blur(12px);
 :root{--on-clay:#24352d}
 :root[data-country="egypt"]{--henna:#2f6274;--henna-deep:#1d4352;--ok:#2f6274;--ok-soft:#dde7ea;--clay:#d3a24e;--clay-deep:#94681d;--on-clay:#2a2114}
 :root[data-country="jordan"]{--henna:#9a4a3a;--henna-deep:#6c2f24;--ok:#9a4a3a;--ok-soft:#f0e0da;--clay:#7b8a55;--clay-deep:#525d36;--on-clay:#f7f5ef}
+/* 말하기 단계: 내 목소리 녹음과 원어민 비교 */
+.mine{margin-top:18px;display:grid;gap:10px}.mine .rec{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:0;color:var(--henna);border-color:var(--hair)}.mine .rec svg{width:18px;height:18px}
+.mine .rec.on{border-color:#c0392b;color:#c0392b;animation:rec-pulse 1.4s ease-in-out infinite}.mine-play{display:flex;gap:8px;flex-wrap:wrap}.mine-play .play{flex:1;justify-content:center}
+@keyframes rec-pulse{50%{box-shadow:0 0 0 6px #c0392b22}}
+@media(prefers-reduced-motion:reduce){.mine .rec.on{animation:none}}
+/* 단어 눌러서 뜻 보기 */
+.w{cursor:pointer;border-radius:4px;text-decoration:underline dotted;text-decoration-color:var(--hair);text-underline-offset:.45em;transition:background .15s}
+.w:hover,.w.on{background:var(--ok-soft);text-decoration-color:var(--henna)}.w:focus-visible{outline:2px solid var(--henna);outline-offset:2px}
+.wpop{position:absolute;z-index:60;max-width:240px;padding:9px 14px;border-radius:12px;background:var(--ink);color:#f4f3f1;font-size:13px;line-height:1.5;text-align:center;display:grid;gap:2px;box-shadow:0 10px 28px #0003;animation:world-title .18s var(--ease) both;pointer-events:none}
+.wpop b{font:400 24px/1.3 Amiri,serif}
+.word-hint{font-size:13px;margin-top:6px}
