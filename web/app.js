@@ -43,6 +43,8 @@ function normalizeState(raw) {
       xp: Number.isFinite(p.xp) && p.xp >= 0 ? Math.floor(p.xp) : 0,
     };
   }
+  // 첫 방문 안내는 한 번만. 이미 학습 기록이 있는 사용자는 보지 않는다.
+  value.introSeen = raw?.introSeen === true || Object.values(value.progress).some(p => p.completedDays.length > 0);
   return value;
 }
 
@@ -497,6 +499,25 @@ tabbar.addEventListener("click", (e) => {
   if (go) SCREENS[go]();
 });
 
+// ---------- 첫 방문 안내: 누구를 위한 앱인지 ----------
+
+function screenIntro() {
+  show(`
+    <section class="intro">
+      <p class="intro-mark in">아라비오</p>
+      <h1 class="in" style="--d:1">문법과 단어는 아는데,<br>막상 말하려면 막히나요?</h1>
+      <p class="intro-body in" style="--d:2">아라비오는 푸스하를 배운 분이 같은 문장을 이집트·요르단 방언으로 비교하며, <b>실제로 꺼내 쓸 수 있는 문장</b>으로 익히도록 만든 앱이에요.</p>
+      <button class="btn henna in" style="--d:3" id="intro-start">시작하기 ${ICON.arrow}</button>
+      <p class="intro-note in" style="--d:4">푸스하가 처음이라면 기초 문법을 먼저 익히고 오면 훨씬 수월해요.</p>
+    </section>`, { tabs: false });
+  document.getElementById("intro-start").addEventListener("click", () => {
+    state.introSeen = true;
+    progress();
+    saveState();
+    screenHome();
+  });
+}
+
 // ---------- 홈: 나라별 학습 경로 ----------
 
 let homeUnlock = null;
@@ -644,7 +665,7 @@ function dialogueLines(s, variant, korean = true, mark = false) {
 function stepPreview(s) {
   frame(`<p class="label in">${esc(s.unitName)} · 푸스하</p>
     <h2 class="title in" style="--d:1">대화를 먼저 읽고 들어보세요</h2>
-    ${lesson.index === 0 ? `<p class="ko word-hint in" style="--d:1">모르는 아랍어 단어는 눌러 보세요. 뜻이 나와요.</p>` : ""}
+    ${lesson.index === 0 ? `${lesson.mode === "lesson" ? `<p class="lesson-purpose in" style="--d:1">오늘은 푸스하로 아는 표현을 방언으로 바꿔 말하는 연습이에요.</p>` : ""}<p class="ko word-hint in" style="--d:1">모르는 아랍어 단어는 눌러 보세요. 뜻이 나와요.</p>` : ""}
     <div class="dialogue-preview in" style="--d:2">${dialogueLines(s, "fusha")}</div>
     <button class="btn henna in" style="--d:3;margin-top:24px" id="go">${DIALECTS[state.dialect].name} 암미야 보기 ${ICON.arrow}</button>`);
   document.getElementById("go").addEventListener("click", next);
@@ -828,6 +849,7 @@ function finishLesson() {
       ${isDay ? `<p class="num in" style="--d:0">${arNum(dayN)}</p><p class="label numk in" style="--d:1">DAY ${dayN}</p>` : `<p class="num in" style="--d:0">✓</p>`}
       <h2 class="title in" style="--d:2">${isDay ? `${dayN}일차를 마쳤어요` : "복습을 마쳤어요"}</h2>
       <p class="lead in" style="--d:3">${isDay ? `100일 중 ${p.completedDays.length}일, 300문장 중 ${p.completedDays.length * 3}문장째예요.` : `${lesson.list.length}문장 복습 완료`}</p>
+      ${isDay ? `<p class="lesson-purpose in" style="--d:3">오늘 익힌 문장, 실제 상황에서 꺼내 써 보세요.</p>` : ""}
       <p class="xp in" style="--d:3"><span>연속 <b>${streak()}일</b></span><span><b>+${gained}</b> 경험치</span></p>
       ${isDay ? `
       <div class="passport in" style="--d:4">
@@ -947,5 +969,6 @@ const SCREENS = { home: screenHome, review: screenReview, records: screenRecords
   }
   if ("speechSynthesis" in window) speechSynthesis.getVoices();
   if (!state.dialect) state.dialect = "egypt";
-  screenHome();
+  if (state.introSeen) screenHome();
+  else screenIntro();
 })();

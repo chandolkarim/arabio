@@ -61,3 +61,12 @@ body{background:#e4e7e1}.tabbar{background:#f4f3f1ef;backdrop-filter:blur(12px);
 /* 레슨 단계 이름(푸스하 · 듣기 등)을 한눈에 보이게 */
 .lesson>.label{font-size:15px;letter-spacing:.04em;margin-bottom:10px}
 .other-dialect{margin-top:22px;padding-top:16px;border-top:1px solid var(--hair)}.other-dialect .ar{font-size:21px;margin-top:8px;color:var(--ink2)}
+/* 첫 방문 안내 */
+.intro{min-height:88svh;max-width:420px;margin:0 auto;padding:72px 28px 40px;display:flex;flex-direction:column;justify-content:center;gap:18px}
+.intro-mark{font:900 22px var(--serif);letter-spacing:-.06em;color:var(--henna)}
+.intro h1{font:700 27px/1.4 var(--serif);letter-spacing:-.04em;color:var(--ink)}
+.intro-body{font-size:16px;line-height:1.75;color:var(--ink2)}.intro-body b{color:var(--henna)}
+.intro .btn{margin-top:14px;display:flex;align-items:center;justify-content:center;gap:8px}.intro .btn svg{width:18px;height:18px}
+.intro-note{font-size:12.5px;line-height:1.6;color:var(--muted);text-align:center}
+.lesson-purpose{margin-top:10px;padding:10px 12px;border-left:2px solid var(--clay);background:#ffffff66;font-size:13.5px;line-height:1.6;color:var(--ink2)}
+.done-screen .lesson-purpose{margin:12px auto 0;max-width:320px;text-align:left}
