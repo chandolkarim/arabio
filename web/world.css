@@ -81,3 +81,18 @@ body{background:#e4e7e1}.tabbar{background:#f4f3f1ef;backdrop-filter:blur(12px);
 .done-cats{display:flex;justify-content:center;gap:4px;margin-top:10px}.done-cats img{width:96px;height:96px}
 @keyframes teacher-pop{from{opacity:0;transform:translateY(8px) scale(.9)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.teacher img{animation:none}}
+/* 2026-10-11 홈 개선: 사진 줄여 길을 첫 화면에, 단원 배너 고정, 노드 키움, 길 옆 고양이 */
+.app[data-screen="home"]{overflow:hidden;overflow:clip}
+.world-hero{height:236px}@media(max-width:520px){.world-hero{height:228px}}
+.world-title{bottom:62px}.world-title>div{font-size:40px;margin-top:2px}.world-title p{margin-top:4px}
+.world-scene:after{background:linear-gradient(180deg,#a1a79e00 0px,#f4f3f1ff 190px,#f4f3f1f5 250px,#a1a79e92 430px,#f4f3f1c9 580px,#f4f3f1b8 100%)}
+.world-sticky{position:sticky;top:0;z-index:6;background:#f4f3f1e6;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid #decebf80}
+.world-sticky .world-unit{padding-top:14px}.world-sticky .world-progress{padding-bottom:10px}
+.world-node{width:78px}
+.world-node>button{width:78px;height:72px;border-radius:27px}
+.world-node svg{width:30px;height:30px}
+.world-node.current:before{inset:-9px auto auto -9px;width:96px;height:90px;border:3px solid var(--clay);opacity:.45;border-radius:33px}
+.world-node>small{margin-top:16px;font-size:11px}
+.world-cat{position:absolute;z-index:1;width:118px;height:118px;pointer-events:none;animation:teacher-pop .7s cubic-bezier(.2,.85,.3,1.25) .3s both}
+.world-cat.right{right:-6px}.world-cat.left{left:-6px}
+@media(prefers-reduced-motion:reduce){.world-cat{animation:none}}

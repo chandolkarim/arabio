@@ -556,8 +556,8 @@ function screenHome() {
     </section>
     <div class="world-picker" role="group" aria-label="학습 나라 선택">${Object.entries(DIALECTS).map(([key,d])=>`<button data-country="${key}" aria-pressed="${key === country}">${d.name} <span lang="ar">${d.ar}</span></button>`).join("")}</div>
     ${due ? `<button class="world-review" id="review">오늘 복습 · ${due}문장 ${ICON.arrow}</button>` : ""}
-    <section class="world-unit"><div><label for="unit-select">UNIT ${String(u.unit).padStart(2,"0")}</label><h1 id="world-unit-name">${esc(u.name)}</h1></div><select id="unit-select" aria-label="학습 단원 선택">${DATA.units.map(unit=>`<option value="${unit.unit}" ${unit.unit===u.unit ? "selected" : ""}>UNIT ${unit.unit} · ${esc(unit.name)}</option>`).join("")}</select></section>
-    <div class="world-progress" id="world-progress"></div>
+    <div class="world-sticky"><section class="world-unit"><div><label for="unit-select" id="world-unit-no">UNIT ${String(u.unit).padStart(2,"0")}</label><h1 id="world-unit-name">${esc(u.name)}</h1></div><select id="unit-select" aria-label="학습 단원 선택">${DATA.units.map(unit=>`<option value="${unit.unit}" ${unit.unit===u.unit ? "selected" : ""}>UNIT ${unit.unit} · ${esc(unit.name)}</option>`).join("")}</select></section>
+    <div class="world-progress" id="world-progress"></div></div>
     <section class="world-path" id="path" aria-label="단원 학습 경로"></section>
     <div id="world-next"></div>
     <details class="world-credit"><summary>사진 출처</summary><a href="https://commons.wikimedia.org/wiki/File:Giza_Pyramids_Panorama.jpg">Giza Pyramids Panorama · Benjamin Inbar</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><br><a href="https://commons.wikimedia.org/wiki/File:Petra_Treasury.jpg">Petra Treasury · David Bjorgen</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a><p>원본 사진에 화면 크롭·색 필터를 적용했습니다.</p></details>`, {tab:"home"});
@@ -584,11 +584,19 @@ function screenHome() {
   homeUnlock=null;
 }
 
+// 길 옆 빈 자리에 선생님: 4번째 칸(왼쪽으로 치우침) 오른편에 꾸꾸, 6번째 칸(오른쪽) 왼편에 아꿍.
+// 오늘 학습 카드와 겹치지 않게 오늘 칸 바로 옆이면 뺀다. 단원을 다 끝내면 축하 표정.
+function pathCats(points, unitFinished, currentIndex) {
+  return [{ i: 3, who: "kkuku", side: "right" }, { i: 5, who: "akkung", side: "left" }]
+    .filter(c => points[c.i] && (currentIndex < 0 || Math.abs(currentIndex - c.i) > 1))
+    .map(c => `<img class="world-cat ${c.side}" src="assets/teachers/${c.who}-${unitFinished ? "celebrate" : "smile"}.webp" alt="" aria-hidden="true" width="118" height="118" style="top:${points[c.i].y - 70}px">`).join("");
+}
+
 function renderPath(now, finished, selectedUnit) {
   const unit=DATA.units.find(u=>u.unit===selectedUnit),done=new Set(progress().completedDays);
   const days=Array.from({length:unit.lastDay-unit.firstDay+1},(_,i)=>unit.firstDay+i);
-  const positions=[32,60,38,26,54,76,42];let y=40;
-  const points=days.map((day,i)=>{const point={day,x:positions[i%positions.length]*4,y};y+=day===now&&!finished?190:110;return point});
+  const positions=[32,60,38,26,54,76,42];let y=50;
+  const points=days.map((day,i)=>{const point={day,x:positions[i%positions.length]*4,y};y+=day===now&&!finished?210:130;return point});
   const height=y+10;
   const route=points.map((point,i)=>i===0?`M${point.x} ${point.y}`:`C${points[i-1].x} ${points[i-1].y+55} ${point.x} ${point.y-55} ${point.x} ${point.y}`).join(" ");
   const lastDone=points.map(point=>done.has(point.day)).lastIndexOf(true);
@@ -597,8 +605,9 @@ function renderPath(now, finished, selectedUnit) {
   box.innerHTML=`<svg class="world-route" viewBox="0 0 400 ${height}" preserveAspectRatio="none" aria-hidden="true"><path d="${route}"/><path class="travelled" d="${travelled}" pathLength="1"/></svg>`+points.map(({day,x,y},i)=>{
     const completed=done.has(day),current=!finished&&day===now,locked=!completed&&!current;
     return `<div class="world-node ${completed?"completed":""} ${current?"current":""} ${homeUnlock?.country===state.dialect&&current?"unlocked":""}" style="left:${x/4}%;top:${y-30}px;--delay:${i*65}ms"><button data-day="${day}" ${locked?"disabled":""} aria-label="${day}일차 ${completed?"다시 학습":current?"학습 시작":"잠김"}">${completed?ICON.check:locked?HOME_ICON.lock:HOME_ICON.chat}</button><small>DAY ${String(day).padStart(2,"0")}</small></div>${current?`<div class="world-day-card ${x>200?"left":"right"}" style="top:${y-35}px"><small>${homeUnlock?.country===state.dialect?"다음 단계 열림":"오늘의 학습"}</small><h2>${day}일차 대화</h2><p>푸스하 + ${DIALECTS[state.dialect].name} 암미야<br>대화 3개 · 듣기 · 말하기</p><button id="today-start">학습 시작 ${ICON.arrow}</button></div>`:""}`;
-  }).join("");
+  }).join("")+pathCats(points,days.every(day=>done.has(day)),finished?-1:points.findIndex(point=>point.day===now));
   document.getElementById("world-unit-name").textContent=unit.name;
+  document.getElementById("world-unit-no").textContent=`UNIT ${String(unit.unit).padStart(2,"0")}`;
   const count=days.filter(day=>done.has(day)).length;
   document.getElementById("world-progress").innerHTML=`<span>${count} / ${days.length} 완료</span><div>${days.map(day=>`<i class="${done.has(day)?"done":""}"></i>`).join("")}</div>`;
   const nextUnit=DATA.units.find(u=>u.unit===unit.unit+1);
