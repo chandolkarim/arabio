@@ -58,3 +58,5 @@ body{background:#e4e7e1}.tabbar{background:#f4f3f1ef;backdrop-filter:blur(12px);
 .w.p{text-decoration-style:solid;text-decoration-color:var(--clay)}
 .wpop{max-width:260px}.wpop .mean{font-weight:700}.wpop .parts{display:grid;gap:1px;margin-top:5px;padding-top:6px;border-top:1px solid #ffffff2e;font-size:11.5px;opacity:.85}
 .wpop .parts bdi{font:15px Amiri,serif;margin-left:4px}
+/* 레슨 단계 이름(푸스하 · 듣기 등)을 한눈에 보이게 */
+.lesson>.label{font-size:15px;letter-spacing:.04em;margin-bottom:10px}
