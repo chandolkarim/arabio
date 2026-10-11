@@ -1022,6 +1022,24 @@ const SCREENS = { home: screenHome, review: screenReview, records: screenRecords
 // ---------- 시작 ----------
 
 (async function boot() {
+  // 새 버전 감지: GitHub Pages는 첫 페이지를 최대 10분 캐시해서, 배포 직후 열면 예전 app.js가 뜰 수 있다.
+  // version.txt(캐시 없이)와 이 스크립트의 ?v= 값이 다르면 주소를 바꿔 새 페이지를 한 번 받아 온다.
+  const APP_VERSION = new URL(document.currentScript?.src || location.href).searchParams.get("v");
+  async function ensureLatest() {
+    if (!APP_VERSION || !/^https?:$/.test(location.protocol)) return;
+    try {
+      const latest = (await fetch(`version.txt?t=${Date.now()}`, { cache: "no-store" }).then(r => r.ok ? r.text() : "")).trim();
+      const url = new URL(location.href);
+      if (latest && latest !== APP_VERSION && url.searchParams.get("v") !== latest) {
+        url.searchParams.set("v", latest);
+        location.replace(url);
+      } else if (url.searchParams.has("v")) {
+        url.searchParams.delete("v");
+        history.replaceState(null, "", url);
+      }
+    } catch { /* 오프라인이면 지금 버전으로 계속 */ }
+  }
+  ensureLatest();
   // The interface uses a static paper background; no ambient particles.
   app.innerHTML = `<p class="loading">불러오는 중…</p>`;
   try {

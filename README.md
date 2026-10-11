@@ -7,6 +7,8 @@
 
 배포: https://chandolkarim.github.io/arabio/ (main에 push하면 GitHub Actions가 `web/`을 Pages로 배포)
 
+배포 전에 `python3 scripts/bump_version.py`로 캐시 버전을 올리세요. 앱은 `web/version.txt`와 자기 버전이 다르면 새 페이지를 한 번 받아 와서, 배포 직후 예전 화면이 남는 문제를 막습니다.
+
 ## 실행
 
 ```bash
