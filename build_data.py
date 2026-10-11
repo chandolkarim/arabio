@@ -8,7 +8,37 @@ web/audio/ 폴더에 음성 파일이 있으면 자동으로 연결한다.
 import csv
 import hashlib
 import json
+import re
 from dialect_notes import split_notes
+
+TAG = re.compile(r"\s*\(?\s*(?:ID\d+\s*)?(?:\d+단원\s*(?:복습|미리 보기|핵심)|단원 핵심|복습)\s*\)?")
+INTERNAL = ("예시", "바꿔도 됨", "화폐", "구조 복습")
+GRAMMAR = re.compile(r"부정|진행|미래|명령|수동|분사|강조|어순|발음|소유|목적어|접미|접두|의문|조건|가정")
+
+
+def tips(notes):
+    """'알아두면 좋은 점'만 남긴다. 단어 대응(푸스하 → 방언)은 화면의 표현 비교·단어 뜻 보기와 겹쳐서 뺀다.
+
+    남기는 것: 발음(ق는 ء, ث→t, 한글 발음), 문법·어순, 관용 설명, 문화·쓰임처럼 설명이 붙은 줄.
+    """
+    out = []
+    for note in notes:
+        text = TAG.sub("", note)
+        text = re.sub(r"\(\s*공통\s*,\s*", "(", text)
+        text = re.sub(r",\s*공통\s*\)", ")", text)
+        text = re.sub(r"\(\s*(?:구어 )?공통[^)]*\)", "", text).replace("()", "").strip()
+        text = re.sub(r"[,\s]+$", "", text)
+        if text.count("(") > text.count(")"):
+            text += ")"  # 태그를 지우다 닫는 괄호까지 지운 경우
+        if not text or text.startswith("ID") or any(word in text for word in INTERNAL):
+            continue
+        rest = text.split(":", 1)[1] if ":" in text else text
+        rest = re.sub(r"이집트|요르단", "", rest)
+        label = text.split(":", 1)[0]
+        if ":" in text and not GRAMMAR.search(label) and not re.search(r"[가-힣A-Za-z]", rest):
+            continue  # 라벨 + 아랍어 대응뿐인 줄
+        out.append(text)
+    return out
 from pathlib import Path
 
 HERE = Path(__file__).parent
@@ -47,6 +77,8 @@ def main():
             "unitKey": r["단원대표표현"],
             "memo": r["메모"],
             "memosByDialect": split_notes(r["메모"]),
+            "tipsByDialect": {d: tips(split_notes(r["바뀐부분"]).get(d, []) + split_notes(r["메모"]).get(d, []))
+                              for d in ("egypt", "jordan")},
             "status": r["상태"],
             "gloss": json.loads(r["보기_뜻"]),
         }

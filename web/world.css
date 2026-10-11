@@ -60,3 +60,4 @@ body{background:#e4e7e1}.tabbar{background:#f4f3f1ef;backdrop-filter:blur(12px);
 .wpop .parts bdi{font:15px Amiri,serif;margin-left:4px}
 /* 레슨 단계 이름(푸스하 · 듣기 등)을 한눈에 보이게 */
 .lesson>.label{font-size:15px;letter-spacing:.04em;margin-bottom:10px}
+.other-dialect{margin-top:22px;padding-top:16px;border-top:1px solid var(--hair)}.other-dialect .ar{font-size:21px;margin-top:8px;color:var(--ink2)}
