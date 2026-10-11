@@ -12,15 +12,15 @@ state = {dialect:'egypt', progress:{}};
 globalThis.assert = undefined;
 `,context);
 const run = code => vm.runInContext(code,context);
-assert.equal(run('lessonQueue(sentencesOfDay(1), "lesson").length'),12);
-assert.equal(run('lessonQueue(sentencesOfDay(1), "lesson").map(x=>x.type).join(",")'),'0,3,0,3,0,3,1,4,1,6,6,6');
-assert.equal(run('lessonQueue(sentencesOfDay(1), "lesson").map(x=>x.index).join(",")'),'0,0,1,1,2,2,0,1,2,0,1,2');
+assert.equal(run('lessonQueue(sentencesOfDay(1), "lesson").length'),15);
+assert.equal(run('lessonQueue(sentencesOfDay(1), "lesson").map(x=>x.type).join(",")'),'0,3,0,3,0,3,1,4,1,4,1,4,6,6,6');
+assert.equal(run('lessonQueue(sentencesOfDay(1), "lesson").map(x=>x.index).join(",")'),'0,0,1,1,2,2,0,0,1,1,2,2,0,1,2');
 assert.equal(run('lessonQueue(sentencesOfDay(1), "review").map(x=>x.type).join(",")'),'4,6,4,6,4,6');
 run('const actualFinish = finishLesson; renderStep = () => {}; let finishCount=0; finishLesson=()=>finishCount++; startLesson(1); next(); next();');
 assert.equal(timers.length,1,'double click must queue one transition');
 timers.shift()();
 assert.equal(run('lesson.cursor'),1);
-for(let i=1;i<12;i++){run('next()');timers.shift()();}
+for(let i=1;i<15;i++){run('next()');timers.shift()();}
 assert.equal(run('finishCount'),1);
 run('show=()=>{}; saveState=()=>{}; burst=()=>{}; finishLesson=actualFinish; startLesson(1); lesson.ratings={"001":true,"002":false,"003":true}; finishLesson(); finishLesson();');
 assert.equal(run('progress().xp'),30,'completion must award XP only once');

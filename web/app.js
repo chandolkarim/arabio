@@ -592,7 +592,8 @@ function lessonQueue(list, mode) {
   // Pair each Fusha dialogue with its dialect expression before practice.
   return [
     ...list.flatMap((_, index) => [{ index, type: 0 }, { index, type: 3 }]),
-    ...list.map((_, index) => ({ index, type: index % 2 === 1 ? 4 : 1 })),
+    // 연습: 대화마다 듣기(뜻 고르기) 1 + 단어 블록 1 → 하루 블록 문제 3개
+    ...list.flatMap((_, index) => [{ index, type: 1 }, { index, type: 4 }]),
     ...list.map((_, index) => ({ index, type: 6 })),
   ];
 }
