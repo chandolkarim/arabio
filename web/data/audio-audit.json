@@ -1,6 +1,8 @@
 {
   "checked": 1800,
-  "contentCandidates": 24,
+  "stale": 0,
+  "contentCandidates": 0,
+  "replacedCount": 24,
   "candidates": [
     {
       "name": "039_jordan_A",
@@ -525,23 +527,6 @@
       "crossModelDifference": false
     },
     {
-      "name": "098_jordan_B",
-      "day": 33,
-      "variant": "jordan",
-      "side": "B",
-      "text": "آه، رح أرجعلك خمسطعش.",
-      "transcript": "سأجعلك 15",
-      "sha256": "eda849eddb8e3f7c00e8414349727f0c24e780c4446f186ea8166223f5a6791f",
-      "match": 0.7,
-      "duration": 2.88,
-      "flags": [
-        "long_speech"
-      ],
-      "contentCandidate": false,
-      "reason": "문장 길이 대비 재생 시간이 김",
-      "crossModelDifference": false
-    },
-    {
       "name": "083_jordan_A",
       "day": 28,
       "variant": "jordan",
@@ -634,6 +619,23 @@
       "text": "كُل كمان، لسه في كتير.",
       "transcript": "حل كمان ذسا في كتير",
       "sha256": "205c40efdc24c439e565e42155a62e35a85c33acfb1522f080e84ab2fddd5294",
+      "match": 0.8,
+      "duration": 2.88,
+      "flags": [
+        "long_speech"
+      ],
+      "contentCandidate": false,
+      "reason": "문장 길이 대비 재생 시간이 김",
+      "crossModelDifference": false
+    },
+    {
+      "name": "098_jordan_B",
+      "day": 33,
+      "variant": "jordan",
+      "side": "B",
+      "text": "آه، رح أرجعلك خمسطعش.",
+      "transcript": "سأجعلك 15",
+      "sha256": "eda849eddb8e3f7c00e8414349727f0c24e780c4446f186ea8166223f5a6791f",
       "match": 0.8,
       "duration": 2.88,
       "flags": [
@@ -1137,6 +1139,5 @@
       "crossModelDifference": false
     }
   ],
-  "method": "Local automatic recognition and acoustic screening; not a human pronunciation review.",
-  "replacedCount": 24
+  "method": "Local automatic recognition and acoustic screening; not a human pronunciation review."
 }

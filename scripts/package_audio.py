@@ -4,7 +4,10 @@ import os
 from pathlib import Path
 import subprocess
 import sys
+import tempfile
 import time
+
+from normalize_audio import encode
 
 ROOT = Path(__file__).resolve().parents[1]
 AUDIO = ROOT / 'web/audio'
@@ -18,12 +21,9 @@ def package():
         output = AUDIO / (wav.stem + '.m4a')
         if output.exists():
             continue
-        partial = output.with_suffix('.partial.m4a')
-        subprocess.run(['afconvert', '-f', 'm4af', '-d', 'aac', '-b', '64000',
-                        str(wav), str(partial)], check=True, capture_output=True)
-        if partial.stat().st_size < 100:
-            raise RuntimeError('Empty conversion: ' + wav.name)
-        partial.replace(output)
+        # Same speech-level normalization as the rest of the library (-20 dB).
+        with tempfile.TemporaryDirectory() as workdir:
+            encode(wav, output, workdir)
         count += 1
     if count:
         subprocess.run([sys.executable, str(ROOT / 'build_data.py')], check=True,

@@ -407,7 +407,7 @@ function renderPath(now, finished, selectedUnit) {
   const points=days.map((day,i)=>{const point={day,x:positions[i%positions.length]*4,y};y+=day===now&&!finished?190:110;return point});
   const height=y+10;
   const route=points.map((point,i)=>i===0?`M${point.x} ${point.y}`:`C${points[i-1].x} ${points[i-1].y+55} ${point.x} ${point.y-55} ${point.x} ${point.y}`).join(" ");
-  const lastDone=points.findLastIndex(point=>done.has(point.day));
+  const lastDone=points.map(point=>done.has(point.day)).lastIndexOf(true);
   const travelled=points.slice(0,lastDone+1).map((point,i)=>i===0?`M${point.x} ${point.y}`:`C${points[i-1].x} ${points[i-1].y+55} ${point.x} ${point.y-55} ${point.x} ${point.y}`).join(" ");
   const box=document.getElementById("path");box.style.height=height+"px";
   box.innerHTML=`<svg class="world-route" viewBox="0 0 400 ${height}" preserveAspectRatio="none" aria-hidden="true"><path d="${route}"/><path class="travelled" d="${travelled}" pathLength="1"/></svg>`+points.map(({day,x,y},i)=>{

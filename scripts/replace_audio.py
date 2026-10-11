@@ -1,5 +1,4 @@
 """Regenerate the displayed content candidates, retaining originals and resumable state."""
-import audioop
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from decimal import Decimal
@@ -9,9 +8,11 @@ import json
 from pathlib import Path
 import shutil
 import subprocess
+import tempfile
 import wave
 
 import generate_audio as g
+from normalize_audio import encode
 
 
 def main():
@@ -62,24 +63,15 @@ def main():
             continue
         raw = g.AUDIO/(name+'.wav')
         with wave.open(str(raw)) as w:
-            params,pcm = w.getparams(),w.readframes(w.getnframes())
-        rms,peak = audioop.rms(pcm,2),audioop.max(pcm,2)
-        if not rms or not peak:
-            raise RuntimeError(name+': empty signal')
-        gain = min(32768*10**(-22/20)/rms,32767*.95/peak)
-        normalized = backup/(name+'.normalized.wav')
-        with wave.open(str(normalized),'wb') as w:
-            w.setparams(params)
-            w.writeframes(audioop.mul(pcm,2,gain))
+            params = w.getparams()
         output = g.ROOT/'web/audio'/(name+'.m4a')
-        temp = output.with_suffix('.replacement.m4a')
-        subprocess.run(['afconvert','-f','m4af','-d','aac','-b','64000',str(normalized),str(temp)],check=True,capture_output=True)
-        if temp.stat().st_size < 100:
-            raise RuntimeError(name+': empty conversion')
-        temp.replace(output)
+        # Same speech-level normalization as the rest of the library (-20 dB).
+        # A scratch dir, not `backup`: the backup already holds the original <name>.wav.
+        with tempfile.TemporaryDirectory() as workdir:
+            level = encode(raw, output, workdir)
         row.update(replaced=True,sha256=hashlib.sha256(output.read_bytes()).hexdigest(),
                    replacementSeconds=params.nframes/params.framerate,
-                   normalizationGain=round(gain,4))
+                   normalizationGainDb=level['gainDb'])
     report['replacedCount'] = sum(bool(r.get('replaced')) for r in report['candidates'])
     g.save(report_path,report)
     g.save(backup/'manifest.json',dict(manifest,complete=True))

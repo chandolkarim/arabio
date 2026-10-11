@@ -56,7 +56,7 @@ API 키는 웹 폴더 밖 `~/.config/arabio/sawtak.env`의 `SAWTAK_API_KEY`에 �
 원본 WAV는 `samples/generation/wav/`에 보관하고, 웹에서는 `web/audio/`의 압축 M4A만 재생합니다.
 설정에서 0.8·1·1.2배 음성 재생 속도를 선택할 수 있습니다.
 
-음량은 `python3 scripts/normalize_audio.py`로 원본 WAV의 말소리 크기를 -20 dB에 맞춰 M4A를 다시 만듭니다(일부만: 파일 이름을 인자로). 처음 실행 시 기존 M4A는 `samples/audio-prenorm/`에 백업합니다. 실행 후 `python3 build_data.py`로 음성 버전(해시)을 갱신하세요.
+음량은 `python3 scripts/normalize_audio.py`로 원본 WAV의 말소리 크기를 -20 dB에 맞춰 M4A를 다시 만듭니다(일부만: 파일 이름을 인자로). 처음 실행 시 기존 M4A는 `samples/audio-prenorm/`에 백업하고, 끝나면 `build_data.py`를 자동으로 돌려 음성 버전(해시)을 갱신합니다. 새로 만드는 음성(`package_audio.py`)과 교체 음성(`replace_audio.py`)도 같은 기준으로 맞춰 넣습니다. 무음·빈 파일은 건너뛰고 알려줍니다.
 
 ```bash
 python3 scripts/generate_audio.py --limit 6  # 첫 대화의 세 변형 A/B
