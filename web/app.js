@@ -156,8 +156,32 @@ function withMark(text, word) {
 const AR_WORD = /[\u0621-\u064a\u064b-\u065f\u0670\u0640]+/g;
 const plainAr = (word) => word.replace(/[\u064b-\u065f\u0670\u0640]/g, "");
 
+// 숙어(DATA.phrases, 최대 6단어)가 있으면 그 구를 한 덩어리로, 아니면 단어별로 누를 수 있게 감싼다.
 function wordify(text) {
-  return esc(text).replace(AR_WORD, (w) => DATA?.words?.[plainAr(w)] ? `<span class="w" role="button" tabindex="0" data-w="${plainAr(w)}">${w}</span>` : w);
+  const words = DATA?.words || {}, phrases = DATA?.phrases || {};
+  const toks = [...text.matchAll(AR_WORD)].map(m => ({ s: m.index, e: m.index + m[0].length, w: m[0], k: plainAr(m[0]) }));
+  let out = "", pos = 0;
+  for (let i = 0; i < toks.length;) {
+    let len = Math.min(6, toks.length - i);
+    for (; len >= 2; len--) {
+      const span = toks.slice(i, i + len);
+      // 구 안에 쉼표·마침표가 끼면 다른 문장 성분이므로 묶지 않는다.
+      if (span.slice(1).every((t, j) => /^\s+$/.test(text.slice(span[j].e, t.s))) && phrases[span.map(t => t.k).join(" ")]) break;
+    }
+    const t = toks[i];
+    out += esc(text.slice(pos, t.s));
+    if (len >= 2) {
+      const end = toks[i + len - 1].e;
+      out += `<span class="w p" role="button" tabindex="0" data-p="${esc(toks.slice(i, i + len).map(x => x.k).join(" "))}">${esc(text.slice(t.s, end))}</span>`;
+      pos = end;
+      i += len;
+    } else {
+      out += words[t.k] ? `<span class="w" role="button" tabindex="0" data-w="${t.k}">${esc(t.w)}</span>` : esc(t.w);
+      pos = t.e;
+      i += 1;
+    }
+  }
+  return out + esc(text.slice(pos));
 }
 
 // wordify + 핵심 표현 강조. 빈칸·핵심 표현은 단어 경계로 맞춰져 있어 앞뒤를 따로 감싸도 단어가 잘리지 않는다.
@@ -181,7 +205,11 @@ function showGloss(el) {
   pop.id = "wpop";
   pop.className = "wpop";
   pop.setAttribute("role", "status");
-  pop.innerHTML = `<b lang="ar" dir="rtl">${esc(el.textContent)}</b><span>${esc(DATA.words[el.dataset.w])}</span>`;
+  const phrase = el.dataset.p;
+  pop.innerHTML = phrase
+    ? `<b lang="ar" dir="rtl">${esc(el.textContent)}</b><span class="mean">${esc(DATA.phrases[phrase])}</span>
+       <span class="parts">${phrase.split(" ").filter(k => DATA.words?.[k]).map(k => `<span><bdi lang="ar" dir="rtl">${esc(k)}</bdi> ${esc(DATA.words[k])}</span>`).join("")}</span>`
+    : `<b lang="ar" dir="rtl">${esc(el.textContent)}</b><span class="mean">${esc(DATA.words[el.dataset.w])}</span>`;
   document.body.appendChild(pop);
   const r = el.getBoundingClientRect();
   const left = Math.min(Math.max(8, r.left + r.width / 2 - pop.offsetWidth / 2), innerWidth - pop.offsetWidth - 8);
