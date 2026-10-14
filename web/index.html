@@ -4,27 +4,43 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#f4f3f1">
-<title>아라비오</title>
+<title>아라비오 · 푸스하로 아는 문장을 방언으로</title>
+<meta name="description" content="문법과 단어는 아는데 막상 말하려면 막히는 아랍어 학습자를 위한 앱. 하루 세 대화로 푸스하 문장을 이집트·요르단 방언과 비교하며 듣고, 조립하고, 직접 말해 봅니다.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="아라비오">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://chandolkarim.github.io/arabio/">
+<meta property="og:title" content="아라비오 · 푸스하로 아는 문장을, 방언으로 말하기">
+<meta property="og:description" content="이집트·요르단 아랍어를 하루 세 대화씩 100일. 듣고, 단어로 조립하고, 직접 말해 보세요.">
+<meta property="og:image" content="https://chandolkarim.github.io/arabio/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="고양이 선생님 꾸꾸(푸스하)와 아꿍(암미야), '푸스하로 아는 문장을, 방언으로 말하기'">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="아라비오 · 푸스하로 아는 문장을, 방언으로 말하기">
+<meta name="twitter:description" content="이집트·요르단 아랍어를 하루 세 대화씩 100일. 듣고, 단어로 조립하고, 직접 말해 보세요.">
+<meta name="twitter:image" content="https://chandolkarim.github.io/arabio/assets/og.png">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261014-reviewed">
-<link rel="stylesheet" href="arabio.css?v=20261014-reviewed">
-<link rel="stylesheet" href="world.css?v=20261014-reviewed">
+<link rel="stylesheet" href="style.css?v=20261014-og">
+<link rel="stylesheet" href="arabio.css?v=20261014-og">
+<link rel="stylesheet" href="world.css?v=20261014-og">
 </head>
 <body>
 <div class="atmo" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
-<main id="app" class="app" aria-live="polite"></main>
+<main id="app" class="app" aria-live="polite"><p class="loading" role="status">문장을 불러오는 중…</p></main>
+<noscript><section class="load-error"><h1>자바스크립트를 켜 주세요</h1><p>아라비오는 브라우저의 자바스크립트로 학습 화면과 음성을 보여 줍니다. 브라우저 설정에서 자바스크립트를 켠 뒤 새로고침해 주세요.</p></section></noscript>
 <nav id="tabbar" class="tabbar" hidden>
   <button data-go="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v8a1 1 0 0 1-1 1h-4v-6h-6v6H5a1 1 0 0 1-1-1z"/></svg>홈</button>
   <button data-go="review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4h4"/></svg>복습</button>
   <button data-go="records"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6L20 9.3l-4 4 1 5.7-5-2.8-5 2.8 1-5.7-4-4 5.4-.7z"/></svg>기록</button>
   <button data-go="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-1.8-.3 1.6 1.6 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.6 1.6 0 0 0-1-1.5 1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0 .3-1.8 1.6 1.6 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.6 1.6 0 0 0 1.5-1 1.6 1.6 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.8.3H9a1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.6 1.6 0 0 0 1 1.5 1.6 1.6 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.8V9a1.6 1.6 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1z"/></svg>설정</button>
 </nav>
-<script src="app.js?v=20261014-reviewed"></script>
+<script src="app.js?v=20261014-og"></script>
 </body>
 </html>
