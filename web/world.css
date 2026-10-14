@@ -109,3 +109,5 @@ body{background:#e4e7e1}.tabbar{background:#f4f3f1ef;backdrop-filter:blur(12px);
 .blk.used{visibility:hidden}.blk.in-line{background:var(--ok-soft);border-color:var(--henna)}
 .build-actions{display:grid;grid-template-columns:1fr 2fr;gap:10px;margin-top:26px}.build-actions .btn{margin-top:0}
 .btn:disabled{opacity:.45;cursor:default}
+.build-hint{min-height:1.4em;margin-top:12px;font-size:14px;color:#a0442e;text-align:center}
+.load-error{max-width:420px;margin:18vh auto 0;padding:0 24px;text-align:center}.load-error h1{font:700 22px var(--serif);margin-bottom:12px}.load-error p{font-size:15px;line-height:1.7;color:var(--ink2);margin-bottom:22px}

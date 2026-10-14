@@ -804,6 +804,7 @@ function stepDialectBlank(s) {
     <p class="ko in" style="--d:2">${esc(s.ko[side])}</p>
     <div class="build in" style="--d:3" dir="rtl" lang="ar" id="build"></div>
     <div class="blocks in" style="--d:4" dir="rtl" lang="ar" id="bank">${bank.map(b => `<button class="blk" data-i="${b.i}">${esc(b.w)}</button>`).join("")}</div>
+    <p class="build-hint" id="build-hint" role="status" aria-live="polite"></p>
     <div class="build-actions in" style="--d:5"><button class="btn ghost" id="clear">다시</button><button class="btn henna" id="check" disabled>확인</button></div>`);
   const build = document.getElementById("build");
   const bankBox = document.getElementById("bank");
@@ -814,6 +815,7 @@ function stepDialectBlank(s) {
       : `<span class="drop">여기에 단어가 들어가요</span>`} ${fixed(words.slice(end))}`;
     bankBox.querySelectorAll(".blk").forEach(b => b.classList.toggle("used", picked.includes(Number(b.dataset.i))));
     document.getElementById("check").disabled = picked.length === 0;
+    if (picked.length >= target.length) document.getElementById("build-hint").textContent = "";
   };
   bankBox.addEventListener("click", (e) => {
     const b = e.target.closest(".blk");
@@ -832,8 +834,15 @@ function stepDialectBlank(s) {
     picked.length = 0;
     draw();
   });
+  const hint = document.getElementById("build-hint");
   document.getElementById("check").addEventListener("click", () => {
     if (build.dataset.done) return;
+    // 잘못된 입력: 단어 수가 모자라면 채점하지 않고 몇 개 더 필요한지 알려 준다.
+    if (picked.length < target.length) {
+      hint.textContent = `아직 단어가 ${target.length - picked.length}개 더 필요해요. 문장을 끝까지 완성한 뒤 확인을 눌러 주세요.`;
+      return;
+    }
+    hint.textContent = "";
     build.dataset.done = "true";
     const right = picked.length === target.length && picked.every((i, j) => bare(bank[i].w) === bare(target[j]));
     build.classList.add(right ? "ok" : "bad");
@@ -1040,12 +1049,21 @@ const SCREENS = { home: screenHome, review: screenReview, records: screenRecords
     } catch { /* 오프라인이면 지금 버전으로 계속 */ }
   }
   ensureLatest();
-  // The interface uses a static paper background; no ambient particles.
-  app.innerHTML = `<p class="loading">불러오는 중…</p>`;
+  // 로딩 → 정상 / 오류(이유 + 할 일 + 다시 시도). 문장 데이터가 없으면 학습을 시작할 수 없으므로 여기서 멈춘다.
+  app.innerHTML = `<p class="loading" role="status">문장을 불러오는 중…</p>`;
   try {
-    DATA = await fetch("data/sentences.json", { cache: "no-cache" }).then((r) => r.json());
+    DATA = await fetch("data/sentences.json", { cache: "no-cache" }).then((r) => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    });
+    if (!Array.isArray(DATA?.sentences) || !DATA.sentences.length) throw new Error("empty");
   } catch {
-    app.innerHTML = `<p class="loading">문장 데이터를 불러오지 못했어요. 로컬 서버로 열었는지 확인해 주세요.</p>`;
+    app.innerHTML = `<section class="load-error" role="alert">
+      <h1>문장을 불러오지 못했어요</h1>
+      <p>인터넷 연결이 끊겼거나 서버가 잠시 응답하지 않는 것 같아요. 연결을 확인한 뒤 다시 시도해 주세요. 지금까지의 학습 기록은 이 기기에 그대로 남아 있어요.</p>
+      <button class="btn henna" id="retry">다시 시도</button>
+    </section>`;
+    document.getElementById("retry").addEventListener("click", () => location.reload());
     return;
   }
   if ("speechSynthesis" in window) speechSynthesis.getVoices();
