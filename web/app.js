@@ -71,6 +71,38 @@ function saveState() {
   }
 }
 
+// ---------- 백업: 진도는 이 브라우저에만 있으므로 코드나 파일로 옮긴다(나중에 앱으로 옮길 때도 같은 형식) ----------
+
+const BACKUP_PREFIX = "ARABIO1.";
+
+function backupJson() {
+  return JSON.stringify({ app: "arabio", version: 1, savedAt: new Date().toISOString(), state });
+}
+
+function backupCode() {
+  const bytes = new TextEncoder().encode(backupJson());
+  let bin = "";
+  for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+  return BACKUP_PREFIX + btoa(bin).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+}
+
+// 백업 코드 또는 백업 파일(JSON) 글자를 읽어 검사한 상태를 돌려준다. 잘못되면 사용자에게 보여 줄 문장으로 실패한다.
+function readBackup(text) {
+  const raw = String(text || "").replace(/\s+/g, "");
+  let json;
+  try {
+    if (raw.startsWith(BACKUP_PREFIX)) {
+      const b64 = raw.slice(BACKUP_PREFIX.length).replace(/-/g, "+").replace(/_/g, "/");
+      json = new TextDecoder().decode(Uint8Array.from(atob(b64 + "=".repeat((4 - (b64.length % 4)) % 4)), c => c.charCodeAt(0)));
+    } else json = String(text || "").trim();
+    const data = JSON.parse(json);
+    if (data?.app !== "arabio" || !data.state) throw new Error();
+    return { savedAt: data.savedAt, state: normalizeState(data.state) };
+  } catch {
+    throw new Error("아라비오 백업 코드가 아니에요. 복사한 코드 전체를 붙여 넣었는지 확인해 주세요.");
+  }
+}
+
 function progress() {
   const d = state.dialect;
   if (!state.progress[d]) state.progress[d] = { completedDays: [], srs: {}, history: {}, xp: 0 };
@@ -432,6 +464,19 @@ function stopAudio() {
 
 document.addEventListener("visibilitychange", () => { if (document.hidden) { stopAudio(); stopRecording(); } });
 
+// 검수로 다시 만든 음성은 ?v=검수 번호로 구분한다. 서비스 워커도 이 주소 그대로 저장한다.
+function audioUrl(s, variant, side) {
+  const revision = s[variant].audioRevision?.[side];
+  return `audio/${s[variant].audio[side]}${revision ? `?v=${encodeURIComponent(revision)}` : ""}`;
+}
+
+// 다음 학습의 음성(푸스하 + 지금 방언)을 미리 받아 두면 내일 오프라인에서도 들을 수 있다.
+function prefetchDayAudio(day) {
+  if (!navigator.serviceWorker?.controller || !DATA) return;
+  const urls = sentencesOfDay(day).flatMap(s => ["fusha", state.dialect].flatMap(v => ["A", "B"].filter(side => s[v].audio[side]).map(side => audioUrl(s, v, side))));
+  setTimeout(() => urls.forEach(url => fetch(url).catch(() => {})), 2500);
+}
+
 function speak(s, variant, side, button = null) {
   const file = s[variant].audio[side];
   if (button && file === currentAudioFile && currentAudio && !currentAudio.paused) {
@@ -442,8 +487,7 @@ function speak(s, variant, side, button = null) {
   if (file) {
     const notice = document.getElementById("service-status");
     if (notice?.dataset?.kind === "audio") notice.hidden = true;
-    const revision = s[variant].audioRevision?.[side];
-    const audio = new Audio(`audio/${file}${revision ? `?v=${encodeURIComponent(revision)}` : ""}`);
+    const audio = new Audio(audioUrl(s, variant, side));
     currentAudio = audio;
     currentAudioFile = file;
     audio.playbackRate = state.audioRate || 1;
@@ -729,6 +773,7 @@ function screenHome() {
   });
   hero.addEventListener("pointerleave",()=>{hero.style.setProperty("--px","0px");hero.style.setProperty("--py","0px")});
   homeUnlock=null;
+  prefetchDayAudio(now);
 }
 
 // 홈의 하루 목표 카드. 오늘 아직 안 했으면 스트릭이 이어질 수 있다고 알려 준다.
@@ -1307,12 +1352,24 @@ function screenSettings() {
       <button class="btn line" id="reset">진도 초기화</button>
       <p class="small muted" style="margin-top:8px">방언은 홈 위쪽에서 바꿀 수 있고, 진도는 방언별로 따로 저장돼요.</p>
     </div>
-    <div class="setting in" style="--d:1">
+    <div class="setting backup in" style="--d:1">
+      <p><b>진도 백업</b></p>
+      <p class="small muted">진도는 이 브라우저에만 저장돼요. 방문 기록을 지우거나 휴대폰을 바꾸기 전에 백업해 두세요.</p>
+      <div class="backup-actions"><button class="btn ghost" id="backup-copy">백업 코드 복사</button><button class="btn ghost" id="backup-file">파일로 저장</button></div>
+      <details class="restore"><summary>백업으로 복원하기</summary>
+        <textarea id="restore-text" rows="3" placeholder="백업 코드를 붙여 넣거나 백업 파일을 고르세요" aria-label="백업 코드"></textarea>
+        <div class="backup-actions"><button class="btn ghost" id="restore-pick">파일 고르기</button><button class="btn henna" id="restore-go">복원하기</button></div>
+        <input type="file" id="restore-file" accept=".json,application/json,text/plain" hidden>
+      </details>
+      <p class="backup-status" id="backup-status" role="status" aria-live="polite"></p>
+    </div>
+    <div class="setting in" style="--d:2">
       <p class="small muted">푸스하: 아이만 · 이집트: 아슈라프 · 요르단: 야잔<br>AI 생성 음성(Sawtak) · 직접 듣고 검수 완료. 없는 음성은 준비 중으로 표시해요.<br>문장 300개 · 15단원 · 100일 · 검수 완료</p>
     </div>
     <div class="setting"><div class="audio-speed"><label for="audio-speed">음성 재생 속도</label><select id="audio-speed">${RATES.map(value=>`<option value="${value}" ${(state.audioRate || 1) === value ? "selected" : ""}>${value === 1 ? "기본 · 1.0배" : value < 1 ? `느리게 · ${value}배` : `빠르게 · ${value}배`}</option>`).join("")}</select></div></div>
     <div class="setting"><div class="audio-speed"><label for="daily-goal">하루 목표</label><select id="daily-goal">${DAILY_GOALS.map(xp => `<option value="${xp}" ${dailyGoal() === xp ? "selected" : ""}>${xp} XP · 대화 ${xp / XP_PER_SENTENCE}개</option>`).join("")}</select></div></div>
     <div class="setting"><div class="audio-speed"><label for="sfx">정답·오답 효과음</label><select id="sfx"><option value="on" ${state.sfx !== false ? "selected" : ""}>켜기</option><option value="off" ${state.sfx === false ? "selected" : ""}>끄기</option></select></div></div>
+    <div class="setting"><a class="btn ghost" href="privacy.html">아라비오 소개 · 개인정보 처리방침</a><p class="small muted" style="margin-top:8px">인터넷이 없어도 앱이 열려요. 음성은 한 번 들은 것과 다음 학습분을 미리 받아 둬요.</p></div>
     ${['localhost', '127.0.0.1', '[::1]'].includes(location.hostname) ? `<div class="setting"><p>로컬 검수 · 진도 저장 없이 모든 일차 확인</p><a class="btn ghost" href="admin.html?day=8">관리자 검수 열기</a></div>` : ''}`, { tab: "settings" });
   document.getElementById("audio-speed").addEventListener("change", e => {
     state.audioRate = Number(e.target.value);
@@ -1327,12 +1384,60 @@ function screenSettings() {
     saveState();
     sfx(true); // 켰을 때 바로 들려준다
   });
+  bindBackup();
   document.getElementById("reset").addEventListener("click", () => {
     if (!confirm(`${DIALECTS[state.dialect].name} 진도를 모두 지울까요?`)) return;
     delete state.progress[state.dialect];
     progress();
     saveState();
     screenHome();
+  });
+}
+
+function bindBackup() {
+  const status = document.getElementById("backup-status");
+  const say = (text, bad = false) => { status.textContent = text; status.classList.toggle("bad", bad); };
+  document.getElementById("backup-copy").addEventListener("click", async () => {
+    const code = backupCode();
+    try {
+      await navigator.clipboard.writeText(code);
+      say("백업 코드를 복사했어요. 카카오톡 ‘나와의 채팅’이나 메모에 붙여 넣어 두세요.");
+    } catch {
+      const box = document.getElementById("restore-text");
+      box.closest("details").open = true;
+      box.value = code;
+      box.select();
+      say("자동 복사가 안 돼요. 아래 칸의 코드를 길게 눌러 직접 복사해 주세요.");
+    }
+  });
+  document.getElementById("backup-file").addEventListener("click", async () => {
+    const file = new File([backupJson()], `arabio-backup-${today()}.json`, { type: "application/json" });
+    // 휴대폰에서는 공유 창(파일 앱·카카오톡 등)으로, 컴퓨터에서는 내려받기로 저장한다.
+    if (navigator.canShare?.({ files: [file] })) {
+      try { await navigator.share({ files: [file], title: "아라비오 진도 백업" }); say("백업 파일을 저장했어요."); return; }
+      catch (e) { if (e?.name === "AbortError") return; }
+    }
+    const link = Object.assign(document.createElement("a"), { href: URL.createObjectURL(file), download: file.name });
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+    say(`${file.name} 파일로 저장했어요.`);
+  });
+  const input = document.getElementById("restore-file");
+  document.getElementById("restore-pick").addEventListener("click", () => input.click());
+  input.addEventListener("change", async () => {
+    if (input.files?.[0]) document.getElementById("restore-text").value = await input.files[0].text();
+    input.value = "";
+  });
+  document.getElementById("restore-go").addEventListener("click", () => {
+    let backup;
+    try { backup = readBackup(document.getElementById("restore-text").value); }
+    catch (e) { say(e.message, true); return; }
+    const when = backup.savedAt ? new Date(backup.savedAt).toLocaleString("ko-KR", { dateStyle: "medium", timeStyle: "short" }) : "날짜 모름";
+    if (!confirm(`${when}에 만든 백업으로 지금 진도를 바꿀까요? 지금 진도는 사라져요.`)) return;
+    state = backup.state;
+    saveState();
+    screenHome();
+    notify("백업으로 진도를 되돌렸어요.", "audio");
   });
 }
 
@@ -1416,6 +1521,10 @@ function startSplash() {
   }
   if ("speechSynthesis" in window) speechSynthesis.getVoices();
   if (!state.dialect) state.dialect = "egypt";
+  // 오프라인 지원(https 또는 내 컴퓨터에서만 동작)
+  if ("serviceWorker" in navigator && (location.protocol === "https:" || ["localhost", "127.0.0.1"].includes(location.hostname))) {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  }
   await splash.ready;
   if (state.introSeen) screenHome();
   else screenIntro();
