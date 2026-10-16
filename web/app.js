@@ -1297,19 +1297,15 @@ function screenRecords() {
 
 function screenSettings() {
   window.onscroll = null;
-  const other = state.dialect === "egypt" ? "jordan" : "egypt";
+  // 방언은 홈 위쪽의 이집트·요르단 버튼으로 바꾼다. 설정에서는 지금 방언의 진도만 다룬다.
   show(`
-    <div class="page-head"><h1>설정</h1><span class="wordmark">아라비오</span></div><p class="page-description">학습 방언 및 진도 관리</p>
+    <div class="page-head"><h1>설정</h1><span class="wordmark">아라비오</span></div><p class="page-description">진도와 학습 환경 관리</p>
     <div class="setting in" style="--d:0">
-      <p>지금 배우는 방언 · <b>${DIALECTS[state.dialect].name}</b> <span class="ar-inline" style="color:var(--henna)">${DIALECTS[state.dialect].ar}</span></p>
-      <button class="btn ghost" id="switch">${DIALECTS[other].name} 방언으로 바꾸기</button>
-      <p class="small muted" style="margin-top:8px">진도는 방언별로 따로 저장돼요. 다시 바꾸면 이어서 할 수 있어요.</p>
-    </div>
-    <div class="setting in" style="--d:1">
       <p>${DIALECTS[state.dialect].name} 진도를 처음부터 다시 시작해요.</p>
       <button class="btn line" id="reset">진도 초기화</button>
+      <p class="small muted" style="margin-top:8px">방언은 홈 위쪽에서 바꿀 수 있고, 진도는 방언별로 따로 저장돼요.</p>
     </div>
-    <div class="setting in" style="--d:2">
+    <div class="setting in" style="--d:1">
       <p class="small muted">푸스하: 아이만 · 이집트: 아슈라프 · 요르단: 야잔<br>AI 생성 음성(Sawtak) · 직접 듣고 검수 완료. 없는 음성은 준비 중으로 표시해요.<br>문장 300개 · 15단원 · 100일 · 검수 완료</p>
     </div>
     <div class="setting"><div class="audio-speed"><label for="audio-speed">음성 재생 속도</label><select id="audio-speed">${RATES.map(value=>`<option value="${value}" ${(state.audioRate || 1) === value ? "selected" : ""}>${value === 1 ? "기본 · 1.0배" : value < 1 ? `느리게 · ${value}배` : `빠르게 · ${value}배`}</option>`).join("")}</select></div></div>
@@ -1328,12 +1324,6 @@ function screenSettings() {
     state.sfx = e.target.value === "on";
     saveState();
     sfx(true); // 켰을 때 바로 들려준다
-  });
-  document.getElementById("switch").addEventListener("click", () => {
-    state.dialect = other;
-    progress();
-    saveState();
-    screenHome();
   });
   document.getElementById("reset").addEventListener("click", () => {
     if (!confirm(`${DIALECTS[state.dialect].name} 진도를 모두 지울까요?`)) return;
