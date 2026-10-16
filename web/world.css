@@ -241,3 +241,8 @@ body{background:#e4e7e1}.tabbar{background:#f4f3f1ef;backdrop-filter:blur(12px);
 @keyframes start-nudge{50%{transform:scale(1.03)}}
 @media(prefers-reduced-motion:reduce){.splash-cats img,.splash-bar i,.splash-tip.swap,.intro-sky span,.intro-bubble,.typed,.intro-cat,.intro-cat img,.intro-start{animation:none!important;opacity:1;clip-path:none}.intro-sky span{opacity:.85}}
 .intro h1{font-size:24px}.intro-body{font-size:15px;line-height:1.7}.intro .btn{margin-top:8px}
+/* 2026-10-16 오늘 목표를 나라 선택 카드 안으로: 따로 떠 있던 카드를 한 카드의 아래 줄로 합침 */
+.world-panel{position:relative;z-index:4;margin:-47px 24px 0;border-radius:18px;background:#f4f3f1f5;border:1px solid #fff8;box-shadow:0 7px 22px #293b3410;overflow:hidden}
+.world-panel .world-picker{margin:0;border:0;border-radius:0;background:none;box-shadow:none}
+.world-panel .world-goal{margin:0;padding:10px 16px 12px;border:0;border-top:1px solid #decebf99;border-radius:0;background:none}
+@media(max-width:360px){.world-panel{margin-left:18px;margin-right:18px}.world-panel .world-picker{margin:0}}
