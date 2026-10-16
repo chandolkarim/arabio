@@ -11,6 +11,9 @@ const DIALECTS = {
   egypt: { name: "이집트", ar: "مصر", en: "EGYPT", city: "카이로", lang: "ar-EG" },
   jordan: { name: "요르단", ar: "الأردن", en: "JORDAN", city: "암만", lang: "ar-JO" },
 };
+// 하트: 연습 문제에서 틀리면 1개 줄고, 3시간마다 1개씩 다시 생긴다. 틀린 문장을 연습하면 가득 찬다.
+const MAX_HEARTS = 5;
+const HEART_REFILL_MS = 3 * 60 * 60 * 1000;
 const STAR = "M50 2 L62 26 L88 14 L76 40 L98 50 L76 60 L88 86 L62 74 L50 98 L38 74 L12 86 L24 60 L2 50 L24 40 L12 14 L38 26 Z";
 const app = document.getElementById("app");
 const tabbar = document.getElementById("tabbar");
@@ -46,6 +49,9 @@ function normalizeState(raw) {
       xp: Number.isFinite(p.xp) && p.xp >= 0 ? Math.floor(p.xp) : 0,
     };
   }
+  const count = Number.isInteger(raw?.hearts?.count) ? Math.max(0, Math.min(MAX_HEARTS, raw.hearts.count)) : MAX_HEARTS;
+  const refillAt = Number.isFinite(raw?.hearts?.refillAt) ? raw.hearts.refillAt : null;
+  value.hearts = { count, refillAt: count < MAX_HEARTS ? refillAt ?? Date.now() + HEART_REFILL_MS : null };
   // 첫 방문 안내는 한 번만. 이미 학습 기록이 있는 사용자는 보지 않는다.
   value.introSeen = raw?.introSeen === true || Object.values(value.progress).some(p => p.completedDays.length > 0);
   return value;
@@ -65,6 +71,45 @@ function progress() {
   const d = state.dialect;
   if (!state.progress[d]) state.progress[d] = { completedDays: [], srs: {}, history: {}, xp: 0 };
   return state.progress[d];
+}
+
+// ---------- 하트 ----------
+
+// 지난 시간만큼 하트를 채운 뒤 돌려준다. 방언과 상관없이 하나로 쓴다.
+function hearts(now = Date.now()) {
+  const h = state.hearts ||= { count: MAX_HEARTS, refillAt: null };
+  while (h.count < MAX_HEARTS && h.refillAt && now >= h.refillAt) {
+    h.count += 1;
+    h.refillAt += HEART_REFILL_MS;
+  }
+  if (h.count >= MAX_HEARTS) h.refillAt = null;
+  return h;
+}
+
+function loseHeart(now = Date.now()) {
+  const h = hearts(now);
+  if (h.count > 0) {
+    h.count -= 1;
+    h.refillAt ??= now + HEART_REFILL_MS;
+    saveState();
+  }
+  return h.count;
+}
+
+function gainHearts(n = MAX_HEARTS) {
+  const h = hearts();
+  const before = h.count;
+  h.count = Math.min(MAX_HEARTS, h.count + n);
+  if (h.count >= MAX_HEARTS) h.refillAt = null;
+  return h.count - before;
+}
+
+// 새 학습과 다시 학습만 하트를 쓴다. 복습과 하트 채우기 연습은 틀려도 줄지 않는다.
+const costsHearts = (mode = lesson?.mode) => mode === "lesson" || mode === "again";
+
+function waitText(ms) {
+  const min = Math.max(1, Math.ceil(ms / 60000));
+  return `${min >= 60 ? `${Math.floor(min / 60)}시간 ` : ""}${min % 60 ? `${min % 60}분` : ""}`.trim();
 }
 
 // ---------- 날짜 ----------
@@ -243,6 +288,7 @@ const ICON = {
   check: `<svg class="check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>`,
   mic: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>`,
   stop: `<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6.5" y="6.5" width="11" height="11" rx="2"/></svg>`,
+  heart: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3.1 4.5 6.8 4.5c2.1 0 3.6 1.1 5.2 3 1.6-1.9 3.1-3 5.2-3 3.7 0 5.9 3.7 4.4 7.2C19.5 16.4 12 21 12 21Z"/></svg>`,
   flame: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c1 3.5-1.5 5-1.5 7.5 0 1.4 1 2.5 2.3 2.5 1.5 0 2.4-1.2 2.2-3 2.3 1.6 4 4.2 4 7a7 7 0 0 1-14 0c0-5 4.5-7.4 7-14Z"/></svg>`,
 };
 
@@ -515,9 +561,29 @@ function judge(right) {
   lesson.combo = right ? (lesson.combo || 0) + 1 : 0;
   lesson.lastWrong = !right;
   sfx(right);
-  if (!right) navigator.vibrate?.(80);
-  else app.querySelector(".prog")?.classList.add("hit");
+  if (!right) {
+    navigator.vibrate?.(80);
+    if (costsHearts()) heartChip(loseHeart(), true);
+  } else app.querySelector(".prog")?.classList.add("hit");
   return { combo: lesson.combo, recovered };
+}
+
+// 레슨 머리줄의 하트 칩. 잃을 때는 흔들리고 -1이 떠오른다.
+function heartChip(count, lost = false) {
+  const el = document.getElementById("hearts");
+  if (!el) return;
+  el.querySelector("b").textContent = count;
+  el.setAttribute("aria-label", `남은 하트 ${count}개`);
+  el.classList.toggle("empty", count === 0);
+  if (!lost || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  el.classList.remove("lost");
+  void el.offsetWidth; // 연달아 틀려도 애니메이션을 처음부터 다시 재생
+  el.classList.add("lost");
+  const minus = document.createElement("span");
+  minus.className = "minus";
+  minus.textContent = "-1";
+  el.appendChild(minus);
+  setTimeout(() => minus.remove(), 900);
 }
 
 function teacherLine(who, good, combo, recovered) {
@@ -565,7 +631,7 @@ function screenHome() {
   const u = unitOfDay(now), country = state.dialect, due = dueReviews().length;
   show(`
     <div class="world-scene" aria-hidden="true"><img src="assets/landmarks/${country}.jpg" alt="" width="960" height="${country === "egypt" ? 542 : 1440}"></div>
-    <header class="world-masthead"><span>${ICON.flame} ${streak()}일</span><b>아라비오</b><span>${p.xp} XP</span></header>
+    <header class="world-masthead"><span>${ICON.flame} ${streak()}일</span><b>아라비오</b><span><span class="mast-heart" aria-label="하트 ${hearts().count}개">${ICON.heart} ${hearts().count}</span>${p.xp} XP</span></header>
     <section class="world-hero" aria-label="${country === "egypt" ? "기자 피라미드" : "페트라 알카즈네"} 배경">
       <img src="assets/landmarks/${country}.jpg" alt="${country === "egypt" ? "이집트 기자의 피라미드" : "요르단 페트라의 알카즈네"}" width="960" height="${country === "egypt" ? 542 : 1440}" fetchpriority="high">
       <div class="world-title"><small>${country === "egypt" ? "CAIRO · EGYPT" : "AMMAN · JORDAN"}</small><div lang="ar" dir="rtl">${DIALECTS[country].ar}</div><p>${DIALECTS[country].name} 아랍어 <span>100일 · 300문장</span></p></div>
@@ -638,7 +704,7 @@ function renderPath(now, finished, selectedUnit) {
 let lesson = null;
 
 function lessonQueue(list, mode) {
-  if (mode === "review") return list.flatMap((_, index) => [{ index, type: 4 }, { index, type: 6 }]);
+  if (mode === "review" || mode === "heal") return list.flatMap((_, index) => [{ index, type: 4 }, { index, type: 6 }]);
   // Pair each Fusha dialogue with its dialect expression before practice.
   return [
     ...list.flatMap((_, index) => [{ index, type: 0 }, { index, type: 3 }]),
@@ -648,11 +714,55 @@ function lessonQueue(list, mode) {
   ];
 }
 
-function startLesson(day, list = sentencesOfDay(day), mode = "lesson") {
+function startLesson(day, list = sentencesOfDay(day), mode = "lesson", resumeDay = null) {
   window.onscroll = null;
+  if (costsHearts(mode) && hearts().count === 0) { screenNoHearts(day); return; }
   forgetRecordings();
-  lesson = { day, list, mode, queue: lessonQueue(list, mode), cursor: 0, index: 0, ratings: {}, mistakes: {}, recordings: {}, transitioning: false };
+  lesson = { day, list, mode, resumeDay, queue: lessonQueue(list, mode), cursor: 0, index: 0, ratings: {}, mistakes: {}, recordings: {}, transitioning: false };
   renderStep();
+}
+
+// 하트 채우기 연습 문장: 방금 틀린 문장 → 오늘 복습 → 자주 헷갈린 문장 → 그날 문장 순으로 최대 3개.
+function healList(day) {
+  const srs = progress().srs;
+  const missed = lesson?.day === day ? lesson.list.filter(s => lesson.mistakes[s.id]) : [];
+  for (const list of [missed, dueReviews(), DATA.sentences.filter(s => srs[s.id]?.hard > 0), sentencesOfDay(day ?? nextDay())]) {
+    if (list.length) return list.slice(0, 3);
+  }
+  return sentencesOfDay(nextDay());
+}
+
+const heartRow = (n, animate = false) => `<div class="heart-row" role="img" aria-label="하트 ${n} / ${MAX_HEARTS}">${Array.from({ length: MAX_HEARTS }, (_, i) => `<span class="${i < n ? "full" : ""} ${animate ? "pop" : ""}" style="--i:${i}">${ICON.heart}</span>`).join("")}</div>`;
+
+function screenNoHearts(day) {
+  const list = healList(day);
+  const h = hearts();
+  show(`
+    <section class="done-screen no-hearts">
+      ${heartRow(h.count)}
+      <h2 class="title in" style="--d:1">하트를 모두 썼어요</h2>
+      <p class="lead in" style="--d:2">이번 학습은 저장되지 않았어요. 헷갈린 문장을 한 번 더 연습하면 하트가 가득 채워져요.</p>
+      ${teacher("ammiya", "sad", "괜찮아! 틀린 걸 한 번 더 보면 확실히 기억나.", "in")}
+      <button class="btn henna in" style="--d:3" id="heal">연습하고 하트 채우기 · ${list.length}문장 ${ICON.arrow}</button>
+      <button class="btn ghost in" style="--d:4" id="home">홈으로</button>
+      ${h.refillAt ? `<p class="small muted in refill-wait" style="--d:5">기다리면 ${waitText(h.refillAt - Date.now())} 뒤에 하트 1개가 생겨요.</p>` : ""}
+    </section>`, { tabs: false });
+  document.getElementById("heal").addEventListener("click", () => startLesson(day, list, "heal", day));
+  document.getElementById("home").addEventListener("click", screenHome);
+}
+
+function screenHealed(day) {
+  show(`
+    <section class="done-screen no-hearts">
+      ${heartRow(MAX_HEARTS, true)}
+      <h2 class="title in" style="--d:1">하트가 다시 가득 찼어요</h2>
+      <div class="done-cats in" style="--d:2"><img src="assets/teachers/kkuku-celebrate.webp" alt="푸스하 선생님 꾸꾸가 축하해요" width="96" height="96"><img src="assets/teachers/akkung-celebrate.webp" alt="암미야 선생님 아꿍이 축하해요" width="96" height="96"></div>
+      <p class="lead in" style="--d:3">헷갈린 문장을 다시 익혔어요. 이제 이어서 학습해 볼까요?</p>
+      ${day ? `<button class="btn henna in" style="--d:4" id="resume">${day}일차 다시 시작 ${ICON.arrow}</button>` : ""}
+      <button class="btn ${day ? "ghost" : "henna"} in" style="--d:5" id="home">홈으로</button>
+    </section>`, { tabs: false });
+  document.getElementById("resume")?.addEventListener("click", () => startLesson(day, sentencesOfDay(day), progress().completedDays.includes(day) ? "again" : "lesson"));
+  document.getElementById("home").addEventListener("click", screenHome);
 }
 
 function lessonPos() { return lesson.cursor; }
@@ -664,10 +774,11 @@ function frame(inner) {
     <header class="lhead">
       <button class="icon" id="quit" aria-label="그만하기">${ICON.x}</button>
       <div class="prog"><i style="width:${(lessonPos() / total) * 100}%"></i></div>
+      ${costsHearts() ? `<span class="heart-chip ${hearts().count === 0 ? "empty" : ""}" id="hearts" role="img" aria-label="남은 하트 ${hearts().count}개">${ICON.heart}<b>${hearts().count}</b></span>` : ""}
       <button class="speed-chip" id="speed" aria-label="음성 속도 바꾸기, 지금 ${rateLabel(state.audioRate || 1)}">${rateLabel(state.audioRate || 1)}</button>
       <span class="stepno">${lessonPos() + 1} / ${total}</span>
     </header>
-    <div class="lesson-stage"><span>${({0:"01 푸스하 · 대화 보기",3:"01 암미야 · 표현 비교",1:"02 연습하기",4:lesson.mode === "review" ? "복습" : "02 연습하기",6:"03 말하기"})[lesson.queue[lesson.cursor].type]}</span><span>표현 ${lesson.index + 1} / ${lesson.list.length}</span></div>
+    <div class="lesson-stage"><span>${({0:"01 푸스하 · 대화 보기",3:"01 암미야 · 표현 비교",1:"02 연습하기",4:({ review: "복습", heal: "하트 채우기 연습" })[lesson.mode] || "02 연습하기",6:"03 말하기"})[lesson.queue[lesson.cursor].type]}</span><span>표현 ${lesson.index + 1} / ${lesson.list.length}</span></div>
     <section class="lesson">${inner}</section>
     `, { tabs: false });
   requestAnimationFrame(() => {
@@ -698,7 +809,9 @@ function next() {
     if (lesson !== activeLesson || !document.getElementById("quit")) return;
     lesson.cursor += 1;
     lesson.transitioning = false;
-    if (lesson.cursor >= lesson.queue.length) finishLesson();
+    // 하트를 다 쓰면 이번 학습은 저장하지 않고 멈춘다.
+    if (costsHearts() && hearts().count === 0) screenNoHearts(lesson.day);
+    else if (lesson.cursor >= lesson.queue.length) finishLesson();
     else renderStep();
   }, 180);
 }
@@ -733,7 +846,7 @@ function openSheet({ good, title, body, teacher: who, combo = 0, recovered = fal
   const line = who ? teacherLine(who, good, combo, recovered) : null;
   sh.innerHTML = `${line ? teacher(who, line.mood, line.text, `in-sheet react-${good ? "good" : "bad"}`) : ""}
     <div class="fb-head"><p class="t" id="feedback-title"><span class="fb-icon" aria-hidden="true">${good ? ICON.check : ICON.x}</span>${title}</p>${good && combo >= COMBO_AT ? `<span class="combo">${ICON.flame}${combo}연속 정답</span>` : ""}</div>
-    <div class="msg">${body}</div><button class="btn ${good ? "ok" : ""}" id="next">계속</button>`;
+    <div class="msg">${body}</div>${!good && costsHearts() && hearts().count === 0 ? `<p class="out-note">${ICON.heart}하트를 모두 썼어요. 틀린 문장을 연습하면 다시 채워져요.</p>` : ""}<button class="btn ${good ? "ok" : ""}" id="next">계속</button>`;
   document.body.appendChild(sh);
   requestAnimationFrame(() => requestAnimationFrame(() => sh.classList.add("up")));
   sh.querySelector("#next").addEventListener("click", next);
@@ -960,6 +1073,14 @@ function stepRecall(s) {
 function finishLesson() {
   if (lesson.finished) return;
   lesson.finished = true;
+  // 하트 채우기 연습은 진도·복습 일정·경험치를 바꾸지 않고 하트만 채운다.
+  if (lesson.mode === "heal") {
+    gainHearts(MAX_HEARTS);
+    saveState();
+    screenHealed(lesson.resumeDay);
+    return;
+  }
+  const heartGained = lesson.mode === "review" ? gainHearts(1) : 0; // 복습을 마치면 하트 1개
   for (const s of lesson.list) rate(s.id, lesson.ratings[s.id] === true, false);
   const p = progress();
   const counts = lesson.mode === "lesson";
@@ -984,7 +1105,7 @@ function finishLesson() {
       <p class="lead in" style="--d:3">${isDay ? `100일 중 ${p.completedDays.length}일, 300문장 중 ${p.completedDays.length * 3}문장째예요.` : `${lesson.list.length}문장 복습 완료`}</p>
       <div class="done-cats in" style="--d:3"><img src="assets/teachers/kkuku-celebrate.webp" alt="푸스하 선생님 꾸꾸가 축하해요" width="96" height="96"><img src="assets/teachers/akkung-celebrate.webp" alt="암미야 선생님 아꿍이 축하해요" width="96" height="96"></div>
       ${isDay ? `<p class="lesson-purpose in" style="--d:3">오늘 익힌 문장, 실제 상황에서 꺼내 써 보세요.</p>` : ""}
-      <p class="xp in" style="--d:3"><span>연속 <b>${streak()}일</b></span><span><b>+${gained}</b> 경험치</span></p>
+      <p class="xp in" style="--d:3"><span>연속 <b>${streak()}일</b></span><span><b>+${gained}</b> 경험치</span>${heartGained ? `<span>하트 <b>+${heartGained}</b></span>` : ""}</p>
       ${isDay ? `
       <div class="passport in" style="--d:4">
         <div class="lines"><i></i><i></i><i></i></div>
