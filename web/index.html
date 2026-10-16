@@ -26,14 +26,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261016-round">
-<link rel="stylesheet" href="arabio.css?v=20261016-round">
-<link rel="stylesheet" href="world.css?v=20261016-round">
+<link rel="stylesheet" href="style.css?v=20261016-intro">
+<link rel="stylesheet" href="arabio.css?v=20261016-intro">
+<link rel="stylesheet" href="world.css?v=20261016-intro">
 </head>
 <body>
 <div class="atmo" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
-<main id="app" class="app" aria-live="polite"><p class="loading" role="status">문장을 불러오는 중…</p></main>
+<main id="app" class="app" aria-live="polite"></main>
+<div id="splash" class="splash" role="status" aria-live="polite">
+  <div class="splash-cats" aria-hidden="true"><img src="assets/teachers/kkuku-smile.webp" alt="" width="96" height="96"><img src="assets/teachers/akkung-smile.webp" alt="" width="96" height="96"></div>
+  <p class="splash-mark">아라비오</p>
+  <div class="splash-bar" aria-hidden="true"><i></i></div>
+  <p class="sr-only">문장을 불러오는 중…</p>
+  <p class="splash-tip" id="splash-tip" aria-hidden="true">문장을 불러오는 중…</p>
+</div>
 <noscript><section class="load-error"><h1>자바스크립트를 켜 주세요</h1><p>아라비오는 브라우저의 자바스크립트로 학습 화면과 음성을 보여 줍니다. 브라우저 설정에서 자바스크립트를 켠 뒤 새로고침해 주세요.</p></section></noscript>
 <nav id="tabbar" class="tabbar" hidden>
   <button data-go="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v8a1 1 0 0 1-1 1h-4v-6h-6v6H5a1 1 0 0 1-1-1z"/></svg>홈</button>
@@ -41,6 +48,6 @@
   <button data-go="records"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6L20 9.3l-4 4 1 5.7-5-2.8-5 2.8 1-5.7-4-4 5.4-.7z"/></svg>기록</button>
   <button data-go="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-1.8-.3 1.6 1.6 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.6 1.6 0 0 0-1-1.5 1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0 .3-1.8 1.6 1.6 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.6 1.6 0 0 0 1.5-1 1.6 1.6 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.8.3H9a1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.6 1.6 0 0 0 1 1.5 1.6 1.6 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.8V9a1.6 1.6 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1z"/></svg>설정</button>
 </nav>
-<script src="app.js?v=20261016-round"></script>
+<script src="app.js?v=20261016-intro"></script>
 </body>
 </html>
