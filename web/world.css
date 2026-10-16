@@ -111,3 +111,21 @@ body{background:#e4e7e1}.tabbar{background:#f4f3f1ef;backdrop-filter:blur(12px);
 .btn:disabled{opacity:.45;cursor:default}
 .build-hint{min-height:1.4em;margin-top:12px;font-size:14px;color:#a0442e;text-align:center}
 .load-error{max-width:420px;margin:18vh auto 0;padding:0 24px;text-align:center}.load-error h1{font:700 22px var(--serif);margin-bottom:12px}.load-error p{font-size:15px;line-height:1.7;color:var(--ink2);margin-bottom:22px}
+/* 2026-10-16 정답·오답 피드백 연출: 아이콘 머리줄, 연속 정답 표시, 고양이 선생님 반응 */
+.fb-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.sheet .t{display:flex;align-items:center;gap:9px}
+.fb-icon{display:inline-grid;place-items:center;width:28px;height:28px;flex:none;border-radius:50%;background:var(--ok);color:#fff;animation:fb-icon .5s var(--spring) .1s both}
+.fb-icon svg{width:17px;height:17px}.fb-icon path{fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.sheet.bad .fb-icon{background:var(--bad)}
+.combo{display:inline-flex;align-items:center;gap:4px;padding:4px 10px 4px 8px;border-radius:999px;background:#f4e3b8;color:#7d5d27;font-size:12.5px;font-weight:800;animation:fb-icon .55s var(--spring) .25s both}
+.combo svg{width:14px;height:14px;color:#d9822b}
+.sheet .teacher.react-good img{animation:cat-hop .7s cubic-bezier(.3,1.4,.5,1) both}
+.sheet .teacher.react-bad img{transform-origin:50% 90%;animation:cat-droop .8s var(--ease) both}
+.sheet .teacher .say{animation:teacher-pop .45s var(--ease) .18s both}
+.prog.hit i{animation:prog-hit .6s var(--ease)}
+.build.bad{animation:shake .5s}
+@keyframes fb-icon{from{opacity:0;transform:scale(.3) rotate(-25deg)}to{opacity:1;transform:none}}
+@keyframes cat-hop{0%{opacity:0;transform:translateY(12px) scale(.88)}45%{opacity:1;transform:translateY(-12px) scale(1.06)}70%{transform:translateY(0) scale(.97,1.03)}100%{transform:none}}
+@keyframes cat-droop{0%{opacity:0;transform:translateY(8px)}40%{opacity:1;transform:rotate(-7deg)}70%{transform:rotate(3deg)}100%{transform:none}}
+@keyframes prog-hit{50%{filter:brightness(1.25) saturate(1.3);box-shadow:0 0 0 3px #f4e3b8}}
+@media(prefers-reduced-motion:reduce){.fb-icon,.combo,.sheet .teacher img,.sheet .teacher .say,.prog.hit i,.build.bad{animation:none}}

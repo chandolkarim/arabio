@@ -29,7 +29,7 @@ function loadState() {
 }
 
 function normalizeState(raw) {
-  const value = { dialect: Object.keys(DIALECTS).includes(raw?.dialect) ? raw.dialect : null, progress: {}, audioRate: RATES.includes(raw?.audioRate) ? raw.audioRate : 1 };
+  const value = { dialect: Object.keys(DIALECTS).includes(raw?.dialect) ? raw.dialect : null, progress: {}, audioRate: RATES.includes(raw?.audioRate) ? raw.audioRate : 1, sfx: raw?.sfx !== false };
   for (const d of Object.keys(DIALECTS)) {
     const p = raw?.progress?.[d];
     if (!p || typeof p !== "object") continue;
@@ -282,6 +282,33 @@ function burst(el, n = 12) {
   }
 }
 
+// 정답·오답 효과음: 파일 없이 Web Audio로 짧게 합성한다. 설정에서 끌 수 있다.
+let sfxCtx = null;
+
+function sfx(good) {
+  if (state.sfx === false) return;
+  try {
+    const Ctx = window.AudioContext || window.webkitAudioContext;
+    if (!Ctx) return;
+    sfxCtx ||= new Ctx();
+    sfxCtx.resume?.();
+    // 정답: 위로 올라가는 두 음, 오답: 아래로 내려가는 낮은 두 음
+    const notes = good ? [[784, 0], [1175, 0.09]] : [[330, 0], [247, 0.13]];
+    for (const [freq, delay] of notes) {
+      const osc = sfxCtx.createOscillator(), gain = sfxCtx.createGain();
+      const start = sfxCtx.currentTime + delay;
+      osc.type = good ? "sine" : "triangle";
+      osc.frequency.value = freq;
+      gain.gain.setValueAtTime(0, start);
+      gain.gain.linearRampToValueAtTime(0.16, start + 0.015);
+      gain.gain.exponentialRampToValueAtTime(0.001, start + 0.3);
+      osc.connect(gain).connect(sfxCtx.destination);
+      osc.start(start);
+      osc.stop(start + 0.34);
+    }
+  } catch { /* 소리를 못 내도 학습은 계속 */ }
+}
+
 // 등장 애니메이션이 끝나면 클래스를 떼서 다른 애니메이션과 겹치지 않게 한다
 document.addEventListener("animationend", (e) => {
   if (e.animationName === "in" || e.animationName === "editorial-in") e.target.classList.remove("in", "w-in");
@@ -470,12 +497,35 @@ tabbar.addEventListener("click", (e) => {
 const TEACHERS = {
   fusha: { name: "꾸꾸", role: "푸스하 선생님", img: "kkuku",
     praise: ["훌륭해요!", "정확해요. 잘 들었네요.", "아주 좋아요."],
-    sad: ["괜찮아요, 같이 다시 볼까요?", "아깝네요. 정답을 확인해 봐요."] },
+    sad: ["괜찮아요, 같이 다시 볼까요?", "아깝네요. 정답을 확인해 봐요."],
+    recover: ["이번엔 정확해요. 금방 익혔네요.", "좋아요, 바로 고쳐 냈어요."],
+    combo: ["{n}연속 정답이에요. 집중력이 대단해요.", "흐름이 아주 좋아요. {n}개 연속이에요."] },
   ammiya: { name: "아꿍", role: "암미야 선생님", img: "akkung",
     praise: ["오, 완전 현지인인데?", "맞아! 잘했어!", "그거지!"],
-    sad: ["아깝다! 다시 보자.", "괜찮아, 다음엔 맞힐 거야!"] },
+    sad: ["아깝다! 다시 보자.", "괜찮아, 다음엔 맞힐 거야!"],
+    recover: ["봐, 금방 맞히잖아!", "그렇지, 이번엔 제대로야!"],
+    combo: ["{n}연속! 이제 현지인 다 됐네!", "와, {n}개 연속이야. 멈추지 마!"] },
 };
 const pick = (list) => list[Math.floor(Math.random() * list.length)];
+const COMBO_AT = 3; // 이만큼 연속으로 맞히면 연속 정답 표시와 축하 표정
+
+// 채점 직후(누른 순간) 반응: 효과음·진동·연속 정답 계산. 시트는 그 뒤에 열린다.
+function judge(right) {
+  const recovered = right && lesson.lastWrong;
+  lesson.combo = right ? (lesson.combo || 0) + 1 : 0;
+  lesson.lastWrong = !right;
+  sfx(right);
+  if (!right) navigator.vibrate?.(80);
+  else app.querySelector(".prog")?.classList.add("hit");
+  return { combo: lesson.combo, recovered };
+}
+
+function teacherLine(who, good, combo, recovered) {
+  const t = TEACHERS[who];
+  if (!good) return { mood: "sad", text: pick(t.sad) };
+  if (combo >= COMBO_AT) return { mood: "celebrate", text: pick(t.combo).replace("{n}", combo) };
+  return { mood: "praise", text: pick(recovered ? t.recover : t.praise) };
+}
 
 function teacher(who, mood, text, cls = "") {
   const t = TEACHERS[who];
@@ -674,13 +724,16 @@ function stepPreview(s) {
   document.getElementById("go").addEventListener("click", next);
 }
 
-function openSheet({ good, title, body, teacher: who }) {
+function openSheet({ good, title, body, teacher: who, combo = 0, recovered = false }) {
   document.querySelector(".sheet")?.remove();
   const sh = document.createElement("div");
   sh.className = `sheet ${good ? "" : "bad"}`;
   sh.setAttribute("role", "region");
   sh.setAttribute("aria-labelledby", "feedback-title");
-  sh.innerHTML = `${who ? teacher(who, good ? "praise" : "sad", pick(TEACHERS[who][good ? "praise" : "sad"]), "in-sheet") : ""}<p class="t" id="feedback-title">${title}</p><div class="msg">${body}</div><button class="btn ${good ? "ok" : ""}" id="next">계속</button>`;
+  const line = who ? teacherLine(who, good, combo, recovered) : null;
+  sh.innerHTML = `${line ? teacher(who, line.mood, line.text, `in-sheet react-${good ? "good" : "bad"}`) : ""}
+    <div class="fb-head"><p class="t" id="feedback-title"><span class="fb-icon" aria-hidden="true">${good ? ICON.check : ICON.x}</span>${title}</p>${good && combo >= COMBO_AT ? `<span class="combo">${ICON.flame}${combo}연속 정답</span>` : ""}</div>
+    <div class="msg">${body}</div><button class="btn ${good ? "ok" : ""}" id="next">계속</button>`;
   document.body.appendChild(sh);
   requestAnimationFrame(() => requestAnimationFrame(() => sh.classList.add("up")));
   sh.querySelector("#next").addEventListener("click", next);
@@ -709,6 +762,7 @@ function quiz({ kicker, title, prompt, answer, wrong, arabic, glossOf, onRight, 
     const right = b.dataset.o === answer;
     const correct = [...box.querySelectorAll(".opt")].find((x) => x.dataset.o === answer);
     b.classList.add("selected");
+    const { combo, recovered } = judge(right);
     if (!right) {
       b.classList.add("wrong");
       lesson.mistakes[lesson.list[lesson.index].id] = true;
@@ -721,7 +775,7 @@ function quiz({ kicker, title, prompt, answer, wrong, arabic, glossOf, onRight, 
       box.classList.add("reveal");
       if (right) burst(correct, 12);
       onRight?.();
-      openSheet({ good: right, title: right ? "정답이에요" : "아쉬워요, 정답은 이거예요", body: sheetBody(), teacher: who });
+      openSheet({ good: right, title: right ? "정답이에요" : "아쉬워요, 정답은 이거예요", body: sheetBody(), teacher: who, combo, recovered });
     }, right ? 0 : 450);
   }));
 }
@@ -845,10 +899,18 @@ function stepDialectBlank(s) {
     hint.textContent = "";
     build.dataset.done = "true";
     const right = picked.length === target.length && picked.every((i, j) => bare(bank[i].w) === bare(target[j]));
+    // 등장 애니메이션(.in)이 끝나기 전에 답하면 흔들기 애니메이션이 덮어써서 칸이 투명하게 남는다.
+    build.classList.remove("in");
     build.classList.add(right ? "ok" : "bad");
+    const { combo, recovered } = judge(right);
     if (!right) lesson.mistakes[s.id] = true;
-    else { burst(build, 12); speak(s, d, side); }
-    openSheet({ good: right, title: right ? "정답이에요" : "아쉬워요, 정답은 이거예요", teacher: "ammiya",
+    else {
+      burst(build, 12);
+      // 효과음이 끝난 뒤 원어민 음성을 들려준다.
+      const activeLesson = lesson, cursor = lesson.cursor;
+      setTimeout(() => { if (lesson === activeLesson && lesson.cursor === cursor && build.isConnected) speak(s, d, side); }, state.sfx === false ? 0 : 380);
+    }
+    openSheet({ good: right, title: right ? "정답이에요" : "아쉬워요, 정답은 이거예요", teacher: "ammiya", combo, recovered,
       body: `<div style="display:flex;align-items:center;gap:10px">${playBtn(d, side)}${ar(esc(s[d][side]))}</div><p style="margin-top:6px">${esc(s[d].blank)} = ${esc(s.gloss[s[d].blank] || "")}</p>` });
   });
   draw();
@@ -1006,10 +1068,16 @@ function screenSettings() {
       <p class="small muted">푸스하: 아이만 · 이집트: 아슈라프 · 요르단: 야잔<br>AI 생성 음성(Sawtak) · 직접 듣고 검수 완료. 없는 음성은 준비 중으로 표시해요.<br>문장 300개 · 15단원 · 100일 · 검수 완료</p>
     </div>
     <div class="setting"><div class="audio-speed"><label for="audio-speed">음성 재생 속도</label><select id="audio-speed">${RATES.map(value=>`<option value="${value}" ${(state.audioRate || 1) === value ? "selected" : ""}>${value === 1 ? "기본 · 1.0배" : value < 1 ? `느리게 · ${value}배` : `빠르게 · ${value}배`}</option>`).join("")}</select></div></div>
+    <div class="setting"><div class="audio-speed"><label for="sfx">정답·오답 효과음</label><select id="sfx"><option value="on" ${state.sfx !== false ? "selected" : ""}>켜기</option><option value="off" ${state.sfx === false ? "selected" : ""}>끄기</option></select></div></div>
     ${['localhost', '127.0.0.1', '[::1]'].includes(location.hostname) ? `<div class="setting"><p>로컬 검수 · 진도 저장 없이 모든 일차 확인</p><a class="btn ghost" href="admin.html?day=8">관리자 검수 열기</a></div>` : ''}`, { tab: "settings" });
   document.getElementById("audio-speed").addEventListener("change", e => {
     state.audioRate = Number(e.target.value);
     saveState();
+  });
+  document.getElementById("sfx").addEventListener("change", e => {
+    state.sfx = e.target.value === "on";
+    saveState();
+    sfx(true); // 켰을 때 바로 들려준다
   });
   document.getElementById("switch").addEventListener("click", () => {
     state.dialect = other;
