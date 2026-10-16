@@ -20,15 +20,15 @@ body{background:#e4e7e1}.tabbar{background:#f4f3f1ef;backdrop-filter:blur(12px);
 .app[data-country="jordan"] .world-picker:before{transform:translateX(calc(100% + 4px))}
 .world-picker button{border:0;background:none;border-radius:11px;min-height:48px;color:var(--muted);font-weight:600;cursor:pointer}.world-picker button[aria-pressed="true"]{color:#f4f3f1}.world-picker span{font:19px Amiri,serif;margin-left:8px}
 .world-review{margin:20px 24px 0;padding:12px 15px;width:calc(100% - 48px);display:flex;justify-content:space-between;align-items:center;border:1px solid var(--hair);border-radius:12px;background:#f4f3f1dd;font-size:12px;cursor:pointer}.world-review svg{width:16px;height:16px}
-.world-unit{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:26px 26px 8px}.world-unit label{font-size:10px;letter-spacing:.15em;font-weight:700;color:var(--clay-deep)}.world-unit h1{font-size:22px;letter-spacing:-.04em;margin-top:6px}.world-unit select{max-width:140px;width:42%;min-height:44px;border:0;border-bottom:1px solid var(--hair);background:#f4f3f188;color:var(--muted);font:11px var(--font);border-radius:5px;padding:5px;cursor:pointer}
-.world-progress{display:flex;justify-content:flex-end;align-items:center;gap:9px;padding:0 26px 16px;font-size:11px;color:var(--muted)}.world-progress>div{display:flex;gap:4px;width:105px}.world-progress i{height:5px;flex:1;background:var(--hair);border-radius:4px}.world-progress i.done{background:var(--henna)}
+.world-unit{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:26px 26px 8px}.world-unit label{font-size:10px;letter-spacing:.15em;font-weight:700;color:var(--clay-deep)}.world-unit h1{font-size:22px;letter-spacing:-.04em;margin-top:6px}.world-unit select{max-width:140px;width:42%;min-height:44px;border:0;border-bottom:1px solid var(--hair);background:#f4f3f188;color:var(--muted);font:11px var(--font);border-radius:var(--r-sm);padding:5px;cursor:pointer}
+.world-progress{display:flex;justify-content:flex-end;align-items:center;gap:9px;padding:0 26px 16px;font-size:11px;color:var(--muted)}.world-progress>div{display:flex;gap:4px;width:105px}.world-progress i{height:6px;flex:1;background:var(--hair);border-radius:var(--r-pill)}.world-progress i.done{background:var(--henna)}
 .world-path{position:relative;margin:0 20px}.world-route{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:var(--hair);stroke-width:7;stroke-linecap:round;filter:drop-shadow(0 1px 0 #fff9)}.world-route .travelled{stroke:var(--gold);stroke-dasharray:1;animation:world-route-fill 1s var(--ease) both}
 .world-node{position:absolute;width:72px;transform:translateX(-50%);text-align:center;z-index:2;animation:world-node-in .65s cubic-bezier(.2,.85,.3,1.15) both;animation-delay:var(--delay)}
 .world-node>button{width:64px;height:60px;border:1px solid #f4f3f180;border-radius:23px;background:var(--hair);color:#7b7168;box-shadow:0 6px 0 #beaa98,0 12px 18px #44291220;display:flex;justify-content:center;align-items:center;cursor:pointer;transition:transform .25s var(--ease),box-shadow .25s}
 .world-node svg,.world-next svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.world-node>small{display:block;font-size:10px;margin-top:14px;color:var(--muted);letter-spacing:.04em;text-shadow:0 1px 7px #f4f3f1}
 .world-node.completed>button{background:var(--henna);color:var(--card);box-shadow:0 6px 0 var(--henna-deep),0 12px 18px #293b3424}.world-node.current>button{background:var(--clay);color:var(--on-clay);box-shadow:0 7px 0 var(--clay-deep),0 13px 24px #8b58452b}.world-node.current:before{content:"";position:absolute;inset:-8px auto auto -8px;width:80px;height:80px;border:1px solid var(--clay);opacity:.5;border-radius:30px;pointer-events:none}.world-node.current small{color:var(--clay-deep);font-weight:700}.world-node button:disabled{cursor:default}.world-node button:not(:disabled):hover{transform:translateY(-3px)}.world-node button:not(:disabled):active{transform:translateY(5px);box-shadow:0 2px 0 var(--henna-deep)}
 .world-node.current svg{animation:world-icon-nudge 3.8s ease-in-out infinite}.world-node.unlocked>button{animation:world-unlock .8s cubic-bezier(.2,.85,.3,1.15) .4s both}
-.world-day-card{position:absolute;z-index:3;width:45%;padding:17px 15px;border:1px solid var(--hair);border-radius:13px;background:#f4f3f1f2;box-shadow:0 9px 28px #4f321224;animation:world-title .7s var(--ease) both}.world-day-card.right{right:0}.world-day-card.left{left:0}.world-day-card>small{font-size:10px;color:var(--clay-deep);font-weight:600}.world-day-card h2{font-size:16px;margin:7px 0 6px}.world-day-card p{font-size:11px;color:var(--muted);line-height:1.6}.world-day-card>button{width:100%;min-height:44px;margin-top:13px;padding:10px 12px;border:0;border-radius:7px;background:var(--clay);color:var(--on-clay);display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font);box-shadow:0 3px 0 var(--clay-deep);cursor:pointer}.world-day-card>button:hover{filter:brightness(1.07)}.world-day-card svg{width:15px;height:15px}
+.world-day-card{position:absolute;z-index:3;width:45%;padding:17px 15px;border:1px solid var(--hair);border-radius:var(--r-lg);background:#f4f3f1f2;box-shadow:0 9px 28px #4f321224;animation:world-title .7s var(--ease) both}.world-day-card.right{right:0}.world-day-card.left{left:0}.world-day-card>small{font-size:10px;color:var(--clay-deep);font-weight:600}.world-day-card h2{font-size:16px;margin:7px 0 6px}.world-day-card p{font-size:11px;color:var(--muted);line-height:1.6}.world-day-card>button{width:100%;min-height:44px;margin-top:13px;padding:10px 12px;border:0;border-radius:var(--r-sm);background:var(--clay);color:var(--on-clay);display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font);box-shadow:0 3px 0 var(--clay-deep);cursor:pointer}.world-day-card>button:hover{filter:brightness(1.07)}.world-day-card svg{width:15px;height:15px}
 .world-next{margin:8px 24px 24px;padding:22px 20px;display:flex;align-items:center;gap:14px;background:#f4f3f1c9;border:1px solid #f4f3f180;border-radius:14px;color:var(--muted)}.world-next>svg:first-child{background:var(--hair);padding:10px;width:43px;height:43px;border-radius:13px}.world-next>svg:last-child{margin-left:auto;width:16px;height:16px}.world-next small{font-size:10px;letter-spacing:.08em}.world-next h2{font-size:16px;margin-top:5px}.world-credit{font-size:10px;color:var(--muted);line-height:1.8;padding:0 24px 15px}.world-credit a{color:inherit}.world-credit summary{cursor:pointer}
 @keyframes world-photo{from{opacity:.35;transform:scale(1.075)}to{opacity:1;transform:scale(1.025)}}
 @keyframes world-title{from{opacity:0;translate:0 10px}to{opacity:1;translate:0 0}}
@@ -111,3 +111,83 @@ body{background:#e4e7e1}.tabbar{background:#f4f3f1ef;backdrop-filter:blur(12px);
 .btn:disabled{opacity:.45;cursor:default}
 .build-hint{min-height:1.4em;margin-top:12px;font-size:14px;color:#a0442e;text-align:center}
 .load-error{max-width:420px;margin:18vh auto 0;padding:0 24px;text-align:center}.load-error h1{font:700 22px var(--serif);margin-bottom:12px}.load-error p{font-size:15px;line-height:1.7;color:var(--ink2);margin-bottom:22px}
+/* 2026-10-16 정답·오답 피드백 연출: 아이콘 머리줄, 연속 정답 표시, 고양이 선생님 반응 */
+.fb-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.sheet .t{display:flex;align-items:center;gap:9px}
+.fb-icon{display:inline-grid;place-items:center;width:28px;height:28px;flex:none;border-radius:50%;background:var(--ok);color:#fff;animation:fb-icon .5s var(--spring) .1s both}
+.fb-icon svg{width:17px;height:17px}.fb-icon path{fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.sheet.bad .fb-icon{background:var(--bad)}
+.combo{display:inline-flex;align-items:center;gap:4px;padding:4px 10px 4px 8px;border-radius:999px;background:#f4e3b8;color:#7d5d27;font-size:12.5px;font-weight:800;animation:fb-icon .55s var(--spring) .25s both}
+.combo svg{width:14px;height:14px;color:#d9822b}
+.sheet .teacher.react-good img{animation:cat-hop .7s cubic-bezier(.3,1.4,.5,1) both}
+.sheet .teacher.react-bad img{transform-origin:50% 90%;animation:cat-droop .8s var(--ease) both}
+.sheet .teacher .say{animation:teacher-pop .45s var(--ease) .18s both}
+.prog.hit i{animation:prog-hit .6s var(--ease)}
+.build.bad{animation:shake .5s}
+@keyframes fb-icon{from{opacity:0;transform:scale(.3) rotate(-25deg)}to{opacity:1;transform:none}}
+@keyframes cat-hop{0%{opacity:0;transform:translateY(12px) scale(.88)}45%{opacity:1;transform:translateY(-12px) scale(1.06)}70%{transform:translateY(0) scale(.97,1.03)}100%{transform:none}}
+@keyframes cat-droop{0%{opacity:0;transform:translateY(8px)}40%{opacity:1;transform:rotate(-7deg)}70%{transform:rotate(3deg)}100%{transform:none}}
+@keyframes prog-hit{50%{filter:brightness(1.25) saturate(1.3);box-shadow:0 0 0 3px #f4e3b8}}
+@media(prefers-reduced-motion:reduce){.fb-icon,.combo,.sheet .teacher img,.sheet .teacher .say,.prog.hit i,.build.bad{animation:none}}
+/* 2026-10-16 하트(목숨): 레슨 머리줄 칩, 잃을 때 흔들림, 하트 소진·회복 화면 */
+.heart-chip{position:relative;flex:none;display:inline-flex;align-items:center;gap:4px;height:32px;padding:0 10px 0 8px;margin-right:2px;border:1px solid var(--hair);border-radius:16px;background:#fff;color:#c8463a;font:800 14px var(--font);font-variant-numeric:tabular-nums}
+.heart-chip svg{width:17px;height:17px}
+.heart-chip.empty{color:var(--muted)}
+.heart-chip.lost svg{animation:heart-break .6s var(--ease)}
+.heart-chip .minus{position:absolute;top:-6px;right:-4px;font-size:12px;font-weight:800;color:#c8463a;pointer-events:none;animation:heart-minus .9s var(--ease) forwards}
+.mast-heart{display:inline-flex;align-items:center;gap:3px;margin-right:8px}
+.sheet .out-note{display:flex;align-items:center;gap:6px;margin-top:10px;font-size:13.5px;font-weight:700;color:var(--bad)}.sheet .out-note svg{width:15px;height:15px;flex:none}
+.heart-row{display:flex;justify-content:center;gap:8px;margin-top:28px;color:#ddd2c6}.heart-row svg{width:32px;height:32px;display:block}
+.heart-row .full{color:#c8463a}.heart-row .pop{animation:heart-fill .5s var(--spring) both;animation-delay:calc(var(--i) * 110ms + 250ms)}
+.no-hearts .teacher{text-align:left;margin-top:18px}
+.no-hearts .btn+.btn{margin-top:10px}
+.no-hearts .refill-wait{margin-top:14px}
+@keyframes heart-break{20%{transform:scale(1.35) rotate(-12deg)}45%{transform:scale(.8) rotate(10deg)}70%{transform:scale(1.06)}}
+@keyframes heart-minus{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-22px)}}
+@keyframes heart-fill{from{opacity:0;transform:scale(.2)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.heart-chip.lost svg,.heart-chip .minus,.heart-row .pop{animation:none}}
+/* 2026-10-16 스트릭·하루 목표·레슨 완료 통계 */
+.goal-ring{flex:none;display:block}.goal-ring circle{fill:none;stroke:#e4dbcf;stroke-width:5}
+.goal-ring .fill{stroke:#d39b35;stroke-linecap:round;transition:stroke-dashoffset .9s var(--ease)}
+.world-goal{display:flex;align-items:center;gap:10px;margin:12px 24px 0;padding:7px 12px;border:1px solid var(--hair);border-radius:14px;background:#f4f3f1e8}
+.world-goal>div{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:6px}.world-goal small{font-size:11px;color:var(--muted)}.world-goal b{font-size:14px;color:var(--ink)}.world-goal p{flex-basis:100%;font-size:12px;color:var(--ink2)}
+.world-goal.met .fill{stroke:var(--ok)}
+.world-masthead .cold svg{opacity:.45}
+.done-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:8px;margin-top:20px}
+.done-stats>div{padding:10px 6px 12px;border:2px solid var(--c);border-radius:14px;background:#fff;text-align:center}
+.done-stats small{display:block;margin:-10px -6px 8px;padding:4px 0;background:var(--c);color:#fff;font-size:11px;font-weight:800;border-radius:10px 10px 0 0}
+.done-stats b{font-size:20px;font-weight:800;color:var(--c);font-variant-numeric:tabular-nums}
+.xp-stat{--c:#c88f2c}.acc-stat{--c:var(--ok)}.time-stat{--c:var(--henna)}
+.heart-bonus{display:flex;justify-content:center;align-items:center;gap:6px;margin-top:10px;font-size:13px;font-weight:700;color:#c8463a}.heart-bonus svg{width:15px;height:15px}
+.streak-flame{margin:34px auto 0;width:120px;height:120px;color:#e8832a}.streak-flame svg{width:100%;height:100%;filter:drop-shadow(0 8px 18px #e8832a55)}
+.streak-num{margin-top:4px;font-size:22px;font-weight:800;color:#c86a1c}.streak-num b{font-size:64px;line-height:1;margin-right:2px;display:inline-block}
+.streak-num.bump b{animation:streak-bump .6s var(--spring)}
+.week{display:flex;justify-content:center;gap:8px;margin-top:22px}
+.week span{display:flex;flex-direction:column;align-items:center;gap:5px;font-size:12px;color:var(--muted)}
+.week i{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#ece5db}
+.week .done i{background:#e8832a}.week i svg{width:16px;height:16px}.week i path{fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.week .today{color:var(--ink);font-weight:800}.week .today i{box-shadow:0 0 0 2px #fff,0 0 0 4px #e8832a}
+.streak-screen .teacher,.goal-screen .teacher{text-align:left;margin-top:22px}
+.goal-big{position:relative;width:132px;height:132px;margin:34px auto 0}.goal-big .fill{stroke:var(--ok)}
+.goal-big b{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:34px;font-weight:800;color:var(--ok)}.goal-big small{font-size:12px;color:var(--muted);font-weight:600}
+.goal-big .fill{animation:goal-fill 1.1s var(--ease) .2s both}
+@keyframes goal-fill{from{stroke-dashoffset:125.66}}
+@keyframes streak-bump{0%{transform:translateY(-14px) scale(1.4);opacity:.3}100%{transform:none;opacity:1}}
+@media(prefers-reduced-motion:reduce){.goal-big .fill,.streak-num.bump b{animation:none}}
+/* 2026-10-16 전체 둥글게: 가는 선으로 나누던 구역을 둥근 카드로 */
+.dialogue-preview,.expression-pair,.notes,.recall,.review-hero,.empty,.setting,.setting:last-of-type,.learned{background:var(--card);border:1px solid var(--hair);border-radius:var(--r-lg)}
+.dialogue-preview{padding:0 16px}.dialogue-line:last-child{border-bottom:0}
+.expression-pair{padding:18px 16px}
+.notes{padding:14px 16px}
+.recall{border-left:1px solid var(--hair);padding:20px 18px}
+.review-hero{padding:26px 22px}
+.empty{padding:18px 18px}
+.setting,.setting:last-of-type{padding:18px;margin-top:12px}
+.learned{padding:16px 16px 10px;margin-top:20px}
+.metrics{gap:10px;border-top:0}.metrics div,.metrics div+div{border:0;border-radius:var(--r-md);background:var(--card);padding:18px 16px}
+.seals{gap:8px;border-top:0}.seals .s{border:0;border-radius:var(--r-md);background:var(--card)}
+.hard li,.hard li:first-child,.hard li:last-child{border:0;border-radius:var(--r-md);background:var(--card);padding:14px 16px;margin-top:8px}
+.sheet .dialogue-preview,.answer .dialogue-preview{margin-top:14px}
+.btn.ghost,.btn.line{border-radius:var(--r-md)}
+.wpop{border-radius:var(--r-md)}
+.learned .row:last-child{border-bottom:0}
