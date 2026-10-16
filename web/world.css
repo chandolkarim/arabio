@@ -191,3 +191,53 @@ body{background:#e4e7e1}.tabbar{background:#f4f3f1ef;backdrop-filter:blur(12px);
 .btn.ghost,.btn.line{border-radius:var(--r-md)}
 .wpop{border-radius:var(--r-md)}
 .learned .row:last-child{border-bottom:0}
+/* 2026-10-16 로딩 화면: 고양이 들썩임, 차오르는 막대, 방언 한마디 */
+.splash{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;background:#f4f3f1}
+.splash-cats{display:flex;gap:6px}.splash-cats img{width:96px;height:96px;animation:splash-bob .55s ease-in-out infinite alternate}
+.splash-cats img+img{animation-delay:.27s}
+.splash-mark{font:900 30px var(--serif);letter-spacing:-.06em;color:var(--henna)}
+.splash-bar{width:160px;height:8px;border-radius:999px;background:#e4dbcf;overflow:hidden}
+.splash-bar i{display:block;height:100%;width:0;border-radius:inherit;background:var(--henna);animation:splash-load 1.4s cubic-bezier(.2,.8,.2,1) forwards}
+.splash-tip{min-height:3.2em;max-width:290px;font-size:13.5px;line-height:1.6;text-align:center;color:var(--ink2)}
+.splash-tip.swap{animation:tip-in .45s var(--ease)}
+.splash.done .splash-bar i{animation:none;width:100%;transition:width .25s}
+.splash.done .splash-cats img{animation:cat-jump .5s cubic-bezier(.3,1.5,.5,1)}
+.splash.done{animation:splash-out .5s var(--ease) .2s forwards;pointer-events:none}
+@keyframes splash-bob{from{transform:translateY(0) rotate(-2deg)}to{transform:translateY(-10px) rotate(2deg)}}
+@keyframes splash-load{to{width:86%}}
+@keyframes tip-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes splash-out{to{opacity:0;visibility:hidden;transform:scale(1.04)}}
+/* 처음 화면: 떠다니는 인사말, 떨어지는 고양이, 타자 말풍선, 눌리는 3D 버튼 */
+.intro{position:relative;padding-top:16px;padding-bottom:28px;gap:10px;overflow:hidden;overflow:clip}
+.intro-sky{position:absolute;inset:0 0 auto;height:240px;pointer-events:none}
+.intro-sky span{position:absolute;padding:4px 11px;border-radius:999px;background:#fff;border:1px solid var(--hair);font:20px Amiri,serif;color:var(--henna);opacity:0;animation:word-in .6s var(--ease) both,word-float 4s ease-in-out infinite alternate;animation-delay:calc(var(--i) * 120ms + 300ms),calc(var(--i) * -700ms)}
+.intro-sky span:nth-child(1){left:5%;top:44px}.intro-sky span:nth-child(2){right:6%;top:30px}.intro-sky span:nth-child(3){left:20%;top:92px;font-size:17px}
+.intro-sky span:nth-child(4){right:18%;top:98px;font-size:17px}.intro-sky span:nth-child(5){left:43%;top:6px}.intro-sky span:nth-child(6){display:none}
+.intro-bubble{position:relative;z-index:1;align-self:center;max-width:300px;margin-top:118px;padding:11px 16px;border:1px solid var(--hair);border-radius:20px;background:#fff;box-shadow:0 6px 18px #293b3414;font-size:15px;line-height:1.55;color:var(--ink);text-align:center;animation:bubble-pop .5s cubic-bezier(.3,1.5,.5,1) .55s both}
+.intro-bubble:after{content:"";position:absolute;left:50%;bottom:-7px;width:13px;height:13px;margin-left:-7px;background:#fff;border-right:1px solid var(--hair);border-bottom:1px solid var(--hair);transform:rotate(45deg);transition:left .3s var(--ease)}
+.intro-bubble[data-who="kkuku"]:after{left:30%}.intro-bubble[data-who="akkung"]:after{left:70%}
+.intro-bubble b{color:var(--henna)}
+.typed{display:inline-block;clip-path:inset(0 100% 0 0);animation:typing .9s steps(26,end) .8s forwards}
+.intro-bubble[data-who] .typed,.intro-cat.cheer~* .typed{animation-delay:0s}
+.intro-cats{position:relative;z-index:1;justify-content:center;gap:14px;margin:4px 0 0}
+.intro-cat{display:flex;flex-direction:column;align-items:center;padding:0;border:0;background:none;cursor:pointer;animation:cat-drop .8s cubic-bezier(.3,1.45,.5,1) both;animation-delay:calc(var(--i) * 170ms + 120ms);-webkit-tap-highlight-color:transparent}
+.intro-cat img{width:108px;height:108px;display:block;animation:idle-bob 2.4s ease-in-out infinite;animation-delay:calc(var(--i) * -1.2s)}
+.intro-cat.hop img,.intro-cat.cheer img{animation:cat-jump .55s cubic-bezier(.3,1.5,.5,1)}
+.intro-cat.cheer img{animation-iteration-count:2}
+.intro-cat .name{font-size:14px;font-weight:700;color:var(--ink)}.intro-cat small{display:block;font-size:11px;font-weight:500;color:var(--muted)}
+.intro-cat:focus-visible{outline:2px solid var(--henna);outline-offset:4px;border-radius:18px}
+.intro .intro-mark,.intro h1,.intro-body{position:relative;z-index:1}
+.intro-start{box-shadow:0 5px 0 var(--henna-deep);transition:translate .12s,box-shadow .12s;animation:start-rise .6s cubic-bezier(.3,1.4,.5,1) .95s both,start-nudge .9s ease-in-out 2.4s 2}
+.intro-start:hover{box-shadow:0 5px 0 var(--henna-deep)}
+.intro-start:active,.intro-start:disabled{translate:0 5px;box-shadow:0 0 0 var(--henna-deep)}
+@keyframes word-in{from{opacity:0;transform:scale(.6)}to{opacity:.85;transform:none}}
+@keyframes word-float{from{translate:0 0}to{translate:0 -10px}}
+@keyframes bubble-pop{from{opacity:0;transform:translateY(10px) scale(.85)}to{opacity:1;transform:none}}
+@keyframes typing{to{clip-path:inset(0 0 0 0)}}
+@keyframes cat-drop{0%{opacity:0;transform:translateY(-70px) scale(.85)}60%{opacity:1;transform:translateY(6px) scale(1.05,.93)}80%{transform:translateY(-3px) scale(.98,1.02)}100%{transform:none}}
+@keyframes idle-bob{50%{transform:translateY(-6px) rotate(1.5deg)}}
+@keyframes cat-jump{0%{transform:none}35%{transform:translateY(-26px) scale(1.06,.96) rotate(-4deg)}65%{transform:translateY(0) scale(1.06,.92)}100%{transform:none}}
+@keyframes start-rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes start-nudge{50%{transform:scale(1.03)}}
+@media(prefers-reduced-motion:reduce){.splash-cats img,.splash-bar i,.splash-tip.swap,.intro-sky span,.intro-bubble,.typed,.intro-cat,.intro-cat img,.intro-start{animation:none!important;opacity:1;clip-path:none}.intro-sky span{opacity:.85}}
+.intro h1{font-size:24px}.intro-body{font-size:15px;line-height:1.7}.intro .btn{margin-top:8px}

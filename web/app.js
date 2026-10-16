@@ -628,21 +628,55 @@ function teacher(who, mood, text, cls = "") {
 
 // ---------- 첫 방문 안내: 누구를 위한 앱인지 ----------
 
+// 처음 화면: 고양이가 통통 떨어지며 등장하고, 말풍선이 타자 치듯 나온다. 고양이를 누르면 뛰며 한마디 한다.
+const INTRO_SAY = {
+  kkuku: ["안녕하세요, 푸스하 선생님 꾸꾸예요.", "표준 아랍어는 제가 맡을게요.", "أهلاً وسهلاً! 반가워요."],
+  akkung: ["나는 암미야 담당 아꿍!", "현지에서 진짜 쓰는 말 알려 줄게.", "إزيك؟ 잘 지냈어?"],
+};
+const INTRO_WORDS = ["مرحبا", "أهلاً", "إزيك؟", "كيفك؟", "يلا", "تمام"];
+
 function screenIntro() {
   show(`
     <section class="intro">
-      <div class="intro-cats in"><figure><img src="assets/teachers/kkuku-smile.webp" alt="푸스하 선생님 꾸꾸" width="120" height="120"><figcaption>꾸꾸<small>푸스하 선생님</small></figcaption></figure><figure><img src="assets/teachers/akkung-smile.webp" alt="암미야 선생님 아꿍" width="120" height="120"><figcaption>아꿍<small>암미야 선생님</small></figcaption></figure></div>
-      <p class="intro-mark in">아라비오</p>
-      <h1 class="in" style="--d:1">문법과 단어는 아는데,<br>막상 말하려면 막히나요?</h1>
-      <p class="intro-body in" style="--d:2">아라비오는 푸스하를 배운 분이 같은 문장을 이집트·요르단 방언으로 비교하며, <b>실제로 꺼내 쓸 수 있는 문장</b>으로 익히도록 만든 앱이에요.</p>
-      <button class="btn henna in" style="--d:3" id="intro-start">시작하기 ${ICON.arrow}</button>
-      <p class="intro-note in" style="--d:4">푸스하가 처음이라면 기초 문법을 먼저 익히고 오면 훨씬 수월해요.</p>
+      <div class="intro-sky" aria-hidden="true">${INTRO_WORDS.map((w, i) => `<span lang="ar" dir="rtl" style="--i:${i}">${w}</span>`).join("")}</div>
+      <p class="intro-bubble" id="intro-bubble"><span class="typed">안녕! 우리는 <b>꾸꾸</b>랑 <b>아꿍</b>이야. 같이 방언으로 말해 보자!</span></p>
+      <div class="intro-cats">
+        <button class="intro-cat" data-cat="kkuku" style="--i:0" aria-label="푸스하 선생님 꾸꾸 누르기"><img src="assets/teachers/kkuku-smile.webp" alt="" width="120" height="120"><span class="name">꾸꾸<small>푸스하 선생님</small></span></button>
+        <button class="intro-cat" data-cat="akkung" style="--i:1" aria-label="암미야 선생님 아꿍 누르기"><img src="assets/teachers/akkung-smile.webp" alt="" width="120" height="120"><span class="name">아꿍<small>암미야 선생님</small></span></button>
+      </div>
+      <p class="intro-mark in" style="--d:14">아라비오</p>
+      <h1 class="in" style="--d:15">문법과 단어는 아는데,<br>막상 말하려면 막히나요?</h1>
+      <p class="intro-body in" style="--d:16">아라비오는 푸스하를 배운 분이 같은 문장을 이집트·요르단 방언으로 비교하며, <b>실제로 꺼내 쓸 수 있는 문장</b>으로 익히도록 만든 앱이에요.</p>
+      <button class="btn henna intro-start" id="intro-start">시작하기 ${ICON.arrow}</button>
+      <p class="intro-note in" style="--d:20">푸스하가 처음이라면 기초 문법을 먼저 익히고 오면 훨씬 수월해요.</p>
     </section>`, { tabs: false });
-  document.getElementById("intro-start").addEventListener("click", () => {
+  const bubble = document.getElementById("intro-bubble");
+  const said = { kkuku: 0, akkung: 0 };
+  // 눌렀을 때 표정이 바로 바뀌도록 미리 받아 둔다.
+  for (const who of ["kkuku", "akkung"]) for (const mood of ["praise", "celebrate"]) new Image().src = `assets/teachers/${who}-${mood}.webp`;
+  app.addEventListener("animationend", e => { if (e.animationName === "cat-jump") e.target.closest(".intro-cat")?.classList.remove("hop"); });
+  app.querySelectorAll(".intro-cat").forEach(cat => cat.addEventListener("click", () => {
+    const who = cat.dataset.cat;
+    cat.classList.remove("hop");
+    void cat.offsetWidth; // 연달아 눌러도 다시 뛴다
+    cat.classList.add("hop");
+    cat.querySelector("img").src = `assets/teachers/${who}-praise.webp`;
+    bubble.dataset.who = who;
+    bubble.innerHTML = `<span class="typed">${mixed(INTRO_SAY[who][said[who]++ % INTRO_SAY[who].length])}</span>`;
+  }));
+  document.getElementById("intro-start").addEventListener("click", (e) => {
+    if (e.currentTarget.disabled) return;
+    e.currentTarget.disabled = true;
     state.introSeen = true;
     progress();
     saveState();
-    screenHome();
+    // 두 고양이가 신나서 뛰고 난 뒤 홈으로
+    app.querySelectorAll(".intro-cat").forEach(cat => {
+      cat.querySelector("img").src = `assets/teachers/${cat.dataset.cat}-celebrate.webp`;
+      cat.classList.add("cheer");
+    });
+    bubble.innerHTML = `<span class="typed">좋아, 출발!</span>`;
+    setTimeout(screenHome, window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 650);
   });
 }
 
@@ -1314,6 +1348,43 @@ const SCREENS = { home: screenHome, review: screenReview, records: screenRecords
 
 // ---------- 시작 ----------
 
+// 로딩 화면: 고양이가 들썩이고 막대가 차오르는 동안 방언 한마디를 돌려 보여 준다.
+// 너무 빨리 끝나 깜빡이지 않게 최소 0.9초는 보여 주고, 끝나면 고양이가 뛰며 사라진다.
+const SPLASH_TIPS = [
+  "이집트에선 ‘지금’을 دلوقتي(딜와으티)라고 해요",
+  "요르단에선 ‘뭐?’를 شو(슈)라고 해요",
+  "‘어떻게 지내?’ 이집트는 عامل إيه, 요르단은 كيفك",
+  "이집트에선 ‘알았어, 좋아’를 ماشي(마시)라고 해요",
+  "요르단에선 ‘지금’을 هلأ(할라)라고 해요",
+];
+
+function startSplash() {
+  const el = document.getElementById("splash");
+  const shownAt = performance.now();
+  const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const tip = document.getElementById("splash-tip");
+  let i = Math.floor(Math.random() * SPLASH_TIPS.length);
+  const rotate = () => {
+    if (!tip) return;
+    tip.classList.remove("swap");
+    void tip.offsetWidth;
+    tip.innerHTML = mixed(SPLASH_TIPS[i++ % SPLASH_TIPS.length]);
+    tip.classList.add("swap");
+  };
+  let tipTimer = setTimeout(function loop() { rotate(); tipTimer = setTimeout(loop, 1800); }, 350);
+  return {
+    ready: new Promise(resolve => setTimeout(resolve, Math.max(0, (calm ? 0 : 900) - (performance.now() - shownAt)))),
+    finish() {
+      clearTimeout(tipTimer);
+      if (!el) return;
+      if (calm) { el.remove(); return; }
+      el.classList.add("done");
+      setTimeout(() => el.remove(), 700);
+    },
+    remove() { clearTimeout(tipTimer); el?.remove(); },
+  };
+}
+
 (async function boot() {
   // 새 버전 감지: GitHub Pages는 첫 페이지를 최대 10분 캐시해서, 배포 직후 열면 예전 app.js가 뜰 수 있다.
   // version.txt(캐시 없이)와 이 스크립트의 ?v= 값이 다르면 주소를 바꿔 새 페이지를 한 번 받아 온다.
@@ -1334,7 +1405,7 @@ const SCREENS = { home: screenHome, review: screenReview, records: screenRecords
   }
   ensureLatest();
   // 로딩 → 정상 / 오류(이유 + 할 일 + 다시 시도). 문장 데이터가 없으면 학습을 시작할 수 없으므로 여기서 멈춘다.
-  app.innerHTML = `<p class="loading" role="status">문장을 불러오는 중…</p>`;
+  const splash = startSplash();
   try {
     DATA = await fetch("data/sentences.json", { cache: "no-cache" }).then((r) => {
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
@@ -1342,6 +1413,7 @@ const SCREENS = { home: screenHome, review: screenReview, records: screenRecords
     });
     if (!Array.isArray(DATA?.sentences) || !DATA.sentences.length) throw new Error("empty");
   } catch {
+    splash.remove();
     app.innerHTML = `<section class="load-error" role="alert">
       <h1>문장을 불러오지 못했어요</h1>
       <p>인터넷 연결이 끊겼거나 서버가 잠시 응답하지 않는 것 같아요. 연결을 확인한 뒤 다시 시도해 주세요. 지금까지의 학습 기록은 이 기기에 그대로 남아 있어요.</p>
@@ -1352,6 +1424,8 @@ const SCREENS = { home: screenHome, review: screenReview, records: screenRecords
   }
   if ("speechSynthesis" in window) speechSynthesis.getVoices();
   if (!state.dialect) state.dialect = "egypt";
+  await splash.ready;
   if (state.introSeen) screenHome();
   else screenIntro();
+  splash.finish();
 })();
