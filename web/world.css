@@ -246,3 +246,10 @@ body{background:#e4e7e1}.tabbar{background:#f4f3f1ef;backdrop-filter:blur(12px);
 .world-panel .world-picker{margin:0;border:0;border-radius:0;background:none;box-shadow:none}
 .world-panel .world-goal{margin:0;padding:10px 16px 12px;border:0;border-top:1px solid #decebf99;border-radius:0;background:none}
 @media(max-width:360px){.world-panel{margin-left:18px;margin-right:18px}.world-panel .world-picker{margin:0}}
+/* 2026-10-16 진도 백업 카드 */
+.backup-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.backup-actions .btn{margin-top:0;min-height:46px;font-size:13px}
+.restore{margin-top:12px}.restore summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--henna);padding:6px 0}
+.restore textarea{width:100%;margin-top:8px;padding:10px 12px;border:1px solid var(--hair);border-radius:var(--r-sm);background:#fff;font:12px/1.5 ui-monospace,monospace;color:var(--ink);resize:vertical;word-break:break-all}
+.backup-status{min-height:1.2em;margin-top:10px;font-size:12.5px;line-height:1.6;color:var(--ok)}.backup-status.bad{color:var(--bad)}
+.setting a.btn{text-decoration:none}
+.backup-status:empty{display:none}
