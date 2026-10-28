@@ -1,0 +1,9 @@
+{
+  "name": "arabio",
+  "private": true,
+  "description": "아라비오: 푸스하로 아는 문장을 이집트·요르단 방언으로 익히는 웹앱",
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  }
+}
