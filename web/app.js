@@ -13,6 +13,7 @@ const rateLabel = (r) => `${r.toFixed(1)}×`; // '외웠어요'를 누를 때마
 const DIALECTS = {
   egypt: { name: "이집트", ar: "مصر", en: "EGYPT", city: "카이로", lang: "ar-EG" },
   jordan: { name: "요르단", ar: "الأردن", en: "JORDAN", city: "암만", lang: "ar-JO" },
+  gulf: { name: "사우디", ar: "السعودية", en: "SAUDI", city: "리야드", lang: "ar-SA" },
 };
 // 하트: 연습 문제에서 틀리면 1개 줄고, 3시간마다 1개씩 다시 생긴다. 틀린 문장을 연습하면 가득 찬다.
 const MAX_HEARTS = 5;
@@ -571,7 +572,7 @@ function bindPlay(s, root = app) {
       b.textContent = "음성 준비 중";
       return;
     }
-    b.title = ({ fusha: "아이만 · 푸스하", egypt: "아슈라프 · 이집트", jordan: "야잔 · 요르단" })[variant];
+    b.title = ({ fusha: "아이만 · 푸스하", egypt: "아슈라프 · 이집트", jordan: "야잔 · 요르단", gulf: "파이쌀 · 사우디" })[variant];
     b.setAttribute("aria-label", `${b.title} · ${side} · ${b.dataset.playLabel || "듣기"}`);
     b.onclick = () => speak(s, variant, side, b);
   });
@@ -690,7 +691,7 @@ function screenIntro() {
       </div>
       <p class="intro-mark in" style="--d:14">아라비오</p>
       <h1 class="in" style="--d:15">문법과 단어는 아는데,<br>막상 말하려면 막히나요?</h1>
-      <p class="intro-body in" style="--d:16">아라비오는 푸스하를 배운 분이 같은 문장을 이집트·요르단 방언으로 비교하며, <b>실제로 꺼내 쓸 수 있는 문장</b>으로 익히도록 만든 앱이에요.</p>
+      <p class="intro-body in" style="--d:16">아라비오는 푸스하를 배운 분이 같은 문장을 이집트·요르단·사우디 방언으로 비교하며, <b>실제로 꺼내 쓸 수 있는 문장</b>으로 익히도록 만든 앱이에요.</p>
       <button class="btn henna intro-start" id="intro-start">시작하기 ${ICON.arrow}</button>
       <p class="intro-note in" style="--d:20">푸스하가 처음이라면 기초 문법을 먼저 익히고 오면 훨씬 수월해요.</p>
     </section>`, { tabs: false });
@@ -731,19 +732,26 @@ const HOME_ICON = {
   chat: '<svg viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-6 3V6a2 2 0 0 1 2-2Z"/><path d="M7 9h10M7 13h7"/></svg>',
   lock: '<svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg>',
 };
+// 나라별 홈 배경 사진. 출처는 홈 아래 '사진 출처'에 적는다.
+const LANDMARKS = {
+  egypt: { h: 542, place: "기자 피라미드", alt: "이집트 기자의 피라미드", tag: "CAIRO · EGYPT" },
+  jordan: { h: 1440, place: "페트라 알카즈네", alt: "요르단 페트라의 알카즈네", tag: "AMMAN · JORDAN" },
+  gulf: { h: 720, place: "디리야 앗투라이프", alt: "사우디 리야드 디리야의 흙벽돌 성채 앗투라이프", tag: "RIYADH · SAUDI ARABIA" },
+};
+
 function screenHome() {
   if (!DIALECTS[state.dialect]) state.dialect = "egypt";
   const p = progress(), now = nextDay(), finished = p.completedDays.length >= 100;
   const u = unitOfDay(now), country = state.dialect, due = dueReviews().length;
   show(`
-    <div class="world-scene" aria-hidden="true"><img src="assets/landmarks/${country}.jpg" alt="" width="960" height="${country === "egypt" ? 542 : 1440}"></div>
+    <div class="world-scene" aria-hidden="true"><img src="assets/landmarks/${country}.jpg" alt="" width="960" height="${LANDMARKS[country].h}"></div>
     <header class="world-masthead"><span class="${p.history[today()] ? "" : "cold"}" aria-label="연속 학습 ${streak()}일${p.history[today()] ? "" : ", 오늘은 아직 안 했어요"}">${ICON.flame} ${streak()}일</span><b>아라비오</b><span><span class="mast-heart" aria-label="하트 ${hearts().count}개">${ICON.heart} ${hearts().count}</span>${p.xp} XP</span></header>
-    <section class="world-hero" aria-label="${country === "egypt" ? "기자 피라미드" : "페트라 알카즈네"} 배경">
-      <img src="assets/landmarks/${country}.jpg" alt="${country === "egypt" ? "이집트 기자의 피라미드" : "요르단 페트라의 알카즈네"}" width="960" height="${country === "egypt" ? 542 : 1440}" fetchpriority="high">
-      <div class="world-title"><small>${country === "egypt" ? "CAIRO · EGYPT" : "AMMAN · JORDAN"}</small><div lang="ar" dir="rtl">${DIALECTS[country].ar}</div><p>${DIALECTS[country].name} 아랍어 <span>100일 · 300문장</span></p></div>
+    <section class="world-hero" aria-label="${LANDMARKS[country].place} 배경">
+      <img src="assets/landmarks/${country}.jpg" alt="${LANDMARKS[country].alt}" width="960" height="${LANDMARKS[country].h}" fetchpriority="high">
+      <div class="world-title"><small>${LANDMARKS[country].tag}</small><div lang="ar" dir="rtl">${DIALECTS[country].ar}</div><p>${DIALECTS[country].name} 아랍어 <span>100일 · 300문장</span></p></div>
     </section>
     <div class="world-panel">
-      <div class="world-picker" role="group" aria-label="학습 나라 선택">${Object.entries(DIALECTS).map(([key,d])=>`<button data-country="${key}" aria-pressed="${key === country}">${d.name} <span lang="ar">${d.ar}</span></button>`).join("")}</div>
+      <div class="world-picker" role="group" aria-label="학습 나라 선택" style="--n:${Object.keys(DIALECTS).length};--i:${Object.keys(DIALECTS).indexOf(country)}">${Object.entries(DIALECTS).map(([key,d])=>`<button data-country="${key}" aria-pressed="${key === country}">${d.name}<span lang="ar">${d.ar}</span></button>`).join("")}</div>
       ${goalCard()}
     </div>
     ${due ? `<button class="world-review" id="review">오늘 복습 · ${due}문장 ${ICON.arrow}</button>` : ""}
@@ -751,7 +759,7 @@ function screenHome() {
     <div class="world-progress" id="world-progress"></div></div>
     <section class="world-path" id="path" aria-label="단원 학습 경로"></section>
     <div id="world-next"></div>
-    <details class="world-credit"><summary>사진 출처</summary><a href="https://commons.wikimedia.org/wiki/File:Giza_Pyramids_Panorama.jpg">Giza Pyramids Panorama · Benjamin Inbar</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><br><a href="https://commons.wikimedia.org/wiki/File:Petra_Treasury.jpg">Petra Treasury · David Bjorgen</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a><p>원본 사진에 화면 크롭·색 필터를 적용했습니다.</p></details>`, {tab:"home"});
+    <details class="world-credit"><summary>사진 출처</summary><a href="https://commons.wikimedia.org/wiki/File:Giza_Pyramids_Panorama.jpg">Giza Pyramids Panorama · Benjamin Inbar</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><br><a href="https://commons.wikimedia.org/wiki/File:Petra_Treasury.jpg">Petra Treasury · David Bjorgen</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a><br><a href="https://commons.wikimedia.org/wiki/File:At-Turaif_District_in_ad-Dir%27iyah_(12).jpg">At-Turaif District in ad-Dir'iyah · Radosław Botev</a> · <a href="https://creativecommons.org/licenses/by/3.0/pl/deed.en">CC BY 3.0 PL</a><p>원본 사진에 화면 크롭·색 필터를 적용했습니다.</p></details>`, {tab:"home"});
   app.dataset.country = country;
   renderPath(now, finished, u.unit);
   document.getElementById("review")?.addEventListener("click",screenReview);
@@ -759,11 +767,12 @@ function screenHome() {
   app.querySelectorAll("[data-country]").forEach(button=>button.addEventListener("click",()=>{
     const nextCountry=button.dataset.country;
     if (nextCountry===state.dialect) return;
+    const keys=Object.keys(DIALECTS), step=keys.indexOf(nextCountry)-keys.indexOf(state.dialect);
     homeUnlock=null;
     state.dialect=nextCountry;progress();saveState();screenHome();
     if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
       const pill=app.querySelector(".world-picker");
-      pill.animate([{transform:"translateX("+(nextCountry==="jordan"?-8:8)+"px)"},{transform:"translateX(0)"}],{duration:500,easing:"cubic-bezier(.2,.85,.25,1.12)"});
+      pill.animate([{transform:"translateX("+(step>0?-8:8)+"px)"},{transform:"translateX(0)"}],{duration:500,easing:"cubic-bezier(.2,.85,.25,1.12)"});
     }
   }));
   const hero=app.querySelector(".world-hero");
@@ -1037,7 +1046,7 @@ function stepMeaning(s) {
 
 function stepCompare(s) {
   const d = state.dialect;
-  const other = d === "egypt" ? "jordan" : "egypt";
+  const others = Object.keys(DIALECTS).filter(k => k !== d);
   frame(`<p class="label in">푸스하 → ${DIALECTS[d].name}</p>
     <h2 class="title in" style="--d:1">${esc(s.gloss[s[d].blank] || s.gloss[s.fusha.blank] || "핵심 표현")}</h2>
     ${teacher("ammiya", "smile", `${DIALECTS[d].name}에선 이렇게 말해!`, "in")}
@@ -1049,7 +1058,7 @@ function stepCompare(s) {
     <div class="dialogue-preview in" style="--d:3">${dialogueLines(s, d, true, true)}</div>
     ${(s.tipsByDialect?.[d] || []).length ? `<div class="compare-notes in" style="--d:4"><p class="label">알아두면 좋은 점</p>
       <ul class="notes">${s.tipsByDialect[d].map(n => `<li>${mixed(n)}</li>`).join("")}</ul></div>` : ""}
-    <details class="other"><summary>${DIALECTS[other].name} 표현도 보기</summary>${ar(wordify(s[other].A))}${ar(wordify(s[other].B))}</details>
+    <details class="other"><summary>${others.map(o => DIALECTS[o].name).join("·")} 표현도 보기</summary>${others.map(o => `<p class="label">${DIALECTS[o].name}</p>${ar(wordify(s[o].A))}${ar(wordify(s[o].B))}`).join("")}</details>
     <button class="btn henna" style="margin-top:24px" id="go">${lesson.index === lesson.list.length - 1 ? "연습 시작" : "다음 푸스하 대화"} ${ICON.arrow}</button>`);
   document.getElementById("go").addEventListener("click", next);
 }
@@ -1344,7 +1353,7 @@ function screenRecords() {
 
 function screenSettings() {
   window.onscroll = null;
-  // 방언은 홈 위쪽의 이집트·요르단 버튼으로 바꾼다. 설정에서는 지금 방언의 진도만 다룬다.
+  // 방언은 홈 위쪽의 나라 버튼(이집트·요르단·사우디)으로 바꾼다. 설정에서는 지금 방언의 진도만 다룬다.
   show(`
     <div class="page-head"><h1>설정</h1><span class="wordmark">아라비오</span></div><p class="page-description">진도와 학습 환경 관리</p>
     <div class="setting in" style="--d:0">
@@ -1364,7 +1373,7 @@ function screenSettings() {
       <p class="backup-status" id="backup-status" role="status" aria-live="polite"></p>
     </div>
     <div class="setting in" style="--d:2">
-      <p class="small muted">푸스하: 아이만 · 이집트: 아슈라프 · 요르단: 야잔<br>AI 생성 음성(Sawtak) · 직접 듣고 검수 완료. 없는 음성은 준비 중으로 표시해요.<br>문장 300개 · 15단원 · 100일 · 검수 완료</p>
+      <p class="small muted">푸스하: 아이만 · 이집트: 아슈라프 · 요르단: 야잔 · 사우디: 파이쌀<br>AI 생성 음성(Sawtak) · 직접 듣고 검수 완료. 없는 음성은 준비 중으로 표시해요.<br>문장 300개 · 15단원 · 100일 · 검수 완료</p>
     </div>
     <div class="setting"><div class="audio-speed"><label for="audio-speed">음성 재생 속도</label><select id="audio-speed">${RATES.map(value=>`<option value="${value}" ${(state.audioRate || 1) === value ? "selected" : ""}>${value === 1 ? "기본 · 1.0배" : value < 1 ? `느리게 · ${value}배` : `빠르게 · ${value}배`}</option>`).join("")}</select></div></div>
     <div class="setting"><div class="audio-speed"><label for="daily-goal">하루 목표</label><select id="daily-goal">${DAILY_GOALS.map(xp => `<option value="${xp}" ${dailyGoal() === xp ? "selected" : ""}>${xp} XP · 대화 ${xp / XP_PER_SENTENCE}개</option>`).join("")}</select></div></div>
@@ -1453,6 +1462,8 @@ const SPLASH_TIPS = [
   "‘어떻게 지내?’ 이집트는 عامل إيه, 요르단은 كيفك",
   "이집트에선 ‘알았어, 좋아’를 ماشي(마시)라고 해요",
   "요르단에선 ‘지금’을 هلأ(할라)라고 해요",
+  "사우디에선 ‘뭐?’를 وش(위시)라고 해요",
+  "사우디에선 ‘아주’를 مرة(마르라)라고 해요",
 ];
 
 function startSplash() {

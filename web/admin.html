@@ -52,7 +52,7 @@ body{display:block;max-width:760px;margin:auto;padding:24px 20px 60px}.review-he
   };
   document.addEventListener('click', e => { const w = e.target.closest('.w'); if (w) w.classList.contains('on') ? hideGloss() : showGloss(w); else hideGloss(); });
   document.addEventListener('keydown', e => { const w = e.target.closest?.('.w'); if (w && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); showGloss(w); } if (e.key === 'Escape') hideGloss(); });
-  const names = {fusha:'푸스하 · 아이만',egypt:'이집트 · 아슈라프',jordan:'요르단 · 야잔'};
+  const names = {fusha:'푸스하 · 아이만',egypt:'이집트 · 아슈라프',jordan:'요르단 · 야잔',gulf:'사우디 · 파이쌀'};
   try {
     const data = await fetch('data/sentences.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error();return r.json();});
     W = data.words || {}; P = data.phrases || {};

@@ -55,11 +55,12 @@ SRC = HERE / "sentences_300.csv"
 WORDS = HERE / "word_gloss.csv"  # 단어를 누르면 보이는 뜻 (발음 기호를 뺀 형태 → 한국어 뜻)
 TIPS = HERE / "tips_rewrite.csv"  # 원래 설명 → 형태가 보이게 고쳐 쓴 설명 (빈칸이면 뺌)
 PHRASES = HERE / "phrase_gloss.csv"  # 숙어·굳은 표현은 한 덩어리로 뜻을 보여 준다
+GULF = HERE / "gulf_300.csv"  # 걸프(사우디) 문장 · 핵심 표현 · 알아두면 좋은 점
 WEB = HERE / "web"
 OUT = WEB / "data" / "sentences.json"
 AUDIO = WEB / "audio"
 
-VARIANTS = {"fusha": "푸스하", "egypt": "이집트", "jordan": "요르단"}
+VARIANTS = {"fusha": "푸스하", "egypt": "이집트", "jordan": "요르단", "gulf": "걸프"}
 
 
 def options(row, ko_name):
@@ -69,6 +70,9 @@ def options(row, ko_name):
 def main():
     REWRITE.update(load_rewrite())
     rows = list(csv.DictReader(SRC.open(encoding="utf-8-sig")))
+    gulf = {r["id"]: r for r in csv.DictReader(GULF.open(encoding="utf-8-sig"))}
+    for r in rows:
+        r.update(gulf[r["id"]])
     audio_files = {p.name for p in AUDIO.iterdir() if p.suffix in {".m4a", ".mp3", ".wav"}} if AUDIO.exists() else set()
 
     sentences = []
@@ -89,7 +93,8 @@ def main():
             "memo": r["메모"],
             "memosByDialect": split_notes(r["메모"]),
             "tipsByDialect": {d: tips(split_notes(r["바뀐부분"]).get(d, []) + split_notes(r["메모"]).get(d, []))
-                              for d in ("egypt", "jordan")},
+                              for d in ("egypt", "jordan")}
+                             | {"gulf": [t for t in r["알아두면_좋은_점_걸프"].split(" ;; ") if t]},
             "status": r["상태"],
             "gloss": json.loads(r["보기_뜻"]),
         }

@@ -1,7 +1,7 @@
 {
   "expected": 1800,
-  "verified": 1800,
+  "verified": 2400,
   "missing": 0,
-  "charged_usd": 2.9223,
-  "total_audio_minutes": 84.57
+  "charged_usd": 3.82235,
+  "total_audio_minutes": 108.08
 }

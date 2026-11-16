@@ -21,6 +21,7 @@ VOICES = {
     'fusha': '381f4457-7cc6-5fb4-84e5-f9dd14ac93d3',
     'egypt': '3e88109c-4903-5b09-a250-b43305ea3b82',
     'jordan': '3a2e57a2-5730-5102-8208-77b1997354b8',
+    'gulf': '9cb7b206-d4e2-5278-bd35-9867c85402b6',  # 파이쌀 (사우디)
 }
 BASE = 'https://api.sawtakarabi.ai/v1/'
 LOCK = threading.Lock()
@@ -97,13 +98,13 @@ def valid_wav(path):
         return False
 
 
-def jobs():
+def jobs(variants=VOICES):
     data = json.loads((ROOT / 'web/data/sentences.json').read_text())
     path = ROOT / 'pronunciation_overrides.json'
     overrides = json.loads(path.read_text()) if path.exists() else {}
     result = []
     for s in data['sentences']:
-        for v in VOICES:
+        for v in variants:
             for side in 'AB':
                 name = f'{s["id"]}_{v}_{side}'
                 text = overrides.get(name, s[v][side])
@@ -211,6 +212,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--limit', type=int)
     parser.add_argument('--workers', type=int, default=4)
+    parser.add_argument('--variant', choices=list(VOICES), action='append',
+                        help='이 목소리만 만든다 (여러 번 줄 수 있음)')
     args = parser.parse_args()
     STATE.mkdir(parents=True, exist_ok=True)
     AUDIO.mkdir(parents=True, exist_ok=True)
@@ -222,7 +225,7 @@ def main():
         raise SystemExit('Another generator is already running')
     key = load_key()
     account = get(key, 'me')
-    queue = jobs()[:args.limit]
+    queue = jobs(args.variant or VOICES)[:args.limit]
     missing = [j for j in queue if not (STATE / (j[0] + '.json')).exists()]
     estimate = Decimal(sum(len(j[2]) for j in missing)) * Decimal('0.00005')
     balance = Decimal(str(account['balance_usd']))

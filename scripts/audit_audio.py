@@ -14,6 +14,7 @@ def audit():
         'fusha': '381f4457-7cc6-5fb4-84e5-f9dd14ac93d3',
         'egypt': '3e88109c-4903-5b09-a250-b43305ea3b82',
         'jordan': '3a2e57a2-5730-5102-8208-77b1997354b8',
+        'gulf': '9cb7b206-d4e2-5278-bd35-9867c85402b6',
     }
     checked = 0
     charge = 0
@@ -60,7 +61,7 @@ def audit():
     if missing:
         print('First missing:', ', '.join(missing[:10]))
         raise SystemExit(1)
-    assert checked == 1800
+    assert checked == 2400
     (ROOT / 'samples/generation/audit-report.txt').write_text(json.dumps(report, indent=2) + '\n')
 
 
