@@ -508,7 +508,8 @@ function speak(s, variant, side, button = null) {
   }
 }
 
-// ---------- 내 목소리 녹음: 말하기 단계에서 원어민 음성과 비교. 녹음은 이 기기 메모리에만 있고 어디에도 보내지 않는다. ----------
+// ---------- 내 목소리 녹음: 말하기 단계에서 원어민 음성과 비교. 녹음은 이 기기 메모리에만 있다.
+// 사용자가 'AI로 확인하기'를 누를 때만 그 녹음 하나를 /api/check-speech로 보내 받아쓰기·채점하고, 서버는 저장하지 않는다. ----------
 
 const canRecord = typeof navigator !== "undefined" && !!navigator.mediaDevices?.getUserMedia && typeof MediaRecorder !== "undefined";
 let recorder = null;
@@ -536,7 +537,10 @@ async function toggleRecording(id, onChange) {
     if (recorder === rec) recorder = null;
     if (chunks.length && lesson) {
       if (lesson.recordings[id]) URL.revokeObjectURL(lesson.recordings[id]);
-      lesson.recordings[id] = URL.createObjectURL(new Blob(chunks, { type: rec.mimeType || chunks[0].type }));
+      const blob = new Blob(chunks, { type: rec.mimeType || chunks[0].type });
+      lesson.recordings[id] = URL.createObjectURL(blob);
+      (lesson.recordingBlobs ||= {})[id] = blob;
+      if (lesson.checks) delete lesson.checks[id]; // 다시 녹음하면 앞의 채점 결과는 지운다
     }
     onChange();
   };
@@ -560,6 +564,51 @@ function playMine(url, button) {
 function forgetRecordings() {
   stopRecording();
   Object.values(lesson?.recordings || {}).forEach(url => URL.revokeObjectURL(url));
+}
+
+// ---------- 말하기 AI 채점 (오픈하사 Whisper 받아쓰기 + 단어 비교) ----------
+
+const AI_CHECK_URL = "api/check-speech";
+const aiCheckAvailable = () => !/github\.io$/.test(location.hostname); // GitHub Pages에는 서버 함수가 없다
+
+async function checkSpeech(s, d) {
+  const blob = lesson.recordingBlobs?.[s.id];
+  if (!blob) return { error: "먼저 녹음해 주세요." };
+  const form = new FormData();
+  form.append("audio", blob, "speech");
+  form.append("id", s.id);
+  form.append("dialect", d);
+  try {
+    const res = await fetch(AI_CHECK_URL, { method: "POST", body: form, signal: AbortSignal.timeout(25000) });
+    const body = await res.json().catch(() => null);
+    if (res.ok && body && Array.isArray(body.words)) return { data: body };
+    if (res.status === 404) return { error: "이 주소에서는 AI 채점을 쓸 수 없어요. arabio-xi.vercel.app에서 열어 주세요." };
+    return { error: body?.error || `AI 채점에 실패했어요(응답 코드 ${res.status}). 잠시 뒤 다시 눌러 주세요.`, hint: body?.hint };
+  } catch (error) {
+    if (error?.name === "TimeoutError") return { error: "AI가 너무 오래 걸려요. 잠시 뒤 다시 눌러 주세요." };
+    return { error: "서버에 연결하지 못했어요. 인터넷 연결을 확인하고 다시 눌러 주세요." };
+  }
+}
+
+function aiVerdict(score) {
+  if (score >= 85) return { mood: "celebrate", text: "완벽해요! 현지 사람도 바로 알아듣겠어요." };
+  if (score >= 60) return { mood: "praise", text: "거의 다 왔어요! 빨간 단어만 원어민 음성으로 듣고 다시 말해 봐요." };
+  return { mood: "sad", text: "괜찮아요. 원어민 음성을 먼저 듣고 한 번 더 녹음해 봐요." };
+}
+
+function aiResultHtml(data) {
+  const v = aiVerdict(data.score);
+  const ring = 2 * Math.PI * 26;
+  const words = data.words.map(w => `<span class="aw ${w.ok === true ? "ok" : w.ok === false ? "miss" : ""}">${esc(w.word)}</span>`).join(" ");
+  return `<div class="ai-result in" role="status">
+    <div class="ai-top">
+      <div class="ai-score" aria-label="AI 일치도 ${data.score}%"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" class="track"/><circle cx="32" cy="32" r="26" class="bar" style="stroke-dasharray:${ring};stroke-dashoffset:${ring * (1 - data.score / 100)}"/></svg><b>${data.score}<small>%</small></b></div>
+      ${teacher("ammiya", v.mood, v.text, "ai-say")}
+    </div>
+    <p class="ai-label">정답 문장 <span>초록은 맞게 말한 단어, 빨강은 놓친 단어</span></p>
+    <p class="ai-words" dir="rtl" lang="ar">${words}</p>
+    <p class="ai-heard">AI가 들은 말 <span dir="rtl" lang="ar">${esc(data.heard)}</span></p>
+  </div>`;
 }
 
 const playBtn = (variant, side, label = "듣기") => `<button class="play" data-play data-play-label="${esc(label)}" data-variant="${variant}" data-side="${side}" aria-pressed="false">${ICON.play}${label}</button>`;
@@ -1169,20 +1218,49 @@ function stepRecall(s) {
     ${canRecord ? `<div class="mine in" style="--d:3" id="mine" data-sid="${s.id}"></div>` : ""}
     <div class="answer" id="answer"><button class="btn" id="reveal">말해봤어요 · 정답 확인</button></div>`);
   let revealed = false;
+  lesson.checks ||= {};
   const renderMine = () => {
     const box = document.getElementById("mine");
     if (!box || box.dataset.sid !== s.id) return; // 녹음이 끝나기 전에 다음 문장으로 넘어간 경우
 
     const url = lesson.recordings[s.id];
     const recording = recorder?.state === "recording";
-    box.innerHTML = `<button class="btn line rec${recording ? " on" : ""}" id="rec" aria-pressed="${recording}">${recording ? `${ICON.stop}녹음 중 · 멈추기` : `${ICON.mic}${url ? "다시 녹음하기" : "녹음하며 말하기"}`}</button>
-      ${url && !recording ? `<div class="mine-play"><button class="play" data-mine aria-pressed="false">${ICON.play}내 목소리</button>${revealed ? playBtn(d, s.blankSide, "원어민") : ""}</div>` : ""}`;
-    box.querySelector("#rec").addEventListener("click", () => toggleRecording(s.id, renderMine));
+    const check = lesson.checks[s.id];
+    const ai = url && !recording && aiCheckAvailable()
+      ? check?.data ? aiResultHtml(check.data)
+        : `<div class="ai-check">
+            <button class="btn ai-btn${check?.loading ? " loading" : ""}" id="ai-check"${check?.loading ? " disabled aria-busy=\"true\"" : ""}>${check?.loading ? `<span class="ai-spin" aria-hidden="true"></span>AI가 듣는 중…` : "AI로 발음 확인하기"}</button>
+            ${check?.error ? `<p class="ai-error" role="alert">${esc(check.error)}${check.hint ? `<br><small>${esc(check.hint)}</small>` : ""}</p>` : ""}
+            <p class="ai-note">누르면 이 녹음이 AI(오픈하사)로 보내져 받아쓰기에만 쓰이고, 저장되지 않아요.</p>
+          </div>`
+      : "";
+    box.innerHTML = `<button class="btn line rec${recording ? " on" : ""}" id="rec" aria-pressed="${recording}">${recording ? `<span class="rec-wave" aria-hidden="true"></span>${ICON.stop}녹음 중 · 멈추기` : `${ICON.mic}${url ? "다시 녹음하기" : "녹음하며 말하기"}`}</button>
+      ${url && !recording ? `<div class="mine-play"><button class="play" data-mine aria-pressed="false">${ICON.play}내 목소리</button>${revealed ? playBtn(d, s.blankSide, "원어민") : ""}</div>` : ""}${ai}`;
+    box.querySelector("#rec").addEventListener("click", () => { if (!lesson.checks[s.id]?.loading) toggleRecording(s.id, renderMine); });
     box.querySelector("[data-mine]")?.addEventListener("click", e => playMine(url, e.currentTarget));
+    box.querySelector("#ai-check")?.addEventListener("click", async () => {
+      if (lesson.checks[s.id]?.loading) return; // 답이 올 때까지 다시 못 누름
+      stopAudio();
+      const activeLesson = lesson;
+      lesson.checks[s.id] = { loading: true };
+      renderMine();
+      const result = await checkSpeech(s, d);
+      if (lesson !== activeLesson) return; // 기다리는 동안 레슨을 나간 경우
+      lesson.checks[s.id] = result;
+      if (result.data && !revealed) reveal(); // 채점하면 정답 문장도 함께 보여 준다
+      else { renderMine(); suggestRating(); }
+    });
     bindPlay(s, box);
   };
+  // 점수가 높으면 '말할 수 있어요', 낮으면 '헷갈려요'를 강조한다(고르는 것은 사용자)
+  const suggestRating = () => {
+    const score = lesson.checks[s.id]?.data?.score;
+    document.querySelectorAll("#answer [data-rate]").forEach(button => {
+      button.classList.toggle("suggest", score !== undefined && (button.dataset.rate === "1" ? score >= 85 : score < 60));
+    });
+  };
   if (canRecord) renderMine();
-  document.getElementById("reveal").addEventListener("click", () => {
+  const reveal = () => {
     revealed = true;
     stopRecording();
     if (canRecord) renderMine();
@@ -1196,7 +1274,9 @@ function stepRecall(s) {
       lesson.ratings[s.id] = button.dataset.rate === "1" && !lesson.mistakes[s.id];
       next();
     }));
-  });
+    suggestRating();
+  };
+  document.getElementById("reveal").addEventListener("click", reveal);
 }
 
 function finishLesson() {

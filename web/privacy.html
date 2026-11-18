@@ -11,9 +11,9 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261116-gulf">
-<link rel="stylesheet" href="arabio.css?v=20261116-gulf">
-<link rel="stylesheet" href="world.css?v=20261116-gulf">
+<link rel="stylesheet" href="style.css?v=20261118-ai">
+<link rel="stylesheet" href="arabio.css?v=20261118-ai">
+<link rel="stylesheet" href="world.css?v=20261118-ai">
 <style>
   body{display:block;background:#f4f3f1}
   .doc{max-width:600px;margin:0 auto;padding:22px 22px 60px;color:var(--ink)}
@@ -35,7 +35,7 @@
   <a class="back" href="./">← 아라비오로 돌아가기</a>
   <header>
     <img src="assets/icons/icon-192.png" alt="" width="64" height="64">
-    <div><h1>아라비오 소개 · 개인정보 처리방침</h1><p class="meta">시행일 2026년 10월 16일</p></div>
+    <div><h1>아라비오 소개 · 개인정보 처리방침</h1><p class="meta">시행일 2026년 11월 18일</p></div>
   </header>
 
   <section>
@@ -49,7 +49,7 @@
     <ul>
       <li><b>회원가입·로그인이 없고, 개인정보를 수집하지 않아요.</b></li>
       <li>학습 기록은 <b>지금 쓰는 기기의 브라우저에만</b> 저장돼요.</li>
-      <li>녹음한 목소리는 <b>어디에도 보내거나 저장하지 않아요.</b></li>
+      <li>녹음한 목소리는 <b>저장하지 않아요.</b> <b>AI로 발음 확인하기</b>를 누를 때만 그 녹음 하나를 받아쓰기 AI로 보내요.</li>
       <li>광고와 이용 분석 도구를 쓰지 않아요.</li>
     </ul>
   </section>
@@ -62,7 +62,8 @@
 
   <section>
     <h2>2. 마이크와 녹음</h2>
-    <p>말하기 단계에서 <b>녹음하며 말하기</b>를 누를 때만 마이크 권한을 요청해요. 녹음은 원어민 음성과 비교해 듣도록 기기 메모리에만 잠깐 있고, 다음 학습으로 넘어가면 지워져요. 서버로 보내거나 파일로 저장하지 않아요.</p>
+    <p>말하기 단계에서 <b>녹음하며 말하기</b>를 누를 때만 마이크 권한을 요청해요. 녹음은 원어민 음성과 비교해 듣도록 기기 메모리에만 잠깐 있고, 다음 학습으로 넘어가면 지워져요.</p>
+    <p style="margin-top:8px"><b>AI로 발음 확인하기</b>를 누르면 그때만 방금 녹음한 파일 하나를 아라비오 서버 함수(Vercel)를 거쳐 오픈하사(Open AI Service Hub)의 받아쓰기 AI(Whisper)로 보내요. 돌아온 받아쓰기 글은 정답 문장과 단어별로 비교해 점수를 보여 주는 데만 써요. 아라비오는 녹음 파일과 받아쓴 글을 저장하거나 기록(로그)에 남기지 않아요. 누르지 않으면 녹음은 기기 밖으로 나가지 않아요.</p>
   </section>
 
   <section>
@@ -74,6 +75,8 @@
     <h2>4. 이용하는 외부 서비스</h2>
     <ul>
       <li><b>GitHub Pages</b>: 앱을 배포하는 곳이에요. 접속할 때 GitHub가 기술적인 접속 기록을 남길 수 있어요(<a href="https://docs.github.com/ko/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보 처리방침</a>).</li>
+      <li><b>Vercel</b>: 앱을 배포하고, AI 발음 확인 요청을 전달하는 서버 함수를 실행해요(<a href="https://vercel.com/legal/privacy-policy">Vercel 개인정보 처리방침</a>).</li>
+      <li><b>오픈하사(Open AI Service Hub, (재)경북IT융합산업기술원)</b>: <b>AI로 발음 확인하기</b>를 누를 때만 녹음을 받아 글로 받아써요(<a href="https://open.hasa.re.kr">open.hasa.re.kr</a>).</li>
       <li><b>Google Fonts, jsDelivr</b>: 글꼴을 받아 와요. 글꼴을 요청할 때 해당 서비스에 IP 주소 같은 기본 접속 정보가 전달될 수 있어요.</li>
     </ul>
   </section>

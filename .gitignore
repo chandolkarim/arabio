@@ -8,3 +8,7 @@ samples/generation/replacement-active.json
 samples/generation/*.log
 samples/quality-audit/
 samples/audio-prenorm/
+
+# 인증키가 든 로컬 파일은 저장소에 올리지 않습니다 (오픈하사 HASA_API_KEY 등)
+.env*
+!.env.example
