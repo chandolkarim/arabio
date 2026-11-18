@@ -291,3 +291,22 @@ body{background:#e4e7e1}.tabbar{background:#f4f3f1ef;backdrop-filter:blur(12px);
 .ai-heard span{font-family:"Noto Naskh Arabic","Amiri",serif;font-size:17px;color:var(--ink2)}
 .rate .btn.suggest{outline:3px solid color-mix(in srgb,var(--henna) 45%,transparent);outline-offset:2px}
 @media(prefers-reduced-motion:reduce){.rec-wave,.ai-spin{animation:none}.ai-score .bar{transition:none}}
+
+/* ---------- 첫 화면: 한 화면 한 메시지 (2026-11-18) ---------- */
+.intro.intro-clean{min-height:92svh;justify-content:center;align-items:center;text-align:center;gap:0;padding:24px 28px 32px}
+.intro-clean .intro-cats{gap:6px;margin:0 0 18px}
+.intro-clean .intro-cat img{width:116px;height:116px}
+.intro-clean .intro-mark{font:900 46px/1.1 var(--serif);letter-spacing:-.06em;color:var(--henna);margin:0}
+.intro-line{font:700 21px/1.5 var(--serif);letter-spacing:-.04em;color:var(--ink2);margin:12px 0 0}
+.intro-line b{color:var(--ink)}
+.intro-dialects{display:flex;justify-content:center;gap:6px;margin:18px 0 0}
+.intro-dialects span{font-size:12.5px;font-weight:700;letter-spacing:.02em;color:var(--henna);background:color-mix(in srgb,var(--henna) 9%,transparent);border-radius:999px;padding:5px 11px}
+.intro-clean .intro-start{align-self:stretch;margin-top:34px}
+.intro-clean .intro-note{margin-top:14px;font-size:12px}
+.intro-clean .intro-note{word-break:keep-all;text-wrap:balance}
+/* 홈 위쪽 오늘 목표 고리 (사진 위 흰 글자) */
+.mast-goal{display:inline-flex;align-items:center;gap:5px;font-variant-numeric:tabular-nums;font-weight:600}
+.world-masthead .mast-goal svg{width:18px;height:18px}
+.mast-goal .goal-ring circle{stroke:rgb(255 255 255/.35);stroke-width:6}
+.mast-goal .goal-ring .fill{stroke:#f1c66b}
+.mast-goal.met .goal-ring .fill{stroke:#9fe0b4}

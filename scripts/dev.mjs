@@ -16,6 +16,8 @@ const ROOT = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const WEB = join(ROOT, 'web');
 const PORT = Number(process.env.PORT || 3000);
 const MOCK = process.argv.includes('--mock');
+let mockTarget = '';   // 연습 모드: 지금 채점하는 정답 문장
+let SENTENCES = null;  // 연습 모드: 문장 번호 → 문장
 const TYPES = {
   '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8',
   '.mjs': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml',
@@ -101,8 +103,6 @@ function loadEnvFile(path) {
 }
 
 // 연습 모드: open.hasa.re.kr 받아쓰기 요청만 가로채, 정답 문장의 앞 70%만 말한 것처럼 답합니다(맞은 단어·놓친 단어 화면 확인용)
-let mockTarget = '';
-let SENTENCES = null;
 async function rememberMockTarget(request) {
   try {
     const form = await request.formData();

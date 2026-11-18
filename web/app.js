@@ -722,41 +722,28 @@ function teacher(who, mood, text, cls = "") {
 
 // ---------- 첫 방문 안내: 누구를 위한 앱인지 ----------
 
-// 처음 화면: 고양이가 통통 떨어지며 등장하고, 말풍선이 타자 치듯 나온다. 고양이를 누르면 뛰며 한마디 한다.
-const INTRO_SAY = {
-  kkuku: ["안녕하세요, 푸스하 선생님 꾸꾸예요.", "표준 아랍어는 제가 맡을게요.", "أهلاً وسهلاً! 반가워요."],
-  akkung: ["나는 암미야 담당 아꿍!", "현지에서 진짜 쓰는 말 알려 줄게.", "إزيك؟ 잘 지냈어?"],
-};
-const INTRO_WORDS = ["مرحبا", "أهلاً", "إزيك؟", "كيفك؟", "يلا", "تمام"];
-
+// 처음 화면: 한 화면 한 메시지. 고양이 두 마리 → 앱 이름 → 한 줄 소개 → 시작하기. (2026-11-18 글을 줄여 깔끔하게)
+// 고양이를 누르면 표정이 바뀌며 통통 뛴다(글은 띄우지 않음).
 function screenIntro() {
   show(`
-    <section class="intro">
-      <div class="intro-sky" aria-hidden="true">${INTRO_WORDS.map((w, i) => `<span lang="ar" dir="rtl" style="--i:${i}">${w}</span>`).join("")}</div>
-      <p class="intro-bubble" id="intro-bubble"><span class="typed">안녕! 우리는 <b>꾸꾸</b>랑 <b>아꿍</b>이야. 같이 방언으로 말해 보자!</span></p>
+    <section class="intro intro-clean">
       <div class="intro-cats">
-        <button class="intro-cat" data-cat="kkuku" style="--i:0" aria-label="푸스하 선생님 꾸꾸 누르기"><img src="assets/teachers/kkuku-smile.webp" alt="" width="120" height="120"><span class="name">꾸꾸<small>푸스하 선생님</small></span></button>
-        <button class="intro-cat" data-cat="akkung" style="--i:1" aria-label="암미야 선생님 아꿍 누르기"><img src="assets/teachers/akkung-smile.webp" alt="" width="120" height="120"><span class="name">아꿍<small>암미야 선생님</small></span></button>
+        <button class="intro-cat" data-cat="kkuku" style="--i:0" aria-label="푸스하 선생님 꾸꾸"><img src="assets/teachers/kkuku-smile.webp" alt="" width="120" height="120"></button>
+        <button class="intro-cat" data-cat="akkung" style="--i:1" aria-label="암미야 선생님 아꿍"><img src="assets/teachers/akkung-smile.webp" alt="" width="120" height="120"></button>
       </div>
-      <p class="intro-mark in" style="--d:14">아라비오</p>
-      <h1 class="in" style="--d:15">문법과 단어는 아는데,<br>막상 말하려면 막히나요?</h1>
-      <p class="intro-body in" style="--d:16">아라비오는 푸스하를 배운 분이 같은 문장을 이집트·요르단·사우디 방언으로 비교하며, <b>실제로 꺼내 쓸 수 있는 문장</b>으로 익히도록 만든 앱이에요.</p>
+      <h1 class="intro-mark in" style="--d:6">아라비오</h1>
+      <p class="intro-line in" style="--d:8">푸스하로 아는 문장을,<br><b>방언으로 말하기</b></p>
+      <p class="intro-dialects in" style="--d:10" aria-label="이집트, 요르단, 사우디 방언"><span>이집트</span><span>요르단</span><span>사우디</span></p>
       <button class="btn henna intro-start" id="intro-start">시작하기 ${ICON.arrow}</button>
-      <p class="intro-note in" style="--d:20">푸스하가 처음이라면 기초 문법을 먼저 익히고 오면 훨씬 수월해요.</p>
+      <p class="intro-note in" style="--d:14">푸스하가 처음이라면 기초 문법을 먼저 익히고 오면 훨씬 수월해요.</p>
     </section>`, { tabs: false });
-  const bubble = document.getElementById("intro-bubble");
-  const said = { kkuku: 0, akkung: 0 };
-  // 눌렀을 때 표정이 바로 바뀌도록 미리 받아 둔다.
   for (const who of ["kkuku", "akkung"]) for (const mood of ["praise", "celebrate"]) new Image().src = `assets/teachers/${who}-${mood}.webp`;
   app.addEventListener("animationend", e => { if (e.animationName === "cat-jump") e.target.closest(".intro-cat")?.classList.remove("hop"); });
   app.querySelectorAll(".intro-cat").forEach(cat => cat.addEventListener("click", () => {
-    const who = cat.dataset.cat;
     cat.classList.remove("hop");
     void cat.offsetWidth; // 연달아 눌러도 다시 뛴다
     cat.classList.add("hop");
-    cat.querySelector("img").src = `assets/teachers/${who}-praise.webp`;
-    bubble.dataset.who = who;
-    bubble.innerHTML = `<span class="typed">${mixed(INTRO_SAY[who][said[who]++ % INTRO_SAY[who].length])}</span>`;
+    cat.querySelector("img").src = `assets/teachers/${cat.dataset.cat}-praise.webp`;
   }));
   document.getElementById("intro-start").addEventListener("click", (e) => {
     if (e.currentTarget.disabled) return;
@@ -769,7 +756,6 @@ function screenIntro() {
       cat.querySelector("img").src = `assets/teachers/${cat.dataset.cat}-celebrate.webp`;
       cat.classList.add("cheer");
     });
-    bubble.innerHTML = `<span class="typed">좋아, 출발!</span>`;
     setTimeout(screenHome, window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 650);
   });
 }
@@ -794,14 +780,13 @@ function screenHome() {
   const u = unitOfDay(now), country = state.dialect, due = dueReviews().length;
   show(`
     <div class="world-scene" aria-hidden="true"><img src="assets/landmarks/${country}.jpg" alt="" width="960" height="${LANDMARKS[country].h}"></div>
-    <header class="world-masthead"><span class="${p.history[today()] ? "" : "cold"}" aria-label="연속 학습 ${streak()}일${p.history[today()] ? "" : ", 오늘은 아직 안 했어요"}">${ICON.flame} ${streak()}일</span><b>아라비오</b><span><span class="mast-heart" aria-label="하트 ${hearts().count}개">${ICON.heart} ${hearts().count}</span>${p.xp} XP</span></header>
+    <header class="world-masthead"><span class="${p.history[today()] ? "" : "cold"}" aria-label="연속 학습 ${streak()}일${p.history[today()] ? "" : ", 오늘은 아직 안 했어요"}">${ICON.flame} ${streak()}일</span><b>아라비오</b><span><span class="mast-heart" aria-label="하트 ${hearts().count}개">${ICON.heart} ${hearts().count}</span>${mastGoal()}</span></header>
     <section class="world-hero" aria-label="${LANDMARKS[country].place} 배경">
       <img src="assets/landmarks/${country}.jpg" alt="${LANDMARKS[country].alt}" width="960" height="${LANDMARKS[country].h}" fetchpriority="high">
       <div class="world-title"><small>${LANDMARKS[country].tag}</small><div lang="ar" dir="rtl">${DIALECTS[country].ar}</div><p>${DIALECTS[country].name} 아랍어 <span>100일 · 300문장</span></p></div>
     </section>
     <div class="world-panel">
       <div class="world-picker" role="group" aria-label="학습 나라 선택" style="--n:${Object.keys(DIALECTS).length};--i:${Object.keys(DIALECTS).indexOf(country)}">${Object.entries(DIALECTS).map(([key,d])=>`<button data-country="${key}" aria-pressed="${key === country}">${d.name}<span lang="ar">${d.ar}</span></button>`).join("")}</div>
-      ${goalCard()}
     </div>
     ${due ? `<button class="world-review" id="review">오늘 복습 · ${due}문장 ${ICON.arrow}</button>` : ""}
     <div class="world-sticky"><section class="world-unit"><div><label for="unit-select" id="world-unit-no">UNIT ${String(u.unit).padStart(2,"0")}</label><h1 id="world-unit-name">${esc(u.name)}</h1></div><select id="unit-select" aria-label="학습 단원 선택">${DATA.units.map(unit=>`<option value="${unit.unit}" ${unit.unit===u.unit ? "selected" : ""}>UNIT ${unit.unit} · ${esc(unit.name)}</option>`).join("")}</select></section>
@@ -834,13 +819,10 @@ function screenHome() {
   prefetchDayAudio(now);
 }
 
-// 홈의 하루 목표 카드. 오늘 아직 안 했으면 스트릭이 이어질 수 있다고 알려 준다.
-function goalCard() {
-  const goal = dailyGoal(), xp = todayXp(), n = streak(), studied = Boolean(progress().history[today()]);
-  const note = xp >= goal ? "목표 달성 · 내일 또 만나요"
-    : !studied && n > 0 ? `오늘 학습하면 ${n + 1}일 연속이에요`
-    : `${Math.ceil((goal - xp) / XP_PER_SENTENCE)}대화 더 하면 달성`;
-  return `<div class="world-goal ${xp >= goal ? "met" : ""}">${goalRing(xp / goal, 34)}<div><small>오늘 목표</small><b>${xp} / ${goal} XP</b><p>${note}</p></div></div>`;
+// 홈 위쪽 오른편의 오늘 목표: 작은 고리와 '오늘 XP / 목표'. (2026-11-18 나라 선택 카드 안의 목표 줄을 빼고 이리로 옮김)
+function mastGoal() {
+  const goal = dailyGoal(), xp = todayXp();
+  return `<span class="mast-goal ${xp >= goal ? "met" : ""}" aria-label="오늘 목표 ${xp} / ${goal} XP${xp >= goal ? ", 달성" : ""}">${goalRing(xp / goal, 18)}${xp}/${goal}</span>`;
 }
 
 // 길 옆 빈 자리에 선생님: 4번째 칸(왼쪽으로 치우침) 오른편에 꾸꾸, 6번째 칸(오른쪽) 왼편에 아꿍.
@@ -1414,7 +1396,7 @@ function screenRecords() {
     .sort((a, b) => srs[b.id].hard - srs[a.id].hard).slice(0, 10);
   const d = state.dialect;
   show(`
-    <div class="page-head"><h1>나의 기록</h1><span class="pill">${DIALECTS[d].name}</span></div><p class="page-description">학습 현황과 단원별 완료 기록</p>
+    <div class="page-head"><h1>나의 기록</h1><span class="pill">${DIALECTS[d].name}</span></div><p class="page-description">학습 현황과 단원별 완료 기록 · 누적 ${p.xp} XP</p>
     <div class="metrics in" style="--d:0">
       <div><b>${p.completedDays.length}</b><span>/ 100일</span></div>
       <div><b>${learned}</b><span>배운 문장</span></div>

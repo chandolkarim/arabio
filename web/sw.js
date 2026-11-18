@@ -1,6 +1,6 @@
 // 아라비오 서비스 워커: 인터넷이 없어도 앱이 열리고, 한 번 받은 음성은 다시 받지 않는다.
 // VERSION은 index.html의 ?v= 값, version.txt와 같아야 한다(tests/pwa.cjs가 확인). 배포할 때 셋을 함께 올린다.
-const VERSION = "20261118-ai";
+const VERSION = "20261118-intro";
 const SHELL = `arabio-shell-${VERSION}`;
 const AUDIO = "arabio-audio-v1"; // 음성 파일은 이름(?v=검수 번호 포함)으로 구분하므로 버전이 바뀌어도 유지한다
 const RUNTIME = "arabio-runtime-v1"; // 글꼴처럼 다른 주소에서 오는 파일
